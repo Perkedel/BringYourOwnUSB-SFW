@@ -1,0 +1,4 @@
+// This is very trivial.
+gameinfo {
+    drawReadThis = true
+}
