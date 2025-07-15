@@ -7,6 +7,10 @@
 - Bidt. Realizer 2. Female. Youngest sister
 - 
 
+### detailes
+
+- George's riffle is Tebenge. The bullet can be tackled like soccer
+
 ## Intro
 
 ## Conflict of Interest
