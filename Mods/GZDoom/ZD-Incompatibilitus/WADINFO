@@ -1,18 +1,18 @@
 ===========================================================================
-Archive Maintainer      : Cool Message to maintainer
-Update to               : FILENAME.pk3
-Advanced engine needed  : GZDoom
+Archive Maintainer      : Overwrite to
+Update to               : ZD-Incompatibilitus.pk3
+Advanced engine needed  : GZDoom Latest & Greatest
 Primary purpose         : Single play
 ===========================================================================
-Title                   : Your mod name here
-Filename                : FILENAME.pk3
-Release date            : YYYY-MM-DD
-Author                  : ???
+Title                   : Incompatibilitus
+Filename                : ZD-Incompatibilitus.pk3
+Release date            : 2025-08-01
+Author                  : JOELwindows7
 Email Address           : no@thanks ***
-Other Files By Author   : FILENAME2.pk3
-Misc. Author Info       : Example author
+Other Files By Author   : Lah-Mboh.pk7
+Misc. Author Info       : aaaaaaaa
 
-Description             : Cool description
+Description             : GZDoom experiments that requires the latest & greatest GZDoom version
 
 Additional Credits to   : See Credits.md
 ===========================================================================
