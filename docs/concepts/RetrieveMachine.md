@@ -1,0 +1,34 @@
+# Retrieve Machine
+
+- The Machine was stolen. Belongs to DNB. Currently very classified of its function, but looks like brain scanner of some sort.
+- Somebody stole the machine. If it's the enemy that stole it, world will ends.
+- you must retrieve. Nobody in the house, you, nor the commander commissioned you, know what the machine's for. 
+- Focus the mission!
+- Building spotted! helicopter drop off to the top 500m
+- drop off
+- infil
+- saw the auction. Oh no, it's sold! the thief who won carried it!
+- follow
+- multiple levels
+- at the final
+- got onto thief house
+- oh no, the box has been opened & the machine itself has been disassemled! the brain scanning part was taken!
+- Quickly defeat the thief
+- fight
+- duar duar duar, the thief's machine destroyed, as well as the brain scanner part that was attached to his machine.
+- News Breaking! The client is announcing that the machine that was stolen. We forgot to flash its firmware to it! So the world still safe! The SSD is in fact empty.
+- whew
+- But the DNB raid team arrives & the thief has been arrested. The first stealer also has been arrested.
+- come back HQ
+- .
+- Hey also news breaking again. Your father is our lieutenant's cousin. So you're related. And since you have minimum amount of tragedy, we'd like to reveal what's machine is for.
+- Scan brain
+- the computer analyze. complete
+- Then this personality output are going to be deployed to bunch of Vesseloids we will born them out ourselves. Come back 25 years. Sorry, we don't have the time fast technology, because that idea is still not yet approved.
+- What is this all about?
+- Now this is the part that enemies (including you, gamers, yes you, some of you!) cannot know. Making Ralsei again. You have tragedy. now, without causing dark world, a service will scan your personality. Then by the service will be processed to add behaviour that takes care of it this so to cope with yourself and/or others. Now you have accompaniments! Without gacha with another beings.
+- That's why enemy cannot know this. if they know, they will do whatever to do the same. No need to fork, or even copy paste our code illegally, no need to realize the prototype in the first place, or infact we don't care if say we remembered to flash the SSD & then they figured out our idea, we just had to reduce risks anyways. The idea was already revealed from Deltarune game or theorized by YouTubers about it. The enemy will clone themselves their own Ralsei, and it'll be this one it this. The nuke comes whenever they're released out to the public. Met our persona or not, or maybe ourselves, just seeing their clone will immediately cause war. We got personal A vs. personal B. The point where enemy is because they are not agreeing us, now boosted up high.
+- Oh.. I see.
+- a
+- 25 years
+- There you have it. Your *clone*, which is not clone. Because you have no tragedy, their personality is almost as same as you. Just few more scratches are deleted. Look, you have now *siblings*! and uh.. *fursonas*, coz there are vesseloids which happens to be outputting thyrens. Yeah it's random.
