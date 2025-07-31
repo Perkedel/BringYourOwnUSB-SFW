@@ -14,3 +14,14 @@ If your biological age passes the maturity, & you'd like other stuffs you desire
 
 - https://gitlab.com/Perkedel
 - https://codelab.org/Perkedel
+- https://github.com/Perkedel/Lah-Mboh
+
+## Deprecation proposal for GitHub
+
+Whoops! We put it on a wrong place! uh.. we gonna be copyright stuck by those stingy people. Stingier than any Krabs that won Stingy champions whole their life, anyone ever.  
+Nope! I'm not doing this! I gotta move this somewhere! Do you know if I can for now place it safely on different hosting that is:
+
+- As public as GitHub, GitLab, Codeberg are
+- Freely usable on an appropriate traffic & storage basis, but still big enough I don't have to pay the fee on this Free tier whatever, just like 3 places above
+- Ignores or even better, Outright ban abusive DMCA. *I used the stone to destroy the stone* 🥁DNB
+- Just better. The better of Best(all 3), plus yours.
