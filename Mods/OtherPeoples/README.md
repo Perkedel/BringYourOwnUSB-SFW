@@ -1,6 +1,6 @@
 # DOOM WADs
 
-Mods by other people! Redistributed as is.
+Mods by other people! Redistributed as is. Assorted regardless of source port, but in Kolmorotzzet style (folder by Author name)!
 
 Modified files won't be here, return to `/Mods` folder for that!
 

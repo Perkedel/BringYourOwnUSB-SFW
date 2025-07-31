@@ -37,6 +37,8 @@ Sauces:
 
 */
 
+//#ifdef LMBH_ExistenceVerifier
+
 class LMBH_BYOU_Existence_SFW : LMBH_ExistenceVerifier
 {
     Default
@@ -45,5 +47,8 @@ class LMBH_BYOU_Existence_SFW : LMBH_ExistenceVerifier
 		LMBH_ExistenceVerifier.title "Bring Your Own USB (SFW)"; // free text humane readable title
 		LMBH_ExistenceVerifier.description "Extra Mboh Stuffs of what we yoink"; // description of the DLC
 		LMBH_ExistenceVerifier.nsfw false; // if the DLC is Not Suitable for Work. Our scanner will warn Doomers if they load that.
+		LMBH_ExistenceVerifier.nsfl false; // if the DLC is Not Suitable for Life. Our scanner will warn Doomers if they load that.
 	}
 }
+
+//#endif
