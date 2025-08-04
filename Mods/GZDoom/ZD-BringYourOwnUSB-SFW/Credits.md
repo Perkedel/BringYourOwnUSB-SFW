@@ -16,3 +16,6 @@ https://github.com/Perkedel/Lah-Mboh
     - [eek!](https://modarchive.org/index.php?request=view_by_moduleid&query=186901). Surasshu. ??? Unknown. `T_MEEK`. The ... song!!!
 - [SpessaSynth Demo Songs](https://github.com/spessasus/spessasynth-demo-songs). Songs yoinked, cover, remade, original, remix, etc. for [SpessaSynth](https://spessasus.github.io/SpessaSynth/)
     - [Funky Stars / Hybrid Songs 2:20](https://github.com/spessasus/spessasynth-demo-songs/blob/main/demo_songs/Hybrid%20song%202_20.rmi). Quasar of Sanxion. ??? Unknown. `R_HY220`.
+- [FreePD Public Domain Musics](https://freepd.com/). Kevin Macleod. **CC0**. Label that publishes musics under CC0 / Public Domain!
+	- Kevin Macleod - Study & Relax
+	- Bryan Teoh - Mysterious Lights
