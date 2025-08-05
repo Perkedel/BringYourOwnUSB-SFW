@@ -4,6 +4,6 @@
 | - | - |
 | For | GZDoom & Derivatives |
 | Requires | . |
-| Conflicts with / Replaces | . |
+| Conflicts with / Replaces | Mboh-UX |
 
-Small MAPINFO to make `READ THIS` into available no matter what IWAD you had.
+Small MAPINFO to make `READ THIS` in main menu available no matter what IWAD you had.
