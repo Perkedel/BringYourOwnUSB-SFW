@@ -4,6 +4,8 @@
 # https://tldp.org/LDP/abs/html/comparison-ops.html
 # https://stackoverflow.com/a/2172367/9079640
 # https://github.com/actions/checkout/tree/v4/q
+# https://stackoverflow.com/a/40082454/9079640
+# https://stackoverflow.com/a/638980/9079640
 
 folderCompile="outCompile"
 
