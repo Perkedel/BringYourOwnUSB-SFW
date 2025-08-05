@@ -9,7 +9,7 @@
 
 folderCompile="outCompile"
 
-mkdir -p folderCompile
+mkdir -p $folderCompile
 
 for thing in Mods/GZDoom/*; do
     baseFilename=$(basename -- "$thing")
