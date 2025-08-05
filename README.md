@@ -8,6 +8,12 @@ We have other mods. Mods that assets we yoinked, original but way to small to be
 
 Come check these all cool stuffs we have right here.
 
+## Which one to choose?!
+
+For Terra-WADs DLC for Lah-Mboh full of yoinked stuffs without permission, use `ZD-BringYourOwnUSB-SFW.pk7`. The rest are optional Mods compatible without Lah-Mboh required.
+
+Check out the [Mods folder](/Mods/) in the Repository for more info.
+
 ## Somewhere
 
 If your biological age passes the maturity, & you'd like other stuffs you desire, go ask your parent for it. Oh wait, you have bad relationship! Alright, we can be found on these other Git hosting, same organisation name `Perkedel`:
