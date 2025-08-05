@@ -13,3 +13,7 @@
 *.ods#
 *.blend1
 docs/DocShoot.md
+
+# Compilation Outputs
+
+outCompile

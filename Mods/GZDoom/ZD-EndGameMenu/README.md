@@ -11,3 +11,7 @@ Small MENUDEF to add `End Game` menu just like in original vanilla DOOM. Or in t
 This time, it's on the Main Menu / Pause Menu, just like in KEX. The same image you see on the Vanilla *fits like a glove* in Main Menu, because Vanilla's Option menu also uses Big Font too! And until it goes to ZDoom etc., you get the point.
 
 **Mind you that**, we currently have no idea how to hide `End Game` when not playing the game / just started the game. That, requires advanced ZScripting of some sort
+
+## Return to BringYourOwnUSB-SFW
+
+[Click Here](https://github.com/Perkedel/BringYourOwnUSB-SFW)
