@@ -18,11 +18,11 @@ Yuzuha: (poke her soft left ear with the paper gently)! ! ! !
 
 Alice: (annoyed, awakened) mmh!!, (open eyes)????
 
-DNB General Employment Form
+[![DNB General Employment Form](https://raw.githubusercontent.com/Perkedel/Lah-Mboh/refs/heads/main/graphics/EmploymentFormMemeA4Filled.png)](https://github.com/Perkedel/Lah-Mboh/blob/main/graphics/EmploymentFormMemeA4Filled.png)
 
-(Fields)
+<!-- (Fields) -->
 
-Dengan mengisi formulir ini, saya sadar bahwa saya telah mengisi dengan kesadaran penuh, dan setuju untuk tunduk kepada aturan sebagaimana yang telah ditetapkan oleh perusahaan.
+<!-- Dengan mengisi formulir ini, saya sadar bahwa saya telah mengisi dengan kesadaran penuh, dan setuju untuk tunduk kepada aturan sebagaimana yang telah ditetapkan oleh perusahaan. -->
 
 Alice: **KYAAAAAAAAAAAAAAAAAAA!!!**, I-i-i-i-it's a-a-a-aa..... FLOATING EMPLOYMENT FORM?!?!?
 
@@ -40,7 +40,7 @@ Sans: 😉👍✨!!
 
 Papyrus: Welp, sorry guys. gotta blend in sometimes, and it's midnight btw. (charge run boost) Till later, folks!, (release)!
 
-Papyrus hit balconless tempered window glass!! Rolling pitch whole boddy falling down 2 stories
+Papyrus hit balconless tempered window glass!! Rolling pitch whole boddy falling down 2 stories. Rolling just like his Undertale counterpart did.
 
 Hit down impact mess up
 
@@ -48,7 +48,9 @@ Papyrus: (reassemble)....! Till later!, (continue running back to villa house ac
 
 Papyrus left, look back overall the hotel room here.
 
-Yuzuha & Alice both stoned flabbergasted what the fuck just happened
+Yuzuha stoned flabbergasted what the fuck just happened
+
+Alice's soul *is gone & dry* with *spirit leaving her body*
 
 ## Bonus
 
