@@ -5,9 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Idk How To Tap</title>
     <!-- <link rel="stylesheet" href="styles.css"> -->
-    <link rel="stylesheet" href="https://perkedel.netlify.app/styles.css"/>
+    <!-- <link rel="stylesheet" href="https://perkedel.netlify.app/styles.css"/> -->
     <style>
         /* @import url("https://perkedel.netlify.app/styles.css"); */
+        :root
+        {
+            color-scheme: dark;
+            font-family: "pixelfont";
+            /* color: #fff; */
+        }
+        .border {
+            padding: 5px 10px 5px 10px;
+            border: 12px solid;
+            border-image: url("http://localhost:8080/trinketos/images/border") 10 10 10 10 stretch;
+        }
+
+        .scroll {
+            padding: 15px 20px 15px 15px;
+            border: 12px solid;
+            border-image: url("http://localhost:8080/trinketos/images/scroll") 18 12 18 12 stretch;
+        }
         /* body {
             color-scheme: dark;
             background-color: #000;
@@ -17,11 +34,79 @@
     <script>
         // Oh shit. Codeium is here. Be careful guys. Repetitives only. Ideas from head only!
         // (JOELwindows7)
+
+        // Core of this..
+        document.addEventListener('trinketMenuResult', function(event){
+            let result = event.detail.result;
+            switch(result) {
+                case "random_dice":
+                    random_dice();
+                    break;
+                case "random_orb":
+                    random_orb();
+                    break;
+                case "random_ball":
+                    random_ball();
+                    break;
+                default:
+                    break;
+            }
+        });
+
         function saySomething(word) {
             if(window.TrinketOS?.spriteSay) {
                 TrinketOS.spriteSay(word);
             }
             console.log(word);
+        }
+
+        function random_dice() {
+            // Aura gone! Minus infinity!! you used codeium windsurf!!!
+            var dice = Math.floor(Math.random() * 6) + 1;
+            saySomething("You rolled a " + dice);
+            // Worlds don't care even it's just e.g.!
+            // Worlds don't care even it's just autocomplete no prompt!
+        }
+
+        function random_orb() {
+            var orb = Math.floor(Math.random() * 3) + 1;
+            saySomething("You see a " + orb);
+        }
+
+        function random_ball() {
+            var ball = Math.floor(Math.random() * 9) + 1;
+            saySomething("You see a " + ball);
+            // ARE YOU FUCKING CRAZY!!! DON'T!!! YOU COULD BE CANCELED!!
+            // okay, next time add ~~8~~ 9-ball prompt of your decision. from fucking yourself, will ya!!
+            // Do not rely on a... Sorry, cannot say C word of for this context even on that NSFL repo.
+        }
+
+        function menuNowNowNow() {
+            saySomething("a Menu");
+            if(window.TrinketOS?.showMenu){
+                TrinketOS.showMenu(
+                    JSON.stringify([
+                        {
+                            text: "Choose a method!"
+                        },
+                        {
+                            text: "Throw a dice",
+                            icon: "DICE_5",
+                            result: "random_dice"
+                        },
+                        {
+                            text: "Look at magic orb",
+                            icon: "MIDNIGHT",
+                            result: "random_orb"
+                        },
+                        {
+                            text: "Roll a 9-ball",
+                            icon: "BALL",
+                            result: "random_ball"
+                        }
+                    ])
+                );
+            }
         }
     </script>
 </head>
@@ -29,6 +114,20 @@
     <h1>Idk How To Tap</h1>
         <p>Idk how to tap. Sandbox experiment for Tapps</p>
         <h2>Sprites</h2>
-            <a href="javascript:saySomething('Hello world!\nLorem ipsum dolor sit amet')" class="Buttonize">Say a word</a>
+            <p><a href="javascript:saySomething('Hello world!\nLorem ipsum dolor sit amet');" class="Buttonize">Say a word</a></p>
+            <p><a href="javascript:menuNowNowNow();" class="Buttonize">Menu NOw NOw NOw</a></p>
+        <h2>Taped with hopes & prayes</h2>
+            <p><a href="https://github.com/ismslv/trinketos/blob/main/tapps_howto.md" target="_blank" rel="noopener noreferrer" class="Buttonize">TrinkedOS Tapps Documentation</a></p>
+            <p><a href="https://www.reddit.com/r/TrinketOS/" target="_blank" rel="noopener noreferrer" class="Buttonize">TrinkedOS Reddit (moar app)</a></p>
+        <h2>Maklumi, In development</h2>
+            <p>TrinketOS is a new launcher / shell for Android (soon for more OSes) that has a lot of features. It is being worked on by one guy out there. It's very new, and we are learning alot from it.</p>
+            <p><b>JOELwindows7</b></p>
+
+        <!-- 
+        Sauceo:
+        - https://stackoverflow.com/questions/147500/is-it-possible-to-include-one-css-file-in-another    
+        
+        -->
+            
 </body>
 </html>

@@ -1,12 +1,12 @@
 {
     "name": "Idk how to Tapp",
-    "html": "start.html",
+    "html": "index.html",
     "icon": "icon.png",
     "author": "JOELwindows7",
-    "link": "https://github.com/ismslv",
-    "color": "#000000",
+    "link": "https://github.com/Perkedel/BringYourOwnUSB-SFW/tree/main/Mods/TrinketOS",
+    "color": "#000010",
     "settings": {
-        "key": "text",
+        "key": "anTest",
         "with_animation": "check"
     },
     "stats": [
