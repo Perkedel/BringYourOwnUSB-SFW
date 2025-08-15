@@ -1,0 +1,16 @@
+{
+    "name": "Idk how to Tapp",
+    "html": "start.html",
+    "icon": "icon.png",
+    "author": "JOELwindows7",
+    "link": "https://github.com/ismslv",
+    "color": "#000000",
+    "settings": {
+        "key": "text",
+        "with_animation": "check"
+    },
+    "stats": [
+        ["highscore", "Highscore: %x", "trophy"],
+        ["played_time", "Played for %x total"]
+    ]
+}

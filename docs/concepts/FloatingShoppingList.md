@@ -30,9 +30,13 @@ Yuzuha: (speak in creepy heavy bass voice) Noo, Alice! It is I,
 
 Papyrus: (displace the prank paper) PAPYRUUUS!!!, NYEEEH!-HYE-HYE-HYE-HYE-HYE
 
-Alice: (petrified as that's a freaking alive skeleton in front of both eyes)?!??!?!? (async) (total freakout) **AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!!!!!!!!!!!!!!!!**
+Alice: (petrified as that's a freaking alive skeleton in front of both eyes)?!??!?!? (async) (total freakout + spongebob eyebrows elongates then vibrate using both her ears instead) **AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!!!!!!!!!!!!!!!!**
 
 Yuzuha: (async) (did not expect a living skeleton) **WHAT THE HELL?!?!?!??!**
+
+GINGAGULI GULI AIRHORN waat de heeeeeel oh my God no wayayaya fart fart short pitch up in toilet bowl fart brain aneurysm bret bret bret ahooga 🤓 horn 🤓 beat slipped hanna barbera and fell
+
+stop meme immediately switch back to reality see Papyrus
 
 Papyrus: Whew! That was really effective. Turns out my brother's talent has some use in it!, Thanks brother!
 

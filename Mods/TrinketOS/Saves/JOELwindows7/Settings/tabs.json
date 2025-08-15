@@ -1,0 +1,620 @@
+[
+    {
+        "backgroundCustom": "",
+        "hidden": false,
+        "icon": "FOLDER",
+        "name": "Files",
+        "pageLeft": {
+            "pagetype": "Files",
+            "path": "/storage/emulated/0"
+        },
+        "tags": "default"
+    },
+    {
+        "backgroundCustom": "",
+        "hidden": false,
+        "icon": "DISKS",
+        "name": "Apps",
+        "pageLeft": {
+            "pagetype": "Apps",
+            "type": "APPS"
+        },
+        "pageRight": {
+            "pagetype": "Apps",
+            "type": "SHORTCUTS"
+        },
+        "tags": "default"
+    },
+    {
+        "backgroundCustom": "",
+        "hidden": false,
+        "icon": "SETTINGS",
+        "name": "Settings",
+        "pageLeft": {
+            "pagetype": "Settings",
+            "settings": "MAIN"
+        },
+        "pageRight": {
+            "pagetype": "Settings",
+            "settings": "SYSTEM"
+        },
+        "tags": "default"
+    },
+    {
+        "backgroundCustom": "",
+        "hidden": true,
+        "icon": "NOTE",
+        "name": "Note",
+        "pageLeft": {
+            "pagetype": "Text",
+            "path": "",
+            "selector": "LAST_CHANGED",
+            "text": ""
+        },
+        "tags": "default"
+    },
+    {
+        "backgroundCustom": "",
+        "hidden": true,
+        "icon": "WEB",
+        "name": "Web",
+        "pageLeft": {
+            "pagetype": "List",
+            "list": [
+                {
+                    "itemtype": "Message",
+                    "icon": "LIST",
+                    "label": "Edit or remove this tab in Settings → Tabs."
+                },
+                {
+                    "itemtype": "Title",
+                    "icon": "LIST",
+                    "label": "Links"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://trinketos.org",
+                    "icon": "OS_LOGO",
+                    "label": "TrinketOS.org"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://ko-fi.com/trinketos",
+                    "icon": "KOFI",
+                    "label": "Ko-Fi: trinketos"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://github.com/ismslv/trinketos",
+                    "icon": "CODE",
+                    "label": "GitHub: trinketos"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://youtube.com/@trinket-os",
+                    "icon": "YOUTUBE",
+                    "label": "YouTube: @trinket-os"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://smslv.itch.io/trinketos",
+                    "icon": "SHOP",
+                    "label": "Itch.io: trinketos"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://www.reddit.com/r/TrinketOS/",
+                    "icon": "MESSAGE",
+                    "label": "Reddit: r/TrinketOS"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "mailto:contact@trinketos.org",
+                    "icon": "MESSAGE",
+                    "label": "@trinket_os on X"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "mailto:contact@trinketos.org",
+                    "icon": "MESSAGE",
+                    "label": "@trinketos on Mastodon"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "mailto:contact@trinketos.org",
+                    "icon": "ENVELOPE",
+                    "label": "contact@trinketos.org"
+                },
+                {
+                    "itemtype": "Message",
+                    "icon": "LIST",
+                    "label": "To report an issue or suggest a feature, please open an issue on GitHub."
+                }
+            ]
+        },
+        "pageRight": {
+            "pagetype": "List",
+            "list": [
+                {
+                    "itemtype": "Message",
+                    "icon": "LIST",
+                    "label": "These links are always available in Settings → Links"
+                },
+                {
+                    "itemtype": "Title",
+                    "icon": "LIST",
+                    "label": "Credits"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://opengameart.org/users/hitctrl",
+                    "icon": "MUSIC",
+                    "label": "The Endless Journey"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://opengameart.org/users/hitctrl",
+                    "icon": "EMPTY",
+                    "label": "HitCtrl, opengameart"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://opengameart.org/users/hitctrl",
+                    "icon": "MUSIC",
+                    "label": "CyberPunk Chronicles"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://opengameart.org/users/hitctrl",
+                    "icon": "EMPTY",
+                    "label": "HitCtrl, opengameart"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://opengameart.org/users/ruskerdax",
+                    "icon": "MUSIC",
+                    "label": "Pondering the Cosmos"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://opengameart.org/users/ruskerdax",
+                    "icon": "EMPTY",
+                    "label": "Ruskerdax, opengameart"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://soundimage.org",
+                    "icon": "MUSIC",
+                    "label": "Endless Cyber Runner"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://soundimage.org",
+                    "icon": "EMPTY",
+                    "label": "E. Matyas, soundimage"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://www.youtube.com/@anti64",
+                    "icon": "MUSIC",
+                    "label": "Sur les rives de nos souvenirs"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://www.youtube.com/@anti64",
+                    "icon": "EMPTY",
+                    "label": "Anti"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://www.youtube.com/@anti64",
+                    "icon": "MUSIC",
+                    "label": "Mood music"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://www.youtube.com/@anti64",
+                    "icon": "EMPTY",
+                    "label": "Anti"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://www.bfxr.net",
+                    "icon": "MUSIC",
+                    "label": "Sound effects"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://www.bfxr.net",
+                    "icon": "EMPTY",
+                    "label": "Created with bfxr.net"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://qwerasd205.github.io/PixelCode/",
+                    "icon": "FONT",
+                    "label": "Pixel Code font"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://qwerasd205.github.io/PixelCode/",
+                    "icon": "EMPTY",
+                    "label": "qwerasd205, github.com"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://zpix.vercel.app",
+                    "icon": "FONT",
+                    "label": "Zpix font"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://zpix.vercel.app",
+                    "icon": "EMPTY",
+                    "label": "Feng Jason, github.com"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://14collective.itch.io/",
+                    "icon": "IMAGE",
+                    "label": "City backgrounds"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://14collective.itch.io/",
+                    "icon": "EMPTY",
+                    "label": "14 Collective, itch.io"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://edermunizz.itch.io/",
+                    "icon": "IMAGE",
+                    "label": "Forest backgrounds"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://edermunizz.itch.io/",
+                    "icon": "EMPTY",
+                    "label": "Eder Muniz, itch.io"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://ansimuz.itch.io/",
+                    "icon": "IMAGE",
+                    "label": "Industrial backgrounds"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://ansimuz.itch.io/",
+                    "icon": "EMPTY",
+                    "label": "Ansimuz, itch.io"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://icons8.com",
+                    "icon": "IMAGE",
+                    "label": "Some of the icons"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://icons8.com",
+                    "icon": "EMPTY",
+                    "label": "icons8.com"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://github.com/NitishGadangi/TypeWriter-TextView",
+                    "icon": "CODE",
+                    "label": "TypeWriter-TextView"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://github.com/NitishGadangi/TypeWriter-TextView",
+                    "icon": "EMPTY",
+                    "label": "Nitish Gadangi"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "http://www.th-mack.de/download/index.html",
+                    "icon": "CODE",
+                    "label": "Swiss Ephemeris"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "http://www.th-mack.de/download/index.html",
+                    "icon": "EMPTY",
+                    "label": "Astrodienst Zürich"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "http://www.th-mack.de/download/index.html",
+                    "icon": "EMPTY",
+                    "label": "Thomas Mack"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://github.com/mozilla/rhino",
+                    "icon": "CODE",
+                    "label": "Rhino JS"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "https://github.com/mozilla/rhino",
+                    "icon": "EMPTY",
+                    "label": "Mozilla"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "http://luaj.sourceforge.net/",
+                    "icon": "CODE",
+                    "label": "LuaJ"
+                },
+                {
+                    "itemtype": "WebLink",
+                    "showLinkSubicon": false,
+                    "url": "http://luaj.sourceforge.net/",
+                    "icon": "EMPTY",
+                    "label": "James Roseborough, Ian Farmer"
+                },
+                {
+                    "itemtype": "Message",
+                    "icon": "LIST",
+                    "label": "If you want to participate in the project as an artist, developer or musician, feel free to contact us on any platform."
+                }
+            ]
+        },
+        "tags": "default"
+    },
+    {
+        "backgroundCustom": "",
+        "hidden": false,
+        "icon": "DICE",
+        "name": "Fun",
+        "pageLeft": {
+            "pagetype": "List",
+            "list": [
+                {
+                    "itemtype": "Title",
+                    "icon": "LIST",
+                    "label": "Choose Fun"
+                },
+                {
+                    "itemtype": "PageLink",
+                    "page": {
+                        "pagetype": "List",
+                        "list": [
+                            {
+                                "itemtype": "Title",
+                                "icon": "LIST",
+                                "label": "Tapps"
+                            },
+                            {
+                                "itemtype": "TappItem",
+                                "icon": "TAPP",
+                                "label": "zm_html_app"
+                            },
+                            {
+                                "itemtype": "TappItem",
+                                "icon": "TAPP",
+                                "label": "notes"
+                            },
+                            {
+                                "itemtype": "TappItem",
+                                "icon": "TAPP",
+                                "label": "tappdex"
+                            },
+                            {
+                                "itemtype": "Script",
+                                "icon": "SCRIPT",
+                                "label": "MonkeysPaw.js"
+                            }
+                        ]
+                    },
+                    "side": "RIGHT",
+                    "icon": "TAPP",
+                    "label": "Tapps"
+                },
+                {
+                    "itemtype": "PageLink",
+                    "page": {
+                        "pagetype": "List",
+                        "list": [
+                            {
+                                "itemtype": "Title",
+                                "icon": "LIST",
+                                "label": "APK fave"
+                            },
+                            {
+                                "itemtype": "App",
+                                "packageName": "com.google.android.youtube",
+                                "icon": "LIST",
+                                "label": ""
+                            },
+                            {
+                                "itemtype": "App",
+                                "packageName": "me.zhanghai.android.files",
+                                "icon": "LIST",
+                                "label": ""
+                            },
+                            {
+                                "itemtype": "App",
+                                "packageName": "net.gsantner.markor",
+                                "icon": "LIST",
+                                "label": ""
+                            }
+                        ]
+                    },
+                    "side": "RIGHT",
+                    "icon": "APP",
+                    "label": "APK fave"
+                },
+                {
+                    "itemtype": "PageLink",
+                    "page": {
+                        "pagetype": "TaskList",
+                        "isMutual": true,
+                        "list": []
+                    },
+                    "side": "RIGHT",
+                    "icon": "TASK_LIST",
+                    "label": "Taske"
+                },
+                {
+                    "itemtype": "PageLink",
+                    "page": {
+                        "pagetype": "List",
+                        "list": [
+                            {
+                                "itemtype": "Title",
+                                "icon": "LIST",
+                                "label": "Websites"
+                            },
+                            {
+                                "itemtype": "PageLink",
+                                "page": {
+                                    "pagetype": "Web",
+                                    "url": "https://perkedel.netlify.app"
+                                },
+                                "side": "RIGHT",
+                                "icon": "ec1b5db6-71cc-47e2-b3a2-4fa2685a3a6a",
+                                "label": "Perkedel ASTR"
+                            },
+                            {
+                                "itemtype": "PageLink",
+                                "page": {
+                                    "pagetype": "Web",
+                                    "url": "https://trinketos.org/vault"
+                                },
+                                "side": "RIGHT",
+                                "icon": "TAPP",
+                                "label": "TrinketOS Vault"
+                            }
+                        ]
+                    },
+                    "side": "LEFT",
+                    "icon": "WEB",
+                    "label": "Websites"
+                }
+            ]
+        },
+        "pageRight": {
+            "pagetype": "List",
+            "list": [
+                {
+                    "itemtype": "Title",
+                    "icon": "LIST",
+                    "label": "Welcome to fun"
+                },
+                {
+                    "itemtype": "Message",
+                    "icon": "LIST",
+                    "label": "Open something on the left!"
+                }
+            ]
+        },
+        "tags": ""
+    },
+    {
+        "backgroundCustom": "",
+        "hidden": true,
+        "icon": "CONTROLLER",
+        "name": "Retroarch",
+        "pageLeft": {
+            "pagetype": "Retroarch",
+            "playlist": "",
+            "snaps": false
+        },
+        "tags": ""
+    },
+    {
+        "backgroundCustom": "",
+        "hidden": false,
+        "icon": "APP",
+        "name": "AppBig",
+        "pageLeft": {
+            "pagetype": "BigIcons",
+            "backgroundCustom": "",
+            "list": [
+                {
+                    "itemtype": "App",
+                    "packageName": "com.google.android.youtube",
+                    "icon": "LIST",
+                    "label": ""
+                },
+                {
+                    "itemtype": "TappItem",
+                    "icon": "TAPP",
+                    "label": "notes"
+                },
+                {
+                    "itemtype": "TappItem",
+                    "icon": "TAPP",
+                    "label": "tappdex"
+                },
+                {
+                    "itemtype": "RetroarchLink",
+                    "game": "",
+                    "playlist": "",
+                    "icon": "CARTRIDGE",
+                    "label": ""
+                }
+            ]
+        },
+        "tags": ""
+    },
+    {
+        "backgroundCustom": "",
+        "hidden": true,
+        "icon": "TASK_LIST",
+        "name": "Taske",
+        "pageLeft": {
+            "pagetype": "TaskList",
+            "isMutual": true,
+            "list": []
+        },
+        "tags": ""
+    }
+]
