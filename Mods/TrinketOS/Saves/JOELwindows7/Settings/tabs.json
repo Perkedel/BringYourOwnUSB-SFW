@@ -447,6 +447,11 @@
                                 "label": "tappdex"
                             },
                             {
+                                "itemtype": "TappItem",
+                                "icon": "TAPP",
+                                "label": "IdkHowToTapp"
+                            },
+                            {
                                 "itemtype": "Script",
                                 "icon": "SCRIPT",
                                 "label": "MonkeysPaw.js"
