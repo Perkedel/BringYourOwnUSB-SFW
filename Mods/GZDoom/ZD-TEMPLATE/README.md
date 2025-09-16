@@ -1,4 +1,4 @@
-# (ZDOOM) Extra Languages (SFW)
+# (ZDOOM) YOUR_NAME_HERE (SFW)
 
 | Detail | Value |
 | - | - |
