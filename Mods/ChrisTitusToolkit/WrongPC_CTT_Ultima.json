@@ -1,0 +1,693 @@
+{
+  "WPFFeature": [
+    "WPFFeaturesdotnet",
+    "WPFFeatureEnableSearchSuggestions",
+    "WPFFeaturesSandbox",
+    "WPFFeatureshyperv",
+    "WPFFeaturewsl",
+    "WPFFeaturenfs",
+    "WPFFeatureDisableLegacyRecovery",
+    "WPFFeatureRegBackup",
+    "WPFFeatureslegacymedia"
+  ],
+  "WPFTweaks": [
+    "WPFTweaksRestorePoint",
+    "WPFTweaksTele",
+    "WPFTweaksDisableExplorerAutoDiscovery",
+    "WPFTweaksDVR",
+    "WPFTweaksStorage",
+    "WPFTweaksEndTaskOnTaskbar",
+    "WPFTweaksServices",
+    "WPFTweaksRecallOff",
+    "WPFTweaksLoc",
+    "WPFTweaksDiskCleanup",
+    "WPFTweaksHome",
+    "WPFTweaksPowershell7Tele",
+    "WPFTweaksWifi",
+    "WPFTweaksEdgeDebloat",
+    "WPFTweaksBraveDebloat",
+    "WPFTweaksAH",
+    "WPFTweaksPowershell7",
+    "WPFTweaksDeleteTempFiles",
+    "WPFTweaksConsumerFeatures"
+  ],
+  "Install": [
+    {
+      "winget": "GlavSoft.TightVNC",
+      "choco": "TightVNC"
+    },
+    {
+      "winget": "Mozilla.Thunderbird",
+      "choco": "thunderbird"
+    },
+    {
+      "winget": "CrystalDewWorld.CrystalDiskMark",
+      "choco": "crystaldiskmark"
+    },
+    {
+      "winget": "GIMP.GIMP.3",
+      "choco": "gimp"
+    },
+    {
+      "winget": "na",
+      "choco": "equalizerapo"
+    },
+    {
+      "winget": "XBMCFoundation.Kodi",
+      "choco": "kodi"
+    },
+    {
+      "winget": "PlayStation.PSRemotePlay",
+      "choco": "ps-remote-play"
+    },
+    {
+      "winget": "MHNexus.HxD",
+      "choco": "HxD"
+    },
+    {
+      "winget": "Wagnardsoft.DisplayDriverUninstaller",
+      "choco": "ddu"
+    },
+    {
+      "winget": "Anki.Anki",
+      "choco": "anki"
+    },
+    {
+      "winget": "HeroicGamesLauncher.HeroicGamesLauncher",
+      "choco": "na"
+    },
+    {
+      "winget": "GodotEngine.GodotEngine",
+      "choco": "godot"
+    },
+    {
+      "winget": "KDE.digikam",
+      "choco": "digikam"
+    },
+    {
+      "winget": "Oxen.Session",
+      "choco": "session"
+    },
+    {
+      "winget": "File-New-Project.EarTrumpet",
+      "choco": "eartrumpet"
+    },
+    {
+      "winget": "xM4ddy.OFGB",
+      "choco": "ofgb"
+    },
+    {
+      "winget": "Spotify.Spotify",
+      "choco": "spotify"
+    },
+    {
+      "winget": "CloneHeroTeam.CloneHero",
+      "choco": "na"
+    },
+    {
+      "winget": "Zulip.Zulip",
+      "choco": "zulip"
+    },
+    {
+      "winget": "uvncbvba.UltraVnc",
+      "choco": "ultravnc"
+    },
+    {
+      "winget": "Axosoft.GitKraken",
+      "choco": "gitkraken"
+    },
+    {
+      "winget": "Docker.DockerDesktop",
+      "choco": "docker-desktop"
+    },
+    {
+      "winget": "RustDesk.RustDesk",
+      "choco": "rustdesk.portable"
+    },
+    {
+      "winget": "KeePassXCTeam.KeePassXC",
+      "choco": "keepassxc"
+    },
+    {
+      "winget": "VB-Audio.Voicemeeter.Potato",
+      "choco": "voicemeeter-potato"
+    },
+    {
+      "winget": "Prusa3d.PrusaSlicer",
+      "choco": "prusaslicer"
+    },
+    {
+      "winget": "MoonlightGameStreamingProject.Moonlight",
+      "choco": "moonlight-qt"
+    },
+    {
+      "winget": "Alex313031.Thorium.AVX2",
+      "choco": "na"
+    },
+    {
+      "winget": "Ventoy.Ventoy",
+      "choco": "ventoy"
+    },
+    {
+      "winget": "qBittorrent.qBittorrent",
+      "choco": "qbittorrent"
+    },
+    {
+      "winget": "darktable.darktable",
+      "choco": "darktable"
+    },
+    {
+      "winget": "AivarAnnamaa.Thonny",
+      "choco": "thonny"
+    },
+    {
+      "winget": "Audacity.Audacity",
+      "choco": "audacity"
+    },
+    {
+      "winget": "Element.Element",
+      "choco": "element-desktop"
+    },
+    {
+      "winget": "WinMerge.WinMerge",
+      "choco": "winmerge"
+    },
+    {
+      "winget": "Rustlang.Rust.MSVC",
+      "choco": "rust"
+    },
+    {
+      "winget": "MoonchildProductions.PaleMoon",
+      "choco": "paleMoon"
+    },
+    {
+      "winget": "angryziber.AngryIPScanner",
+      "choco": "angryip"
+    },
+    {
+      "winget": "JanDeDobbeleer.OhMyPosh",
+      "choco": "oh-my-posh"
+    },
+    {
+      "winget": "CodeSector.TeraCopy",
+      "choco": "TeraCopy"
+    },
+    {
+      "winget": "ItchIo.Itch",
+      "choco": "itch"
+    },
+    {
+      "winget": "WiresharkFoundation.Wireshark",
+      "choco": "wireshark"
+    },
+    {
+      "winget": "TorProject.TorBrowser",
+      "choco": "tor-browser"
+    },
+    {
+      "winget": "FreeCAD.FreeCAD",
+      "choco": "freecad"
+    },
+    {
+      "winget": "Ditto.Ditto",
+      "choco": "ditto"
+    },
+    {
+      "winget": "OpenWhisperSystems.Signal",
+      "choco": "signal"
+    },
+    {
+      "winget": "Famatech.AdvancedIPScanner",
+      "choco": "advanced-ip-scanner"
+    },
+    {
+      "winget": "Notepad++.Notepad++",
+      "choco": "notepadplusplus"
+    },
+    {
+      "winget": "nepnep.neofetch-win",
+      "choco": "na"
+    },
+    {
+      "winget": "Neovim.Neovim",
+      "choco": "neovim"
+    },
+    {
+      "winget": "DigitalScholar.Zotero",
+      "choco": "zotero"
+    },
+    {
+      "winget": "CrystalDewWorld.CrystalDiskInfo",
+      "choco": "crystaldiskinfo"
+    },
+    {
+      "winget": "Microsoft.WindowsPCHealthCheck",
+      "choco": "na"
+    },
+    {
+      "winget": "Telegram.TelegramDesktop",
+      "choco": "telegram"
+    },
+    {
+      "winget": "GitButler.GitButler",
+      "choco": "na"
+    },
+    {
+      "winget": "MartiCliment.UniGetUI",
+      "choco": "wingetui"
+    },
+    {
+      "winget": "LocalSend.LocalSend",
+      "choco": "localsend.install"
+    },
+    {
+      "winget": "GitHub.cli",
+      "choco": "git;gh"
+    },
+    {
+      "winget": "ShareX.ShareX",
+      "choco": "sharex"
+    },
+    {
+      "winget": "yt-dlp.yt-dlp",
+      "choco": "yt-dlp"
+    },
+    {
+      "winget": "Microsoft.PowerToys",
+      "choco": "powertoys"
+    },
+    {
+      "winget": "Gyan.FFmpeg",
+      "choco": "ffmpeg-full"
+    },
+    {
+      "winget": "Microsoft.PowerShell",
+      "choco": "powershell-core"
+    },
+    {
+      "winget": "Python.Python.3.13",
+      "choco": "python"
+    },
+    {
+      "winget": "PrismLauncher.PrismLauncher",
+      "choco": "prismlauncher"
+    },
+    {
+      "winget": "Emulationstation.Emulationstation",
+      "choco": "emulationstation"
+    },
+    {
+      "winget": "Jellyfin.JellyfinMediaPlayer",
+      "choco": "jellyfin-media-player"
+    },
+    {
+      "winget": "CalcProgrammer1.OpenRGB",
+      "choco": "openrgb"
+    },
+    {
+      "winget": "Nvidia.GeForceNow",
+      "choco": "nvidia-geforce-now"
+    },
+    {
+      "winget": "Zen-Team.Zen-Browser",
+      "choco": "na"
+    },
+    {
+      "winget": "RaspberryPiFoundation.RaspberryPiImager",
+      "choco": "rpi-imager"
+    },
+    {
+      "winget": "GitHub.GitHubDesktop",
+      "choco": "git;github-desktop"
+    },
+    {
+      "winget": "TechPowerUp.GPU-Z",
+      "choco": "gpu-z"
+    },
+    {
+      "winget": "EclipseAdoptium.Temurin.21.JDK",
+      "choco": "temurin"
+    },
+    {
+      "winget": "Clementine.Clementine",
+      "choco": "clementine"
+    },
+    {
+      "winget": "Inkscape.Inkscape",
+      "choco": "inkscape"
+    },
+    {
+      "winget": "BiniSoft.WindowsFirewallControl",
+      "choco": "windowsfirewallcontrol"
+    },
+    {
+      "winget": "IridiumIO.CompactGUI",
+      "choco": "compactgui"
+    },
+    {
+      "winget": "Bitwarden.Bitwarden",
+      "choco": "bitwarden"
+    },
+    {
+      "winget": "TechNobo.TcNoAccountSwitcher",
+      "choco": "tcno-acc-switcher"
+    },
+    {
+      "winget": "Jellyfin.Server",
+      "choco": "jellyfin"
+    },
+    {
+      "winget": "Greenshot.Greenshot",
+      "choco": "greenshot"
+    },
+    {
+      "winget": "Musescore.Musescore",
+      "choco": "musescore"
+    },
+    {
+      "winget": "REALiX.HWiNFO",
+      "choco": "hwinfo"
+    },
+    {
+      "winget": "Cemu.Cemu",
+      "choco": "cemu"
+    },
+    {
+      "winget": "LizardByte.Sunshine",
+      "choco": "sunshine"
+    },
+    {
+      "winget": "EFIBootEditor.EFIBootEditor",
+      "choco": "na"
+    },
+    {
+      "winget": "xemu-project.xemu",
+      "choco": "na"
+    },
+    {
+      "winget": "Oracle.VirtualBox",
+      "choco": "virtualbox"
+    },
+    {
+      "winget": "Kitware.CMake",
+      "choco": "cmake"
+    },
+    {
+      "winget": "Playnite.Playnite",
+      "choco": "playnite"
+    },
+    {
+      "winget": "Adobe.Acrobat.Reader.64-bit",
+      "choco": "adobereader"
+    },
+    {
+      "winget": "RevoUninstaller.RevoUninstaller",
+      "choco": "revo-uninstaller"
+    },
+    {
+      "winget": "CoreyButler.NVMforWindows",
+      "choco": "nvm"
+    },
+    {
+      "winget": "BlenderFoundation.Blender",
+      "choco": "blender"
+    },
+    {
+      "winget": "SumatraPDF.SumatraPDF",
+      "choco": "sumatrapdf"
+    },
+    {
+      "winget": "Valve.Steam",
+      "choco": "steam-client"
+    },
+    {
+      "winget": "ElectronicArts.EADesktop",
+      "choco": "ea-app"
+    },
+    {
+      "winget": "Fastfetch-cli.Fastfetch",
+      "choco": "na"
+    },
+    {
+      "winget": "AntibodySoftware.WizFile",
+      "choco": "na"
+    },
+    {
+      "winget": "subhra74.XtremeDownloadManager",
+      "choco": "xdm"
+    },
+    {
+      "winget": "Fork.Fork",
+      "choco": "git-fork"
+    },
+    {
+      "winget": "PuTTY.PuTTY",
+      "choco": "putty"
+    },
+    {
+      "winget": "9NNCB5BS59PH",
+      "choco": "na"
+    },
+    {
+      "winget": "AntibodySoftware.WizTree",
+      "choco": "wiztree"
+    },
+    {
+      "winget": "Aegisub.Aegisub",
+      "choco": "aegisub"
+    },
+    {
+      "winget": "CPUID.CPU-Z",
+      "choco": "cpu-z"
+    },
+    {
+      "winget": "OpenJS.NodeJS",
+      "choco": "nodejs"
+    },
+    {
+      "winget": "KiCad.KiCad",
+      "choco": "na"
+    },
+    {
+      "winget": "AutoHotkey.AutoHotkey",
+      "choco": "autohotkey"
+    },
+    {
+      "winget": "VSCodium.VSCodium",
+      "choco": "vscodium"
+    },
+    {
+      "winget": "Insecure.Nmap",
+      "choco": "nmap"
+    },
+    {
+      "winget": "SideQuestVR.SideQuest",
+      "choco": "sidequest"
+    },
+    {
+      "winget": "Rainmeter.Rainmeter",
+      "choco": "na"
+    },
+    {
+      "winget": "Git.Git",
+      "choco": "git"
+    },
+    {
+      "winget": "M2Team.NanaZip",
+      "choco": "nanazip"
+    },
+    {
+      "winget": "VideoLAN.VLC",
+      "choco": "vlc"
+    },
+    {
+      "winget": "KDE.KDEConnect",
+      "choco": "kdeconnect-kde"
+    },
+    {
+      "winget": "EpicGames.EpicGamesLauncher",
+      "choco": "epicgameslauncher"
+    },
+    {
+      "winget": "Nikse.SubtitleEdit",
+      "choco": "na"
+    },
+    {
+      "winget": "Rufus.Rufus",
+      "choco": "rufus"
+    },
+    {
+      "winget": "WinSCP.WinSCP",
+      "choco": "winscp"
+    },
+    {
+      "winget": "Microsoft.WindowsTerminal",
+      "choco": "microsoft-windows-terminal"
+    },
+    {
+      "winget": "Ubisoft.Connect",
+      "choco": "ubisoft-connect"
+    },
+    {
+      "winget": "GOG.Galaxy",
+      "choco": "goggalaxy"
+    },
+    {
+      "winget": "na",
+      "choco": "pyenv-win"
+    },
+    {
+      "winget": "BleachBit.BleachBit",
+      "choco": "bleachbit"
+    },
+    {
+      "winget": "LIGHTNINGUK.ImgBurn",
+      "choco": "imgburn"
+    },
+    {
+      "winget": "Rem0o.FanControl",
+      "choco": "na"
+    },
+    {
+      "winget": "GitExtensionsTeam.GitExtensions",
+      "choco": "git;gitextensions"
+    },
+    {
+      "winget": "Microsoft.Sysinternals.ProcessMonitor",
+      "choco": "procexp"
+    }
+  ],
+  "WPFInstall": [
+    "WPFInstalltightvnc",
+    "WPFInstallthunderbird",
+    "WPFInstallcrystaldiskmark",
+    "WPFInstallgimp",
+    "WPFInstallEqualizerAPO",
+    "WPFInstallkodi",
+    "WPFInstallpsremoteplay",
+    "WPFInstallxeheditor",
+    "WPFInstallddu",
+    "WPFInstallanki",
+    "WPFInstallheroiclauncher",
+    "WPFInstallgodotengine",
+    "WPFInstalldigikam",
+    "WPFInstallsession",
+    "WPFInstalleartrumpet",
+    "WPFInstallOFGB",
+    "WPFInstallspotify",
+    "WPFInstallclonehero",
+    "WPFInstallzulip",
+    "WPFInstallultravnc",
+    "WPFInstallgitkrakenclient",
+    "WPFInstalldockerdesktop",
+    "WPFInstallrustdesk",
+    "WPFInstallkeepass",
+    "WPFInstallVoicemeeterPotato",
+    "WPFInstallprucaslicer",
+    "WPFInstallmoonlight",
+    "WPFInstallthorium",
+    "WPFInstallventoy",
+    "WPFInstallqbittorrent",
+    "WPFInstalldarktable",
+    "WPFInstallThonny",
+    "WPFInstallaudacity",
+    "WPFInstallmatrix",
+    "WPFInstallwinmerge",
+    "WPFInstallrustlang",
+    "WPFInstallPaleMoon",
+    "WPFInstallangryipscanner",
+    "WPFInstallposh",
+    "WPFInstallTeraCopy",
+    "WPFInstallitch",
+    "WPFInstallwireshark",
+    "WPFInstalltor",
+    "WPFInstallfreecad",
+    "WPFInstallditto",
+    "WPFInstallsignal",
+    "WPFInstalladvancedip",
+    "WPFInstallnotepadplus",
+    "WPFInstallneofetchwin",
+    "WPFInstallneovim",
+    "WPFInstallzotero",
+    "WPFInstallcrystaldiskinfo",
+    "WPFInstallwindowspchealth",
+    "WPFInstalltelegram",
+    "WPFInstallgitbutler",
+    "WPFInstallwingetui",
+    "WPFInstalllocalsend",
+    "WPFInstallgithubcli",
+    "WPFInstallsharex",
+    "WPFInstallytdlp",
+    "WPFInstallpowertoys",
+    "WPFInstallffmpeg",
+    "WPFInstallpowershell",
+    "WPFInstallpython3",
+    "WPFInstallprismlauncher",
+    "WPFInstallemulationstation",
+    "WPFInstalljellyfinmediaplayer",
+    "WPFInstallopenrgb",
+    "WPFInstallgeforcenow",
+    "WPFInstallZenBrowser",
+    "WPFInstallpiimager",
+    "WPFInstallgithubdesktop",
+    "WPFInstallgpuz",
+    "WPFInstalltemurin",
+    "WPFInstallclementine",
+    "WPFInstallinkscape",
+    "WPFInstallwindowsfirewallcontrol",
+    "WPFInstallCompactGUI",
+    "WPFInstallbitwarden",
+    "WPFInstallTcNoAccSwitcher",
+    "WPFInstalljellyfinserver",
+    "WPFInstallgreenshot",
+    "WPFInstallmusescore",
+    "WPFInstallhwinfo",
+    "WPFInstallcemu",
+    "WPFInstallsunshine",
+    "WPFInstallefibooteditor",
+    "WPFInstallxemu",
+    "WPFInstallOVirtualBox",
+    "WPFInstallcmake",
+    "WPFInstallplaynite",
+    "WPFInstalladobe",
+    "WPFInstallrevo",
+    "WPFInstallnvm",
+    "WPFInstallblender",
+    "WPFInstallsumatra",
+    "WPFInstallsteam",
+    "WPFInstalleaapp",
+    "WPFInstallfastfetch",
+    "WPFInstallwizfile",
+    "WPFInstallxdm",
+    "WPFInstallFork",
+    "WPFInstallputty",
+    "WPFInstalltidal",
+    "WPFInstallwiztree",
+    "WPFInstallAegisub",
+    "WPFInstallcpuz",
+    "WPFInstallnodejs",
+    "WPFInstallkicad",
+    "WPFInstallautohotkey",
+    "WPFInstallvscodium",
+    "WPFInstallnmap",
+    "WPFInstallsidequest",
+    "WPFInstallrainmeter",
+    "WPFInstallgit",
+    "WPFInstallnanazip",
+    "WPFInstallvlc",
+    "WPFInstallkdeconnect",
+    "WPFInstallepicgames",
+    "WPFInstallSubtitleEdit",
+    "WPFInstallrufus",
+    "WPFInstallwinscp",
+    "WPFInstallterminal",
+    "WPFInstallubisoft",
+    "WPFInstallgog",
+    "WPFInstallpyenvwin",
+    "WPFInstallbleachbit",
+    "WPFInstallimgburn",
+    "WPFInstallfancontrol",
+    "WPFInstallgitextensions",
+    "WPFInstallprocessmonitor"
+  ]
+}
