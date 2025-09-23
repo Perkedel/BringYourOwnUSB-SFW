@@ -1,0 +1,3 @@
+[submodule "SourcePorts/AutumnLamonte/xtermdoom"]
+	path = SourcePorts/AutumnLamonte/xtermdoom
+	url = https://gitlab.com/AutumnMeowMeow/xtermdoom.git
