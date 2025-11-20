@@ -1,0 +1,10 @@
+// your VM-Abort based warn message CVARINFO here!!!.
+// (JOELwindows7)
+// Replace namespace `LMBH_` with your own, e.g. `Contoso_`
+// Title the `LoremIpsum` as the label of what warning is that, e.g. `IllegalModLoaded_HaramWorks`
+// When the warn triggers, it raises which flag Cvar you wanted below.
+nosave noarchive bool LMBH_AbortWarn_LoremIpsum = false;
+
+// These variables you have set will not be saved to config (`noarchive`),
+// hence will reset when user quit this client.
+// Therefore the One-time VM-abort warn message can trigger every startup

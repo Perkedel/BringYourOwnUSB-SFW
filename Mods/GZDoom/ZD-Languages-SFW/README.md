@@ -35,6 +35,7 @@ To set it back, `language = "auto"` to make it pick your system language. Or if 
 - [`LANGUAGE` lump. ZDoom Wiki](https://zdoom.org/wiki/LANGUAGE)
 - [Internationalization. ZDoom Wiki](https://zdoom.org/wiki/Internationalization)
 - [GZDoom & Raze Strings Google Document](https://docs.google.com/spreadsheets/d/1pvwXEgytkor9SClCiDn4j5AH7FedyXS-ocCbsuQIXDU/edit?usp=sharing)
+- [UZDoom Weblate](https://hosted.weblate.org/engage/uzdoom/)
 - [Language OptionString. GZDoom GitHub Repository](https://github.com/ZDoom/gzdoom/blob/0f26139e1068d7e4a5a83e036ef59654fd37b510/wadsrc/static/menudef.txt#L2913)
 
 ## Return to BringYourOwnUSB-SFW

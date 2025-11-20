@@ -1,0 +1,113 @@
+/*
+ * GNU General Public License, Version 3.0
+ *
+ * Copyright (c) 2025 Perkedel
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+// This is the template Zscript about VM-Abort based warn message.
+// (JOELwindows7)
+// Inspired from KekDose featured on Pillow Blaster's Russian Overkill.
+/*
+From the Russian Overkill moonspeak readme:
+
+
+                                       ♥ KeksDose presents ♥
+                               moonspeak directory (Overkill Edition)
+
+This work is dedicated to praising Mima-Sama and the Moon ♥ Remember the 30th of every month is
+Mima Day, and you may bless her by speaking a prayer to her (or two or three).
+
+You can reuse and edit as you like, as long as
+
+	- this text and the terms it imposes upon the work remain unchanged and included
+	in particular, don't superimpose some licence over this
+	- the work won't be used in a commercial project or with the intent of receiving any assets
+	otherwise, such as donations
+
+*/
+// I forgot who said that above notes seems interpretable as BSD-like?
+// also you may take a look at Project Brutality who rejects GZDoom newer than 4.11.3 something.
+// it also does it with VM Abort
+
+class LMBH_AbortWarn_Template : StaticEventHandler {
+
+    // Edit your stuff here! Only do this when Client started up!
+    override void WorldLoaded(WorldEvent e){
+        // Your logic here, e.g. you played this mod with illegal mods alongside.
+        bool loremIpsum_IllegalMod = true;
+        bool loremIpsum_PlayedWithMod = true;
+
+        bool will_vmabort = loremIpsum_IllegalMod && loremIpsum_PlayedWithMod;
+
+        // Don't modify, I think..
+        // If flag not already been raised, then crash
+        if (will_vmabort && !Cvar.FindCvar("LMBH_AbortWarn_LoremIpsum").GetBool()) {
+            // don't forget to raise the Cvar flag!
+            Cvar.FindCvar("LMBH_AbortWarn_LoremIpsum").SetBool(true);
+
+            // in case text does not work, put the text here first
+            string werror_say = StringTable.Localize("$WARNVMABORT");
+    		string esc_say = StringTable.Localize("$ESCVMABORT");
+    		//console.printf("\c[fire]%s", werror_say);
+    		console.printf("\c[fire]You have a warning!: Lorem Ipsum dolor sit amet, you have loaded something illegal example while playing something example!");
+    		//console.printf("\c-%s", werror_say);
+    		console.printf("\c-Close this console (\c[green]ESC\c-) to continue.\n\c-Then try loading level again.");
+
+            // Finally, the star of the show!
+            ThrowAbortException("Lorem Ipsum VM Abort: ");
+        }
+    }
+
+    override void OnEngineInitialize()
+    {
+        Cvar.FindCvar("LMBH_AbortWarn_LoremIpsum").SetBool(false);
+    }
+
+    override void UiTick () {
+        super.UiTick();
+
+		if(0 < level.time && NULL == players [consoleplayer].mo) {
+			if(0 == abort_timer) {
+				OnAbort();
+			}
+
+			AbortTick(abort_timer);
+			abort_timer++;
+		}
+		else {
+			abort_timer = 0;
+		}
+    }
+
+    ui void OnAbort (){
+        // don't forget to raise the Cvar flag!
+        Cvar.FindCvar("LMBH_AbortWarn_LoremIpsum").SetBool(true);
+
+        string werror_say = StringTable.Localize("$WARNVMABORT");
+		string esc_say = StringTable.Localize("$ESCVMABORT");
+		//console.printf("\c[fire]%s", werror_say);
+		console.printf("\c[fire]You have a warning!: Lorem Ipsum");
+		//console.printf("\c-%s", werror_say);
+		console.printf("\c-Close this console (\c[green]ESC\c-) to continue.");
+
+		Object.S_StartSound("werror/vmabort", 0, 0); // star of the show as well!
+    }
+
+	ui void AbortTick (int timer) {
+        // This is Update(float delta)!!!
+	}
+
+	ui int abort_timer;
+}

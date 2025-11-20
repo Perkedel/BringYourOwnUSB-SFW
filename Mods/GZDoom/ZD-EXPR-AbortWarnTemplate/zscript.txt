@@ -1,0 +1,4 @@
+// Don't forget to include it to your own root zscript lump!
+version "3.0.0"
+
+#include "scripts/JOELwindows7/AbortWarn.zsc"
