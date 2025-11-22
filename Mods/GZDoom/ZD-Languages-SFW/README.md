@@ -1,4 +1,4 @@
-# (ZDOOM) YOUR PROJECT NAME HERE
+# Languages for UZDoom
 
 | Detail | Value |
 | - | - |
@@ -29,6 +29,17 @@ language = "id"
 This sets Cvar `language` into `id` which is `Bahasa Indonesia`. Changing this forces GZDoom to use this language instead of based on your system language (`auto`).
 
 To set it back, `language = "auto"` to make it pick your system language. Or if you prefer using menu: `OPTIONS`, `Miscleaneous Options`, `Language` & select yours.
+
+## We have overwriten the language list for now.
+
+It's a duplicate of the original from current UZDoom which in turn based on GZDoom.  
+We then added ours to it.
+
+## Currently the UZDoom's Weblate stuffs are not ready yet
+
+It's being worked on. Stay tuned and/or contribute yours. https://hosted.weblate.org/engage/uzdoom/
+
+Pls complete Bahasa Indonesia too! there are so many strings!! yg jago Bahasa Inggris ditunggu 🙏!
 
 ## Further Readings
 
