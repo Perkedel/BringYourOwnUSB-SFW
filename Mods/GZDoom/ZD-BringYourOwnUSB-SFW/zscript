@@ -3,3 +3,7 @@
 version "4.11.3" // Because Project Brutality, but we also want latest features too! bruh, dilemma!
 
 #include "scripts/ExistenceVerifier/Exist-BringYourOwnUSB-SFW.zs"
+
+#include "scripts/LevelMap/BYOUS_LevelPostProcessor.zsc"
+
+// TODO: move 3rd party yoinks to here. Realm667 stuffs!
