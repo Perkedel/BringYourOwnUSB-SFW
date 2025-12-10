@@ -4,6 +4,7 @@
 | - | - |
 | For | GZDoom & Derivatives |
 | Requires | . |
+| IWAD | . |
 | Conflicts with / Replaces | . |
 
 Write cool thing about this mod.

@@ -11,9 +11,10 @@ https://github.com/Perkedel/Lah-Mboh
   - [faq](https://www.irasutoya.com/p/faq.html)
   - btw, you want to click the file & drag drop instead of drag drop just the thumbnailed link image. The resolution difference
 - [Doom Press Release Beta](https://www.doomworld.com/idgames/historic/doomprbt). id Software. **Proprietory**. Doom prototypes press release
-  - **Unholy Bible & Evil Sceptre!** & the 2 former bonus before becoming Health & Armor bonus respectively.
+  - **Unholy Bible & Evil Sceptre!** & the 2 former bonuses before (Demonic Dagger & Skull Chest) becoming Health & Armor bonus respectively.
   - [Alternate emulate online in Archive](https://archive.org/details/doomprbt).
   - [idgames originale](https://www.gamers.org/pub/idgames/historic/doomprbt.zip)
+  - [ZDoom's article about DOOM ScoreItem](https://zdoom.org/wiki/Classes:ScoreItem)
 
 ## Sounds
 

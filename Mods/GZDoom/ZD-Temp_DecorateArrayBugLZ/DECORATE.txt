@@ -1,0 +1,314 @@
+// Here's the bug I wanna show you
+// JOELwindows7
+
+Actor LZArrayBug
+{
+    /*
+    Here variable.
+    modifiable vars must begin with `user_`, got it.
+    */
+    var int user_select_array;
+    var int user_max_array; // 2
+    var int user_an_array[2];
+
+    +NOINTERACTION // also make it uninteractable
+    RenderStyle None // and invisible.
+
+    States
+    {
+        Spawn:
+            TNT1 A 0
+            TNT1 A 0 A_SetUserVar("user_select_array", 0) // bla bla bla, set some variable something..
+            TNT1 A 0 A_SetUserArray("user_an_array",0,1) // Just set that array at which index with any value,
+            TNT1 A 0 A_SetUserArray("user_an_array",1,33) // Just see!.
+        Between:
+            // replicate a little
+            TNT1 A 0
+            TNT1 A 0 Sector_SetColor(user_an_array[user_select_array],255,0,0)
+            TNT1 A 0 A_SetUserVar("user_select_array", user_select_array + 1)
+            TNT1 A 0 A_JumpIf(user_select_array >= user_max_array, "Bouncing")
+            //Loop // Ah, I edited. Maybe Looping as below trick after all is a bad idea. We should stop it!
+            Stop // Because it seems Jump if didn't work in LZDoom turns out?!
+        Bouncing:
+            TNT1 A 0 A_SetUserVar("user_select_array", 0)
+        BouncedNow:
+            TNT1 A 0 A_JumpIf(user_select_array == 1, "Between")
+            Stop
+    }
+
+    // Too lazy to DoomEdNum, it's not supposed to be permanent anyway, so spawn this manually!
+    // `summon LZArrayBug`
+    // yeah.
+
+    // the jump if is bugged after all, on LZDoom! what to do?!??!?!
+}
+
+// What?! no crash? how about this one I applied before?
+// https://zdoom.org/wiki/Using_Action_Special_tricks
+Actor HTC2SectorLightControllerSlow
+{
+    /*
+    Okay here we go.
+    */
+ 	var int user_size;
+	var int user_max;
+	var int user_sectors[2]; // looks like below kept increasint the user_size var alot. let's increase size of this array then?
+	//var int user_sectors[25];
+	var int user_colorprog;
+	+NOINTERACTION
+	RenderStyle None
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserArray("user_sectors",0,1)
+		TNT1 A 0 A_SetUserArray("user_sectors",1,33)
+		TNT1 A 0 A_SetUserVar("user_max",2)
+		TNT1 A 0 A_SetUserVar("user_size",0)
+		TNT1 A 0 A_SetUserVar("user_colorprog",1)
+	Lighting1:
+		TNT1 A 0 Sector_SetColor(user_sectors[user_size],255,0,0)
+		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
+		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
+		Loop
+	Lighting2:
+		TNT1 A 0 Sector_SetColor(user_sectors[user_size],192,64,0)
+		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
+		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
+		Loop
+	Lighting3:
+		TNT1 A 0 Sector_SetColor(user_sectors[user_size],128,128,0)
+		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
+		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
+		Loop
+	Lighting4:
+		TNT1 A 0 Sector_SetColor(user_sectors[user_size],64,192,0)
+		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
+		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
+		Loop
+	Lighting5:
+		TNT1 A 0 Sector_SetColor(user_sectors[user_size],0,255,0)
+		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
+		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
+		Loop
+	Lighting6:
+		TNT1 A 0 Sector_SetColor(user_sectors[user_size],0,192,64)
+		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
+		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
+		Loop
+	Lighting7:
+		TNT1 A 0 Sector_SetColor(user_sectors[user_size],0,128,128)
+		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
+		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
+		Loop
+	Lighting8:
+		TNT1 A 0 Sector_SetColor(user_sectors[user_size],0,64,192)
+		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
+		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
+		Loop
+	Lighting9:
+		TNT1 A 0 Sector_SetColor(user_sectors[user_size],0,0,255)
+		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
+		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
+		Loop
+	Lighting10:
+		TNT1 A 0 Sector_SetColor(user_sectors[user_size],64,0,192)
+		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
+		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
+		Loop
+	Lighting11:
+		TNT1 A 0 Sector_SetColor(user_sectors[user_size],128,0,128)
+		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
+		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
+		Loop
+	Lighting12:
+		TNT1 A 0 Sector_SetColor(user_sectors[user_size],192,0,64)
+		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
+		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
+		Loop
+	NextCycle:
+		TNT1 A 5 A_SetUserVar("user_size",0)
+		TNT1 A 0 A_SetUserVar("user_colorprog",user_colorprog+1)
+		TNT1 A 0 A_JumpIf(user_colorprog>=13,"NC2")
+	NextCycleCont:
+		TNT1 A 0 A_JumpIf(user_colorprog==1,"Lighting1")
+		TNT1 A 0 A_JumpIf(user_colorprog==2,"Lighting2")
+		TNT1 A 0 A_JumpIf(user_colorprog==3,"Lighting3")
+		TNT1 A 0 A_JumpIf(user_colorprog==4,"Lighting4")
+		TNT1 A 0 A_JumpIf(user_colorprog==5,"Lighting5")
+		TNT1 A 0 A_JumpIf(user_colorprog==6,"Lighting6")
+		TNT1 A 0 A_JumpIf(user_colorprog==7,"Lighting7")
+		TNT1 A 0 A_JumpIf(user_colorprog==8,"Lighting8")
+		TNT1 A 0 A_JumpIf(user_colorprog==9,"Lighting9")
+		TNT1 A 0 A_JumpIf(user_colorprog==10,"Lighting10")
+		TNT1 A 0 A_JumpIf(user_colorprog==11,"Lighting11")
+		TNT1 A 0 A_JumpIf(user_colorprog==12,"Lighting12")
+	NC2:
+		TNT1 A 0 A_SetUserVar("user_colorprog",1)
+		Goto NextCycleCont
+	}
+
+	// There you are, there's the crash
+	// Try it with other GZDoom derivatives, or UZDoom and derivatives, idk!
+}
+
+/*
+...
+===========================================================================
+This is Freedoom, the free content first person shooter.
+
+Freedoom is freely redistributable under the terms of the modified BSD
+license. Check out the Freedoom website for more information:
+
+    https://freedoom.github.io/
+============================================================================
+D_CheckNetGame: Checking network game status.
+player 1 of 1 (1 nodes)
+I_InitInput
+I_StartupMouse
+I_StartupKeyboard
+I_StartupXInput
+I_StartupRawPS2
+I_StartupDirectInputJoystick
+Vulkan device: AMD Radeon RX 7600
+Vulkan device type: discrete gpu
+Vulkan version: 1.4.315 (api) 2.0.353 (driver)
+Max. texture size: 16384
+Max. uniform buffer range: -1
+Min. uniform buffer offset alignment: 16
+Resolution: 1280 x 720
+
+
+map01 - Hydroelectric Plant
+
+]summon htc2sectorlightcontrollerslow
+VM execution aborted: array access out of bounds. Size = 2, current index = 2
+
+Called from HTC2SectorLightControllerSlow.StateFunction.6 at W:/starring codes/Doom Projects/BringYourOwnUSB-SFW/Mods/GZDoom/ZD-Temp_DecorateArrayBugLZ/:decorate.txt, line 50
+Called from state HTC2SectorLightControllerSlow.6 in HTC2SectorLightControllerSlow
+*/
+
+// Now, try this with other ZDoom derivatives that make sense.
+/*
+✅ is SAFE
+💥 is CRASH
+
+LZDoom v4.14.3 = 💥 (You are here)
+UZDoom v4.14.3 = ✅
+GZDoom v4.14.2 = ✅
+GZDoom v4.11.3 = ✅
+ZDoom v2.8.1 = ✅
+*/
+
+// increase array size?
+// nope, didn't help, but different error
+/*
+OS: Windows 11 (or higher) (NT 10.0) Build 26200
+
+LZDoom version l4.14.3
+W_Init: Init WADfiles.
+adding C:/Users/Joel Robert Justiawa/Documents/Kolmorotzzet (kolmorotshitt)/Artistic Setups/ZDoom/lzdoom-win64/lzdoom.pk3, 702 lumps
+adding C:/Users/Joel Robert Justiawa/Documents/Kolmorotzzet (kolmorotshitt)/Artistic Setups/ZDoom/lzdoom-win64/game_support.pk3, 3311 lumps
+adding ./../../Doom WADs/IWAD/Freedoom/freedoom2.wad, 3610 lumps
+adding C:/Users/Joel Robert Justiawa/Documents/Kolmorotzzet (kolmorotshitt)/Artistic Setups/ZDoom/lzdoom-win64/lights.pk3, 7 lumps
+adding C:/Users/Joel Robert Justiawa/Documents/Kolmorotzzet (kolmorotshitt)/Artistic Setups/ZDoom/lzdoom-win64/brightmaps.pk3, 500 lumps
+adding C:/Users/Joel Robert Justiawa/Documents/Kolmorotzzet (kolmorotshitt)/Artistic Setups/ZDoom/lzdoom-win64/game_widescreen_gfx.pk3, 214 lumps
+adding W:/starring codes/Doom Projects/BringYourOwnUSB-SFW/Mods/GZDoom/ZD-Temp_DecorateArrayBugLZ, 4 lumps
+S_Init: Setting up sound.
+I_InitSound: Initializing OpenAL
+  Opened device OpenAL Soft on Headphones (Realtek USB Audio)
+  EFX enabled
+I_Init: Setting up machine state.
+CPU speed: 4200 MHz
+CPU Vendor ID: AuthenticAMD
+  Name: AMD Ryzen 9 7950X3D 16-Core Processor
+  Family 25 (25), Model 97, Stepping 2
+  Features: SSE2 SSE3 SSSE3 SSE4.1 SSE4.2 AVX AVX2 AVX512 F16C FMA3 BMI1 BMI2 HyperThreading
+V_Init: allocate screen.
+ST_Init: Init startup screen.
+Checking cmd-line parameters...
+S_InitData: Load sound definitions.
+G_ParseMapInfo: Load map definitions.
+Texman.Init: Init texture manager.
+ParseTeamInfo: Load team definitions.
+LoadActors: Load actor definitions.
+script parsing took 359.65 ms
+R_Init: Init Doom refresh subsystem.
+DecalLibrary: Load decals.
+Adding dehacked patch freedoom2.wad:DEHACKED
+Patch installed
+M_Init: Init menus.
+P_Init: Init Playloop state.
+ParseSBarInfo: Loading custom status bar definition.
+===========================================================================
+This is Freedoom, the free content first person shooter.
+
+Freedoom is freely redistributable under the terms of the modified BSD
+license. Check out the Freedoom website for more information:
+
+    https://freedoom.github.io/
+============================================================================
+D_CheckNetGame: Checking network game status.
+player 1 of 1 (1 nodes)
+I_InitInput
+I_StartupMouse
+I_StartupKeyboard
+I_StartupXInput
+I_StartupRawPS2
+I_StartupDirectInputJoystick
+Vulkan device: AMD Radeon RX 7600
+Vulkan device type: discrete gpu
+Vulkan version: 1.4.315 (api) 2.0.353 (driver)
+Max. texture size: 16384
+Max. uniform buffer range: -1
+Min. uniform buffer offset alignment: 16
+Resolution: 1280 x 720
+
+
+map01 - Hydroelectric Plant
+
+]spawn lzarraybug
+Unknown command "spawn"
+]summon lzarraybug
+]summon htc2sectorlightcontroller
+Unknown actor or visual thinker 'htc2sectorlightcontroller'
+]summon htc2sectorlightcontrollerslow
+VM execution aborted: array access out of bounds. Size = 24, current index = 24
+
+Called from HTC2SectorLightControllerSlow.StateFunction.6 at W:/starring codes/Doom Projects/BringYourOwnUSB-SFW/Mods/GZDoom/ZD-Temp_DecorateArrayBugLZ/:decorate.txt, line 55
+Called from state HTC2SectorLightControllerSlow.6 in HTC2SectorLightControllerSlow
+*/
+
+// turns out it was A_JumpIf did not work all along!!!!
+
+Actor LZJumpIfBug
+{
+    var int user_something; // 2
+
+    +NOINTERACTION
+
+    States
+    {
+        Spawn:
+            BON1 A 1 A_SetUserVar("user_something", 2)
+        Red:
+            BON2 A 2
+            BON2 B 2 A_JumpIf(user_something >= 2, "Green")
+            BON2 C 2 A_SetUserVar("user_something", user_something + 1)
+            BON2 D 2
+            Loop
+            //Stop
+        Green:
+            BON1 A 2 A_JumpIf(user_something <= 1, "Red")
+            BON1 B 2
+            BON1 C 2 A_SetUserVar("user_something", user_something - 1)
+            BON1 D 2
+            Loop
+            //Stop
+    }
+
+    // EUREKA!! THAT WAS THE JUMP IF BUG!!! IT FULLY MALFUNCTIONS!!
+    // DIDN'T WORK! LZDOOM v4.14.3!!!!!!!!!!!!
+    // ALL OTHER ZDOOM SOURCE PORTS SUPPOSEDLY ALTERNATES!!!!!!
+    // GO!, CREATE ISSUE NOW!!! Or check already exist.. idk.
+}
