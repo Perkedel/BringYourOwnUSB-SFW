@@ -1,4 +1,4 @@
-# (ZDOOM) YOUR_NAME_HERE (SFW)
+# (ZDOOM) Abort Warn Template
 
 | Detail | Value |
 | - | - |

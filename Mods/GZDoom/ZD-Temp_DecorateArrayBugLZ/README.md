@@ -1,4 +1,8 @@
-# (ZDOOM) YOUR_NAME_HERE (SFW)
+# (ZDOOM) (DEPRECATED) Decorate Bug LZDoom Array??
+
+> [!WARNING]
+> Deprecated.  
+> Bug has been fixed just now. Pls reupdate your [LZDoom to the latest version](https://github.com/drfrag666/lzdoom).
 
 | Detail | Value |
 | - | - |
