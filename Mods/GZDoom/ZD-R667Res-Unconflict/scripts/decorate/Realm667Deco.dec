@@ -2165,7 +2165,7 @@ Description:
 	in map editor. Reflective strip glows in dark.
 */
 // was 15220
-ACTOR TrafficCone 26220
+ACTOR CaptainToenailTrafficCone 26220
 {
 	//$Title Traffic Cone Orange
 	//$Category Obstacles/Traffic Cones
@@ -2208,7 +2208,7 @@ ACTOR TrafficCone 26220
 }
 
 // was 15221, sorry, the comments do not inherit somehow..
-ACTOR TrafficConeGreen : TrafficCone 26221
+ACTOR CaptainToenailTrafficConeGreen : CaptainToenailTrafficCone 26221
 {
 	//$Title Traffic Cone Green
 	//$Category Obstacles/Traffic Cones
@@ -2234,7 +2234,7 @@ ACTOR TrafficConeGreen : TrafficCone 26221
 }
 
 // was 15222
-ACTOR TrafficConeYellow : TrafficCone 26222
+ACTOR CaptainToenailTrafficConeYellow : CaptainToenailTrafficCone 26222
 {
 	//$Title Traffic Cone Yellow
 	//$Category Obstacles/Traffic Cones
@@ -2260,7 +2260,7 @@ ACTOR TrafficConeYellow : TrafficCone 26222
 }
 
 // was 15223
-ACTOR TrafficConeBlue : TrafficCone 26223
+ACTOR CaptainToenailTrafficConeBlue : CaptainToenailTrafficCone 26223
 {
 	//$Title Traffic Cone Blue
 	//$Category Obstacles/Traffic Cones
@@ -2286,7 +2286,7 @@ ACTOR TrafficConeBlue : TrafficCone 26223
 }
 
 // was 15224
-ACTOR TrafficConeRed : TrafficCone 26224
+ACTOR CaptainToenailTrafficConeRed : CaptainToenailTrafficCone 26224
 {
 	//$Title Traffic Cone Red
 	//$Category Obstacles/Traffic Cones

@@ -39,6 +39,7 @@
     - [AK47](https://www.realm667.com/repository/armory/doom-style#preview-5). JoeyTD
     - [Russian Overkill Ammo Satchel](https://www.realm667.com/repository/armory/doom-style#preview-6). PillowBlaster
     - [Baphomet's heart](https://www.realm667.com/repository/armory/doom-style#preview-17). KILLA DIO
+    - I'm tired. Just so you know all [informations are within that!](https://www.realm667.com/repository/armory/doom-style) & [more](https://www.realm667.com/). Sorry for missed names
 	- [Extra Keycards & Skull Keys](https://www.realm667.com/repository/item-store/keys-puzzle#preview-8). Disguise, updated further by MagicWazard. Extra keys for even more complex puzzles.
 	- [Damage & Low Health System](https://www.realm667.com/repository/sfx-shoppe/other#preview-3). Captain Maniac et al. **Yoink?? idk, not now? Oh wait, I got an idea! We're cardiophile! break it down!**
 	- [Duke Nukem Pipe Bomb](https://www.realm667.com/repository/armory/doom-style?start=60#preview-51). Xim et all. This gotta be the better one I suppose..
