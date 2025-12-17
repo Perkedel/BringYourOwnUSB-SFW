@@ -1,0 +1,195 @@
+// PillowBlaster special on Realm667!!!!!!!!!!!!!!!
+
+// Ammo Satchels?!
+/*
+"I've got a present for you!"
+
+Submitted: PillowBlaster
+Decorate: PillowBlaster
+Sprites: Daniel, Id Software
+Sprite Edit: PillowBlaster
+Sounds: Id Software
+Idea Base: Field Ops from Wolf:ET
+
+Name: Ammo Satchels
+Class: 1
+Type: Projectile
+Palette: Custom
+Summon: SatchelDropper
+Ammotype: SatchelAmmo (Custom)
+AltFire: Yes
+Powered Mode: No
+Added States: N
+*/
+ACTOR PillowBlasterSatcheler : Weapon
+{
+   Inventory.PickupSound "misc/w_pkup"
+   Inventory.PickupMessage "You are an ammo dispenser! (1)"
+   Obituary "%o was overweighted, thanks to %k's ammunition."
+   Weapon.UpSound ""
+   Weapon.AmmoGive 0
+   Weapon.AmmoType1 "PillowBlasterSatchelAmmo"
+   Weapon.AmmoUse1 25
+   Weapon.AmmoType2 "PillowBlasterSatchelAmmo"
+   Weapon.AmmoUse2 25
+   Weapon.SlotNumber 1
+   AttackSound ""
+   Scale 0.35
+   +NOAUTOFIRE
+   +NOALERT
+   +AMMO_OPTIONAL
+   +ALT_AMMO_OPTIONAL
+   States
+   {
+   Spawn:
+	STCP A -1
+	Loop
+   Ready:
+	STCG A 0 A_GiveInventory("PillowBlasterSatchelAmmo",1)
+	STCG A 2 A_WeaponReady
+	Loop
+   SatchelOn:
+	STCG HGFEDCBA 1
+	Goto Ready
+   Deselect:
+	STCG A 1 A_Lower
+	STCG A 0 A_Lower
+	Loop
+   Select:
+	STCG A 1 A_Raise
+	STCG A 0 A_Raise
+	Loop
+   Fire:
+	STCG A 0 A_JumpIfNoAmmo("Ready")
+	STCG ABCDEFGH 1
+	STCG HGF 1
+	TNT1 A 0 A_PlayWeaponSound("Weapons/SatchelToss")
+	TNT1 A 0 A_FireCustomMissile("PillowBlasterSatchelSpawner",0,1,-20,0)
+	STCF ABCDEFGH 1
+	TNT1 A 10
+	TNT1 A 10 A_ReFire
+	Goto SatchelOn
+   Hold:
+	STCG A 0 A_JumpIfNoAmmo("Ready")
+	STCG HGF 1
+	TNT1 A 0 A_PlayWeaponSound("Weapons/SatchelToss")
+	TNT1 A 0 A_FireCustomMissile("PillowBlasterSatchelSpawner",0,1,-20,0)
+	STCF ABCDEFGH 1
+	TNT1 A 10
+	STCG A 0 A_JumpIfNoAmmo("SatchelOn")
+	TNT1 A 10 A_ReFire
+	Goto SatchelOn
+   AltFire:
+	STCG A 0 A_JumpIfNoAmmo("Ready")
+	STCG ABCDEFGH 1
+	TNT1 A 2 A_ReFire
+	TNT1 A 0 A_PlayWeaponSound("Weapons/SatchelToss")
+	TNT1 A 0 A_PlaySoundEx("Weapons/SatchelOof","Voice")
+	TNT1 A 0 A_FireCustomMissile("PillowBlasterSatchelBlaster",0,1,20,0)
+	HNDG IJKLMNOP 1
+	TNT1 A 15
+	Goto SatchelOn
+   AltHold:
+	TNT1 A 1
+	TNT1 A 0 A_ReFire
+	TNT1 A 0 A_PlayWeaponSound("Weapons/SatchelToss")
+	TNT1 A 0 A_PlaySoundEx("Weapons/SatchelOof","Voice")
+	TNT1 A 0 A_FireCustomMissile("PillowBlasterSatchelBlaster",0,1,20,0)
+	HNDG IJKLMNOP 1
+	TNT1 A 15
+	Goto SatchelOn
+   }
+}
+
+ACTOR PillowBlasterSatchelAmmo : Ammo
+{
+Inventory.Amount 1
+Inventory.MaxAmount 100
+Ammo.BackpackAmount 0
+Ammo.BackpackMaxAmount 100
+Inventory.Icon STTPRCNT
+}
+
+actor PillowBlasterSatchelSpawner
+{
+  Radius 7
+  Height 9
+  Speed 10
+  Damage 0
+  Projectile
+  -NOGRAVITY
+  BounceType Doom
+  BounceCount 3
+  SeeSound ""
+  DeathSound ""
+  BounceSound "Weapons/SatchelBounce"
+  States
+  {
+  Spawn:
+    STCP ABCD 4
+    loop
+  Death:
+    STCP A 0 A_NoBlocking
+    STCP A 1 A_SpawnItem("PillowBlasterAmmoSatchel",0,0)
+    stop
+  }
+}
+
+actor PillowBlasterAmmoSatchel : CustomInventory
+{
+  inventory.pickupmessage "Picked up an ammo satchel."
+  Inventory.PickupSound "Weapons/SatchelPick"
+  -COUNTITEM
+  +INVENTORY.AUTOACTIVATE
+  +INVENTORY.ALWAYSPICKUP
+  states
+  {
+  Pickup:
+  TNT1 A 0 A_GiveInventory("Clip",10)
+  TNT1 A 0 A_GiveInventory("Shell",4)
+  TNT1 A 0 A_GiveInventory("RocketAmmo",2)
+  TNT1 A 0 A_GiveInventory("Cell",20)
+  //TNT1 A 0 A_GiveInventory("Backpack) This would be faster, but then you could
+  //					have also double ammo capacity.
+  stop
+  Spawn:
+  STCP A 600
+  Goto FadeOut
+  FadeOut:
+  STCP AAAAAAAAAAAAAAAAAAAA 1 A_FadeOut(0.05)
+  Stop
+  }
+}
+
+//Alt-Fire
+
+actor PillowBlasterSatchelBlaster
+{
+  Radius 7
+  Height 9
+  Speed 50
+  Damage 25
+  Projectile
+  -NOGRAVITY
+  BounceType Doom
+  BounceCount 4
+  SeeSound ""
+  DeathSound ""
+  BounceSound "Weapons/SatchelBounce"
+  Obituary "%o was slammed in the face, thanks to %k's ammunition."
+  States
+  {
+  Spawn:
+    STCP ABCD 2
+    loop
+  Death:
+    STCP A 0 A_NoBlocking
+    STCP A 1 A_SpawnItem("PillowBlasterAmmoSatchel",0,0)
+    stop
+  XDeath:
+    STCP A 0 A_NoBlocking
+    STCP A 0 A_PlaySound("Weapons/SatchelHit")
+    STCP A 1 A_SpawnItem("PillowBlasterAmmoSatchel",0,0)
+    stop
+  }
+}

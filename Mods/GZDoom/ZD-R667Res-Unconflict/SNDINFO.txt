@@ -312,4 +312,20 @@ weapons/incant	                dsincant
 weapons/spirit1                 dsspirt1
 // end WRW
 
+Weapons/AK47FIR AK47FIR
+
+// Russian Overkill Pillow Blaster
+//Ammo satchels
+Weapons/SatchelToss	STCHTOSS
+Weapons/SatchelBounce	STCHBNC
+Weapons/SatchelPick	STCHPICK
+//Alt-Fire
+Weapons/SatchelHit	STCHHIT
+Weapons/SatchelOof	DSOOF
+// End RO
+
+HEARTA	HEARTA
+HEARTB	HEARTB
+SQUEEZ	SQUEEZ
+
 // End Realm667

@@ -36,6 +36,9 @@
     - [Prototype Nature Props](https://www.realm667.com/repository/prop-stop/vegetation#preview-7). PGE
     - [Dark Imp Pack](https://www.realm667.com/repository/beastiary/doom-style?start=60#preview-6). 
         - Dark Imp Nami. Nanami, Itsnaturetodie, Ghastly, Itsnaturetodie
+    - [AK47](https://www.realm667.com/repository/armory/doom-style#preview-5). JoeyTD
+    - [Russian Overkill Ammo Satchel](https://www.realm667.com/repository/armory/doom-style#preview-6). PillowBlaster
+    - [Baphomet's heart](https://www.realm667.com/repository/armory/doom-style#preview-17). KILLA DIO
 	- [Extra Keycards & Skull Keys](https://www.realm667.com/repository/item-store/keys-puzzle#preview-8). Disguise, updated further by MagicWazard. Extra keys for even more complex puzzles.
 	- [Damage & Low Health System](https://www.realm667.com/repository/sfx-shoppe/other#preview-3). Captain Maniac et al. **Yoink?? idk, not now? Oh wait, I got an idea! We're cardiophile! break it down!**
 	- [Duke Nukem Pipe Bomb](https://www.realm667.com/repository/armory/doom-style?start=60#preview-51). Xim et all. This gotta be the better one I suppose..
