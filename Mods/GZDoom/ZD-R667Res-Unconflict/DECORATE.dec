@@ -1,0 +1,3 @@
+// Here's decorate from Realm667 yoinks we moved to here
+#include "scripts/decorate/Realm667Deco.dec"
+#include "scripts/decorate/WeaponsResourceWAD.dec"
