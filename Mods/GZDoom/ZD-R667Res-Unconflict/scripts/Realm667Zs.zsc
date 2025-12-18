@@ -1907,4 +1907,366 @@ Class ExSmoke : Actor
 }
 */
 
+// AA12 Shotgun Captain Toenail
+/*
+Code: Captain Toenail
+GLDefs: N/A
+Sounds: mateomateo002
+Sprites: Id Software, Infinity Ward
+Sprite Edit: Captain Toenail
+Idea Base: CoD MW2
 
+Name: AA12 Shotgun
+Class: Level 3
+Type: Hitscan
+Palette: Doom
+Summon: AA12
+Ammotype: Shell
+AltFire: No
+Powered Mode: No
+*/
+
+Class CaptainToenailAA12 : DoomWeapon
+{
+	//$Category Weapons
+	//$Title "AA-12 Shotgun"
+
+	Default
+	{
+		Weapon.AmmoUse 1;
+		Weapon.AmmoGive 8;
+		Weapon.AmmoType "Shell";
+		Inventory.PickupMessage "You got the AA-12 shotgun!";
+		Obituary "%o was blown away by %k's AA-12 shotgun.";
+		Weapon.SlotNumber 3;
+		Decal "BulletChip";
+		AttackSound "AA12/Fire";
+		Scale 0.85;
+		Tag "AA-12 Shotgun";
+	}
+
+	States
+	{
+		Ready:
+			AA12 A 1 A_WeaponReady;
+			Loop;
+		Deselect:
+			AA12 A 1 A_Lower;
+			Loop;
+		Select:
+			AA12 A 1 A_Raise;
+			Loop;
+		Fire:
+			AA12 B 1 Bright A_FireBullets (6, 4, 5, 5, "BulletPuff");
+			AA12 B 0 Bright A_GunFlash;
+			AA12 B 0 Bright A_SetPitch (pitch-0.5);
+			AA12 C 1 Bright;
+			AA12 DA 2;
+			AA12 A 7 A_ReFire;
+			Goto Ready;
+		Flash:
+			TNT1 A 4 Bright A_Light1;
+			TNT1 A 3 Bright A_Light2;
+			Goto LightDone;
+		Spawn:
+			AA12 E -1;
+			Stop;
+	}
+}
+
+// AN94 Watermelon666
+/*
+Submitted: Watermelon666
+Decorate: Watermelon666
+Sounds: New World Interactive
+Sprites: Watermelon666, Monolith Productions, ID software
+Idea Base: AN-94 from Battlefield IV
+
+Name: AN-94
+Class: 4
+Type: Hitscan
+Palette: Doom
+Summon: E_AN94
+Ammo Type: Clip
+Powered Mode: No
+Added States: No
+ACS: No
+*/
+
+Class Watermelon666E_AN94 : DoomWeapon
+{
+	Default
+	{
+		Tag "AN-94";
+		Weapon.Kickback 50;
+		Weapon.AmmoUse1 1;
+		Weapon.AmmoGive2 20;
+		Weapon.SelectionOrder 3000;
+		Inventory.PickupMessage "Avtomat Nikonova 1994";
+		Weapon.AmmoType "Clip";
+		Obituary "%o was killed by %k Assault Rifle";
+		Scale 0.275;
+		Decal "Bulletchip";
+		+WEAPON.NOAUTOSWITCHTO
+		+WEAPON.NOALERT
+		+NOEXTREMEDEATH
+		+WEAPON.AMMO_OPTIONAL
+		+WEAPON.NOAUTOFIRE
+		Weapon.SlotNumber 4;
+	}
+
+	bool Burst;
+
+	Action Void A_AN94Fire()
+	{
+		A_WeaponReady(WRF_NOSWITCH);
+		A_Overlay(-2,"Muzzle", false);
+		A_OverlayRenderstyle(-2,STYLE_Translucent);
+		A_OverlayAlpha(-2,0.99);
+		A_FireBullets(2,2,-1,5,"BulletPuff", FBF_USEAMMO);
+		A_StartSound("AN94/Fire",CHAN_WEAPON);
+		A_QuakeEx(6,6,6,1,0,1,"",QF_SCALEDOWN);
+		A_SetPitch(pitch-0.75);
+	}
+
+	Action Void A_AN94Burst()
+	{
+    	If (CountInv("Clip")==0)
+  		{
+  		    A_StartSound("AN94/Empty", CHAN_5);
+  		}
+    	Else
+  		{
+      		A_WeaponReady(WRF_NOSWITCH);
+      		A_Overlay(-2,"Muzzle", false);
+      		A_OverlayRenderstyle(-2,STYLE_Translucent);
+      		A_OverlayAlpha(-2,0.99);
+      		A_FireBullets(2.75,2.75,-1,5,"BulletPuff", FBF_USEAMMO);
+      		A_QuakeEx(6,6,6,1,0,1,"",QF_SCALEDOWN);
+      		A_SetPitch(pitch-0.75);
+  		}
+	}
+
+	States
+	{
+    	Spawn:
+    		AN9P Z -1;
+    		Stop;
+    	Ready:
+    		AN9G A 1 A_WeaponReady();
+    		Loop;
+    	Select:
+    		AN9S GFEDCBA 1 A_WeaponReady(WRF_NOFIRE);
+    		Goto Ready;
+    	Deselect:
+    		AN9D ABCDEFG 1 ;
+    		TNT1 A 0 A_Lower(128);
+    		Wait;
+    	OutAmmo:
+    		TNT1 A 0 A_StartSound("AN94/Empty", CHAN_WEAPON);
+    		AN9F ABCA 2 A_WeaponReady(WRF_NOFIRE);
+    		AN9G A 2 A_WeaponReady(WRF_NOFIRE);
+    		Goto Ready;
+    	Fire:
+    		TNT1 A 0 A_JumpIf(invoker.Burst,"Burst.fire");
+    		TNT1 A 0
+ 			{
+                If (CountInv("Clip")==0)
+    			{
+    				Return ResolveState("OutAmmo");
+    			}
+    			Else
+    			{
+    			    A_AlertMonsters(500);
+    			}
+    			Return ResolveState(null);
+            }
+    		AN9F A 1 Bright A_AN94Fire();
+    		AN9F BCA 1 A_WeaponReady(WRF_NOFIRE|WRF_NOSWITCH);
+    		TNT1 A 0 A_Refire();
+    		AN9G A 1 A_WeaponReady();
+    		Goto Ready;
+    	Burst.fire:
+    		TNT1 A 0
+    			{If (CountInv("Clip")==0)
+    			{
+    				Return ResolveState("OutAmmo");
+    			}
+    			Else
+    			{
+    			A_AlertMonsters(500);
+    			}
+    			Return ResolveState(null);}
+    		AN9F A 1 Bright A_AN94Fire();
+    		TNT1 A 0 A_AN94Burst();
+    		AN9F BCA 1 A_WeaponReady(WRF_NOFIRE|WRF_NOSWITCH);
+    		AN9G A 1 A_WeaponReady(WRF_ALLOWRELOAD);
+    		Goto Ready;
+    	Muzzle:
+    		TNT1 A 0 A_Jump(128,"Muzzle2","Muzzle3","Muzzle4");
+    		MUZZ A 2 Bright;
+    		Stop;
+    	Muzzle2:
+    		MUZZ B 2 Bright;
+    		Stop;
+    	Muzzle3:
+    		MUZZ C 2 Bright;
+    		Stop;
+    	Muzzle4:
+    		MUZZ D 2 Bright;
+    		Stop;
+    	Altfire:
+    		TNT1 A 0 A_JumpIf(invoker.Burst,"FullAuto");
+    		TNT1 A 0 A_StartSound("AN94/Alt", CHAN_6);
+    		TNT1 A 0 A_Print("Burst mode", 5);
+    		AN9G A 8 A_WeaponReady(WRF_NOFIRE|WRF_NOSWITCH);
+    		TNT1 A 0 { invoker.Burst=true; }
+    		goto Ready;
+    	FullAuto:
+    		TNT1 A 0 A_StartSound("AN94/Alt", CHAN_6);
+    		TNT1 A 0 A_Print("Full Auto mode", 5);
+    		AN9G A 8 A_WeaponReady(WRF_NOFIRE|WRF_NOSWITCH);
+    		TNT1 A 0 { invoker.Burst=false; }
+    		goto Ready;
+	}
+}
+
+// Quake Axe Willis
+/*
+Weapon: Arcane Axe
+Original by Wills (from WRW), remade by Gothic.
+DoEffect & HandlePickup code by DeVloek
+Sprites ripped from Arcane Dimensions using Quake Model Viewer.
+Shadow Axe model by MatthewB & Stas "dwere" Kuznetsov.
+Hands edited by Gothic, taking bits from Doom hands.
+Sounds from Quake & Chasm: The Rift.
+
+Name: Arcane Axe
+Class: 1
+Type: Melee
+Palette: Doom
+Summon: QuakeAxe
+Ammo Type: None
+Altfire: No
+Powered Mode: No
+Brightmaps: Yes
+Actor modification: No
+ACS: No
+
+Can be enhanced with any PowerStrength powerup. While powered up, it will always gib the target.
+Includes an alternate set of sprites without gloves.
+
+Code: Wills, Gothic, DeVloek
+GLDEFS: Gothic
+Sprites: MatthewB & Stas "dwere" Kuznetsov (model), id Software
+Sprite Edit: Gothic
+Sounds: id Software, Action Forms
+Idea Base: Shadow Axe from Arcane Dimensions
+*/
+
+class WillsQuakeAxe : Weapon
+{
+    Default
+    	{
+    	+WEAPON.MELEEWEAPON
+    	Inventory.PickupMessage "You got the Arcane Axe!";
+    	Obituary "%k chopped %o like a psycho.";
+    	Scale 0.5;
+    	Weapon.SlotNumber 1;
+    	Weapon.SlotPriority 0;
+    	Weapon.SelectionOrder 2100;
+    	}
+    States
+    	{
+           	Spawn:
+          		QAXP A -1;
+          		Stop;
+           	Deselect:
+          		QAXE A 1 A_Lower();
+          		Wait;
+           	Select:
+          		QAXE A 1 A_Raise();
+          		Wait;
+           	Ready:
+          		QAXE A 1 A_WeaponReady();
+          		Loop;
+           	Fire:
+          		QAXE B 0 A_Jump(128,"Fire2");
+          		QAXE B 2 A_StartSound("weapons/quakeaxe",7);
+          		QAXE CD 2;
+          		QAXE E 2 CA_QuakeAxeChop();
+          		TNT1 A 7;
+          		QAXE I 2;
+          		Goto Ready;
+           	Fire2:
+          		QAXE F 2 A_StartSound("weapons/quakeaxe",7);
+          		QAXE GH 2;
+          		TNT1 A 9 CA_QuakeAxeChop();
+          		QAXE I 2;
+          		Goto Ready;
+    	}
+
+    action void CA_QuakeAxeChop()
+   	{
+  		string pufftype = "WillsQAxePuff"; int damage = 4;
+  		if (FindInventory("PowerStrength"))
+  		{
+ 			pufftype = "WillsQAxePuffPowered";
+ 			damage *= 7;
+  		}
+  		A_CustomPunch(damage,0,CPF_NOTURN,pufftype);
+   	}
+
+    bool doonce;
+
+    override void DoEffect()
+   	{
+  		if (owner.player && owner.FindInventory("PowerStrength"))	// while the player has the berserk power
+  		{
+ 			let rwep = owner.player.readyweapon;	// get the weapon that the player is currently using
+ 			let pwep = owner.player.pendingweapon;	// get the weapon that the player is switching to
+ 			let psp = owner.player.FindPSprite(PSP_Weapon);
+ 			if (rwep is 'WillsQuakeAxe' && psp && psp.frame < 9) psp.frame += 9;// display the berserk axe frames instead of the normal ones
+ 			if (pwep is 'Fist' && doonce == true)
+ 			{
+				if (rwep is 'WillsQuakeAxe')	// when the player auto-switches from the axe to the fist after having picked up a berserk
+				{
+   					owner.player.pendingweapon = WP_NOCHANGE;				// do not switch to the fist
+   					owner.player.SetPSprite(PSP_Weapon,GetReadyState());	// keep the axe ready instead
+				}
+				doonce = false;	// but do this only once, so the player can switch to the fist manually
+ 			}
+  		}
+  		Super.doEffect();
+   	}
+
+    override bool HandlePickup(Inventory item)
+   	{
+  		if (item is 'PowerStrength') doonce = true;	// when the player has picked up a berserk (this is required to make it work in each map)
+  		return super.HandlePickup(item);
+   	}
+}
+
+class WillsQAxePuff : BulletPuff
+{
+Default
+	{
+	+PUFFONACTORS
+	//+NOEXTREMEDEATH
+	+FORCEPAIN
+	}
+States
+	{
+	Melee:
+	Crash:
+		PUFF A 4 Bright light("BPUFF1") A_StartSound("weapons/quakeaxe/hitsolid");
+		PUFF B 4 light("BPUFF2");
+		PUFF CD 4;
+		Stop;
+	XDeath:
+		TNT1 A 1 A_StartSound("weapons/quakeaxe/hitflesh");
+		Stop;
+	}
+}
+
+class WillsQAxePuffPowered : WillsQAxePuff { Default { +EXTREMEDEATH } }

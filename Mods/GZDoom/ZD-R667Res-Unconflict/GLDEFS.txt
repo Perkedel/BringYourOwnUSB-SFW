@@ -1834,4 +1834,67 @@ FlickerLight2 FCauldronX2
 	frame LAVCF { light FCauldronX2 }
 } */
 
+Object LossForWords40mmShot
+{
+ Frame MIS6B { Light Explod }
+ Frame MIS6C { Light Explod2 }
+ Frame MIS6D { Light Explod3 }
+ Frame MIS6E { Light Explod3 }
+ Frame MIS6F { Light Explod4 }
+}
+
+Object LossForWords40mmTimedShot
+{
+ Frame MIS6B { Light Explod }
+ Frame MIS6C { Light Explod2 }
+ Frame MIS6D { Light Explod3 }
+ Frame MIS6E { Light Explod3 }
+ Frame MIS6F { Light Explod4 }
+}
+
+Pointlight Explod
+{
+ Color 1.0 1.0 0.0
+ Size 90
+}
+Pointlight Explod2
+{
+ Color 1.0 1.0 0.0
+ Size 110
+}
+
+Pointlight Explod3
+{
+ Color 1.0 1.0 0.0
+ Size 60
+}
+
+Pointlight Explod4
+{
+ Color 1.0 1.0 0.0
+ Size 30
+}
+
+brightmap sprite AN9GA0
+{
+	map "Sprites/BM_AN94"
+	disablefullbright
+}
+
+brightmap sprite AN9PZ0
+{
+	map "Sprites/BM_PAN94"
+	disablefullbright
+}
+
+BrightMap Sprite QAXEJ0 { Map BMQAXE01 DisableFullBright }
+BrightMap Sprite QAXEK0 { Map BMQAXE02 DisableFullBright }
+BrightMap Sprite QAXEL0 { Map BMQAXE03 DisableFullBright }
+BrightMap Sprite QAXEM0 { Map BMQAXE04 DisableFullBright }
+BrightMap Sprite QAXEN0 { Map BMQAXE05 DisableFullBright }
+BrightMap Sprite QAXEO0 { Map BMQAXE06 DisableFullBright }
+BrightMap Sprite QAXEP0 { Map BMQAXE07 DisableFullBright }
+BrightMap Sprite QAXEQ0 { Map BMQAXE08 DisableFullBright }
+BrightMap Sprite QAXER0 { Map BMQAXE09 DisableFullBright }
+
 // End Realm667

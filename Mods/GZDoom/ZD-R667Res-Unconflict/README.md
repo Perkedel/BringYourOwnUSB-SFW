@@ -9,9 +9,11 @@
 
 Yoink all Realm667, everything, no exceptions. Now you can use these all standalone, with whatever your mod to be, without needing to rely on anything else anymore. Perfect for smaller main mod size, and constantly updating Realm667 resources themselves.
 
-## COOL DESCRIPTION CHAPTER HERE 1
+## Compatible with all ZDoom version & Derivatives, that is..
 
-Cool say 1
+Any version since `DoomEdNum` support in `MAPINFO` tho & `let [st,bl] = func()` (multi-return) thingimagic. If you're on a version without this support, it'll crash like that.
+
+So probably you'd wanna use at least LZDoom dev versions..
 
 ## COOL DESCRIPTION CHAPTER HERE 2
 

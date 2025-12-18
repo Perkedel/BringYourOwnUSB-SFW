@@ -1,0 +1,134 @@
+Sprite "AN9GA0", 320, 200
+{
+	Patch "AN94A0", 149, 77
+}
+
+Sprite "MUZZA0", 320, 200
+{
+	Offset -3, -2
+	Patch "MZZLA0", 144, 60
+}
+
+Sprite "MUZZB0", 320, 200
+{
+	Offset -3, -2
+	Patch "MZZLB0", 144, 60
+}
+
+Sprite "MUZZC0", 320, 200
+{
+	Offset -3, -2
+	Patch "MZZLC0", 144, 60
+}
+
+Sprite "MUZZD0", 320, 200
+{
+	Offset -3, -2
+	Patch "MZZLD0", 140, 59
+}
+
+Sprite "AN9FA0", 320, 200
+{
+	Offset -3, -2
+	Patch "AN94A0", 149, 77
+}
+
+Sprite "AN9FB0", 320, 200
+{
+	XScale 0.900
+	YScale 0.900
+	Offset 9, 4
+	Patch "AN94A0", 149, 77
+}
+
+Sprite "AN9FC0", 320, 200
+{
+	XScale 0.900
+	YScale 0.900
+	Offset 11, 5
+	Patch "AN94A0", 149, 77
+}
+
+Sprite "AN9SA0", 320, 200
+{
+	Offset 4, -4
+	Patch "AN94A0", 149, 77
+}
+
+Sprite "AN9SB0", 320, 200
+{
+	Offset 10, -10
+	Patch "AN94A0", 149, 77
+}
+
+Sprite "AN9SC0", 320, 200
+{
+	Offset 18, -18
+	Patch "AN94A0", 149, 77
+}
+
+Sprite "AN9SD0", 320, 200
+{
+	Offset 28, -28
+	Patch "AN94A0", 149, 77
+}
+
+Sprite "AN9SE0", 320, 200
+{
+	Offset 40, -40
+	Patch "AN94A0", 149, 77
+}
+
+Sprite "AN9SF0", 320, 200
+{
+	Offset 54, -54
+	Patch "AN94A0", 149, 77
+}
+
+Sprite "AN9SG0", 320, 200
+{
+	Offset 70, -70
+	Patch "AN94A0", 149, 77
+}
+
+Sprite "AN9DA0", 320, 200
+{
+	Offset -4, -4
+	Patch "AN94A0", 149, 77
+}
+
+Sprite "AN9DB0", 320, 200
+{
+	Offset -10, -10
+	Patch "AN94A0", 149, 77
+}
+
+Sprite "AN9DC0", 320, 200
+{
+	Offset -18, -18
+	Patch "AN94A0", 149, 77
+}
+
+Sprite "AN9DD0", 320, 200
+{
+	Offset -28, -28
+	Patch "AN94A0", 149, 77
+}
+
+Sprite "AN9DE0", 320, 200
+{
+	Offset -40, -40
+	Patch "AN94A0", 149, 77
+}
+
+Sprite "AN9DF0", 320, 200
+{
+	Offset -54, -54
+	Patch "AN94A0", 149, 77
+}
+
+Sprite "AN9DG0", 320, 200
+{
+	Offset -70, -70
+	Patch "AN94A0", 149, 77
+}

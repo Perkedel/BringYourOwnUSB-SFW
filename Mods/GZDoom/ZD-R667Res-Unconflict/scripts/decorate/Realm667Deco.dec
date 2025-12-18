@@ -3622,3 +3622,622 @@ ACTOR JOELWINDOWS7HELLTAKERBAPHOMETHEART : KILLADIOBAPHOMETSHEART
     // TODO: redraw helltaker style??
 }
 */
+
+// 40mm Grenade Launcher Project Angel
+/*
+Submitted: ProjectAngel
+Updated: Ozymandias81, BadMojo , RichardDS90
+Code: ProjectAngel, RichardDS90
+GLDefs: BadMojo
+Sounds: Raven Software
+Sprites: OSJClatchford, Sonik.O.Fan, 3d Realms, Raven Software, Midway, Cardboard Marty (old sprites)
+Idea Base: Shadow Warrior Grenade Launcher, Militek MGL from 007: NightFire
+
+Name: 40mm Grenade Launcher
+Class: 5
+Type: Projectile
+Palette: Doom
+Summon: 40mmGrenadeLauncher
+Ammotype: 40mmGrenades
+AltFire: Yes
+Powered Mode: No
+Brightmaps: No
+Added States: No
+ACS: No
+
+//-----------SCRAP
+    Fire:
+		RGLF A 3
+		RGLF A 0 A_GunFlash
+		RGLF A 0 A_PlayWeaponSound ("40mm/grenfire")
+		RGLF B 3
+		RGLF B 0 A_FireCustomMissile ("40mmShot", 0, 1, 1, 10, 1)
+		RGLG ABC 3
+		RGLG A 15
+		RGLG A 5 A_ReFire
+		Goto Ready
+	AltFire:
+		RGLF A 3
+		RGLF A 0 A_GunFlash
+		RGLF A 0 A_PlayWeaponSound ("40mm/grenfire")
+		RGLF B 3
+		RGLF B 0 A_FireCustomMissile ("40mmTimedShot", 0, 1, 1, 10, 1)
+		RGLG ABC 3
+		RGLG A 30
+		RGLG A 5 A_ReFire
+		Goto Ready
+//-----------END-SCRAP
+
+*/
+
+ACTOR ProjectAngel40mmGrenadeLauncher : Weapon
+{
+	Inventory.PickupMessage "You got the 40mm Grenade Launcher!."
+	Weapon.Ammogive 10
+	Weapon.AmmoType1 "ProjectAngel40mmGrenades"
+	Weapon.AmmoType2 "ProjectAngel40mmGrenades"
+	Weapon.AmmoUse1 1
+	Weapon.AmmoUse2 1
+	Weapon.SelectionOrder 421
+	Weapon.SlotNumber 5
+	+WEAPON.EXPLOSIVE
+	Obituary "%o was blown up by %k's Grenade Launcher."
+	States
+	{
+	Ready:
+		RGLG A 1 A_WeaponReady
+		Loop
+	Select:
+		RGLG A 1 A_Raise
+		Loop
+	Deselect:
+		RGLG A 1 A_Lower
+		Loop
+	Fire:
+		RGLF A 2
+		RGLF A 0 A_GunFlash
+		RGLF A 0 A_PlayWeaponSound ("40mm/grenfire")
+		RGLF B 2 A_FireProjectile("ProjectAngel40mmShot", 0, 1, 0, 10, FPF_NOAUTOAIM , 1)
+		RGLF C 2
+		RGLF B 0
+		RGLG ABCD 3
+		RGLG A 12
+		RGLG A 5 A_ReFire
+		Goto Ready
+	AltFire:
+		RGLF A 2
+		RGLF A 0 A_GunFlash
+		RGLF A 0 A_PlayWeaponSound ("40mm/grenfire")
+		RGLF B 2 A_FireProjectile("ProjectAngel40mmTimedShot", 0, 1, 0, 10, FPF_NOAUTOAIM , 1)
+		RGLF C 2
+		RGLF B 0
+		RGLG ABCD 3
+		RGLG A 12
+		RGLG A 5 A_ReFire
+		Goto Ready
+	Flash:
+		TNT1 A 1 BRIGHT A_Light1
+		TNT1 B 2 BRIGHT A_Light2
+		Goto LightDone
+	Spawn:
+		GLMM A -1
+		Stop
+	}
+}
+
+ACTOR ProjectAngel40mmShot
+{
+	Radius 8
+	Height 8
+	Damage 25
+	Speed 50
+	Scale 0.75
+	SeeSound "40mm/grenbounce"
+	DeathSound "40mm/grenexplode"
+	Projectile
+	ReactionTime 15
+	Decal Scorch
+	-NOGRAVITY
+	States
+	{
+	Spawn:
+		SHRP O 3 bright A_SpawnItemEX("ProjectAngelGrenadeSmoke",0,0,0,0,0,0,0,2)
+		SHRP O 0 A_CountDown
+		Loop
+	Death:
+		MIS6 B 0 A_NoGravity
+		MIS6 B 3 bright A_SetTranslucent (0.85,1)
+		MIS6 C 3 bright A_Explode
+		MIS6 DEF 3 bright
+		Stop
+	}
+}
+
+ACTOR ProjectAngel40mmTimedShot : ProjectAngel40mmShot
+{
+	ReactionTime 30
+	Speed 30
+	Damage 1
+	+HEXENBOUNCE
+	+BOUNCEONACTORS
+	+EXTREMEDEATH
+	+CANBOUNCEWATER
+	States
+	{
+	Death:
+		MIS6 B 0 A_NoGravity
+		MIS6 B 3 bright A_SetTranslucent (0.85,1)
+		MIS6 C 3 bright A_Explode //(200, 200, 0)
+		MIS6 DEF 3 bright
+		Stop
+	}
+}
+
+ACTOR ProjectAngelGrenadeSmoke
+{
+   Radius 0
+   Height 1
+   Speed 0
+   Projectile
+   Scale 0.75
+   Renderstyle Translucent
+   Alpha 0.45
+   States
+   {
+   Spawn:
+      NULL A 3 bright
+      SMK2 ABCDE 2 Bright
+      Stop
+   }
+}
+
+ACTOR ProjectAngel40mmGrenades : Ammo //5567
+{
+	Inventory.Amount 5
+	Inventory.MaxAmount 50
+	Ammo.BackpackAmount 20
+	Ammo.BackpackMaxAmount 100
+	Inventory.PickupSound "misc/i_pkup"
+	Inventory.PickupMessage "Picked up some 40mm grenades."
+	Inventory.Icon "40MMA0"
+	States
+	{
+	Spawn:
+		40MM A -1
+		Stop
+	}
+}
+
+ACTOR ProjectAngel40mmGrenadeBox : ProjectAngel40mmGrenades //5568
+{
+	Inventory.Amount 20
+	Inventory.PickupMessage "Picked up a box of 40mm grenades."
+	States
+	{
+	Spawn:
+		40BX A -1
+		Stop
+	}
+}
+
+// (SCRAPPED, moved to Zscript) AA12 Shotgun Captain Toenail
+/*
+ACTOR AA12 : DoomWeapon
+{
+  Weapon.AmmoUse 1
+  Weapon.AmmoGive 8
+  Weapon.AmmoType "Shell"
+  Inventory.PickupMessage "You got the AA-12 shotgun!"
+  Obituary "%o was blown away by %k's AA-12 shotgun."
+  Weapon.SlotNumber 3
+  Decal "BulletChip"
+  AttackSound "AA12/Fire"
+  Scale 0.85
+  States
+  {
+  Ready:
+    AA12 A 1 A_WeaponReady
+    Loop
+  Deselect:
+    AA12 A 1 A_Lower
+    Loop
+  Select:
+    AA12 A 1 A_Raise
+    Loop
+  Fire:
+    AA12 B 1 Bright A_FireBullets (6, 4, 5, 5, "BulletPuff")
+    AA12 B 0 Bright A_GunFlash
+    AA12 B 0 Bright A_SetPitch (pitch-0.5)
+    AA12 C 1 Bright
+    AA12 DA 2
+    AA12 A 7 A_ReFire
+    Goto Ready
+  Flash:
+    TNT1 A 4 Bright A_Light1
+    TNT1 A 3 Bright A_Light2
+    Goto LightDone
+  Spawn:
+    AA12 E -1
+    Stop
+  }
+}
+*/
+
+// Action Machine Gun Xim
+/*
+info:
+Name: Action Machine Gun
+Class: Level 4
+Type: Hitscan
+Palette: Doom
+Summon: ActionMachineGun
+Ammotype: Clip
+AltFire: No
+
+credits:
+Submitted: Xim
+Code: Xim
+Sprites: ScubaSteve
+Sounds: ScubaSteve
+Idea Base: Action Doom Machinegun
+*/
+
+ACTOR XimActionMachineGun : Weapon
+{
+   Weapon.SelectionOrder 752
+   Weapon.AmmoUse 1
+   Weapon.AmmoGive 20
+   Weapon.AmmoType "Clip"
+   Weapon.SlotNumber 4
+   Tag "Action Doom Machine Gun"
+   Inventory.PickupMessage "You got the action machinegun."
+   Obituary "%o was mowed down by %k's action machinegun."
+   AttackSound "weapon/actionMachinegunFire"
+   Decal "BulletChip"
+   States
+   {
+   Ready:
+     AMGG A 0 A_JumpIfInventory("XimActionGunLoad",1,"LoadGun")
+     AMGG A 1 A_WeaponReady
+     Loop
+   Deselect:
+     AMGG A 1 A_Lower
+     Loop
+   Select:
+     AMGG A 0 A_GiveInventory("XimActionGunLoad",1)
+     AMGG C 1 A_Raise
+     Loop
+   Fire:
+     AMGG A 1 A_FireBullets (4.5, 3.5, 1, 6, "BulletPuff")
+     AMGF A 2 Bright A_GunFlash
+     AMGG A 1 A_FireBullets (4.5, 3.5, 1, 7, "BulletPuff")
+     AMGF B 2 Bright A_GunFlash
+     AMGG A 1 A_FireBullets (4.5, 3.5, 1, 5, "BulletPuff")
+     AMGF C 2 Bright A_GunFlash
+     AMGG A 5
+     AMGG A 0 A_ReFire
+     Goto Ready
+   LoadGun:
+     AMGG D 2
+     AMGG E 2
+     AMGG F 9 A_PlayWeaponSound("weapon/actionMachinegunLoad")
+     AMGG G 5
+     AMGG H 3
+     AMGG I 3
+     AMGG J 3 A_TakeInventory("XimActionGunLoad",1)
+     Goto Ready
+   Flash:
+     NONE A 5 Bright A_Light1
+     Goto LightDone
+     NONE B 5 Bright A_Light1
+     Goto LightDone
+   Spawn:
+     AMGG P -1
+     Stop
+   }
+}
+
+ACTOR XimActionGunLoad : Ammo
+{
+	Inventory.MaxAmount 1
+	Ammo.BackpackAmount 0
+	Ammo.BackpackMaxAmount 1
+}
+
+// 44MP Automag Pistol LossForWords
+/*
+info:
+Name: .44 AMP
+Class: 2
+Type: Hitscan
+Palette: Doom
+Summon: 44AMP
+Ammo Type: 44Clip (Reserve), AutoMagLoaded (Magazine)
+Altfire: No
+Powered Mode: No
+Brightmaps: No
+Actor modification: No
+ACS: No
+
+credits:
+Code: LossForWords
+Sounds: Magmacow, Warner Bros.
+Sprites: Joblez, Toutin, Jesus, Blackheart, BloodyAcid, Monolith (Blood)
+Sprite Edit: LossForWords
+
+description:
+An accurate and powerful automatic pistol, chambered in .44 Magnum, popularized by action films.
+It overpenetrates targets and makes even the nastiest demon flinch, but holds only 7 rounds in the magazine, kicks like a mule, has a slower rate of fire, and a small 28/42 reserve capacity.
+With this in your hands, you've gotta ask yourself a question.
+'Do you feel lucky?'
+
+//Code: LossForWords
+//Hand sprites: LossForWords, Joblez
+//Pistol: Toutin, Jesus, Blackheart, LossForWords
+//Effect: Monolith
+//Pickup: YukesVonFaust
+//Ammo: BloodyAcid, LossForWords
+//Sounds: Magmacow, Warner Bros.
+*/
+actor LossForWords44AMP : Weapon
+{
+    Inventory.PickupMessage "Picked up the .44 AMP."
+    weapon.ammogive1 0
+    weapon.ammogive2 7
+    weapon.ammotype1 "LossForWordsAutoMagLoaded"
+    weapon.ammotype2 "LossForWords44Clip"
+    weapon.ammouse1 1
+    Weapon.KickBack 200
+    Weapon.SlotNumber 2
+    Obituary "%o was silenced by %k's .44 AMP."
+    Tag ".44 AMP"
+    +AMMO_CHECKBOTH //Added Ammo_CheckBoth so you won't end up selecting an empty weapon for no reason, unlike with Ammo_Optional.
+    +NOAUTOFIRE
+    +WEAPON.NOALERT
+    states
+    {
+        Spawn:
+            AUPK A -1
+            stop
+        Ready:
+            AUMP A 0 A_JumpIf(CountInv("LossForWordsAutoMagLoaded") == 0,"EmptyReady") //If you have no ammo left, jump to empty states.
+            AUMP A 1 A_WeaponReady(WRF_ALLOWRELOAD)
+            Loop
+        EmptyReady:
+            AUMP A 0 A_JumpIf(CountInv("LossForWordsAutoMagLoaded") > 0,"SlideRelease") //If you SOMEHOW get a magazine round on an empty gun, jump to slide release animation.
+            AUEP A 1 A_WeaponReady(WRF_ALLOWRELOAD)
+            Loop
+        SlideRelease:
+            AUEP A 0 A_PlaySoundEX("AUMPREL",CHAN_7)
+            AUEP G 1
+            AUMP F 2
+            AUMP G 1
+            Goto Ready
+        Select:
+            NULL A 0 A_JumpIf(CountInv("LossForWordsAutoMagLoaded") == 0,"EmptySelect")
+            AUMP AA 0 A_Raise
+            AUMP A 1 A_Raise
+            loop
+        EmptySelect:
+            AUEP AA 0 A_Raise
+            AUEP A 1 A_Raise
+            loop
+        Deselect:
+            NULL A 0 A_JumpIf(CountInv("LossForWordsAutoMagLoaded") == 0,"EmptyDeselect")
+            AUMP AA 0 A_Lower
+            AUMP A 1 A_Lower
+            loop
+        EmptyDeselect:
+            AUEP AA 0 A_Lower
+            AUEP A 1 A_Lower
+            loop
+        Fire:
+            NULL A 0 A_JumpIf(CountInv("LossForWordsAutoMagLoaded") == 0,"Reload")
+            NULL A 0 A_AlertMonsters
+            //I wanted to do a GTA VC styled "trail of smoke", but unfortunately no go.
+            //Angling the source of the shot throws off the aim.
+            //So it has to be an invisible A_RailAttack.
+            AUMP A 0 A_PlayWeaponSound("AUMPFIR")
+            //AUMF A 1 BRIGHT A_RailAttack(frandom(45, 85),17,1,"None","None",RGF_CENTERZ|RGF_Silent|RGF_explicitangle,0,"LossForWordsAutoMagPuff", 1.5,-1.5,8999, 1,0,0,"LossForWordsAutoMagTrail",0,0,2)
+            AUMF A 1 BRIGHT A_RailAttack(frandom(45, 85),0,1,"None","None",RGF_SILENT|RGF_EXPLICITANGLE,0,"LossForWordsAutoMagPuff", 0,0,8999, 1,0,0,none,8,0,2)
+            AUMF B 1 BRIGHT
+            //Visual recoil below.
+            // A_SetPitch raises your view, A_Recoil pushes you back, and A_Quake shakes the screen.
+            NULL A 0 A_SetPitch(Pitch -2.0)
+            NULL A 0 A_Recoil(3)
+            NULL A 0 A_Quake(3, 4, 0, 48576, "None")
+            AUMP BC 1
+            NULL A 0 A_JumpIf(CountInv("LossForWordsAutoMagLoaded") == 0,"NoRefire") //If you have no ammo left, jump to empty recoil animation.
+            AUMP DE 3
+            AUMP FG 2
+            AUMP A 9
+            AUMP A 0 A_Refire
+            Goto Ready
+        NoRefire:
+            AUEP DE 3
+            AUEP FG 2
+            AUEP A 9
+            AUEP A 0 A_Refire
+            Goto EmptyReady
+        Reload:
+            NULL A 0 A_JumpIfInventory("LossForWordsAutoMagLoaded", 7, "ReloadFull") // If your magazine is loaded, jump to ReloadFull state.
+            NULL A 0 A_JumpIfInventory("LossForWords44Clip", 1, "ReloadWork") // If you have a bullet and less than your maximum capacity, jump to ReloadWork.
+            AUEP A 1 A_WeaponReady // Empty reload state. A_WeaponReady on both to keep the gun bobbing.
+            Goto Ready
+        ReloadFull:
+            AUMP A 1 A_WeaponReady // State your gun jumps into if you hold down Reload on a full mag. Keep it like this, or add an inspect animation.
+            Goto Ready
+            // Don't worry about messing up the tempo or anything, do your own thing with this. As long as it jumps to ReloadLoop, it should work.
+        ReloadWork:
+            NULL A 0 A_JumpIf(CountInv("LossForWordsAutoMagLoaded") == 0,"ReloadWorkEmpty") // Check for mag quantity, if zero, jump to empty reload animation.
+            AUMR A 2
+            NULL A 0 A_PlaySoundEX("AUMPOPN",CHAN_6)
+            AUMR BCDE 1
+            AUMR F 5
+            AUMR G 1
+            AUMR H 1
+            AUMR I 1
+            Goto ReloadLoop
+        ReloadWorkEmpty:
+            AUER A 2
+            NULL A 0 A_PlaySoundEX("AUMPOPN",CHAN_6)
+            AUER BCDE 1
+            AUER F 5
+            AUER G 1
+            AUER H 1
+            AUEP A 0 A_PlaySoundEX("AUMPREL",CHAN_7)
+            AUER I 1
+            Goto ReloadLoop
+            //Take one round from reserve, give one round to magazine. If your magazine is loaded, or you run out of reserve rounds, jump to ReloadFinish.
+        ReloadLoop:
+            NULL A 0 A_TakeInventory("LossForWords44Clip", 1,TIF_NOTAKEINFINITE)
+            NULL A 0 A_GiveInventory("LossForWordsAutoMagLoaded", 1)
+            NULL A 0 A_JumpIfInventory("LossForWordsAutoMagLoaded", 7, "ReloadFinish")
+            NULL A 0 A_JumpIfInventory("LossForWords44Clip", 1, "ReloadLoop")
+            Goto ReloadFinish
+            //Reload finish. Add fancy animation here.
+        ReloadFinish:
+            NULL A 0 A_PlaySoundEX("AUMPCLS",CHAN_6)
+            AUMR J 3
+            AUMR K 2
+            AUMR LA 2
+            NULL A 0 A_Refire("Fire")
+        Goto Ready
+    }
+}
+
+ACTOR LossForWordsAutoMagLoaded : Ammo
+{
+    +IGNORESKILL
+    Inventory.Amount 0
+    Inventory.MaxAmount 7
+    Ammo.BackpackAmount 0
+    Ammo.BackpackMaxAmount 7
+    Inventory.Icon "MAGNA0"
+}
+
+actor LossForWordsAutoMagTrail
+{
+	Scale 0.2
+	Alpha 0.5
+	RenderStyle "Add"
+	+NOGRAVITY
+	States
+	{
+    	Spawn:
+            // Check if the player's close. If player's close, do not spawn.
+            //This comes in handy if you plan on doing Railgun attacks with projectile trails, or FastProjectile attacks with MissileTrails.
+    	    TNT1 A 0
+    		TNT1 A 1 A_CheckProximity("SpawnNone","PlayerPawn",120,1,CPXF_ANCESTOR)
+    	    AMSM ABCDEEEEEEEEEEE 1 Bright A_FadeOut(0.1,TRUE)
+    		Stop
+    	SpawnNone:
+    	    TNT1 A 1
+    		Stop
+	}
+}
+
+//Replace the BulletPuff inheritance with your puff base of choice, and delete XDeath state if your puff already has one.
+ACTOR LossForWordsAutoMagPuff : BulletPuff
+{
+    +NOEXTREMEDEATH
+    +ALWAYSPUFF
+    +FORCEPAIN
+    +FORCEDECAL
+    DamageType "Bullet"
+    Decal "BulletChip"
+    States
+    {
+        XDeath:
+            TNT1 A 0
+            Stop
+    }
+}
+
+ACTOR LossForWords44Clip : Ammo
+{
+    Inventory.PickupMessage "Picked up a .44 clip."
+    Tag ".44 Clip"
+    Inventory.Amount 5
+    Inventory.MaxAmount 28
+    Ammo.BackpackAmount 10
+    Ammo.BackpackMaxAmount 42
+    Inventory.Icon "MAGNB0"
+    States
+    {
+        Spawn:
+            MAGN A -1
+            stop
+    }
+}
+
+ACTOR LossForWords44ClipBox : LossForWords44Clip
+{
+    Inventory.PickupMessage "Picked up a box of .44 bullets."
+    Tag ".44 Bullet Box"
+    Inventory.Amount 10
+    States
+    {
+        Spawn:
+            MAGN B -1
+            Stop
+    }
+}
+
+// Angled Pistol JoeyTD
+/*
+Decorate: JoeyTD, Ghastly_dragon
+Sprites: JoeyTD, Id Software, 3D Realms
+Sounds: Id Software
+
+Name: Angled Pistol
+Class: 2
+Type: Hitscan
+Palette: Doom
+Summon: AngledPistol
+Ammo Type: Clip
+Altfire: No
+Powered Mode: No
+Added States: No
+*/
+
+Actor JoeyTDAngledPistol : Weapon  //Rename this!!!
+{
+    Scale 0.75
+    //Obituary "%o was splattered by %k pistol"
+    Obituary "$OB_MPPISTOL"
+    Radius 20
+    Height 16
+    //AttackSound "Weapon/PistolFire"
+    AttackSound "weapons/pistol"
+    //Inventory.pickupmessage "You got the Pistol"
+    Inventory.Pickupmessage "$PICKUP_PISTOL_DROPPED"
+    Weapon.SelectionOrder 434
+    Weapon.SlotNumber 2
+    Weapon.kickback 100
+    Weapon.ammotype "CLIP"
+    Weapon.ammouse 1
+    Weapon.ammogive 25
+    States
+    {
+    Spawn:
+        2PIS E -1
+        Loop
+    Ready:
+        2PIS A 2 A_WeaponReady
+        Loop
+    Deselect:
+        2PIS D 1 A_Lower
+        Loop
+    Select:
+        2PIS F 1 A_Raise
+        Loop
+    Fire:
+        2PIS A 1
+        2PIS B 4 bright A_FireBullets(3, 3, 1, 5, "BulletPuff")
+        2PIS C 4
+        2PIS F 4
+        2PIS D 4 A_ReFire
+        Goto Ready
+    }
+}

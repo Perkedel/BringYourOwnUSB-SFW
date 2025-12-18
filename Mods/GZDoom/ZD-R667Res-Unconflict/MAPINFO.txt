@@ -68,6 +68,8 @@ DoomEdNums
 	// BONUS Kan3 Ignitable Cauldron based on Captain Toenail
 	//28924 = IgniteCauldron // was 15924
 	//28925 = UnlitCauldron // was 15925
+	28940 = CaptainToenailAA12 // was 12405
+	25032 = WillsQuakeAxe
 
 	// Monster Resource WAD / Realm667 Bestiary
 	// Monsters. was 31XX, conflict with Obsidian Plague Decorate ID24
@@ -138,6 +140,8 @@ DoomEdNums
 	/*
 	Reserve 25000s!! or change em a bit.
 	*/
+
+
 
 	// End Realm667
 }

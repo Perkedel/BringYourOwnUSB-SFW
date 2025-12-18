@@ -2825,36 +2825,36 @@ ACTOR BasheGunMagnumBullets : Ammo 25031
 
 //Weapon: Quake Axe
 //By: Wills
-
-ACTOR WillsQuakeAxe : Weapon 25032 // was `Axe`, too unspecific, caused conflict with Twilight Maiden
+// DEPRECATED, go TO Zscript
+ACTOR WillsQuakeAxeOld : Weapon 25033 // was 25032, newer one already zscript // was `Axe`, too unspecific, caused conflict with Twilight Maiden
 {
    Weapon.SlotNumber 1
    Weapon.SelectionOrder 25032
    +MELEEWEAPON
-   Inventory.PickupSound "weapons/quakeaxe"
+   Inventory.PickupSound "weapons/quakeaxe/old"
    Inventory.PickupMessage "You got the axe!"
-   AttackSound "weapons/quakeaxe"
+   AttackSound "weapons/quakeaxe/old"
    Weapon.AmmoUse 0
    Scale 0.5
    States
    {
    Spawn:
-      QAXP A -1
+      QOXP A -1
       Loop
    Ready:
-      QAXE A 1 A_WeaponReady
+      QOXE A 1 A_WeaponReady
       Loop
    Deselect:
-      QAXE A 1 A_Lower
+      QOXE A 1 A_Lower
       Loop
    Select:
-      QAXE A 1 A_Raise
+      QOXE A 1 A_Raise
       Loop
    Fire:
-      QAXE B 4
-      QAXE C 4
-      QAXE D 4 A_CustomPunch(12, 0, 0, "BulletPuff")
-      QAXE D 4 A_ReFire
+      QOXE B 4
+      QOXE C 4
+      QOXE D 4 A_CustomPunch(12, 0, 0, "BulletPuff")
+      QOXE D 4 A_ReFire
       Goto Ready
    }
 }

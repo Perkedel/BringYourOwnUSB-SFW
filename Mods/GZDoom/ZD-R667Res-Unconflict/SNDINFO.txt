@@ -237,7 +237,8 @@ weapons/incendx	                dsincndx
 
 weapons/magnum                  dsmagnum
 
-weapons/quakeaxe                dsaxe
+//weapons/quakeaxe                dsaxe
+weapons/quakeaxe/old                dsaxe
 
 weapons/bfgboom                 dsbfg2
 weapons/redhit                  dshitw
@@ -327,5 +328,35 @@ Weapons/SatchelOof	DSOOF
 HEARTA	HEARTA
 HEARTB	HEARTB
 SQUEEZ	SQUEEZ
+
+40mm/grenfire "sounds/Realm667/ProjectAngel/PANGEL_gfire.ogg"
+40mm/grenbounce "sounds/Realm667/ProjectAngel/PANGEL_bounce.ogg"
+
+explode1 "sounds/Realm667/ProjectAngel/PANGEL_explode1.ogg"
+explode2 "sounds/Realm667/ProjectAngel/PANGEL_explode2.ogg"
+explode3 "sounds/Realm667/ProjectAngel/PANGEL_explode3.ogg"
+explode4 "sounds/Realm667/ProjectAngel/PANGEL_explode4.ogg"
+$RANDOM 40mm/grenexplode { explode1 explode2 explode3 explode4 }
+
+AA12/Fire			DSAA12
+$limit AA12/Fire	0
+
+weapon/actionMachinegunFire	ACMACH
+weapon/actionMachinegunLoad	ACMACHR
+
+AUMPFIR AUMPFIR
+AUMPOPN AUMPOPN
+AUMPCLS AUMPCLS
+AUMPREL AUMPREL
+
+an94/fire		an94fire
+an94/alt		an94alt
+an94/empty		an94empt
+
+//Weapon/PistolFire DSPISTOL
+
+weapons/quakeaxe ax1
+weapons/quakeaxe/hitsolid axhit2
+weapons/quakeaxe/hitflesh axhit
 
 // End Realm667
