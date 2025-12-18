@@ -1,0 +1,8 @@
+// SNDINFO Bring Your Own USB
+// (JOELwindows7)
+
+// https://zdoom.org/w/index.php?title=SNDINFO
+
+// Octavia LTCGO
+//$mididevice "music/octavia/ToBach/M_MSACRE.mid" sndsys
+$mididevice "music/octavia/ToBach/M_MSACRE.mid" standard

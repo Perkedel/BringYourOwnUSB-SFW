@@ -4241,3 +4241,34 @@ Actor JoeyTDAngledPistol : Weapon  //Rename this!!!
         Goto Ready
     }
 }
+
+// Le Basic Office Chair Ghastly Dragon
+/*
+Submitted: Ghastly_dragon
+Decorate: Ghastly_dragon
+Sprites: Id Software
+
+Name: Chair
+Connection: None
+Type: Technical
+Palette: Doom
+Summon: Chair
+Ambient Sound: No
+De-/Activatable: No
+Destroyable: No
+Special Effects: No
+*/
+
+Actor Ghastly_dragonChair
+{
+  +FloorClip
+  +Solid
+  Height 30
+  Radius 15
+  States
+  {
+  Spawn:
+    CHAI A -1
+    Stop
+  }
+}

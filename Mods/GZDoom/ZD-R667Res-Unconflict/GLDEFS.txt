@@ -1815,7 +1815,7 @@ FlickerLight2 FCauldronX2
 	offset 0 28 0
 	attenuate 1
 }
-/* object IgniteCauldron
+/* object Kan3IgniteCauldron
 {
 	frame LAVCG { light FCauldronX1 }
 	frame LAVCH { light FCauldronX1 }
@@ -1824,7 +1824,7 @@ FlickerLight2 FCauldronX2
 	frame LAVCE { light FCauldronX2 }
 	frame LAVCF { light FCauldronX2 }
 } */
-/* object UnlitCauldron
+/* object Kan3UnlitCauldron
 {
 	frame LAVCG { light FCauldronX1 }
 	frame LAVCH { light FCauldronX1 }
@@ -1834,7 +1834,7 @@ FlickerLight2 FCauldronX2
 	frame LAVCF { light FCauldronX2 }
 } */
 
-Object LossForWords40mmShot
+Object ProjectAngel40mmShot
 {
  Frame MIS6B { Light Explod }
  Frame MIS6C { Light Explod2 }
@@ -1843,7 +1843,7 @@ Object LossForWords40mmShot
  Frame MIS6F { Light Explod4 }
 }
 
-Object LossForWords40mmTimedShot
+Object ProjectAngel40mmTimedShot
 {
  Frame MIS6B { Light Explod }
  Frame MIS6C { Light Explod2 }

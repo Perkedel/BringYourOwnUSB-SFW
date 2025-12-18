@@ -1631,7 +1631,7 @@ Sounds: freesound.org (cribbler), Id Software, Kan3
 Sprite Edit: Kan3
 */
 /*
-Class IgniteCauldron : Actor
+Class Kan3IgniteCauldron : Actor
 {
 	Array <string> incendiary; //Incendiary weapons list
 	bool burning; //Check if the cauldron shouldn't be unlit
@@ -1640,7 +1640,7 @@ Class IgniteCauldron : Actor
 	int timer; //Cooldown
 
 	private int WSFlags;
-	flagdef Flammable: WSFlags, 0; //Custom flag to make the unlit cauldron ignitable
+	flagdef Flammable: WSFlags, 0; //Custom flag to make the unlit cauldron ignitable. Incompatible with old ZDoom derivatives
 	Default
 	{
 		//$Category Light sources
@@ -1777,7 +1777,7 @@ Class IgniteCauldron : Actor
 					bFLAMMABLE = true; //set it to be ignitable
 					A_StopSound(6);
 					for(int s = 0; s <= 3; s++) {
-						actor smokesp = Spawn("ExpireSmokeSpawner", (pos.xy, pos.z + Height * 0.75), ALLOW_REPLACE); //Spawn the smoke
+						actor smokesp = Spawn("Kan3ExpireSmokeSpawner", (pos.xy, pos.z + Height * 0.75), ALLOW_REPLACE); //Spawn the smoke
 						if(smokesp)
 							smokesp.target = self; //set the smoke target to be the cauldron
 					}
@@ -1836,12 +1836,12 @@ Class IgniteCauldron : Actor
 	}
 }
 
-Class UnlitCauldron : IgniteCauldron //Unlit version
+Class Kan3UnlitCauldron : Kan3IgniteCauldron //Unlit version
 {
 	Default
 	{
 		//$Sprite LAVCC0
-		+IgniteCauldron.FLAMMABLE; //set the flag to make it ignitable
+		+Kan3IgniteCauldron.FLAMMABLE; //set the flag to make it ignitable
 		Tag "Unlit cauldron";
 	}
 	States
@@ -1851,7 +1851,7 @@ Class UnlitCauldron : IgniteCauldron //Unlit version
 	}
 }
 
-Class ExpireSmokeSpawner : Actor //Smoke spawner
+Class Kan3ExpireSmokeSpawner : Actor //Smoke spawner
 {
 	Default
 	{
@@ -1863,7 +1863,7 @@ Class ExpireSmokeSpawner : Actor //Smoke spawner
 	Spawn:
 		TNT1 AAAAAAAAAAAA 1 NoDelay {
 			if(random() >= 224) {
-				actor bsmoke = Spawn("ExSmoke", pos, ALLOW_REPLACE); //Continuosly spawn smoke at a radnom rate
+				actor bsmoke = Spawn("Kan3ExSmoke", pos, ALLOW_REPLACE); //Continuosly spawn smoke at a radnom rate
 				if(bsmoke) {
 					bsmoke.scale = scale; //Set the smoke scale to match the spawner
 					bsmoke.vel.z = frandom(0.1,1.0); //set a random vertical velocity to the smoke
@@ -1889,7 +1889,7 @@ Class ExpireSmokeSpawner : Actor //Smoke spawner
 	}
 }
 
-Class ExSmoke : Actor
+Class Kan3ExSmoke : Actor
 {
 	Default
 	{
