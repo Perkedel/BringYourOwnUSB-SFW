@@ -4259,7 +4259,7 @@ Destroyable: No
 Special Effects: No
 */
 
-Actor Ghastly_dragonChair
+Actor Ghastly_dragon[Chair
 {
   +FloorClip
   +Solid
