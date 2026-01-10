@@ -16,6 +16,10 @@ Ah, finally, stuffs that its license conflicts with our choice of free culture. 
 
 This also restores the music & various other assets that become silent & magentarized on the original version for Lah-Mboh is initially shipped for Arcade machines sold to tenants around the universe. Those silenced asset were silenced, due to various reason especially regarding unconfirmable copyright allowances.
 
+## Outright Yoinks
+
+Any questions?
+
 ## Return to BringYourOwnUSB-SFW
 
 [Click Here](https://github.com/Perkedel/BringYourOwnUSB-SFW)
