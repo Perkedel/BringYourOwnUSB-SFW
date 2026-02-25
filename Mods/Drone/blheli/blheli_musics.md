@@ -14,7 +14,7 @@ Please update your ESC to better firmware version
 - BLHeli_32. Use [Escape32](https://github.com/neoxic/ESCape32), the new open source alternative of the original (which is proprietary btw, idk).
   - [Info](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM)
   - [Custom firmware for JDM-188 RC](https://github.com/neoxic/STM32F0/blob/master/doc/jdm.md)
-- BLHeli_S. Use [BLHeli_S & AM32 Bluejay Configurator](https://github.com/mathiasvr/bluejay-configurator/releases) or [Online](https://esc-configurator.com/) or [CN Mirror](https://esc-configurator.pitronic.top/). New for `S` is [Bluejay](https://github.com/bird-sanctuary/bluejay)
+- BLHeli_S. Use [BLHeli_S & AM32 Bluejay Configurator](https://github.com/mathiasvr/bluejay-configurator/releases) or [Online PWA](https://esc-configurator.com/) or [CN Mirror](https://esc-configurator.pitronic.top/). New for `S` is [Bluejay](https://github.com/bird-sanctuary/bluejay)
 
 ### Flashers
 
@@ -22,10 +22,11 @@ Use the following softwares to do so
 
 - [BlHeli_32 BLHeliSuite](https://www.mediafire.com/folder/dx6kfaasyo24l/BLHeliSuite) or [this](https://github.com/bitdump/BLHeli/releases), use ~~32.3.0.4 /~~ latest there is (32.10.0.0). from [here](https://github.com/bitdump/BLHeli) ~~a~~
   - [Info](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM)
-- [BLHeli_S & AM32 Bluejay Configurator](https://github.com/mathiasvr/bluejay-configurator/releases) or [Online](https://esc-configurator.com/) or [CN Mirror](https://esc-configurator.pitronic.top/). [Source Code](https://github.com/stylesuxx/esc-configurator)
+- [BLHeli_S & AM32 Bluejay Configurator](https://github.com/mathiasvr/bluejay-configurator/releases) or [Online PWA](https://esc-configurator.com/) or [CN Mirror](https://esc-configurator.pitronic.top/). [Source Code](https://github.com/stylesuxx/esc-configurator)
   - [CP210x Driver](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers)
   - [STM USB VCP Driver](https://www.st.com/en/development-tools/stsw-stm32102.html)
   - inspired from [Original blheli-configurator](https://github.com/blheli-configurator/blheli-configurator)
+- [Escape32 Tools CLI](https://github.com/neoxic/ESCape32-Tools/releases). If you want Escape32 instead.
 - [ESCTunes.com](http://esctunes.com/) Libraries of ESC musics
   - [Tunes](http://esctunes.com/tunes)
   - The Bluejay (BLHeli_S) configurator & This site uses Nokia RTTL format
@@ -112,6 +113,7 @@ Flash your **BLHeli_S** with Bluejay & install which music you'd like using [`Op
   - ESC 2: `Melody:b=180,o=5,d=8:a4,a#4,b4,c,p,c,b4,a#4,a4,a#4,b4,c,p,c,b4,a#4,f4,g4,g#4,a4,a#4,c,d,a#4,e,d,c,g4,p,16b4,32b4,32p,4b4,1p,1p,1p,2p`
   - ESC 3: `Melody:b=180,o=5,d=8:1p,1p,1p,1p,a,a#,b,c6,p,c6,b,c6,d6,e6,f6,a6,p,a6,g6,a6,a#6,a6,a#6,g6,e6,d6,e6,c6,16f6,32f6,32p,f6,e6,f6`
   - ESC 4: `Melody:b=180,o=5,d=8:1p,1p,1p,1p,a4,a#4,b4,c,p,c,b4,c,4p,p,d,p,d,e,f#,4g,g,16g,32g,32p,2g,a,g#,g,f`
+- Oh my God, too many to list, pls continue!
 
 ### [RoxWolf](https://youtube.com/@roxwolf8280)
 
@@ -343,6 +345,40 @@ It's my turn now. **Bluejay / BLHeli_S** yey!
   - ESC 2: `VanElektronische_1:d=8,o=5,b=63:c#,16a4,b4,4c#`
   - ESC 3: `VanElektronische_2:d=8,o=5,b=63:a4,16e4,g4,4a4`
   - ESC 4: `VanElektronische_3:d=8,o=5,b=63:e,16c#,d,4e`
+- One by One. Check if any of 4 of your motors fried first! When battery plugged in, one by one ESC rings below songs in `C Major+`, followed by the chord. If there's an unusual long gap, that mean you fried that motor or ESC.
+  - Mono: `OneByOne_Mono:d=4,o=4,b=160:c,e,p,e,g,p,g,a#,p,a#,c5,2p,2c` If you only had one ESC / Single Rotor e.g. Airplane Aeromodel
+  - ESC 1: `OneByOne_0:d=4,o=4,b=160:c,e,p,p,p,p,p,p,p,p,p,2p,2c`
+  - ESC 2: `OneByOne_1:d=4,o=4,b=160:p,p,p,e,g,p,p,p,p,p,p,2p,2e`
+  - ESC 3: `OneByOne_3:d=4,o=4,b=160:p,p,p,p,p,p,g,a#,p,p,p,2p,2g`
+  - ESC 4: `OneByOne_4:d=4,o=4,b=160:p,p,p,p,p,p,p,p,p,a#,c5,2p,2c`
+
+## Which BLHeli should I pick?
+
+> [!TIP]  
+> TLDR: Choose pre-Bluejay'd ones! Its ESCs must be **`BLHeli_S`** compatible (such as `EFM8XXXX` based) Ask the store owner if they got one, and request flashing Bluejay if it isn't.  
+> If you got AM32 ones, it still work with Bluejay's ESC Configurator.
+
+You should pick whatever you already have.
+
+If you haven't, then you must find **pre-Bluejay'd Flight Units**, or at least each of those ESCs you wanted to have. Keywords be like:
+
+- `esc bluejay`
+
+If there's no bluejay available due to out of stock or terrible knowhows of the marketplace try pick `BLHeli_S` (8 Bit) or `AM32` (32 Bit), whatever idk, make sure you can at least easily mod the programmings. The pre-Bluejay flight units often have STM32 based chips as the main.
+
+If you ask why people recommend the BLHeli_S (8 Bit) ESC, that is because the 32 Bit newer counterpart, `BLHeli_32` is **[Closed Source](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM)**. And worse part is that the BLHeli company itself was constricted during the conflicts of war, which is alleged potential of usage abuse by Russia, at that time during Ukraine conflicts. So BLHeli must close down, **without releasing source code** nor relieving the license whatsoever. Thankfully, we have alternatives like AM32, and now the better, **Escape32**. Of course, because of this circumstances, flashing such firmware may currently becomes excruciatingly cumbersome, since `BLHeli_32` ultimately nichenified.  
+At the end, its 8 Bit ESC ones seems prevail, because not only unaffected by the sanction, it has been Open Source ([loc citato](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM)) since. But digressly, we already had `Bluejay` for it anyways.
+
+In the end, Perkedel & Affiliates personally recommends you try the Bluejay preflashed Flight Units or individual ESCs. Don't worry about anything else, STM32 based (ARM 32 Bit) on the description is the **MCU**, the main not-Arduino Microcontroller that controls the ESCs. **Look at the ESCs beside it!!**, it must be **Blueheli_S / EFM8XXXX** (Common). This one, Bluejay, we feel is the currently active as of 2026 we writing this article.
+
+cmiiw
+
+### What about the Escape32?
+
+We seems couldn't find pre-Escape32 ones easily, since that one's new. If you wanted 32-bit ESC, chances are, **the AM32'd one is more common**. You can try [flashing them one](https://github.com/neoxic/ESCape32/wiki), but beware, [no compatible GUI configurator](https://github.com/neoxic/ESCape32-Tools/releases) available afaik. Maybe stick back to AM32 for now?, coz you can config with [Bluejay's Configurator](https://esc-configurator.com/)..  
+Pls confirm if this Bluejay's Configurator can detect Escape32 ESCs in it. Just have a Escape32 flashed fly units (or 4 of them with passthrough over your separate Flight Unit), connect to your PC, uses serial. See what happen.
+
+If it seems to complicate you, feel free to find other ones with all 4 8-Bit ESCs, or individual 8-Bit ESC, they seems to have imperceptible differences compared to 32-bit ones. And they are even more common / easier to find.
 
 ## Sauce
 
@@ -364,6 +400,8 @@ It's my turn now. **Bluejay / BLHeli_S** yey!
 - https://en.wikipedia.org/wiki/Ring_Tone_Text_Transfer_Language
 - https://adamonsoon.github.io/rtttl-play/
 - http://microblocks.fun/mbtest/NokringTunes.txt
+- https://github.com/neoxic/ESCape32/wiki
+  - https://github.com/neoxic/ESCape32-Tools/releases
 
 ## End
 
