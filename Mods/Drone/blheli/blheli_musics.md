@@ -1,0 +1,372 @@
+# blheli musics
+
+Tunes for your Drones that use blheli to drive the rotors
+
+> [!CAUTION]  
+> **NoAI**, Please do not use below data for LLM/AI Sampling. This includes the open source ones (even Creative Commons Free Culture such as `CC4.0-BY-SA`)
+
+## Sofwares Needed!
+
+### First, Update your esc firmware!
+
+Please update your ESC to better firmware version
+
+- BLHeli_32. Use [Escape32](https://github.com/neoxic/ESCape32), the new open source alternative of the original (which is proprietary btw, idk).
+  - [Info](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM)
+  - [Custom firmware for JDM-188 RC](https://github.com/neoxic/STM32F0/blob/master/doc/jdm.md)
+- BLHeli_S. Use [BLHeli_S & AM32 Bluejay Configurator](https://github.com/mathiasvr/bluejay-configurator/releases) or [Online](https://esc-configurator.com/) or [CN Mirror](https://esc-configurator.pitronic.top/). New for `S` is [Bluejay](https://github.com/bird-sanctuary/bluejay)
+
+### Flashers
+
+Use the following softwares to do so
+
+- [BlHeli_32 BLHeliSuite](https://www.mediafire.com/folder/dx6kfaasyo24l/BLHeliSuite) or [this](https://github.com/bitdump/BLHeli/releases), use ~~32.3.0.4 /~~ latest there is (32.10.0.0). from [here](https://github.com/bitdump/BLHeli) ~~a~~
+  - [Info](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM)
+- [BLHeli_S & AM32 Bluejay Configurator](https://github.com/mathiasvr/bluejay-configurator/releases) or [Online](https://esc-configurator.com/) or [CN Mirror](https://esc-configurator.pitronic.top/). [Source Code](https://github.com/stylesuxx/esc-configurator)
+  - [CP210x Driver](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers)
+  - [STM USB VCP Driver](https://www.st.com/en/development-tools/stsw-stm32102.html)
+  - inspired from [Original blheli-configurator](https://github.com/blheli-configurator/blheli-configurator)
+- [ESCTunes.com](http://esctunes.com/) Libraries of ESC musics
+  - [Tunes](http://esctunes.com/tunes)
+  - The Bluejay (BLHeli_S) configurator & This site uses Nokia RTTL format
+- [Skully's RTTL Composer](https://rtttl.skully.tech/). [Source Code](https://github.com/ImSkully/rtttl-web-composer). Easy & Intuitive RTTL Nokring Composer. You can copy the RTTL result directly to your Bluejay Configurator!
+
+## **Musics**
+
+Enjoy these musics now!!
+
+### Bluejay Configurator
+
+Flash your **BLHeli_S** with Bluejay & install which music you'd like using [`Open Melody Editor`](https://esc-configurator.com/). Choose over different presets from dropdown. Bunch of Copies of those songs below:
+
+- Template Separate
+  - ESC 1: `a`
+  - ESC 2: `b`
+  - ESC 3: `c`
+  - ESC 4: `d`
+- Template Synchronize
+  - All: `abcd`
+- Bluejay Default
+  - All: `bluejay:b=570,o=4,d=32:4b,p,4e5,p,4b,p,4f#5,2p,4e5,2b5,8b5`
+- 2Pac - Hit Em Up
+  - All: `2pac_hit_em_up:d=4,o=5,b=200:a,8p,a,8g,a,p,a,c6,a,d6,8p,d6,8c6,d6,2p,8p,8d6,8d#6,e6,8p,e6,8d6,e6,p,c6,8b,8g,e,a.,a,8g,a`
+- Abba - Chiquita
+  - ESC 1: `ab_chiq_m1:b=104,o=5,d=16:8f#,c#,p,c#,p,c#,p,c#,p,c#,p,c#,h4,c#,d,8f#,e6,e,e6,p,e6,e,e6,e,e6,e,e6,e,e6,e,g#6,g#,g#6,g#,g#6,g#,g#6,g#,a6,a,a6,a,a6,a,a6,a,g#6,g#,g#6,g#,a6,a,a6,a,h6,h,h6,h,8a6`
+  - ESC 2: `ab_chiq_m2:b=104,o=6,d=16:8f#,c#,p,c#,p,c#,p,c#,p,c#,p,c#,h5,c#,d,8f#,a5,p,a5,p,a5,p,a5,p,a5,p,a5,p,a5,p,d,p,d,p,d,p,d,p,d,p,d,p,d,p,d,p,d,p,d,p,d,p,d,p,d,p,d,p,8d`
+  - ESC 3: `ab_chiq_b1:b=104,o=4,d=16:a3,p,a3,p,e,p,a3,p,a3,p,a3,p,e,p,a3,p,a3,p,a3,p,e,p,a3,p,a3,p,a3,p,h3,p,c#,p,d,p,d,p,a,p,d,p,d,p,d,p,a,p,d,p,d,p,d,p,a,p,d,p,d,p,d,p,8a`
+  - ESC 4: `ab_chiq_b2:b=104,o=4,d=16:a3,p,a3,p,a,p,a3,p,a3,p,a3,p,a,p,a3,p,a3,p,a3,p,a,p,a3,p,a,p,a,p,h,p,c#5,p,d,p,d,p,d5,p,d,p,d,p,d,p,d5,p,d,p,d,p,d,p,d5,p,d,p,d,p,d,p,8d5`
+- Among Us Theme
+  - All: `Amongus:b=95,o=5,d=4:c4,8c6,8d#6,8f6,8f#6,8f6,8d#6,c6,8c6,16a#,16d6,c6,16c6,8g3,c4,8c6,8d#6,8f6,8f#6,8f6,8d#6,2f#6,16f#6,16f6,16d#6,16f#6,16f6,16d#6`
+- AC/DC - Black in Black
+  - ESC 1: `ACDCBack1:b=180,o=5,d=4:16b4,8p.,2p,16d,16p,16d,16p,16d,8p.,2p,16a4,16p,16a4,16p,16a4,8p.,2p.,8p,16g4,16p,16e4,16p,16d4,16p,16b3,16p,16a3,16b3,16a3,16p,16g3,16p`
+  - ESC 2: `ACDCBack2:b=180,o=5,d=4:16g#4,8p.,2p,16d4,16p,16d4,16p,16d4,8p.,2p,16e4,16p,16e4,16p,16e4,8p.,2p.,1p`
+  - ESC 3: `ACDCBack3:b=180,o=5,d=4:16e3,8p.,p,16e3,8p.,p,2p,16e3,8p.,p,2p,16e3,8p.,p,2p,16e3,8p.,p`
+  - ESC 4: `ACDCBack4:b=180,o=5,d=4:16e4,8p.,2p,16a3,16p,16a3,16p,16a3,8p.,2p,16c#4,16p,16c#4,16p,16c#4,8p.,2p.,1p`
+- AC/DC - TNT
+  - ESC 1: `tnt1:d=4,o=3,b=250:2c6,4c6,2p,4d#6,4p,2f6,4f6,4p,4d#5,4f6,4d#5,4p,2c6`
+  - ESC 2: `tnt2:d=4,o=3,b=250:2g5,4g5,2p,4a#5,4p,2c6,4c6,2p,4c6,2p,2g5`
+  - ESC 3: `tnt3:d=4,o=3,b=250:2c5,4c5,2p,4d#5,4p,2f5,4f5,4p,4d#5,4f5,4d#5,4p,2c5`
+  - ESC 4: `tnt4:d=4,o=3,b=250:8c4,8p,8c4,8p,8c4,8p,8c4,8p,8c4,8p,8d#4,8p,8d#4,8p,8f4,8p,8f4,8p,8f4,8p,8f4,8p,8d#4,8p,8f4,8p,8d#4,8p,8d#4,8p,2c4`
+- Bad Apple
+  - ESC 1: `Melody:b=147,o=5,d=8:d#,f,f#,g#,16a#,p,16a#,d#6,c#6,16a#,p,16a#,16d#,p,16d#,1p,1p,2p,d#,f,f#,g#,16a#,p,16a#,d#6,c#6,16a#,p,16a#,16d#,1p,1p,4p`
+  - ESC 2: `Melody:b=147,o=5,d=8:1p,2p,a#,g#,f#,f,d#,f,f#,g#,16a#,p,16a#,g#,f#,f,d#,f,f#,f,d#,d,f,1p,2p,a#,g#,f#,f,d#,f,f#,g#,16a#,p,16a#,1p,p`
+  - ESC 3: `Melody:b=147,o=5,d=8:d#4,a#4,d#4,a#4,d#4,a#4,d#4,a#4,d#4,a#4,d#4,a#4,d#4,a#4,d#4,a#4,b3,f#4,b3,f#4,b3,f#4,b3,f#4,c#4,g#4,c#4,g#4,d4,a#4,d4,a#4,d#4,a#4,d#4,a#4,d#4,a#4,d#4,a#4,d#4,a#4,d#4,a#4,d#4,a#4,d#4,a#4,b3,f#4,b3,f#4,b3,f#4,b3,f#4,c#4,g#4,c#4,g#4,d4,a#4`
+  - ESC 4: `Melody:b=147,o=5,d=8:1p,1p,1p,1p,1p,1p,2p,4p,g#,f#,16f,p,16f,16f#,p,16f#,16g#,p,16g#,16a#,p,16a#`
+- Batman Theme
+  - ESC 1: `bm_0:b=180,o=4,d=32:8d#5,p,8d#5,p,8d5,p,8d5,p,8c#5,p,8c#5,p,8d5,p,8d5,p,4d#5,p,p,2d#5`
+  - ESC 2: `bm_1:b=180,o=4,d=32:8g#,p,8g#,p,8g#,p,8g#,p,8g#,p,8g#,p,8g#,p,8g#,p,4g#,p,p,2g#`
+  - ESC 3: `bm_2:b=180,o=4,d=32:8d#6,p,8d#6,p,8d6,p,8d6,p,8c#6,p,8c#6,p,8d6,p,8d6,p,4g#6,p,p,2g#6`
+  - ESC 4: `bm_3:b=180,o=4,d=32:8g#,p,8g#,p,8g#,p,8g#,p,8g#,p,8g#,p,8d#6,p,8d#6,p,4d#6,p,p,2d#6`
+- NOMA - Brain Power
+  - ESC 1: `Brainpower:b=170,o=4,d=32:16e5,16p,16f#5,16p,f#5,p,f#5,p,f#5,p,f#5,p,f#5,p,f#5,p,f#5,p,f#5,p,f#5,p,f#5,p,f#5,p,f#5,p,e5,p,e5,p,e5,p,e5,p,16b,16p,16c#5,16p,16a,16p,16f#5,16p,16f#5,16p,16e5`
+  - ESC 2: `Brainpower:b=170,o=4,d=32:16e5,16p,16f#5,16p,f#5,p,f#5,p,f#5,p,f#5,p,f#5,p,f#5,p,f#5,p,f#5,p,f#5,p,f#5,p,f#5,p,f#5,p,e5,p,e5,p,e5,p,e5,p,16b,16p,16c#5,16p,16a,16p,16f#5,16p,16f#5,16p,16e5`
+  - ESC 3: `Brainpower:b=170,o=4,d=32:1p,1p,16e5,16p,16f#5,16p,f#5,p,f#5,p,f#5,p,f#5,p,f#5,p,f#5,p,f#5,p,f#5,p,f#5,p,f#5,p,f#5,p,f#5,p,d5,p,d5,p,d5,p,d5,p,16f#5,16p,16a5,16p,16g#5,16p,16a5,16p,16g#5,p,16g#5,16c#5`
+  - ESC 4: `Brainpower:b=170,o=4,d=32:1p,1p,16e5,16p,16f#5,16p,f#5,p,f#5,p,f#5,p,f#5,p,f#5,p,f#5,p,f#5,p,f#5,p,f#5,p,f#5,p,f#5,p,f#5,p,d5,p,d5,p,d5,p,d5,p,16f#5,16p,16a5,16p,16g#5,16p,16a5,16p,16g#5,p,16g#5,16c#5`
+- Britney Spears - Oops!... I did it again
+  - ESC 1: `oops1:d=4,o=5,b=120:8a,8g,8f,8e,16d,16p,8d.,16p,8d.,16p,8c#,8d,8e,8d`
+  - ESC 2: `oops2:d=4,o=5,b=120:8c,8p,8c,8a.4,16p,8a.4,16p,8a.4,16p,8a4,8b4,8c#,8a4`
+  - ESC 3: `oops3:d=4,o=5,b=120:8c,8p,8c,8a.4,16p,8a.4,16p,8a.4,16p,8a4,8b4,8c#,8a4`
+  - ESC 4: `oops4:d=4,o=5,b=120:p.,a3,2d4,2c#4`
+- Bobby Helms - Jingle Bell Rock
+  - ESC 1: `jingle1:b=200,o=5,d=4:f#,32p,8f#,32p,8f#,p,f#,32p,8f#,32p,8f#,p,f#,32p,8a,32p,d,32p,8e,64p,f,32p,8e,32p,d,32p,8b4,32p,2a4`
+  - ESC 2: `jingle2:b=200,o=5,d=4:d,32p,8d,32p,8d,p,c#,32p,8c#,32p,8c#,p,d,32p,8e,32p,a4,32p,8b4,32p,c,32p,8b4,64p,a4,32p,8g4,32p,2f#4`
+  - ESC 3: `jingle3:b=200,o=5,d=4:f#,32p,8f#,32p,8f#,p,f#,32p,8f#,32p,8f#,p,f#,32p,8a,32p,d,32p,8e,64p,f,32p,8e,32p,d,32p,8b4,32p,2a4`
+  - ESC 4: `jingle4:b=200,o=5,d=4:d,32p,8d,32p,8d,p,c#,32p,8c#,32p,8c#,p,d,32p,8e,32p,a4,32p,8b4,32p,c,32p,8b4,64p,a4,32p,8g4,32p,2f#4`
+- Castlevania Adventure - Battle of the Holy
+  - ESC 1: `battle1:b=120,o=5,d=16:e,b4,e,b,b4,e,a#,b4,e,a,b4,e,g,b4,e,b4,g,b4,e,a,b4,e,g,b4,e,f#,b4,e,f#,b4,b3,8a,32a,32p,8a#,32a#,32p,8b.`
+  - ESC 2: `battle2:b=120,o=4,d=16:1e3,2c.,8d,8p,8e3,8p,8e3,8p`
+  - ESC 3: `battle3:b=120,o=4,d=16:1p,2p.,b3,b5,8e3,8p,8e3,8p,8e3`
+  - ESC 4: `battle4:b=120,o=5,d=16:e,b4,e,b,b4,e,a#,b4,e,a,b4,e,g,b4,e,b4,g,b4,e,a,b4,e,g,b4,e,f#,b4,e,f#,b4,b,8a,32a,32p,8a#,32a#,32p,8b.`
+- Cheech and Chong - Earache my Eye
+  - ESC 1: `Earache:d=4,o=3,b=180:8b,8a#,a,8b,8a#,a,d4,32p,d4,1b,1b`
+  - ESC 2: `Earache:d=4,o=4,b=180:8b,8a#,a,8b,8a#,a,d5,32p,d5,1b,1b`
+  - ESC 3: `Earache:d=4,o=3,b=180:8b,8a#,a,8b,8a#,a,d4,32p,d4,1b,1b`
+  - ESC 4: `Earache:d=4,o=4,b=180:8f#,8f,e,8f#,8f,e,a,32p,a,1f#,1f#`
+- Chopin - Revolutionary Etude
+  - ESC 1: `rev_etude_0:o=5,b=160,d=16:8p,g#6,g6,f6,d6,d#6,d6,b,g,g#,g,f,d,d#,d,b4,g4,g#4,g4,f4,d4,d#4,d4,c4,g3,c4,g3,c4,g3,c4,g3,1d6,2p.,8g#.,g,1f6`
+  - ESC 2: `rev_etude_1:o=5,b=160,d=16:1b,2p.,8g#.,g,8b3,g#6,g6,f6,d6,d#6,d6,b,g,g#,g,f,d,d#,d,b4,g4,g#4,g4,f4,d4,d#4,d4,c4,g3,c4,g3,c4,g3,c4,g3,1d6`
+  - ESC 3: `rev_etude_2:o=5,b=160,d=16:1g,2p.,8f.,32g.,64p,1g,2p.,8f.,32g.,64p,8p,g#6,g6,f6,d6,d#6,d6,b,g,g#,g,f,d,d#,d,b4,g4,g#4,g4,f4,d4,d#4,d4,c4,b3,g4,f4,d#4,d4,d#4,d4,c4,b3,a#4,g#4,g4`
+  - ESC 4: `rev_etude_3:o=5,b=160,d=16:1f,2p.,8d#.,g,1f,2p.,8d#.,32g.,64p,8g,8p,1p,1p,p,f4,g4,f4,d#4,d4,d#,d,c,b4,c,b4,g#4,g4,g#4,g4,f4,d#4,f4,d#4,2c4`
+- IOSYS - Cirno's Perfect Math Class
+  - ESC 1: `Melody:b=180,o=5,d=8:a,a#,b,c6,p,c6,b,a#,a,a#,b,c6,p,c6,b,a#,a,a#,b,c6,d6,e6,f6,d6,g6,f6,e6,c6,p,16c,32c,32p,4c,1p,1p,1p,2p`
+  - ESC 2: `Melody:b=180,o=5,d=8:a4,a#4,b4,c,p,c,b4,a#4,a4,a#4,b4,c,p,c,b4,a#4,f4,g4,g#4,a4,a#4,c,d,a#4,e,d,c,g4,p,16b4,32b4,32p,4b4,1p,1p,1p,2p`
+  - ESC 3: `Melody:b=180,o=5,d=8:1p,1p,1p,1p,a,a#,b,c6,p,c6,b,c6,d6,e6,f6,a6,p,a6,g6,a6,a#6,a6,a#6,g6,e6,d6,e6,c6,16f6,32f6,32p,f6,e6,f6`
+  - ESC 4: `Melody:b=180,o=5,d=8:1p,1p,1p,1p,a4,a#4,b4,c,p,c,b4,c,4p,p,d,p,d,e,f#,4g,g,16g,32g,32p,2g,a,g#,g,f`
+
+### [RoxWolf](https://youtube.com/@roxwolf8280)
+
+Musics for your **BLHeli_32**, covers by RoxWolf below!
+
+> [!NOTE]
+> I'm tired! pls do rest of all!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+#### for BLHeli_32
+
+- Template BLHeli_32 Configurator Separate
+  - ESC 1: ✅ Music On, Gen. Length = `14`, Gen. Interval = `2` ;`a`
+  - ESC 2: ✅ Music On, Gen. Length = `14`, Gen. Interval = `2` ;`b`
+  - ESC 3: ✅ Music On, Gen. Length = `14`, Gen. Interval = `2` ;`c`
+  - ESC 4: ✅ Music On, Gen. Length = `14`, Gen. Interval = `2` ;`d`
+- Template BLHeli_32 Configurator Apply to all ESCs
+  - All: ✅ Music On, Gen. Length = `14`, Gen. Interval = `2`; `abcd`
+
+#### [Axel F Crazy Frog Theme](https://youtu.be/_8VD5BeEb8U)
+
+ESC 1:
+
+```
+Set Music On
+Set Gen. Length 15
+Set Gen. Interval 0    
+Paste these notes:
+F5 4 P4 G#5 4 P8 F5 8 P8 F5 8 A#5 4 F5 4 D#5 4 F5 4 P4 C6 4 P 8 F5 8 P8 F5 8 C#6 4 C6 4 G#5 4 F5 4 C6 4 F6 4 F5 8 D#5 8 P8 D#5 8 C5 4 G5 4 F5 1
+```
+
+ESC 2:
+
+```
+Set Music On
+Set Gen. Length 15
+Set Gen. Interval 0    
+Paste these notes:
+F4 4 P4 F5 4 P8 D#4 8 P8 D#5 8 C4 4 C5 4 D#4 4 F4 4 P4 F5 4 P4 P8 C4 8 C4 4 D#4 4 F4 4 C#4 4 P4 C#5 4 P8 D#4 8 P8 D#5 8 C5 4 D#4 4 F4 1
+```
+
+ESC 3:
+
+```
+Set Music On
+Set Gen. Length 15
+Set Gen. Interval 0    
+Paste these notes:
+F4 4 P4 F5 4 P8 D#4 8 P8 D#5 8 C4 4 C5 4 D#4 4 F4 4 P4 F5 4 P4 P8 C4 8 C4 4 D#4 4 F4 4 C#4 4 P4 C#5 4 P8 D#4 8 P8 D#5 8 C5 4 D#4 4 F4 1
+```
+
+ESC 4:
+
+```
+Set Music On
+Set Gen. Length 15
+Set Gen. Interval 0    
+Paste these notes:
+F6 4 P4 G#6 4 P8 F6 8 P8 F6 8 A#6 4 F6 4 D#6 4 F6 4 P4 C7 4 P8 F6 8 P8 F6 8 C#7 4 C7 4 G#6 4 F6 4 C7 4 F7 4 F6 8 D#6 8 P8 D#6 8 C6 4 G6 4 F6 1
+```
+
+#### [Street Fighters II](https://youtu.be/s49Uj4EML7Y)
+
+ESC 1:
+
+```
+Set Music On
+Set Gen. Length 14
+Set Gen. Interval 2    
+Paste these notes:
+G4 2 G4 2 P8 P16 C5 8 D5 8 C5 8 A#4 8 A4 8 G4 8 F4 8 D#4 2 D#4 2 P8 P16 D#4 8 D4 8 D#4 4 D#4 4 P8 C4 2 C4 4 P8 D4 4 D4 4 D4 4 P8 F4 4 G4 8 P8 G4 8 F4 8 P8 F4 8 G4 4 P8 C5 8 D5 8 C5 8 G4 4
+```
+
+ESC 2:
+
+```
+Set Music On
+Set Gen. Length 14
+Set Gen. Interval 2     
+Paste these notes:
+A#5 8 P8 A#5 8 A5 8 P8 A5 8 A#5 1 P32 A5 8 P8 A#5 8 P8 A#5 8 A5 8 P8 A5 8 A#5 1 P32 A5 8 P8 A#5 8 A5 8 P8 A#5 8 P8 A5 8 P8 C6 8 P8 C6 8 A#5 4 A5 4 F5 4 A#5 8 P8 A#5 8 A5 8 P8 A5 8 A#5 1
+```
+
+ESC 3:
+
+```
+Set Music On
+Set Gen. Length 14
+Set Gen. Interval 2    
+Paste these notes:
+G5 8 P8 G5 8 F5 8 P8 F5 8 G5 1 P32 F5 8 P8 G5 8 P8 G5 8 F5 8 P8 F5 8 G5 1 P32 F5 8 P8 G5 8 F5 8 P8 G5 8 P8 F5 8 P8 G5 8 P8 G5 8 F5 4 F5 4 C5 4 G5 8 P8 G5 8 F5 8 P8 F5 8 G5 1
+```
+
+ESC 4:
+
+```
+Set Music On
+Set Gen. Length 14
+Set Gen. Interval 2     
+Paste these notes:
+D5 8 P8 D5 8 C5 8 P8 C5 8 D5 1 P32 C5 8 P8 D5 8 P8 D5 8 C5 8 P8 C5 8 D5 1 P32 C5 8 P8 D5 8 C5 8 P8 D5 8 P8 C5 8 P8 D#5 8 P8 D#5 8 D5 4 C5 4 A4 4 D5 8 P8 D5 8 C5 8 P8 C5 8 D5 1
+```
+
+oscar:
+
+```
+A#5 8 P8 A#5 8 A5 8 P8 A5 8 A#5 1 P32 A5 8 P8 A#5 8 P8 A#5 8 A5 8 P8 A5 8 A#5 1 P32 A5 8 P8 A#5 8 A5 8 P8 A#5 8 P8 A5 8 P8 C6 8 P8 C6 8 A#5 4 A5 4 F5 4 A#5 8 P8 A#5 8 A5 8 P8 A5 8 A#5 1
+```
+
+#### Fast Silent (does not delete Ready tone)
+
+All:
+
+```
+Set Music On
+Set Gen. Length 8
+Set Gen. Interval 0    
+Paste these notes:
+P128
+```
+
+#### Europe - Final Countdown
+
+ESC 1:
+
+```
+Set Music On
+Set Gen. Length 15
+Set Gen. Interval 0    
+Paste these notes:
+D#5 1 D#5 1 E5 1 E5 1 E5 1 E51 C#5 1 C#5 1 D#5 4
+```
+
+ESC 2:
+
+```
+Set Music On
+Set Gen. Length 15
+Set Gen. Interval 0    
+Paste these notes:
+B4 1 B4 1 G#4 1 B4 1 C#5 1 C#5 1 A#4 1 A#4 1 B4 4
+```
+
+ESC 3:
+
+```
+Set Music On
+Set Gen. Length 15
+Set Gen. Interval 0   
+Paste these notes:
+G#4 1 G#4 2 F#4 2 E4 1 E4 1 G#4 1 G#4 1 F#4 1 G4 1 G#4 4
+```
+
+ESC 4:
+
+```
+Set Music On
+Set Gen. Length 15
+Set Gen. Interval 0    
+Paste these notes:
+P2 P4 D#6 8 C#6 8 D#6 2 G#5 2 P2 P4 E6 8 D#6 8 E6 8 P8 D#6 8 P8 C#6 2 P2 P4 E6 8 D#6 8 E6 2 G#5 2 P2 P4 C#6 8 B5 8 C#6 8 P8 B5 8 P8 A#5 8 P8 F#6 8 P8 G#6 4
+```
+
+### [NinjaSauce](https://youtube.com/@ninjasauce8855)
+
+NinjaSauce covers of songs too below! **BLHeli_32**
+
+### [Scout339th](https://youtube.com/@Scount339)
+
+#### for BLHeli_32
+
+- [Still Alive](https://youtu.be/DFVXgsJqw9M) 
+  - ESC 1: ✅ Music On, Gen. Length = `8`, Gen. Interval = `0`; `G7 1/2 F#7 1/2 E7 1/2 E7 1/2 F#7 1/2 P1/1 P1/1 P1/1 P1/2`
+  - ESC 2: ✅ Music On, Gen. Length = `8`, Gen. Interval = `0`; `P1/1 P1/1 A5 1/2 D6 1/2 F#6 1/2 D6 1/2 B5 1/2 D6 1/2 F#6 1/2 D6 1/2`
+  - ESC 3: ✅ Music On, Gen. Length = `8`, Gen. Interval = `0`; `G6 1/2 F#6 1/2 E6 1/2 E6 1/2 F#6 1/2 P1/1 P1/1 P1/1 P1/2`
+  - ESC 4: ✅ Music On, Gen. Length = `8`, Gen. Interval = `0`; `P1/1 P1/1 A5 1/2 D6 1/2 F#6 1/2 D6 1/2 B5 1/2 D6 1/2 F#6 1/2 D6 1/2`
+
+### [VisionFPV](https://youtube.com/@visionfpv8226)
+
+#### for BLHeli_32
+
+- [AC/DC - Highway to Hell](https://youtu.be/M8BR83Rq2_A) 
+  - ESC 1: ✅ Music On, Gen. Length = `15`, Gen. Interval = `2`; `A#5 4 A#5 4 A#5 4 P1 P8 G5 4 G5 4 G#5 4 P1 P8 G5 4 G5 4 G#5 4 P4 G5 4 G5 4 G#5 4 P4 G5 4 P4 A#5 4 A#5 4`
+  - ESC 2: ✅ Music On, Gen. Length = `15`, Gen. Interval = `2`; `F5 4 F5 4 F5 4 P1 P8 D#5 4 D#5 4 D#5 4 P1 P8 D#5 4 D#5 4 D#5 4 P4 D#5 4 D#5 4 D#5 4 P4 D#5 4 P4 F5 4 F5 4`
+  - ESC 3: ✅ Music On, Gen. Length = `15`, Gen. Interval = `2`; `D5 4 D5 4 D5 4 P1 P8 A#4 4 A#4 4 C5 4 P1 P8 A#4 4 A#4 4 C5 4 P4 A#4 4 A#4 4 C5 4 P4 A#4 4 P4 D5 4 D5 4`
+  - ESC 4: ✅ Music On, Gen. Length = `15`, Gen. Interval = `2`; `A#4 4 A#4 4 A#4 4 P1 P8 G4 4 G4 4 G#4 4 P1 P8 G4 4 G4 4 G#4 4 P4 G4 4 G4 4 G#4 4 P4 G4 4 P4 A#4 4 A#4 4`
+
+### [Dustindufault](https://youtube.com/@dustindufault7880)
+
+- [Pinkfong - Baby Shark && JAWS Theme](https://youtu.be/DFVXgsJqw9M) 
+  - ESC 1: ✅ Music On, Gen. Length = `15`, Gen. Interval = `0`; `D6 1/2 E6 1/2 G6 1/4 G6 1/4 G6 1/4 G6 1/8 G6 1/4 G6 1/8 G6 1/4 D6 1/4 E6 1/4 G6 1/4 G6 1/4 G6 1/4 G6 1/8 G6 1/4 G6 1/8 G6 1/4 D6 1/4 E6 1/4 G6 1/4 G6 1/4 G6 1/4 G6 1/8 G6 1/4 G6 1/8 G6 1/4 G6 1/4 G6 1/4 F#6 1/2 P1/1 G4 1/2 G#4 1/4 P1/2 G4 1/2 G#4 1/4 P1/2 G4 1/4 G#4 1/8 P1/4 G4 1/4 G#4 1/8 P1/4 G4 1/4 G#4 1/8 B5 1/1`
+  - ESC 2: ✅ Music On, Gen. Length = `15`, Gen. Interval = `0`; `D6 1/2 E6 1/2 B5 1/4 G6 1/4 G6 1/4 G6 1/8 B5 1/4 G6 1/8 G6 1/4 D6 1/4 E6 1/4 B5 1/4 G6 1/4 G6 1/4 G6 1/8 B5 1/4 G6 1/8 G6 1/4 D6 1/4 E6 1/4 B5 1/4 G6 1/4 G6 1/4 G6 1/8 B5 1/4 G6 1/8 G6 1/4 G6 1/4 G6 1/4 G4 1/2 P1/1 G4 1/2 G#4 1/4 P1/2 G4 1/2 G#4 1/4 P1/2 G4 1/4 G#4 1/8 P1/4 G4 1/4 G#4 1/8 P1/4 G4 1/4 G#4 1/8 B5 1/1`
+  - ESC 3: ✅ Music On, Gen. Length = `15`, Gen. Interval = `0`; `P1/2 P1/2 G5 1/2 G5 1/2 G5 1/2 G5 1/2 C4 1/2 C4 1/2 C4 1/2 C4 1/2 E4 1/2 E4 1/2 E4 1/2 E4 1/2 D4 1/2 P1/1 C4 1/2 C#4 1/4 P1/2 C4 1/2 C#4 1/4 P1/2 C4 1/4 C#4 1/8 P1/4 C4 1/4 C#4 1/8 P1/4 C4 1/4 C#4 1/8 B5 1/1`
+  - ESC 4: ✅ Music On, Gen. Length = `15`, Gen. Interval = `0`; `P1/2 P1/2 G5 1/2 G5 1/2 G5 1/2 G5 1/2 C4 1/2 C4 1/2 C4 1/2 C4 1/2 E4 1/2 E4 1/2 E4 1/2 E4 1/2 D4 1/2 P1/1 C4 1/2 C#4 1/4 P1/2 C4 1/2 C#4 1/4 P1/2 C4 1/4 C#4 1/8 P1/4 C4 1/4 C#4 1/8 P1/4 C4 1/4 C#4 1/8 B5 1/1`
+
+### [Skully](https://github.com/ImSkully)
+
+This person makes the [composer for it](https://rtttl.skully.tech/) ([Source Code](https://github.com/ImSkully/rtttl-web-composer)). Bascially the **BLHeli_S/ Bluejay** Configurator Melody editor accepts Nokia RTTL Format. You can just plop any RTTL songs into respective ESCs, but be careful, **avoid the song that's too long** to prevent huge startup delay & overheat!
+
+#### for BLHeli_S / Bluejay
+
+- Trim Phone
+  - All: `Trim Phone:d=16,o=5,b=355:a,b,a,b,a,b,a,4p,a,b,a,b,a,b,a,b,a`
+- Kimmunitcator
+  - All: `Kimmunicator:d=8,o=7,b=715:d,g,p,g4,p,p,d,g,p,g4,p,p,f,a#,p,d,g`
+- Pager
+  - All: `Pager:d=8,o=5,b=160:d6,16p,2d6,16p,d6,16p,2d6,16p,d6,16p,2d6`
+
+### JOELwindows7
+
+It's my turn now. **Bluejay / BLHeli_S** yey!
+
+#### for BLHeli_S / Bluejay
+
+- Template Separate
+  - ESC 1: `a`
+  - ESC 2: `b`
+  - ESC 3: `c`
+  - ESC 4: `d`
+- Template Synchronize
+  - All: `abcd`
+- Doremi Basic
+  - All: `Doremi:d=8,o=5,b=63:c,d,e,f,g,a,b,4c6`
+- Samsung Notification not Whatsapp
+  - All: `SamsungWA:d=4,o=5,b=320:b4,d,b,a,p,f#`
+- OIIA
+  - All: `Oiia:d=8,o=5,b=125:d#,16e,32p,16e,d#,e,32p,e,d,16e,32p,16e,d#,16e,32p,16e`
+- Van Elektronische Startup. When you plug the battery to our Stork Fly Unit.
+  - ESC 1: `VanElektronische_0:d=8,o=5,b=63:e,16c#,d,4e`
+  - ESC 2: `VanElektronische_1:d=8,o=5,b=63:c#,16a4,b4,4c#`
+  - ESC 3: `VanElektronische_2:d=8,o=5,b=63:a4,16e4,g4,4a4`
+  - ESC 4: `VanElektronische_3:d=8,o=5,b=63:e,16c#,d,4e`
+
+## Sauce
+
+- https://youtube.com/@roxwolf8280 RoxWolf
+  - [Instruction](https://youtu.be/AA4SRmm6Z_c)
+- https://youtube.com/playlist?list=PLwip8UXl_Wqg4FUnzJBpHO_VSBquJgiac NinjaSauce
+- https://oscarliang.com/blheli-32-custom-startup-tone-music Oscar Liang
+  - https://oscarliang.com/bluejay-blheli-s/ Bluejay 
+- https://github.com/mathiasvr/bluejay-configurator/releases
+- https://github.com/bird-sanctuary/bluejay
+  - https://github.com/bird-sanctuary/bluejay/wiki/Tested-Hardware
+- https://youtu.be/4wCmhiaBkjA TRONCAT
+- https://youtu.be/_alIV-sDU8g Nick Burns
+- https://youtu.be/vv4EwcCMG7s Senyx Escape32
+- https://youtu.be/xtHc8XHCySM VisionFPV
+- https://youtube.com/shorts/vHgOgkCuREQ FPVPilot33
+- https://youtu.be/e4VHGVPjhtA FlickFPV
+- https://eddmann.com/posts/building-a-nokia-composer-rtttl-player-and-wav-file-generator-in-the-browser/
+- https://en.wikipedia.org/wiki/Ring_Tone_Text_Transfer_Language
+- https://adamonsoon.github.io/rtttl-play/
+- http://microblocks.fun/mbtest/NokringTunes.txt
+
+## End
+
+by JOELwindows7  
+Perkedel Technologies  
+CC4.0-BY-SA
