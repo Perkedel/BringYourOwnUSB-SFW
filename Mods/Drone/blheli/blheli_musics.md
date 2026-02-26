@@ -352,6 +352,18 @@ It's my turn now. **Bluejay / BLHeli_S** yey!
   - ESC 3: `OneByOne_3:d=4,o=4,b=160:p,p,p,p,p,p,g,a#,p,p,p,2p,2g`
   - ESC 4: `OneByOne_4:d=4,o=4,b=160:p,p,p,p,p,p,p,p,p,a#,c5,2p,2c`
 
+## How to install the song?
+
+### Bluejay Configurator (BLHeli_S & AM32)
+
+- Start the configurator.
+- Connect your Flight Unit to the computer, usually via USB interface. It will connect to the configurator through serial.
+- `Select Serial Port` and choose your Flight Unit controller.
+- Do something.
+  - You can replace old firmwares with another new ones here. e.g., **to replace the old `BLHeli_S` firmware with Bluejay**.
+  - Write Melodies to it. The configurator has many presets to choose from, provided by the communities. You can also write one yourself, using a tools like [Skully's RTTL composer](https://rtttl.skully.tech/) & Copy Paste the text result one by one to respective ESCs, or sync all. Accept each ESCs and `Write Melodies`.
+- Enjoy. When you plug the battery back in / power cycle, you'll hear your chosen song.
+
 ## Which BLHeli should I pick?
 
 > [!TIP]  
@@ -366,7 +378,7 @@ If you haven't, then you must find **pre-Bluejay'd Flight Units**, or at least e
 
 If there's no bluejay available due to out of stock or terrible knowhows of the marketplace try pick `BLHeli_S` (8 Bit) or `AM32` (32 Bit), whatever idk, make sure you can at least easily mod the programmings. The pre-Bluejay flight units often have STM32 based chips as the main.
 
-If you ask why people recommend the BLHeli_S (8 Bit) ESC, that is because the 32 Bit newer counterpart, `BLHeli_32` is **[Closed Source](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM)**. And worse part is that the BLHeli company itself was constricted during the conflicts of war, which is alleged potential of usage abuse by Russia, at that time during Ukraine conflicts. So BLHeli must close down, **without releasing source code** nor relieving the license whatsoever. Thankfully, we have alternatives like AM32, and now the better, **Escape32**. Of course, because of this circumstances, flashing such firmware may currently becomes excruciatingly cumbersome, since `BLHeli_32` ultimately nichenified.  
+If you ask why people recommend the BLHeli_S (8 Bit) ESC, that is because the 32 Bit newer counterpart, `BLHeli_32` is **[Closed Source](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM)**. And worse part is that the BLHeli company itself was constricted during the conflicts of war, which is alleged potential of usage abuse by Russia, at that time during Ukraine conflicts. So BLHeli must close down, **without releasing source code** nor relieving the license whatsoever. Thankfully, we have alternatives like AM32, and now new in the scene, **Escape32**. Of course, because of this circumstances, flashing such firmware may currently becomes excruciatingly cumbersome, since `BLHeli_32` ultimately nichenified.  
 At the end, its 8 Bit ESC ones seems prevail, because not only unaffected by the sanction, it has been Open Source ([loc citato](https://github.com/bitdump/BLHeli/tree/master/BLHeli_32%20ARM)) since. But digressly, we already had `Bluejay` for it anyways.
 
 In the end, Perkedel & Affiliates personally recommends you try the Bluejay preflashed Flight Units or individual ESCs. Don't worry about anything else, STM32 based (ARM 32 Bit) on the description is the **MCU**, the main not-Arduino Microcontroller that controls the ESCs. **Look at the ESCs beside it!!**, it must be **Blueheli_S / EFM8XXXX** (Common). This one, Bluejay, we feel is the currently active as of 2026 we writing this article.
@@ -402,6 +414,7 @@ If it seems to complicate you, feel free to find other ones with all 4 8-Bit ESC
 - http://microblocks.fun/mbtest/NokringTunes.txt
 - https://github.com/neoxic/ESCape32/wiki
   - https://github.com/neoxic/ESCape32-Tools/releases
+- https://github.com/drewcrawford/bassdll
 
 ## End
 
