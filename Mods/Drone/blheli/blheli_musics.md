@@ -312,7 +312,7 @@ NinjaSauce covers of songs too below! **BLHeli_32**
 
 This person makes the [composer for it](https://rtttl.skully.tech/) ([Source Code](https://github.com/ImSkully/rtttl-web-composer)). Bascially the **BLHeli_S/ Bluejay** Configurator Melody editor accepts Nokia RTTL Format. You can just plop any RTTL songs into respective ESCs, but be careful, **avoid the song that's too long** to prevent huge startup delay & overheat!
 
-#### for BLHeli_S / Bluejay
+#### for BLHeli_S / Bluejay / AM32
 
 - Trim Phone
   - All: `Trim Phone:d=16,o=5,b=355:a,b,a,b,a,b,a,4p,a,b,a,b,a,b,a,b,a`
@@ -321,11 +321,21 @@ This person makes the [composer for it](https://rtttl.skully.tech/) ([Source Cod
 - Pager
   - All: `Pager:d=8,o=5,b=160:d6,16p,2d6,16p,d6,16p,2d6,16p,d6,16p,2d6`
 
+### [maritomppa123](https://www.youtube.com/@maritomppa123)
+
+#### for BLHeli_S / Bluejay / AM32
+
+- [Bohemian Rhapsody](https://youtu.be/BcPiPyg5yc4?si=TZn7kdRc8vULp4Tm): very frightening me
+  - ESC 1: `Melody:b=150,o=5,d=4:1p,16g,16p,16g,16p,16g,16p,16g,16p,8g#,8p,8g#,8p,14a`
+  - ESC 2: `Melody:b=150,o=5,d=4:16g#,16p,16g#,16p,16g#,16p,16g#,16p,8d#,8p,8d#,8p,16e,16p,16e,16p,16e,16p,16e,16p,8d,8p,8d,8p,14e`
+  - ESC 3: `Melody:b=150,o=5,d=4:16c#,16p,16c#,16p,16c#,16p,16c#,16p,8c,8p,8c,8p,16c,16p,16c,16p,16c,16p,16c,16p,8b4,8p,8b4,8p,14c#`
+  - ESC 4: `Melody:b=150,o=5,d=4:16g#4,16p,16g#4,16p,16g#4,16p,16g#4,16p,8g#4,8p,8g#4,8p,16g4,16p,16g4,16p,16g4,16p,16g4,16p,8e4,8p,8e4,8p,14a4`
+
 ### JOELwindows7
 
 It's my turn now. **Bluejay / BLHeli_S** yey!
 
-#### for BLHeli_S / Bluejay
+#### for BLHeli_S / Bluejay / AM32
 
 - Template Separate
   - ESC 1: `a`
@@ -364,11 +374,18 @@ It's my turn now. **Bluejay / BLHeli_S** yey!
   - Write Melodies to it. The configurator has many presets to choose from, provided by the communities. You can also write one yourself, using a tools like [Skully's RTTL composer](https://rtttl.skully.tech/) & Copy Paste the text result one by one to respective ESCs, or sync all. Accept each ESCs and `Write Melodies`.
 - Enjoy. When you plug the battery back in / power cycle, you'll hear your chosen song.
 
+### BLHeli_32 Suite
+
+...
+
 ## Which BLHeli should I pick?
 
 > [!TIP]  
-> TLDR: Choose pre-Bluejay'd ones! Its ESCs must be **`BLHeli_S`** compatible (such as `EFM8XXXX` based) Ask the store owner if they got one, and request flashing Bluejay if it isn't.  
-> If you got AM32 ones, it still work with Bluejay's ESC Configurator.
+> TLDR: 
+> - Recommended to choose pre-Bluejay'd ones! Its ESCs must be **`BLHeli_S`** compatible (such as `EFM8XXXX` based) Ask the store owner if they got one, and request flashing Bluejay if it isn't that already. it's okay if main MCU is STM32 based.
+> - If you got AM32 ones (where formerly would've been `BLHeli_32`), it's still work with Bluejay's ESC Configurator, just flash AM32 if haven't AM32 already.  
+> - Escape32 is rare and no GUI Editor compatible atm! Bluejay Configurator untested!
+> - Only `BLHeli_32` is proprietary. Rest are Open Sourced.
 
 You should pick whatever you already have.
 
