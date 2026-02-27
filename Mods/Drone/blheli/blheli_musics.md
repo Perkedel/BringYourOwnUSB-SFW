@@ -26,6 +26,7 @@ Use the following softwares to do so
   - [CP210x Driver](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers)
   - [STM USB VCP Driver](https://www.st.com/en/development-tools/stsw-stm32102.html)
   - inspired from [Original blheli-configurator](https://github.com/blheli-configurator/blheli-configurator)
+- [Betaflight Configurator (Online PWA)](https://app.betaflight.com/) & [Android Releases](https://github.com/betaflight/betaflight-configurator/releases). [Source Code](https://github.com/betaflight/betaflight-configurator), [GitHub total](https://github.com/betaflight). Configure your Betaflight Flight Units
 - [Escape32 Tools CLI](https://github.com/neoxic/ESCape32-Tools/releases). If you want Escape32 instead.
 - [ESCTunes.com](http://esctunes.com/) Libraries of ESC musics
   - [Tunes](http://esctunes.com/tunes)
@@ -49,6 +50,11 @@ Flash your **BLHeli_S** with Bluejay & install which music you'd like using [`Op
   - All: `abcd`
 - Bluejay Default
   - All: `bluejay:b=570,o=4,d=32:4b,p,4e5,p,4b,p,4f#5,2p,4e5,2b5,8b5`
+- Super Mario Mushroom Power up
+  - ESC 1: `powerup_1: d=2,o=2,b=960:8c4,8g3,8c4,8e4,8g4,8c5,8g4,8g#3,8c4,8d#4,8g#4,8d#4,8g#4,8c5,8d#5,8g#5,8d#5,8d4,8f4,8a#4,8f4,8a#4,8d5,8f5,8d5,8f5,8a#5,8f5`
+  - ESC 2: `powerup_2: d=2,o=2,b=960:8c5,8g4,8c5,8e5,8g5,8c6,8g5,8g#4,8c5,8d#5,8g#5,8d#5,8g#5,8c6,8d#6,8g#6,8d#6,8d5,8f5,8a#5,8f5,8a#5,8d6,8f6,8d6,8f6,8a#6,8f6`
+  - ESC 3: `powerup_1: d=2,o=2,b=960:8c4,8g3,8c4,8e4,8g4,8c5,8g4,8g#3,8c4,8d#4,8g#4,8d#4,8g#4,8c5,8d#5,8g#5,8d#5,8d4,8f4,8a#4,8f4,8a#4,8d5,8f5,8d5,8f5,8a#5,8f5`
+  - ESC 4: `powerup_2: d=2,o=2,b=960:8c5,8g4,8c5,8e5,8g5,8c6,8g5,8g#4,8c5,8d#5,8g#5,8d#5,8g#5,8c6,8d#6,8g#6,8d#6,8d5,8f5,8a#5,8f5,8a#5,8d6,8f6,8d6,8f6,8a#6,8f6`
 - 2Pac - Hit Em Up
   - All: `2pac_hit_em_up:d=4,o=5,b=200:a,8p,a,8g,a,p,a,c6,a,d6,8p,d6,8c6,d6,2p,8p,8d6,8d#6,e6,8p,e6,8d6,e6,p,c6,8b,8g,e,a.,a,8g,a`
 - Abba - Chiquita
@@ -113,6 +119,11 @@ Flash your **BLHeli_S** with Bluejay & install which music you'd like using [`Op
   - ESC 2: `Melody:b=180,o=5,d=8:a4,a#4,b4,c,p,c,b4,a#4,a4,a#4,b4,c,p,c,b4,a#4,f4,g4,g#4,a4,a#4,c,d,a#4,e,d,c,g4,p,16b4,32b4,32p,4b4,1p,1p,1p,2p`
   - ESC 3: `Melody:b=180,o=5,d=8:1p,1p,1p,1p,a,a#,b,c6,p,c6,b,c6,d6,e6,f6,a6,p,a6,g6,a6,a#6,a6,a#6,g6,e6,d6,e6,c6,16f6,32f6,32p,f6,e6,f6`
   - ESC 4: `Melody:b=180,o=5,d=8:1p,1p,1p,1p,a4,a#4,b4,c,p,c,b4,c,4p,p,d,p,d,e,f#,4g,g,16g,32g,32p,2g,a,g#,g,f`
+- Toby Fox - (Undertale) Megalovania
+  - ESC 1: `Megalo:b=280,o=5,d=8: 4d,d6,p,a,4p,g#,p,g,p,4f,d,f,g,4c,d6,p,a,4p,g#,p,g,p,4f,d,f,g,4b,d6,p,a,4p,g#,p,g,p,4f,d,f,g,a#,a#,d6,p,a,4p,g#,p,g,p,4f,d,f,g`
+  - ESC 2: `Megalo:b=280,o=6,d=8:4d,d7,p,a,4p,g#,p,g,p,4f,d,f,g,4c,d7,p,a,4p,g#,p,g,p,4f,d,f,g,4b,d7,p,a,4p,g#,p,g,p,4f,d,f,g,a#,a#,d7,p,a,4p,g#,p,g,p,4f,d,f,g`
+  - ESC 3: `Megalo:b=280,o=4,d=8:4d,d5,p,a,4p,g#,p,g,p,4f,d,f,g,4c,d5,p,a,4p,g#,p,g,p,4f,d,f,g,4b,d5,p,a,4p,g#,p,g,p,4f,d,f,g,a#,a#,d5,p,a,4p,g#,p,g,p,4f,d,f,g`
+  - ESC 4: `Megalo:b=280,o=4,d=8:d,p,d,p,d,p,d,p,d,p,d,p,d,p,d,p,4e,4p,4e,4p,4e,4p,4e,4p,f,p,f,p,f,p,f,p,f,p,f,p,f,p,f,p,4g,4p,4g,4p,4g,4p,4g,4p`
 - Oh my God, too many to list, pls continue!
 
 ### [RoxWolf](https://youtube.com/@roxwolf8280)
@@ -302,6 +313,8 @@ NinjaSauce covers of songs too below! **BLHeli_32**
 
 ### [Dustindufault](https://youtube.com/@dustindufault7880)
 
+#### for BLHeli_S / Bluejay / AM32
+
 - [Pinkfong - Baby Shark && JAWS Theme](https://youtu.be/DFVXgsJqw9M) 
   - ESC 1: ✅ Music On, Gen. Length = `15`, Gen. Interval = `0`; `D6 1/2 E6 1/2 G6 1/4 G6 1/4 G6 1/4 G6 1/8 G6 1/4 G6 1/8 G6 1/4 D6 1/4 E6 1/4 G6 1/4 G6 1/4 G6 1/4 G6 1/8 G6 1/4 G6 1/8 G6 1/4 D6 1/4 E6 1/4 G6 1/4 G6 1/4 G6 1/4 G6 1/8 G6 1/4 G6 1/8 G6 1/4 G6 1/4 G6 1/4 F#6 1/2 P1/1 G4 1/2 G#4 1/4 P1/2 G4 1/2 G#4 1/4 P1/2 G4 1/4 G#4 1/8 P1/4 G4 1/4 G#4 1/8 P1/4 G4 1/4 G#4 1/8 B5 1/1`
   - ESC 2: ✅ Music On, Gen. Length = `15`, Gen. Interval = `0`; `D6 1/2 E6 1/2 B5 1/4 G6 1/4 G6 1/4 G6 1/8 B5 1/4 G6 1/8 G6 1/4 D6 1/4 E6 1/4 B5 1/4 G6 1/4 G6 1/4 G6 1/8 B5 1/4 G6 1/8 G6 1/4 D6 1/4 E6 1/4 B5 1/4 G6 1/4 G6 1/4 G6 1/8 B5 1/4 G6 1/8 G6 1/4 G6 1/4 G6 1/4 G4 1/2 P1/1 G4 1/2 G#4 1/4 P1/2 G4 1/2 G#4 1/4 P1/2 G4 1/4 G#4 1/8 P1/4 G4 1/4 G#4 1/8 P1/4 G4 1/4 G#4 1/8 B5 1/1`
@@ -319,7 +332,31 @@ This person makes the [composer for it](https://rtttl.skully.tech/) ([Source Cod
 - Kimmunitcator
   - All: `Kimmunicator:d=8,o=7,b=715:d,g,p,g4,p,p,d,g,p,g4,p,p,f,a#,p,d,g`
 - Pager
-  - All: `Pager:d=8,o=5,b=160:d6,16p,2d6,16p,d6,16p,2d6,16p,d6,16p,2d6`
+  - All: `Pager:d=8,o=5,b=160:d6,16p,2d6,16p,d6,16p,2d6,16p,d6,16p,2d6`\
+
+### ESCTunes.com
+
+Best of the best?, Only?.. There's alot of them there! Remember, **avoid installing long song!**
+
+#### for BLHeli_S / Bluejay / AM32
+
+- Nokia Tune
+  - All: `Nokia - Nokia Tune:o=5,d=4,b=225:8e6,8d6,f#5,g#5,8c#6,8b5,d5,e5,8b5,8a5,c#5,e5,2a5`
+- Nokia Buffoon
+  - All: `Nokia - The Buffoon:o=5,d=32,b=90:c#5,8e5,g#5,c#6,8p5,c6,8p5,8b5,8p5,b5,8a5,b5,a5,16p5,8g#5,8p5,g#5,8a5,b5,a5,8p5,g#5,8p5,e5,16p5,e5,f#5,8p5,8g5,8g#5,16p5`
+- Nokia Groovy Blue
+  - All: `nokia - groovy Blue:o=6,d=32,b=112:p6,16g6,16a#6,16g6,a#6.,16f6.,a6,8p6.,a6,8p6.,a6,8p6,a6,8p6,a6,8p6.,a6,a#6.,a6.,a6,8a#6,a6,8g#6,a6,8p6.,a6,8p6.,a6,8p6.,a6,8p6.,a6,8p6.,a6,8p6,16g6,16a#6,16g6,16a#6,16f6,a6,8p6.,a6,8p6.,a6,8p6,a6,8p6,a6,8p6.`
+- Nokia Circles
+  - All: `Nokia - Circles:o=5,d=16,b=180:a6,a5,c6,e6,8a6,8a5,8c7,8b6,8a6,8f6.,f5,a5,c6,8f6,8f5,8a6,8g6,8f6,8g6.,g5,b5,d6,8g6,8g5,8c7,8b6,8a6,4a6,2p5,f5,a5,c6,f5,f6,p5,g5,b5,d6,g5,g6,2p5`
+- Nokia Entertainer
+  - All: `nokia - Entertainer:o=5,d=16,b=140:8d6,8d#6,8e6,4c7,8e6,4c7,8e6,2c7,8c7,8d7,8d#7,8e7,8c7,8d7,4e7,8b6,4d7,2c7,4p5,8d6,8d#6,8e6,4c7,8e6,4c7,8e6,2c7,8p5,8a6,8g6,8f#6,8a6,8c7,4e7,8d7,8c7,8a6,2d7`
+- Nokia Jumping
+  - All: `Nokia Standard Tones - Jumping:o=6,d=4,b=225:8c5,8p6,2c5.,8p6,16b5.,16g5.,16p6,16a5.,16g5.,16p6,16e5.,16p6,16c5.,16g5.,16p6,16c5.,16f5.,16p6,16c5.,16p6,16e5.,16c5.,16d5.,16p6,16c5.,1p6,16c5.,8p6,2c5.,8p6,16b5.,16g5.,8p6,16a5.,16g5.,16p6,16e5.,16p6,16c5.,16g5.,16p6,16c5.,16f5.,16p6,16c5.,16p6,16e5.,16c5.,16d5.,16p6,16c5.`
+- Nokia Auld Lang Syne
+  - All: `Nokia Standard Tones - Auld Lang Syne:o=6,d=4,b=140:g5,c6.,8c6,c6,e6,d6.,8c6,d6,8e6,8d6,c6.,8c6,e6,g6,2a6.,a6,g6.,8e6,e6,c6,d6.,8c6,d6,8e6,8d6,c6.,8a5,a5,g5,2c6`
+- Twinkle Twinkle Little Star
+  - All: `Other - Twinkle Twinkle Little Star:o=5,d=4,b=80:32p5,8c5,8c5,8g5,8g5,8a5,8a5,g5,8f5,8f5,8e5,8e5,8d5,8d5,c5,8g5,8g5,8f5,8f5,8e5,8e5,d5,8g5,8g5,8f5,8f5,8e5,8e5,d5,8c5,8c5,8g5,8g5,8a5,8a5,g5`
+
 
 ### [maritomppa123](https://www.youtube.com/@maritomppa123)
 
