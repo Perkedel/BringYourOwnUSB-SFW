@@ -1,0 +1,250 @@
+semver: 2.11.4
+header:
+  name: Simulacral
+  bitmap: ""
+  labels: ""
+noGlobalFunctions: 0
+thrTrim: 0
+trimInc: 0
+displayTrims: 0
+ignoreSensorIds: 0
+showInstanceIds: 0
+disableThrottleWarning: 0
+enableCustomThrottleWarning: 0
+customThrottleWarningPosition: 0
+beepANACenter: 0
+extendedLimits: 0
+extendedTrims: 0
+throttleReversed: 0
+checklistInteractive: 0
+mixData:
+  - destCh: 0
+    srcRaw: I0
+    weight: 100
+    swtch: NONE
+    curve:
+      type: 0
+      value: 0
+    delayPrec: 0
+    delayUp: 0
+    delayDown: 0
+    speedPrec: 0
+    speedUp: 0
+    speedDown: 0
+    carryTrim: 0
+    mltpx: ADD
+    mixWarn: 0
+    flightModes: 000000000
+    offset: 0
+    name: ""
+  - destCh: 1
+    srcRaw: I1
+    weight: 100
+    swtch: NONE
+    curve:
+      type: 0
+      value: 0
+    delayPrec: 0
+    delayUp: 0
+    delayDown: 0
+    speedPrec: 0
+    speedUp: 0
+    speedDown: 0
+    carryTrim: 0
+    mltpx: ADD
+    mixWarn: 0
+    flightModes: 000000000
+    offset: 0
+    name: ""
+  - destCh: 2
+    srcRaw: I2
+    weight: 100
+    swtch: NONE
+    curve:
+      type: 0
+      value: 0
+    delayPrec: 0
+    delayUp: 0
+    delayDown: 0
+    speedPrec: 0
+    speedUp: 0
+    speedDown: 0
+    carryTrim: 0
+    mltpx: ADD
+    mixWarn: 0
+    flightModes: 000000000
+    offset: 0
+    name: ""
+  - destCh: 3
+    srcRaw: I3
+    weight: 100
+    swtch: NONE
+    curve:
+      type: 0
+      value: 0
+    delayPrec: 0
+    delayUp: 0
+    delayDown: 0
+    speedPrec: 0
+    speedUp: 0
+    speedDown: 0
+    carryTrim: 0
+    mltpx: ADD
+    mixWarn: 0
+    flightModes: 000000000
+    offset: 0
+    name: ""
+expoData:
+  - srcRaw: Rud
+    scale: 0
+    mode: 3
+    chn: 0
+    swtch: NONE
+    flightModes: 000000000
+    weight: 100
+    offset: 0
+    curve:
+      type: 0
+      value: 0
+    trimSource: 0
+    name: ""
+  - srcRaw: Ele
+    scale: 0
+    mode: 3
+    chn: 1
+    swtch: NONE
+    flightModes: 000000000
+    weight: 100
+    offset: 0
+    curve:
+      type: 0
+      value: 0
+    trimSource: 0
+    name: ""
+  - srcRaw: Thr
+    scale: 0
+    mode: 3
+    chn: 2
+    swtch: NONE
+    flightModes: 000000000
+    weight: 100
+    offset: 0
+    curve:
+      type: 0
+      value: 0
+    trimSource: 0
+    name: ""
+  - srcRaw: Ail
+    scale: 0
+    mode: 3
+    chn: 3
+    swtch: NONE
+    flightModes: 000000000
+    weight: 100
+    offset: 0
+    curve:
+      type: 0
+      value: 0
+    trimSource: 0
+    name: ""
+inputNames:
+  0:
+    val: Rud
+  1:
+    val: Ele
+  2:
+    val: Thr
+  3:
+    val: Ail
+swashR:
+  type: TYPE_NONE
+  value: 0
+  collectiveSource: NONE
+  aileronSource: NONE
+  elevatorSource: NONE
+  collectiveWeight: 0
+  aileronWeight: 0
+  elevatorWeight: 0
+thrTraceSrc: Thr
+switchWarning:
+  SA:
+    pos: up
+  SB:
+    pos: up
+  SC:
+    pos: up
+  SD:
+    pos: up
+  SE:
+    pos: up
+  SF:
+    pos: up
+  SG:
+    pos: up
+thrTrimSw: 0
+potsWarnMode: WARN_OFF
+potsWarnEnabled: 0
+jitterFilter: GLOBAL
+displayChecklist: 0
+telemetryProtocol: 0
+varioData:
+  source: none
+  centerSilent: 0
+  centerMax: 0
+  centerMin: 0
+  min: 0
+  max: 0
+rssiSource: none
+rfAlarms:
+  warning: 45
+  critical: 42
+disableTelemetryWarning: 0
+trainerData:
+  mode: OFF
+  channelsStart: 0
+  channelsCount: -8
+  frameLength: 0
+  delay: 0
+  pulsePol: 0
+screenData:
+  0:
+    LayoutId: Layout2P1
+    layoutData:
+      options:
+        0:
+          type: Bool
+          value:
+            boolValue: 1
+        1:
+          type: Bool
+          value:
+            boolValue: 1
+        2:
+          type: Bool
+          value:
+            boolValue: 1
+        3:
+          type: Bool
+          value:
+            boolValue: 1
+        4:
+          type: Bool
+          value:
+            boolValue: 0
+view: 0
+modelRegistrationID: ""
+hatsMode: GLOBAL
+usbJoystickExtMode: 0
+usbJoystickIfMode: JOYSTICK
+usbJoystickCircularCut: 0
+radioThemesDisabled: GLOBAL
+radioGFDisabled: GLOBAL
+radioTrainerDisabled: GLOBAL
+modelHeliDisabled: GLOBAL
+modelFMDisabled: GLOBAL
+modelCurvesDisabled: GLOBAL
+modelGVDisabled: GLOBAL
+modelLSDisabled: GLOBAL
+modelSFDisabled: GLOBAL
+modelCustomScriptsDisabled: GLOBAL
+modelTelemetryDisabled: GLOBAL

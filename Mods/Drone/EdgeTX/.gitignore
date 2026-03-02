@@ -1,0 +1,54 @@
+# EdgeTX Ignore these files
+
+# https://www.atlassian.com/git/tutorials/saving-changes/gitignore
+# https://git-scm.com/docs/gitignore
+
+## Too big to store
+SDCards/**/THEMES/*
+!SDCards/WaduhMemory/THEMES/Stork_Dark
+#**/SDCards/WaduhMemory/THEMES/
+!SDCards/WaduhMemory/THEMES/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]
+!SDCards/WaduhMemory/THEMES/[Rr][Ee][Aa][Dd][Mm][Ee].[Mm][Dd]
+
+SDCards/**/LOGS/*
+!SDCards/**/LOGS/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]
+
+SDCards/**/FIRMWARE/*
+!SDCards/**/FIRMWARE/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]
+
+#SDCards/**/SCRIPTS/*
+SDCards/**/SCRIPTS/*.lua
+SDCards/**/SCRIPTS/*.luac
+#!SDCards/**/SCRIPTS/PRESETS/*
+#!SDCards/**/SCRIPTS/MIXES/*
+SDCards/**/SCRIPTS/PRESETS/*
+!SDCards/**/SCRIPTS/PRESETS/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]
+SDCards/**/SCRIPTS/MIXES/*
+!SDCards/**/SCRIPTS/MIXES/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]
+SDCards/**/SCRIPTS/TOOLS/*
+SDCards/**/SCRIPTS/TOOLS/*.luac
+!SDCards/**/SCRIPTS/TOOLS/elrs.lua
+!SDCards/**/SCRIPTS/TOOLS/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]
+SDCards/**/SCRIPTS/RGBLED/*
+
+SDCards/**/WIDGETS/*
+SDCards/**/WIDGETS/*.luac
+!SDCards/**/WIDGETS/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]
+
+SDCards/**/TEMPLATES/*
+!SDCards/**/TEMPLATES/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]
+
+### Sound files also too big. Unignore only modified ones
+
+SDCards/**/SOUNDS/*
+!SDCards/**/SOUNDS/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]
+
+### Most of the time, IMAGES contains dependencies for other apps
+
+SDCards/**/IMAGES/*
+!SDCards/**/IMAGES/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]
+
+### The FM2M is special Fly Me to the Moon's stuffs!
+
+SDCards/**/FM2M/*
+!SDCards/**/FM2M/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]

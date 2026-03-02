@@ -1,0 +1,228 @@
+checksum:  37032
+semver: 2.11.4
+board: tx16s
+calib:
+  LH:
+    mid: 512
+    spanNeg: 384
+    spanPos: 384
+  LV:
+    mid: 512
+    spanNeg: 384
+    spanPos: 384
+  RV:
+    mid: 512
+    spanNeg: 384
+    spanPos: 384
+  RH:
+    mid: 512
+    spanNeg: 384
+    spanPos: 384
+  P1:
+    mid: 512
+    spanNeg: 384
+    spanPos: 384
+  P2:
+    mid: 773
+    spanNeg: 5388
+    spanPos: 9758
+  P3:
+    mid: 512
+    spanNeg: 384
+    spanPos: 384
+  SL1:
+    mid: 512
+    spanNeg: 384
+    spanPos: 384
+  SL2:
+    mid: 512
+    spanNeg: 384
+    spanPos: 384
+  EXT1:
+    mid: 512
+    spanNeg: 384
+    spanPos: 384
+  EXT2:
+    mid: 512
+    spanNeg: 384
+    spanPos: 384
+  EXT3:
+    mid: 512
+    spanNeg: 384
+    spanPos: 384
+  EXT4:
+    mid: 512
+    spanNeg: 384
+    spanPos: 384
+currModelFilename: model1.yml
+vBatWarn: 66
+txVoltageCalibration: 0
+vBatMin: 67
+vBatMax: 83
+backlightMode: backlight_mode_all
+trainer:
+  calib:
+    0:
+      val: 0
+    1:
+      val: 0
+    2:
+      val: 0
+    3:
+      val: 0
+  mix:
+    0:
+      srcChn: 0
+      mode: REPL
+      studWeight: 100
+    1:
+      srcChn: 1
+      mode: REPL
+      studWeight: 100
+    2:
+      srcChn: 2
+      mode: REPL
+      studWeight: 100
+    3:
+      srcChn: 3
+      mode: REPL
+      studWeight: 100
+PPM_Multiplier: 0
+view: 0
+fai: 0
+disableMemoryWarning: 0
+beepMode: mode_nokeys
+alarmsFlash: 0
+disableAlarmWarning: 0
+disableRssiPoweroffAlarm: 0
+disableTrainerPoweroffAlarm: 0
+USBMode: 0
+hatsMode: SWITCHABLE
+stickDeadZone: 0
+jackMode: 0
+hapticMode: mode_all
+stickMode: 1
+timezone: 0
+timezoneMinutes: 0
+adjustRTC: 1
+inactivityTimer: 10
+internalModuleBaudrate: 5
+internalModule: TYPE_NONE
+splashMode: 3
+lightAutoOff: 2
+templateSetup: 0
+hapticLength: 2
+speakerPitch: 0
+hapticStrength: 2
+beepLength: 2
+gpsFormat: 0
+speakerVolume: 24
+backlightBright: 0
+blOffBright: 20
+switchesDelay: 0
+globalTimer: 0
+bluetoothName: horus
+bluetoothBaudrate: 0
+bluetoothMode: OFF
+countryCode: 0
+noJitterFilter: 0
+disableRtcWarning: 0
+audioMuteEnable: 0
+keysBacklight: 0
+rotEncMode: 0
+imperial: 0
+ppmunit: 0
+ttsLanguage: en
+beepVolume: 2
+wavVolume: 4
+varioVolume: 2
+varioPitch: 0
+varioRange: 0
+varioRepeat: 0
+backgroundVolume: 3
+dontPlayHello: 0
+modelQuickSelect: 0
+modelSelectLayout: 0
+labelSingleSelect: 0
+labelMultiMode: 0
+favMultiMode: 0
+serialPort:
+  VCP:
+    mode: CLI
+    power: 0
+antennaMode: MODE_PER_MODEL
+pwrOnSpeed: 0
+pwrOffSpeed: -2
+pwrOffIfInactive: 0
+disablePwrOnOffHaptic: 0
+sticksConfig:
+  0:
+    name: ""
+  1:
+    name: ""
+  2:
+    name: ""
+  3:
+    name: ""
+potsConfig:
+  P1:
+    name: ""
+    type: with_detent
+    inv: 0
+  P2:
+    name: ""
+    type: multipos_switch
+    inv: 0
+  P3:
+    name: ""
+    type: with_detent
+    inv: 0
+  SL1:
+    name: ""
+    type: slider
+    inv: 0
+  SL2:
+    name: ""
+    type: slider
+    inv: 0
+switchConfig:
+  SA:
+    type: 3pos
+    name: ""
+  SB:
+    type: 3pos
+    name: ""
+  SC:
+    type: 3pos
+    name: ""
+  SD:
+    type: 3pos
+    name: ""
+  SE:
+    type: 3pos
+    name: ""
+  SF:
+    type: 2pos
+    name: ""
+  SG:
+    type: 3pos
+    name: ""
+  SH:
+    type: toggle
+    name: ""
+ownerRegistrationID: ""
+imuMax: 0
+imuOffset: 0
+uartSampleMode: 0
+selectedTheme: ""
+radioThemesDisabled: 0
+radioGFDisabled: 0
+radioTrainerDisabled: 0
+modelHeliDisabled: 0
+modelFMDisabled: 0
+modelCurvesDisabled: 0
+modelGVDisabled: 0
+modelLSDisabled: 0
+modelSFDisabled: 0
+modelCustomScriptsDisabled: 0
+modelTelemetryDisabled: 0
