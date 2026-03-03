@@ -2,7 +2,7 @@ semver: 2.11.5
 header:
   name: Empty
   bitmap: ""
-  labels: ""
+  labels: Favorites
 noGlobalFunctions: 0
 thrTrim: 0
 trimInc: 0
@@ -197,33 +197,33 @@ screenData:
     layoutData:
       zones:
         0:
-          widgetName: "BattAnalog"
+          widgetName: BattAnalog
           widgetData:
             options:
-                0:
-                  type: Source
-                  value:
-                      source: NONE
-                1:
-                  type: Unsigned
-                  value:
-                      unsignedValue: 1
-                2:
-                  type: Unsigned
-                  value:
-                      unsignedValue: 1
-                3:
-                  type: Bool
-                  value:
-                      boolValue: 0
-                4:
-                  type: Color
-                  value:
-                      color: 0xF8FC00
-                5:
-                  type: Bool
-                  value:
-                      boolValue: 0
+              0:
+                type: Source
+                value:
+                  source: NONE
+              1:
+                type: Unsigned
+                value:
+                  unsignedValue: 1
+              2:
+                type: Unsigned
+                value:
+                  unsignedValue: 1
+              3:
+                type: Bool
+                value:
+                  boolValue: 0
+              4:
+                type: Color
+                value:
+                  color: 0xf8fc00
+              5:
+                type: Bool
+                value:
+                  boolValue: 0
       options:
         0:
           type: Bool
@@ -269,8 +269,50 @@ screenData:
           type: Bool
           value:
             boolValue: 0
+topbarData:
+  zones:
+    3:
+      widgetName: Internal GPS
+      widgetData: ~
+    4:
+      widgetName: Radio Info
+      widgetData:
+        options:
+          0:
+            type: Color
+            value:
+              color: 0xf04030
+          1:
+            type: Color
+            value:
+              color: 0xf8c000
+          2:
+            type: Color
+            value:
+              color: 0x48ac50
+    5:
+      widgetName: Date Time
+      widgetData:
+        options:
+          0:
+            type: Color
+            value:
+              color: COLIDX1
+topbarWidgetWidth:
+  0:
+    val: 1
+  1:
+    val: 1
+  2:
+    val: 1
+  3:
+    val: 1
+  4:
+    val: 1
+  5:
+    val: 1
 view: 0
-modelRegistrationID: ""
+modelRegistrationID: -eC!U*U*
 hatsMode: GLOBAL
 usbJoystickExtMode: 0
 usbJoystickIfMode: JOYSTICK

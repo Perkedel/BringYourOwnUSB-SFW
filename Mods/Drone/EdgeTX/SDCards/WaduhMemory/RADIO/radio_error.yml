@@ -1,60 +1,60 @@
-checksum:  61391
+checksum: 22584
 semver: 2.11.5
 board: tx16s
 calib:
   LH:
-    mid: 1023
-    spanNeg: 1008
-    spanPos: 1008
+    mid: 512
+    spanNeg: 384
+    spanPos: 384
   LV:
-    mid: 1023
-    spanNeg: 1008
-    spanPos: 1008
+    mid: 512
+    spanNeg: 384
+    spanPos: 384
   RV:
-    mid: 1023
-    spanNeg: 1008
-    spanPos: 1008
+    mid: 512
+    spanNeg: 384
+    spanPos: 384
   RH:
-    mid: 1023
-    spanNeg: 1008
-    spanPos: 1008
+    mid: 512
+    spanNeg: 384
+    spanPos: 384
   P1:
-    mid: 1023
-    spanNeg: 1008
-    spanPos: 1008
+    mid: 512
+    spanNeg: 384
+    spanPos: 384
   P2:
-    mid: 1023
+    mid: 773
     spanNeg: 5388
     spanPos: 9758
   P3:
-    mid: 1023
-    spanNeg: 1008
-    spanPos: 1008
+    mid: 512
+    spanNeg: 384
+    spanPos: 384
   SL1:
-    mid: 1023
-    spanNeg: 1008
-    spanPos: 1008
+    mid: 512
+    spanNeg: 384
+    spanPos: 384
   SL2:
-    mid: 1023
-    spanNeg: 1008
-    spanPos: 1008
+    mid: 512
+    spanNeg: 384
+    spanPos: 384
   EXT1:
-    mid: 1023
-    spanNeg: 1008
-    spanPos: 1008
+    mid: 512
+    spanNeg: 384
+    spanPos: 384
   EXT2:
-    mid: 1023
-    spanNeg: 1008
-    spanPos: 1008
+    mid: 512
+    spanNeg: 384
+    spanPos: 384
   EXT3:
-    mid: 1023
-    spanNeg: 1008
-    spanPos: 1008
+    mid: 512
+    spanNeg: 384
+    spanPos: 384
   EXT4:
-    mid: 1023
-    spanNeg: 1008
-    spanPos: 1008
-currModelFilename: model1.yml
+    mid: 512
+    spanNeg: 384
+    spanPos: 384
+currModelFilename: model2.yml
 vBatWarn: 66
 txVoltageCalibration: 0
 vBatMin: 67
@@ -120,7 +120,7 @@ speakerVolume: 24
 backlightBright: 0
 blOffBright: 20
 switchesDelay: 0
-globalTimer: 92
+globalTimer: 0
 bluetoothName: hoshino
 bluetoothBaudrate: 0
 bluetoothMode: TELEMETRY
@@ -259,16 +259,11 @@ switchConfig:
   SJ:
     type: toggle
     name: ""
-flexSwitches:
-  FL1:
-    channel: P1
-  FL2:
-    channel: P1
-ownerRegistrationID: -eC!U*U*
+ownerRegistrationID: ""
 imuMax: 0
 imuOffset: 0
 uartSampleMode: 0
-selectedTheme: Stork_TENS
+selectedTheme: "Stork_TENS"
 radioThemesDisabled: 0
 radioGFDisabled: 0
 radioTrainerDisabled: 0
