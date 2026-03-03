@@ -49,11 +49,15 @@ Telemetry / Widgets? Apps? Lua Scripts are the one!
   - Use Desktop version instead! [Win](https://agent.team-blacksheep.com/agent/TBS-Agent-v4-latest-windows.zip), [Linux](https://agent.team-blacksheep.com/agent/TBS-Agent-v4-latest-linux.zip), [Linux ARM64](https://agent.team-blacksheep.com/agent/TBS-Agent-v4-latest-arm64-linux.zip), [macOS M1](https://agent.team-blacksheep.com/agent/TBS-Agent-v4-latest-arm64-mac.zip), [macOS Intel](https://agent.team-blacksheep.com/agent/TBS-Agent-v4-latest-linux.zip)
   - [Lua Script EdgeTX](https://www.team-blacksheep.com/media/files/tbs-agent-100-etx.zip) (put content of zip file to `SCRIPTS/TOOLS`), [FreedomTX / OpenTX](https://www.team-blacksheep.com/media/files/tbs-agent-100-legacy.zip), [ETHOS](https://www.team-blacksheep.com/media/files/TBSAGENTLITE.zip) ([how to install on ETHOS](https://www.team-blacksheep.com/media/files/tbs-agent-lite-ethos.pdf))
 - [MadMonkey87's Telemetry Widgets](https://github.com/MadMonkey87/EdgeTX-Goodies)
-- [Yaapu's Frsky Telemetry Widgets](https://github.com/yaapu/FrskyTelemetryScripts)
+- [Yaapu's Frsky Telemetry Widgets](https://github.com/yaapu/FrskyTelemetryScripts). clone this whole repository & copy folders accordingly!
+  - for EdgeTX/OpenTX: choose & copy according `*_common` folders, based on color or b/w. Then with color or b/w, also copy the resolution folders too e.g. `c480x320/SD` for RadioMaster TX16s. 
+- [iNav / teckel12 Lua Telemetry](https://github.com/teckel12/LuaTelemetry). [Download Latest](https://github.com/teckel12/LuaTelemetry/releases/latest)
 - [bob01's Widgets](https://github.com/bob01/etx-widgets)
 - [dbarrios' Widgets](https://github.com/dbarrios83/edgetx-widgets)
 - [EdgeTX About Widgets](https://manual.edgetx.org/color-radios/screen-settings/widgets)
   - https://github.com/offer-shmuely/edgetx-x10-widgets/wiki
+- [Moshir's Flight Tracker](https://github.com/moshirfakhoury/edgetx-flightprogress-luascript)
+  - [Video](https://youtu.be/JjI5H5LCPlc)
 - [FM2M's Crazy Rices](https://fm2m.online/download) **PAID** Free trial available, [buy info](https://fm2m.online/toolbox-edgetx/#paypal). Drastically rices / changes the look of your EdgeTX RCs! Try the **ToolBox**! Other than that, there are free Telemetries:
   - [Digital Clock](https://download.fm2m.online/edgetx/stable/FM2M_DigitalClock_110.zip)
   - [Widget Pack](https://download.fm2m.online/edgetx/stable/FM2M_DigitalClock_110.zip)
@@ -70,6 +74,13 @@ Wanna make one? Res is `128x64`. Use any image making softwares! I recommend Ink
 
 - Pls Windows Clipboard broken, sauce uncopied
 
+## Model Images
+
+We got Model Images
+
+- [SkyRacoon.com](https://www.skyraccoon.com/)
+  - thancc [Painless360](https://youtu.be/41soFy3Ddfs)
+
 ## Sauce
 
 - https://www.facebook.com/groups/edgetx/posts/3708514806145350
@@ -83,3 +94,13 @@ Wanna make one? Res is `128x64`. Use any image making softwares! I recommend Ink
 - https://youtu.be/DNqbPw5NpR0
 - https://youtu.be/Pv36h7FIiYc
 - https://youtu.be/fPfm3ZjOTsE
+- https://youtu.be/YMTVJgIRzDY
+- https://youtu.be/b9dT8JthB7E
+- https://youtu.be/QS9c5OvomKI
+- https://github.com/offer-shmuely/edgetx-x10-widgets (should be included with your EdgeTX Companion update button)
+  - https://github.com/offer-shmuely/edgetx-x10-widgets/wiki
+- https://youtu.be/41soFy3Ddfs
+  - https://www.skyraccoon.com/
+- https://youtu.be/SAQHowQ3rFM
+  - https://github.com/iNavFlight/LuaTelemetry/
+  - https://github.com/yaapu/FrskyTelemetryScript/

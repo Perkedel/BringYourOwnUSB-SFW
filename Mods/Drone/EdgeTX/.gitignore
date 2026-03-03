@@ -6,6 +6,7 @@
 ## Too big to store
 SDCards/**/THEMES/*
 !SDCards/WaduhMemory/THEMES/Stork_Dark
+!SDCards/WaduhMemory/THEMES/Stork_*
 #**/SDCards/WaduhMemory/THEMES/
 !SDCards/WaduhMemory/THEMES/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]
 !SDCards/WaduhMemory/THEMES/[Rr][Ee][Aa][Dd][Mm][Ee].[Mm][Dd]
@@ -30,6 +31,7 @@ SDCards/**/SCRIPTS/TOOLS/*.luac
 !SDCards/**/SCRIPTS/TOOLS/elrs.lua
 !SDCards/**/SCRIPTS/TOOLS/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]
 SDCards/**/SCRIPTS/RGBLED/*
+SDCards/**/SCRIPTS/TELEMETRY/*
 
 SDCards/**/WIDGETS/*
 SDCards/**/WIDGETS/*.luac

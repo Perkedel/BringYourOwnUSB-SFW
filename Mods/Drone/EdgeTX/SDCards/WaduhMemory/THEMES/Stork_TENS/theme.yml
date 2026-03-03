@@ -1,0 +1,17 @@
+---
+summary: 
+   name: "Stork_TENS"
+   author: "JOELwindows7"
+   info: "Attempt to theme. Here's Stork's Remote Mod theme I could come up with, with whatever EdgeTX capable to theme of yey!"
+colors: 
+   PRIMARY1: 0xF8FCF8
+   PRIMARY2: 0xF88000
+   PRIMARY3: 0x002418
+   SECONDARY1: 0x000000
+   SECONDARY2: 0xE8FC00
+   SECONDARY3: 0x0058A0
+   FOCUS: 0x1094F8
+   EDIT: 0x001830
+   ACTIVE: 0x007400
+   WARNING: 0xF80000
+   DISABLED: 0x989898

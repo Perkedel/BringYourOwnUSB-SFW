@@ -1,5 +1,5 @@
-checksum:  37032
-semver: 2.11.4
+checksum: 22584
+semver: 2.11.5
 board: tx16s
 calib:
   LH:
@@ -54,7 +54,7 @@ calib:
     mid: 512
     spanNeg: 384
     spanPos: 384
-currModelFilename: model1.yml
+currModelFilename: model2.yml
 vBatWarn: 66
 txVoltageCalibration: 0
 vBatMin: 67
@@ -102,14 +102,14 @@ stickDeadZone: 0
 jackMode: 0
 hapticMode: mode_all
 stickMode: 1
-timezone: 0
+timezone: 7
 timezoneMinutes: 0
 adjustRTC: 1
 inactivityTimer: 10
-internalModuleBaudrate: 5
-internalModule: TYPE_NONE
+internalModuleBaudrate: 0
+internalModule: TYPE_CROSSFIRE
 splashMode: 3
-lightAutoOff: 2
+lightAutoOff: 24
 templateSetup: 0
 hapticLength: 2
 speakerPitch: 0
@@ -121,9 +121,9 @@ backlightBright: 0
 blOffBright: 20
 switchesDelay: 0
 globalTimer: 0
-bluetoothName: horus
+bluetoothName: hoshino
 bluetoothBaudrate: 0
-bluetoothMode: OFF
+bluetoothMode: TELEMETRY
 countryCode: 0
 noJitterFilter: 0
 disableRtcWarning: 0
@@ -141,12 +141,18 @@ varioRange: 0
 varioRepeat: 0
 backgroundVolume: 3
 dontPlayHello: 0
-modelQuickSelect: 0
+modelQuickSelect: 1
 modelSelectLayout: 0
 labelSingleSelect: 0
 labelMultiMode: 0
 favMultiMode: 0
 serialPort:
+  AUX1:
+    mode: TELEMETRY_IN
+    power: 0
+  AUX2:
+    mode: SPACEMOUSE
+    power: 0
   VCP:
     mode: CLI
     power: 0
@@ -155,6 +161,27 @@ pwrOnSpeed: 0
 pwrOffSpeed: -2
 pwrOffIfInactive: 0
 disablePwrOnOffHaptic: 0
+customFn:
+  59:
+    swtch: RADIO_ACTIVITY
+    func: PLAY_SOUND
+    def: Alrm,0,1x
+  60:
+    swtch: ON
+    func: BACKLIGHT
+    def: P1,1
+  61:
+    swtch: SF0
+    func: BACKLIGHT
+    def: SH,0
+  62:
+    swtch: SF2
+    func: BACKLIGHT
+    def: P1,0
+  63:
+    swtch: ON
+    func: VOLUME
+    def: P3,1
 sticksConfig:
   0:
     name: ""
@@ -185,6 +212,22 @@ potsConfig:
     name: ""
     type: slider
     inv: 0
+  EXT1:
+    name: ""
+    type: slider
+    inv: 0
+  EXT2:
+    name: ""
+    type: slider
+    inv: 0
+  EXT3:
+    name: ""
+    type: slider
+    inv: 0
+  EXT4:
+    name: ""
+    type: slider
+    inv: 0
 switchConfig:
   SA:
     type: 3pos
@@ -210,11 +253,17 @@ switchConfig:
   SH:
     type: toggle
     name: ""
+  SI:
+    type: 2pos
+    name: ""
+  SJ:
+    type: toggle
+    name: ""
 ownerRegistrationID: ""
 imuMax: 0
 imuOffset: 0
 uartSampleMode: 0
-selectedTheme: ""
+selectedTheme: "Stork_TENS"
 radioThemesDisabled: 0
 radioGFDisabled: 0
 radioTrainerDisabled: 0

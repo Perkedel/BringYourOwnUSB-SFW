@@ -1,6 +1,6 @@
 semver: 2.11.5
 header:
-  name: Empty
+  name: RoundRobin
   bitmap: ""
   labels: ""
 noGlobalFunctions: 0
@@ -94,6 +94,25 @@ mixData:
     flightModes: 000000000
     offset: 0
     name: ""
+  - destCh: 31
+    srcRaw: I31
+    weight: 100
+    swtch: NONE
+    curve:
+      type: 0
+      value: 0
+    delayPrec: 0
+    delayUp: 0
+    delayDown: 0
+    speedPrec: 0
+    speedUp: 0
+    speedDown: 0
+    carryTrim: 0
+    mltpx: ADD
+    mixWarn: 0
+    flightModes: 000000000
+    offset: 0
+    name: RoundR
 expoData:
   - srcRaw: Rud
     scale: 0
@@ -147,6 +166,19 @@ expoData:
       value: 0
     trimSource: 0
     name: ""
+  - srcRaw: SH
+    scale: 0
+    mode: 3
+    chn: 31
+    swtch: NONE
+    flightModes: 000000000
+    weight: 100
+    offset: 0
+    curve:
+      type: 0
+      value: 0
+    trimSource: 0
+    name: Round
 inputNames:
   0:
     val: Rud
@@ -156,6 +188,130 @@ inputNames:
     val: Thr
   3:
     val: Ail
+  31:
+    val: Roun
+logicalSw:
+  0:
+    func: FUNC_VPOS
+    def: ch(31),1
+    delay: 0
+    duration: 0
+    andsw: NONE
+    lsPersist: 0
+    lsState: 0
+  1:
+    func: FUNC_VPOS
+    def: gv(8),10
+    delay: 0
+    duration: 0
+    andsw: NONE
+    lsPersist: 0
+    lsState: 0
+  2:
+    func: FUNC_VEQUAL
+    def: gv(8),0
+    delay: 0
+    duration: 0
+    andsw: NONE
+    lsPersist: 0
+    lsState: 0
+  3:
+    func: FUNC_VEQUAL
+    def: gv(8),1
+    delay: 0
+    duration: 0
+    andsw: NONE
+    lsPersist: 0
+    lsState: 0
+  4:
+    func: FUNC_VEQUAL
+    def: gv(8),2
+    delay: 0
+    duration: 0
+    andsw: NONE
+    lsPersist: 0
+    lsState: 0
+  5:
+    func: FUNC_VEQUAL
+    def: gv(8),3
+    delay: 0
+    duration: 0
+    andsw: NONE
+    lsPersist: 0
+    lsState: 0
+  6:
+    func: FUNC_VEQUAL
+    def: gv(8),4
+    delay: 0
+    duration: 0
+    andsw: NONE
+    lsPersist: 0
+    lsState: 0
+  7:
+    func: FUNC_VEQUAL
+    def: gv(8),5
+    delay: 0
+    duration: 0
+    andsw: NONE
+    lsPersist: 0
+    lsState: 0
+  8:
+    func: FUNC_VEQUAL
+    def: gv(8),6
+    delay: 0
+    duration: 0
+    andsw: NONE
+    lsPersist: 0
+    lsState: 0
+  9:
+    func: FUNC_VEQUAL
+    def: gv(8),7
+    delay: 0
+    duration: 0
+    andsw: NONE
+    lsPersist: 0
+    lsState: 0
+  10:
+    func: FUNC_VEQUAL
+    def: gv(8),8
+    delay: 0
+    duration: 0
+    andsw: NONE
+    lsPersist: 0
+    lsState: 0
+  11:
+    func: FUNC_VEQUAL
+    def: gv(8),9
+    delay: 0
+    duration: 0
+    andsw: NONE
+    lsPersist: 0
+    lsState: 0
+  12:
+    func: FUNC_VEQUAL
+    def: gv(8),10
+    delay: 0
+    duration: 0
+    andsw: NONE
+    lsPersist: 0
+    lsState: 0
+  13:
+    func: FUNC_VNEG
+    def: gv(8),-1
+    delay: 0
+    duration: 0
+    andsw: NONE
+    lsPersist: 0
+    lsState: 0
+customFn:
+  0:
+    swtch: L1
+    func: ADJUST_GVAR
+    def: 8,IncDec,1,1
+  1:
+    swtch: L2
+    func: ADJUST_GVAR
+    def: 8,Cst,0,1
 swashR:
   type: TYPE_NONE
   value: 0
@@ -193,59 +349,6 @@ trainerData:
   pulsePol: 0
 screenData:
   0:
-    LayoutId: Layout2P1
-    layoutData:
-      zones:
-        0:
-          widgetName: "BattAnalog"
-          widgetData:
-            options:
-                0:
-                  type: Source
-                  value:
-                      source: NONE
-                1:
-                  type: Unsigned
-                  value:
-                      unsignedValue: 1
-                2:
-                  type: Unsigned
-                  value:
-                      unsignedValue: 1
-                3:
-                  type: Bool
-                  value:
-                      boolValue: 0
-                4:
-                  type: Color
-                  value:
-                      color: 0xF8FC00
-                5:
-                  type: Bool
-                  value:
-                      boolValue: 0
-      options:
-        0:
-          type: Bool
-          value:
-            boolValue: 1
-        1:
-          type: Bool
-          value:
-            boolValue: 1
-        2:
-          type: Bool
-          value:
-            boolValue: 1
-        3:
-          type: Bool
-          value:
-            boolValue: 1
-        4:
-          type: Bool
-          value:
-            boolValue: 0
-  1:
     LayoutId: Layout2P1
     layoutData:
       options:
