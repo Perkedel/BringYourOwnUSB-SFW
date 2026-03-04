@@ -23,6 +23,7 @@ Use the Companion to start the SDCard content!
 Unfortunately, EdgeTX Companion has Cons atm:
 
 - You cannot edit widgets with companion. Even tho you've set up models in `.etx` file already, the companion does not support widget editing, you must use radio and resync everything back to here and forth.
+  - Wait! You can use the emulator directly by using `SD Path` mode. Changes this time will now writes to that `SD Path`. Use emulator this way to rice your radio before you have one, then back to Companion, to `Read from SD Path`, and save to `.etx` again.
 
 ## Sounds
 
@@ -37,7 +38,7 @@ Unfortunately, EdgeTX Companion has Cons atm:
 - [G711 Sound Converter](https://g711.org). EdgeTX works best with up to **16-Bit 32 KHz PCM** WAV file. Be sure to convert them to this low quality first, or else you'll get too loud distortion.
 - [3CX Sound Converter](https://3cx.com/docs/converting-wav-file) (yes, that PABX company)
 - [Bill Clark's how to custom sound](https://youtu.be/DqF7HUsFrnE)
-- [Windows CE Startup](SDCards/WaduhMemory/SOUNDS/en/wcelod.wav). I added Windows CE startup sound I yoinked from a WinCE device. I have converted this with Audacity, export 32 Khz 16 Bit (coz original was 12.8 Khz idk) as this new compatible for radio file.
+- [Windows CE Startup](SDCards/WaduhMemory/SOUNDS/en/wcelod.wav). I added Windows CE startup sound I yoinked from a WinCE device. I have converted this with Audacity, export to 32 Khz 16 Bit (coz original was 12.8 Khz idk), as this is new compatible format for the radio.
   - You can replace `SD://SOUNDS/(lang)/SYSTEM/hello.wav` with this, or
   - just make this Global Function that's `ON` which is `Play Track` `wcelod.wav`. This will get late and break the immersive joke due to `👩🗣️ Welcome to EdgeTX` first, then this sound, in that Global Function order.
   - You can also use other OS startup sound for alternative jokes, like **Windows XP Logon**, or something idk.
@@ -55,10 +56,10 @@ Telemetry / Widgets? Apps? Lua Scripts are the one!
   - [Lua Script EdgeTX](https://www.team-blacksheep.com/media/files/tbs-agent-100-etx.zip) (put content of zip file to `SCRIPTS/TOOLS`), [FreedomTX / OpenTX](https://www.team-blacksheep.com/media/files/tbs-agent-100-legacy.zip), [ETHOS](https://www.team-blacksheep.com/media/files/TBSAGENTLITE.zip) ([how to install on ETHOS](https://www.team-blacksheep.com/media/files/tbs-agent-lite-ethos.pdf))
 - [MadMonkey87's Telemetry Widgets](https://github.com/MadMonkey87/EdgeTX-Goodies)
 - [Yaapu's Frsky Telemetry Widgets](https://github.com/yaapu/FrskyTelemetryScripts). clone this whole repository & copy folders accordingly!
-  - for EdgeTX/OpenTX: choose & copy according `*_common` folders, based on color or b/w. Then with color or b/w, also copy the resolution folders too e.g. `c480x320/SD` for RadioMaster TX16s. 
+  - for EdgeTX/OpenTX: choose & copy according `*_common` folders, based on `color` or `b/w` model you had. Then with `color` or `b/w`, also copy the resolution folders too e.g. `c480x320/SD` for RadioMaster TX16s which has `Color` display. 
 - [iNav / teckel12 Lua Telemetry](https://github.com/teckel12/LuaTelemetry). [Download Latest](https://github.com/teckel12/LuaTelemetry/releases/latest)
 - [bob01's Widgets](https://github.com/bob01/etx-widgets)
-- [dbarrios' Widgets](https://github.com/dbarrios83/edgetx-widgets)
+- [dbarrios' Widgets](https://github.com/dbarrios83/edgetx-widgets). Daniel Barrios' Telemetry Collections!, **Full Screen All-in-1 Widget Available & Recommended**
 - [EdgeTX About Widgets](https://manual.edgetx.org/color-radios/screen-settings/widgets)
   - https://github.com/offer-shmuely/edgetx-x10-widgets/wiki
 - [Moshir's Flight Tracker](https://github.com/moshirfakhoury/edgetx-flightprogress-luascript)

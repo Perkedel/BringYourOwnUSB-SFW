@@ -39,6 +39,7 @@ SDCards/**/WIDGETS/*.luac
 
 SDCards/**/TEMPLATES/*
 !SDCards/**/TEMPLATES/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]
+!SDCards/**/TEMPLATES/2.[Pp][Ee][Rr][Ss][Oo][Nn][Aa][Ll]
 
 ### Sound files also too big. Unignore only modified ones
 

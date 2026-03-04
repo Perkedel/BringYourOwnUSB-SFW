@@ -1046,7 +1046,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Thumb"
-     style="display:inline">
+     style="display:none">
     <g
        inkscape:groupmode="layer"
        id="layer3"
@@ -1077,7 +1077,9 @@
     <g
        inkscape:groupmode="layer"
        id="layer4"
-       inkscape:label="Stork_TENS_thumb">
+       inkscape:label="Stork_TENS_thumb"
+       sodipodi:insensitive="true"
+       style="display:none">
       <g
          id="g9"
          transform="matrix(4.0676936,0,0,4.0676936,5.2859019,127.9395)"
