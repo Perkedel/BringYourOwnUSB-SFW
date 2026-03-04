@@ -42,13 +42,18 @@ SDCards/**/TEMPLATES/*
 
 ### Sound files also too big. Unignore only modified ones
 
-SDCards/**/SOUNDS/*
+#SDCards/**/SOUNDS/*
+SDCards/**/SOUNDS/*/*
 !SDCards/**/SOUNDS/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]
+!SDCards/**/SOUNDS/*/wcelod.wav
+!SDCards/**/SOUNDS/wcelod.wav
 
 ### Most of the time, IMAGES contains dependencies for other apps
 
 SDCards/**/IMAGES/*
 !SDCards/**/IMAGES/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]
+!SDCards/**/IMAGES/mav.png
+!SDCards/**/IMAGES/perkedel
 
 ### The FM2M is special Fly Me to the Moon's stuffs!
 

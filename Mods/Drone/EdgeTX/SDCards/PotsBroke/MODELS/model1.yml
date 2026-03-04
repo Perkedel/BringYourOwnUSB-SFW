@@ -1,8 +1,8 @@
 semver: 2.11.5
 header: 
-   name: "Empty"
-   bitmap: "mav.png"
-   labels: "Favorites"
+   name: "MODEL01"
+   bitmap: ""
+   labels: ""
 telemetryProtocol: 0
 thrTrim: 0
 noGlobalFunctions: 0
@@ -94,10 +94,13 @@ expoData:
    mode: 3
    scale: 0
    trimSource: 0
-   srcRaw: "Rud"
+   srcRaw: "Ail"
    weight: 100
    offset: 0
    swtch: "NONE"
+   curve: 
+      type: 1
+      value: 0
    chn: 0
    flightModes: 000000000
    name: ""
@@ -109,6 +112,9 @@ expoData:
    weight: 100
    offset: 0
    swtch: "NONE"
+   curve: 
+      type: 1
+      value: 0
    chn: 1
    flightModes: 000000000
    name: ""
@@ -120,6 +126,9 @@ expoData:
    weight: 100
    offset: 0
    swtch: "NONE"
+   curve: 
+      type: 1
+      value: 0
    chn: 2
    flightModes: 000000000
    name: ""
@@ -127,14 +136,34 @@ expoData:
    mode: 3
    scale: 0
    trimSource: 0
-   srcRaw: "Ail"
+   srcRaw: "Rud"
    weight: 100
    offset: 0
    swtch: "NONE"
+   curve: 
+      type: 1
+      value: 0
    chn: 3
    flightModes: 000000000
    name: ""
 thrTraceSrc: Thr
+switchWarning: 
+   SA:
+      pos: up
+   SB:
+      pos: up
+   SC:
+      pos: up
+   SD:
+      pos: up
+   SE:
+      pos: up
+   SF:
+      pos: up
+   SG:
+      pos: up
+   SH:
+      pos: up
 rssiSource: none
 rfAlarms: 
    warning: 45
@@ -142,78 +171,18 @@ rfAlarms:
 thrTrimSw: 0
 potsWarnMode: WARN_OFF
 jitterFilter: GLOBAL
-trainerData: 
-   mode: OFF
-   channelsStart: 0
-   channelsCount: -8
-   frameLength: 0
-   delay: 0
-   pulsePol: 0
 inputNames: 
    0:
-      val: "Rud"
+      val: "Ail"
    1:
       val: "Ele"
    2:
       val: "Thr"
    3:
-      val: "Ail"
+      val: "Rud"
 potsWarnEnabled: 0
 screenData: 
    0:
-      LayoutId: "Layout2P1"
-      layoutData: 
-         zones: 
-            0:
-               widgetName: "BattAnalog"
-               widgetData: 
-                  options: 
-                     0:
-                        type: Source
-                        value: 
-                           source: NONE
-                     1:
-                        type: Unsigned
-                        value: 
-                           unsignedValue: 1
-                     2:
-                        type: Unsigned
-                        value: 
-                           unsignedValue: 1
-                     3:
-                        type: Bool
-                        value: 
-                           boolValue: 0
-                     4:
-                        type: Color
-                        value: 
-                           color: 0xF8FC00
-                     5:
-                        type: Bool
-                        value: 
-                           boolValue: 0
-         options: 
-            0:
-               type: Bool
-               value: 
-                  boolValue: 1
-            1:
-               type: Bool
-               value: 
-                  boolValue: 1
-            2:
-               type: Bool
-               value: 
-                  boolValue: 1
-            3:
-               type: Bool
-               value: 
-                  boolValue: 1
-            4:
-               type: Bool
-               value: 
-                  boolValue: 0
-   1:
       LayoutId: "Layout2P1"
       layoutData: 
          options: 

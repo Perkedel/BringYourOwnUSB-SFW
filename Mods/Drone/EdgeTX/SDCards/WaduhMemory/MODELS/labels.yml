@@ -1,4 +1,31 @@
 Labels:
-  WaduhCoy: ~
-  Favorites: ~
+  "WaduhCoy":
+  "Favorites":
 Sort: 1
+Models:
+  model1.yml:
+    hash: "1f510000645c8a43"
+    name: "Waduh"
+    mod0type: 5
+    labels: "WaduhCoy,Favorites"
+    bitmap: "mav.png"
+    lastopen: 1772608967
+  model2.yml:
+    hash: "7e170000645c5321"
+    name: "Empty"
+    labels: "Favorites"
+    bitmap: "mav.png"
+    lastopen: 1772597431
+  model3.yml:
+    hash: "7c110000645c9d31"
+    name: "Simulacral"
+    labels: "Favorites"
+    bitmap: ""
+    lastopen: 1772604712
+  model4.yml:
+    hash: "69180000645c0b1e"
+    name: "RoundRobin"
+    labels: ""
+    bitmap: ""
+    lastopen: 0
+

@@ -1,4 +1,4 @@
-checksum: 14716
+checksum: 18725
 manuallyEdited: 0
 timezoneMinutes: 0
 ppmunit: 0
@@ -22,17 +22,17 @@ calib:
       spanNeg: 384
       spanPos: 384
    P1:
-      mid: 0
-      spanNeg: 0
-      spanPos: 2016
+      mid: 512
+      spanNeg: 384
+      spanPos: 384
    P2:
       mid: 773
       spanNeg: 5388
       spanPos: 9758
    P3:
-      mid: 2048
-      spanNeg: 2016
-      spanPos: 0
+      mid: 512
+      spanNeg: 384
+      spanPos: 384
    SL1:
       mid: 512
       spanNeg: 384
@@ -64,7 +64,7 @@ antennaMode: MODE_PER_MODEL
 disableRtcWarning: 0
 keysBacklight: 0
 dontPlayHello: 0
-internalModule: TYPE_CROSSFIRE
+internalModule: TYPE_MULTIMODULE
 trainer: 
    mix: 
       0:
@@ -90,15 +90,15 @@ alarmsFlash: 0
 disableMemoryWarning: 0
 disableAlarmWarning: 0
 stickMode: 1
-timezone: 7
-adjustRTC: 1
+timezone: 0
+adjustRTC: 0
 inactivityTimer: 10
-internalModuleBaudrate: 0
-splashMode: 3
-hapticMode: mode_all
+internalModuleBaudrate: 5
+splashMode: 0
+hapticMode: mode_nokeys
 switchesDelay: 0
-lightAutoOff: 24
-templateSetup: 0
+lightAutoOff: 2
+templateSetup: 21
 PPM_Multiplier: 0
 hapticLength: 2
 beepLength: 2
@@ -110,12 +110,12 @@ speakerVolume: 24
 vBatMin: 67
 vBatMax: 83
 backlightBright: 0
-globalTimer: 4371
+globalTimer: 6
 bluetoothBaudrate: 0
-bluetoothMode: TELEMETRY
+bluetoothMode: OFF
 countryCode: 0
 pwrOnSpeed: 0
-pwrOffSpeed: -2
+pwrOffSpeed: 0
 noJitterFilter: 0
 imperial: 0
 disableRssiPoweroffAlarm: 0
@@ -129,41 +129,6 @@ backgroundVolume: 3
 varioPitch: 0
 varioRange: 0
 varioRepeat: 0
-customFn: 
-   11:
-      swtch: "ON"
-      func: PLAY_TRACK
-      def: "wcelod,1,1x"
-   59:
-      swtch: "RADIO_ACTIVITY"
-      func: PLAY_SOUND
-      def: "Alrm,0,1x"
-   60:
-      swtch: "ON"
-      func: BACKLIGHT
-      def: "P1,1"
-   61:
-      swtch: "SF0"
-      func: BACKLIGHT
-      def: "SH,0"
-   62:
-      swtch: "SF2"
-      func: BACKLIGHT
-      def: "P1,0"
-   63:
-      swtch: "ON"
-      func: VOLUME
-      def: "P3,1"
-serialPort: 
-   AUX1:
-      mode: TELEMETRY_IN
-      power: 0
-   AUX2:
-      mode: SPACEMOUSE
-      power: 0
-   VCP:
-      mode: CLI
-      power: 0
 potsConfig: 
    P1:
       type: with_detent
@@ -182,22 +147,6 @@ potsConfig:
       inv: 0
       name: ""
    SL2:
-      type: slider
-      inv: 0
-      name: ""
-   EXT1:
-      type: slider
-      inv: 0
-      name: ""
-   EXT2:
-      type: slider
-      inv: 0
-      name: ""
-   EXT3:
-      type: slider
-      inv: 0
-      name: ""
-   EXT4:
       type: slider
       inv: 0
       name: ""
@@ -226,27 +175,21 @@ switchConfig:
    SH:
       type: toggle
       name: ""
-   SI:
-      type: 2pos
-      name: ""
-   SJ:
-      type: toggle
-      name: ""
 flexSwitches: 
    FL1:
       channel: P1
    FL2:
       channel: P1
 currModelFilename: "model1.yml"
-modelQuickSelect: 1
+modelQuickSelect: 0
 blOffBright: 20
-bluetoothName: "hoshino"
+bluetoothName: "horus"
 ownerRegistrationID: "-eC!U*U*"
 rotEncMode: 0
 uartSampleMode: 0
 imuMax: 0
 imuOffset: 0
-selectedTheme: "Stork_TENS"
+selectedTheme: "EdgeTX Default"
 labelSingleSelect: 0
 labelMultiMode: 0
 favMultiMode: 0

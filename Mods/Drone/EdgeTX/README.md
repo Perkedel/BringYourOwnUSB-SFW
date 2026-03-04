@@ -36,6 +36,11 @@ Unfortunately, EdgeTX Companion has Cons atm:
 - [EdgeTX default TTS soundpack](https://github.com/EdgeTX/edgetx-sdcard-sounds). No Bahasa Indonesia atm.
 - [G711 Sound Converter](https://g711.org). EdgeTX works best with up to **16-Bit 32 KHz PCM** WAV file. Be sure to convert them to this low quality first, or else you'll get too loud distortion.
 - [3CX Sound Converter](https://3cx.com/docs/converting-wav-file) (yes, that PABX company)
+- [Bill Clark's how to custom sound](https://youtu.be/DqF7HUsFrnE)
+- [Windows CE Startup](SDCards/WaduhMemory/SOUNDS/en/wcelod.wav). I added Windows CE startup sound I yoinked from a WinCE device. I have converted this with Audacity, export 32 Khz 16 Bit (coz original was 12.8 Khz idk) as this new compatible for radio file.
+  - You can replace `SD://SOUNDS/(lang)/SYSTEM/hello.wav` with this, or
+  - just make this Global Function that's `ON` which is `Play Track` `wcelod.wav`. This will get late and break the immersive joke due to `👩🗣️ Welcome to EdgeTX` first, then this sound, in that Global Function order.
+  - You can also use other OS startup sound for alternative jokes, like **Windows XP Logon**, or something idk.
 
 ## Lua Scripts
 
