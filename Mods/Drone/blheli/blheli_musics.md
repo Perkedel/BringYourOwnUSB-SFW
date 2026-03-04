@@ -142,150 +142,24 @@ Musics for your **BLHeli_32**, covers by RoxWolf below!
   - ESC 4: ✅ Music On, Gen. Length = `14`, Gen. Interval = `2` ;`d`
 - Template BLHeli_32 Configurator Apply to all ESCs
   - All: ✅ Music On, Gen. Length = `14`, Gen. Interval = `2`; `abcd`
-
-#### [Axel F Crazy Frog Theme](https://youtu.be/_8VD5BeEb8U)
-
-ESC 1:
-
-```
-Set Music On
-Set Gen. Length 15
-Set Gen. Interval 0    
-Paste these notes:
-F5 4 P4 G#5 4 P8 F5 8 P8 F5 8 A#5 4 F5 4 D#5 4 F5 4 P4 C6 4 P 8 F5 8 P8 F5 8 C#6 4 C6 4 G#5 4 F5 4 C6 4 F6 4 F5 8 D#5 8 P8 D#5 8 C5 4 G5 4 F5 1
-```
-
-ESC 2:
-
-```
-Set Music On
-Set Gen. Length 15
-Set Gen. Interval 0    
-Paste these notes:
-F4 4 P4 F5 4 P8 D#4 8 P8 D#5 8 C4 4 C5 4 D#4 4 F4 4 P4 F5 4 P4 P8 C4 8 C4 4 D#4 4 F4 4 C#4 4 P4 C#5 4 P8 D#4 8 P8 D#5 8 C5 4 D#4 4 F4 1
-```
-
-ESC 3:
-
-```
-Set Music On
-Set Gen. Length 15
-Set Gen. Interval 0    
-Paste these notes:
-F4 4 P4 F5 4 P8 D#4 8 P8 D#5 8 C4 4 C5 4 D#4 4 F4 4 P4 F5 4 P4 P8 C4 8 C4 4 D#4 4 F4 4 C#4 4 P4 C#5 4 P8 D#4 8 P8 D#5 8 C5 4 D#4 4 F4 1
-```
-
-ESC 4:
-
-```
-Set Music On
-Set Gen. Length 15
-Set Gen. Interval 0    
-Paste these notes:
-F6 4 P4 G#6 4 P8 F6 8 P8 F6 8 A#6 4 F6 4 D#6 4 F6 4 P4 C7 4 P8 F6 8 P8 F6 8 C#7 4 C7 4 G#6 4 F6 4 C7 4 F7 4 F6 8 D#6 8 P8 D#6 8 C6 4 G6 4 F6 1
-```
-
-#### [Street Fighters II](https://youtu.be/s49Uj4EML7Y)
-
-ESC 1:
-
-```
-Set Music On
-Set Gen. Length 14
-Set Gen. Interval 2    
-Paste these notes:
-G4 2 G4 2 P8 P16 C5 8 D5 8 C5 8 A#4 8 A4 8 G4 8 F4 8 D#4 2 D#4 2 P8 P16 D#4 8 D4 8 D#4 4 D#4 4 P8 C4 2 C4 4 P8 D4 4 D4 4 D4 4 P8 F4 4 G4 8 P8 G4 8 F4 8 P8 F4 8 G4 4 P8 C5 8 D5 8 C5 8 G4 4
-```
-
-ESC 2:
-
-```
-Set Music On
-Set Gen. Length 14
-Set Gen. Interval 2     
-Paste these notes:
-A#5 8 P8 A#5 8 A5 8 P8 A5 8 A#5 1 P32 A5 8 P8 A#5 8 P8 A#5 8 A5 8 P8 A5 8 A#5 1 P32 A5 8 P8 A#5 8 A5 8 P8 A#5 8 P8 A5 8 P8 C6 8 P8 C6 8 A#5 4 A5 4 F5 4 A#5 8 P8 A#5 8 A5 8 P8 A5 8 A#5 1
-```
-
-ESC 3:
-
-```
-Set Music On
-Set Gen. Length 14
-Set Gen. Interval 2    
-Paste these notes:
-G5 8 P8 G5 8 F5 8 P8 F5 8 G5 1 P32 F5 8 P8 G5 8 P8 G5 8 F5 8 P8 F5 8 G5 1 P32 F5 8 P8 G5 8 F5 8 P8 G5 8 P8 F5 8 P8 G5 8 P8 G5 8 F5 4 F5 4 C5 4 G5 8 P8 G5 8 F5 8 P8 F5 8 G5 1
-```
-
-ESC 4:
-
-```
-Set Music On
-Set Gen. Length 14
-Set Gen. Interval 2     
-Paste these notes:
-D5 8 P8 D5 8 C5 8 P8 C5 8 D5 1 P32 C5 8 P8 D5 8 P8 D5 8 C5 8 P8 C5 8 D5 1 P32 C5 8 P8 D5 8 C5 8 P8 D5 8 P8 C5 8 P8 D#5 8 P8 D#5 8 D5 4 C5 4 A4 4 D5 8 P8 D5 8 C5 8 P8 C5 8 D5 1
-```
-
-oscar:
-
-```
-A#5 8 P8 A#5 8 A5 8 P8 A5 8 A#5 1 P32 A5 8 P8 A#5 8 P8 A#5 8 A5 8 P8 A5 8 A#5 1 P32 A5 8 P8 A#5 8 A5 8 P8 A#5 8 P8 A5 8 P8 C6 8 P8 C6 8 A#5 4 A5 4 F5 4 A#5 8 P8 A#5 8 A5 8 P8 A5 8 A#5 1
-```
-
-#### Fast Silent (does not delete Ready tone)
-
-All:
-
-```
-Set Music On
-Set Gen. Length 8
-Set Gen. Interval 0    
-Paste these notes:
-P128
-```
-
-#### Europe - Final Countdown
-
-ESC 1:
-
-```
-Set Music On
-Set Gen. Length 15
-Set Gen. Interval 0    
-Paste these notes:
-D#5 1 D#5 1 E5 1 E5 1 E5 1 E51 C#5 1 C#5 1 D#5 4
-```
-
-ESC 2:
-
-```
-Set Music On
-Set Gen. Length 15
-Set Gen. Interval 0    
-Paste these notes:
-B4 1 B4 1 G#4 1 B4 1 C#5 1 C#5 1 A#4 1 A#4 1 B4 4
-```
-
-ESC 3:
-
-```
-Set Music On
-Set Gen. Length 15
-Set Gen. Interval 0   
-Paste these notes:
-G#4 1 G#4 2 F#4 2 E4 1 E4 1 G#4 1 G#4 1 F#4 1 G4 1 G#4 4
-```
-
-ESC 4:
-
-```
-Set Music On
-Set Gen. Length 15
-Set Gen. Interval 0    
-Paste these notes:
-P2 P4 D#6 8 C#6 8 D#6 2 G#5 2 P2 P4 E6 8 D#6 8 E6 8 P8 D#6 8 P8 C#6 2 P2 P4 E6 8 D#6 8 E6 2 G#5 2 P2 P4 C#6 8 B5 8 C#6 8 P8 B5 8 P8 A#5 8 P8 F#6 8 P8 G#6 4
-```
+- [Axel F Crazy Frog Theme](https://youtu.be/_8VD5BeEb8U)
+  - ESC 1: ✅ Music On, Gen. Length = `15`, Gen. Interval = `0` ;`F5 4 P4 G#5 4 P8 F5 8 P8 F5 8 A#5 4 F5 4 D#5 4 F5 4 P4 C6 4 P 8 F5 8 P8 F5 8 C#6 4 C6 4 G#5 4 F5 4 C6 4 F6 4 F5 8 D#5 8 P8 D#5 8 C5 4 G5 4 F5 1`
+  - ESC 2: ✅ Music On, Gen. Length = `15`, Gen. Interval = `0` ;`F4 4 P4 F5 4 P8 D#4 8 P8 D#5 8 C4 4 C5 4 D#4 4 F4 4 P4 F5 4 P4 P8 C4 8 C4 4 D#4 4 F4 4 C#4 4 P4 C#5 4 P8 D#4 8 P8 D#5 8 C5 4 D#4 4 F4 1`
+  - ESC 3: ✅ Music On, Gen. Length = `15`, Gen. Interval = `0` ;`F4 4 P4 F5 4 P8 D#4 8 P8 D#5 8 C4 4 C5 4 D#4 4 F4 4 P4 F5 4 P4 P8 C4 8 C4 4 D#4 4 F4 4 C#4 4 P4 C#5 4 P8 D#4 8 P8 D#5 8 C5 4 D#4 4 F4 1`
+  - ESC 4: ✅ Music On, Gen. Length = `15`, Gen. Interval = `0` ;`F6 4 P4 G#6 4 P8 F6 8 P8 F6 8 A#6 4 F6 4 D#6 4 F6 4 P4 C7 4 P8 F6 8 P8 F6 8 C#7 4 C7 4 G#6 4 F6 4 C7 4 F7 4 F6 8 D#6 8 P8 D#6 8 C6 4 G6 4 F6 1`
+- [Street Fighters II](https://youtu.be/s49Uj4EML7Y)
+  - ESC 1: ✅ Music On, Gen. Length = `14`, Gen. Interval = `2` ;`G4 2 G4 2 P8 P16 C5 8 D5 8 C5 8 A#4 8 A4 8 G4 8 F4 8 D#4 2 D#4 2 P8 P16 D#4 8 D4 8 D#4 4 D#4 4 P8 C4 2 C4 4 P8 D4 4 D4 4 D4 4 P8 F4 4 G4 8 P8 G4 8 F4 8 P8 F4 8 G4 4 P8 C5 8 D5 8 C5 8 G4 4`
+  - ESC 2: ✅ Music On, Gen. Length = `14`, Gen. Interval = `2` ;`A#5 8 P8 A#5 8 A5 8 P8 A5 8 A#5 1 P32 A5 8 P8 A#5 8 P8 A#5 8 A5 8 P8 A5 8 A#5 1 P32 A5 8 P8 A#5 8 A5 8 P8 A#5 8 P8 A5 8 P8 C6 8 P8 C6 8 A#5 4 A5 4 F5 4 A#5 8 P8 A#5 8 A5 8 P8 A5 8 A#5 1`
+  - ESC 3: ✅ Music On, Gen. Length = `14`, Gen. Interval = `2` ;`G5 8 P8 G5 8 F5 8 P8 F5 8 G5 1 P32 F5 8 P8 G5 8 P8 G5 8 F5 8 P8 F5 8 G5 1 P32 F5 8 P8 G5 8 F5 8 P8 G5 8 P8 F5 8 P8 G5 8 P8 G5 8 F5 4 F5 4 C5 4 G5 8 P8 G5 8 F5 8 P8 F5 8 G5 1`
+  - ESC 4: ✅ Music On, Gen. Length = `14`, Gen. Interval = `2` ;`D5 8 P8 D5 8 C5 8 P8 C5 8 D5 1 P32 C5 8 P8 D5 8 P8 D5 8 C5 8 P8 C5 8 D5 1 P32 C5 8 P8 D5 8 C5 8 P8 D5 8 P8 C5 8 P8 D#5 8 P8 D#5 8 D5 4 C5 4 A4 4 D5 8 P8 D5 8 C5 8 P8 C5 8 D5 1`
+  - oscar: ✅ Music On, Gen. Length = `14`, Gen. Interval = `2` ;`A#5 8 P8 A#5 8 A5 8 P8 A5 8 A#5 1 P32 A5 8 P8 A#5 8 P8 A#5 8 A5 8 P8 A5 8 A#5 1 P32 A5 8 P8 A#5 8 A5 8 P8 A#5 8 P8 A5 8 P8 C6 8 P8 C6 8 A#5 4 A5 4 F5 4 A#5 8 P8 A#5 8 A5 8 P8 A5 8 A#5 1`
+- Fast Silent (does not delete Ready tone)
+  - All: ✅ Music On, Gen. Length = `8`, Gen. Interval = `0`; `P128`
+- Europe - Final Countdown
+  - ESC 1: ✅ Music On, Gen. Length = `15`, Gen. Interval = `0` ;`D#5 1 D#5 1 E5 1 E5 1 E5 1 E51 C#5 1 C#5 1 D#5 4`
+  - ESC 2: ✅ Music On, Gen. Length = `15`, Gen. Interval = `0` ;`B4 1 B4 1 G#4 1 B4 1 C#5 1 C#5 1 A#4 1 A#4 1 B4 4`
+  - ESC 3: ✅ Music On, Gen. Length = `15`, Gen. Interval = `0` ;`G#4 1 G#4 2 F#4 2 E4 1 E4 1 G#4 1 G#4 1 F#4 1 G4 1 G#4 4`
+  - ESC 4: ✅ Music On, Gen. Length = `15`, Gen. Interval = `0` ;`P2 P4 D#6 8 C#6 8 D#6 2 G#5 2 P2 P4 E6 8 D#6 8 E6 8 P8 D#6 8 P8 C#6 2 P2 P4 E6 8 D#6 8 E6 2 G#5 2 P2 P4 C#6 8 B5 8 C#6 8 P8 B5 8 P8 A#5 8 P8 F#6 8 P8 G#6 4`
 
 ### [NinjaSauce](https://youtube.com/@ninjasauce8855)
 
@@ -334,7 +208,7 @@ This person makes the [composer for it](https://rtttl.skully.tech/) ([Source Cod
 - Pager
   - All: `Pager:d=8,o=5,b=160:d6,16p,2d6,16p,d6,16p,2d6,16p,d6,16p,2d6`\
 
-### ESCTunes.com
+### [ESCTunes.com](https://esctunes.com)
 
 Best of the best?, Only?.. There's alot of them there! Remember, **avoid installing long song!**
 
