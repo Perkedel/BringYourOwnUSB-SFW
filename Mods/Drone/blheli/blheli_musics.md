@@ -206,7 +206,9 @@ This person makes the [composer for it](https://rtttl.skully.tech/) ([Source Cod
 - Kimmunitcator
   - All: `Kimmunicator:d=8,o=7,b=715:d,g,p,g4,p,p,d,g,p,g4,p,p,f,a#,p,d,g`
 - Pager
-  - All: `Pager:d=8,o=5,b=160:d6,16p,2d6,16p,d6,16p,2d6,16p,d6,16p,2d6`\
+  - All: `Pager:d=8,o=5,b=160:d6,16p,2d6,16p,d6,16p,2d6,16p,d6,16p,2d6`
+- Aqua - Barbie Girl (Note corrected)
+  - All: `Barbie Girl:d=8,o=6,b=125:g#,e,g#,c#7,4a,4p,f#,d#,f#,b,4g#,f#,e,4p,e,c#,4f#,4c#,4p,f#,e,4g#,4f#`
 
 ### [ESCTunes.com](https://esctunes.com)
 

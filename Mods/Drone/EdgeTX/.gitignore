@@ -32,6 +32,10 @@ SDCards/**/SCRIPTS/TOOLS/*.luac
 !SDCards/**/SCRIPTS/TOOLS/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]
 SDCards/**/SCRIPTS/RGBLED/*
 SDCards/**/SCRIPTS/TELEMETRY/*
+SDCards/**/SCRIPTS/FUNCTIONS/*
+!SDCards/**/SCRIPTS/FUNCTIONS/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]
+SDCards/**/SCRIPTS/MIXES/*
+!SDCards/**/SCRIPTS/MIXES/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]
 
 SDCards/**/WIDGETS/*
 SDCards/**/WIDGETS/*.luac
@@ -54,7 +58,13 @@ SDCards/**/SOUNDS/*/*
 SDCards/**/IMAGES/*
 !SDCards/**/IMAGES/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]
 !SDCards/**/IMAGES/mav.png
+!SDCards/**/IMAGES/mav2.png
+!SDCards/**/IMAGES/simulacral.png
+!SDCards/**/IMAGES/splash.png
+!SDCards/**/IMAGES/crzTes.png
 !SDCards/**/IMAGES/perkedel
+# pls do not use dropbox or non-preservable hosting!
+!SDCards/**/IMAGES/droneshakk
 
 ### The FM2M is special Fly Me to the Moon's stuffs!
 

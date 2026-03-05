@@ -1,7 +1,7 @@
 semver: 2.11.5
 header: 
    name: "Waduh"
-   bitmap: "mav.png"
+   bitmap: "mav2.png"
    labels: "WaduhCoy,Favorites"
 timers: 
    0:
@@ -131,6 +131,16 @@ mixData:
    speedUp: 0
    speedDown: 0
    name: "Arm"
+limitData: 
+   4:
+      min: 0
+      max: 0
+      ppmCenter: 0
+      offset: 0
+      symetrical: 0
+      revert: 1
+      curve: 0
+      name: ""
 expoData: 
  -
    mode: 3
@@ -179,7 +189,7 @@ expoData:
  -
    mode: 3
    scale: 0
-   trimSource: 0
+   trimSource: 1
    srcRaw: "SF"
    weight: 100
    offset: 0
@@ -843,6 +853,8 @@ screenData:
                         type: Bool
                         value: 
                            boolValue: 0
+            1:
+               widgetName: "Timer"
             2:
                widgetName: "Outputs"
                widgetData: 
@@ -889,7 +901,7 @@ screenData:
                value: 
                   boolValue: 0
    1:
-      LayoutId: "Layout1x1AM"
+      LayoutId: "Layout1x1"
       layoutData: 
          zones: 
             0:
@@ -916,8 +928,70 @@ screenData:
                         type: Bool
                         value: 
                            boolValue: 1
+         options: 
+            0:
+               type: Bool
+               value: 
+                  boolValue: 0
+            1:
+               type: Bool
+               value: 
+                  boolValue: 0
+            2:
+               type: Bool
+               value: 
+                  boolValue: 0
+            3:
+               type: Bool
+               value: 
+                  boolValue: 0
+            4:
+               type: Bool
+               value: 
+                  boolValue: 0
    2:
-      LayoutId: "Layout1x1AM"
+      LayoutId: "Layout1x1"
+      layoutData: 
+         zones: 
+            0:
+               widgetName: "iNav"
+               widgetData: 
+                  options: 
+                     0:
+                        type: Bool
+                        value: 
+                           boolValue: 1
+                     1:
+                        type: Color
+                        value: 
+                           color: COLIDX13
+                     2:
+                        type: Color
+                        value: 
+                           color: 0xF88400
+         options: 
+            0:
+               type: Bool
+               value: 
+                  boolValue: 0
+            1:
+               type: Bool
+               value: 
+                  boolValue: 0
+            2:
+               type: Bool
+               value: 
+                  boolValue: 0
+            3:
+               type: Bool
+               value: 
+                  boolValue: 0
+            4:
+               type: Bool
+               value: 
+                  boolValue: 0
+   3:
+      LayoutId: "Layout1x1"
       layoutData: 
          zones: 
             0:
@@ -928,6 +1002,54 @@ screenData:
                         type: Signed
                         value: 
                            signedValue: 1
+         options: 
+            0:
+               type: Bool
+               value: 
+                  boolValue: 0
+            1:
+               type: Bool
+               value: 
+                  boolValue: 0
+            2:
+               type: Bool
+               value: 
+                  boolValue: 0
+            3:
+               type: Bool
+               value: 
+                  boolValue: 0
+            4:
+               type: Bool
+               value: 
+                  boolValue: 0
+   4:
+      LayoutId: "Layout1x1"
+      layoutData: 
+         zones: 
+            0:
+               widgetName: "FM2M D-Clock"
+         options: 
+            0:
+               type: Bool
+               value: 
+                  boolValue: 0
+            1:
+               type: Bool
+               value: 
+                  boolValue: 0
+            2:
+               type: Bool
+               value: 
+                  boolValue: 0
+            3:
+               type: Bool
+               value: 
+                  boolValue: 0
+            4:
+               type: Bool
+               value: 
+                  boolValue: 0
 topbarData: 
    zones: 
       0:

@@ -57,7 +57,8 @@ Telemetry / Widgets? Apps? Lua Scripts are the one!
 - [MadMonkey87's Telemetry Widgets](https://github.com/MadMonkey87/EdgeTX-Goodies)
 - [Yaapu's Frsky Telemetry Widgets](https://github.com/yaapu/FrskyTelemetryScripts). clone this whole repository & copy folders accordingly!
   - for EdgeTX/OpenTX: choose & copy according `*_common` folders, based on `color` or `b/w` model you had. Then with `color` or `b/w`, also copy the resolution folders too e.g. `c480x320/SD` for RadioMaster TX16s which has `Color` display. 
-- [iNav / teckel12 Lua Telemetry](https://github.com/teckel12/LuaTelemetry). [Download Latest](https://github.com/teckel12/LuaTelemetry/releases/latest)
+- [iNav Telemetry](https://github.com/iNavFlight/OpenTX-Telemetry-Widget). [Download Latest](https://github.com/iNavFlight/OpenTX-Telemetry-Widget/releases/latest)
+  - [Outdated](https://github.com/teckel12/LuaTelemetry) old. [Download](https://github.com/teckel12/LuaTelemetry/releases/latest)
 - [bob01's Widgets](https://github.com/bob01/etx-widgets)
 - [dbarrios' Widgets](https://github.com/dbarrios83/edgetx-widgets). Daniel Barrios' Telemetry Collections!, **Full Screen All-in-1 Widget Available & Recommended**
 - [EdgeTX About Widgets](https://manual.edgetx.org/color-radios/screen-settings/widgets)
@@ -86,6 +87,15 @@ We got Model Images
 
 - [SkyRacoon.com](https://www.skyraccoon.com/)
   - thancc [Painless360](https://youtu.be/41soFy3Ddfs)
+- [droneshakk's images](https://youtu.be/9_nBqWIg4Yc)
+  - Images
+    - ![Bg](SDCards/WaduhMemory/IMAGES/droneshakk/background.png)
+    - ![expr](SDCards/WaduhMemory/IMAGES/droneshakk/adobe_expr.jpg)
+    - ![big](SDCards/WaduhMemory/IMAGES/droneshakk/BigImage.jpg)
+  - Dropbox sauces
+    - [480x320](https://www.dropbox.com/scl/fi/b436aoa10puc12viuq9xo/InShot_20251017_013727302.jpg?rlkey=fizchetuljr6ph4yrqvw9z04x&st=d750k8l3&dl=0)
+    - [Link 2](https://www.dropbox.com/scl/fi/xtvbv20enf44ztt159o71/background.png?rlkey=1fodpf5a51apef4wlbqxm6p3d&st=2hpmd4xw&dl=0)
+    - [Link 3](https://www.dropbox.com/scl/fi/jq6orpu8p4jqqpsxabmb0/Adobe-Express-file.jpg?rlkey=khazb2uuuntttq8rj30hqdd3q&st=cn2krk63&dl=0)
 
 ## Sauce
 
@@ -110,4 +120,6 @@ We got Model Images
 - https://youtu.be/SAQHowQ3rFM
   - https://github.com/iNavFlight/LuaTelemetry/
   - https://github.com/yaapu/FrskyTelemetryScript/
-- 
+- https://www.expresslrs.org/software/switch-config
+  - https://www.youtube.com/live/ARCfafma1rM
+- https://youtu.be/3rIxhtkNYEU On Off switch Bill Clark
