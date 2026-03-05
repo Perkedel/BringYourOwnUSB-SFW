@@ -61,6 +61,7 @@ SDCards/**/IMAGES/*
 !SDCards/**/IMAGES/mav*.png
 !SDCards/**/IMAGES/simulacral.png
 !SDCards/**/IMAGES/splash.png
+!SDCards/**/IMAGES/shutdown.png
 !SDCards/**/IMAGES/crzTes.png
 !SDCards/**/IMAGES/perkedel
 # pls do not use dropbox or non-preservable hosting!
