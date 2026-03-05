@@ -48,6 +48,7 @@ Unfortunately, EdgeTX Companion has Cons atm:
 Telemetry / Widgets? Apps? Lua Scripts are the one!
 
 - ExpressLRS Lua App. You can use the [configurator](https://www.expresslrs.org/quick-start/installing-configurator/) to download the matching Lua App version for your RC. After you connected, save the the app into `SCRIPTS/TOOLS` of your RC SDCard.
+- [Moar Lua Script pls](https://github.com/EdgeTX/lua-scripts)
 - [Betaflight's Lua Scripts App](https://github.com/betaflight/betaflight-tx-lua-scripts)
   - [Try Nightly](https://github.com/betaflight/betaflight-tx-lua-scripts-nightlies/releases) if your betaflight version is too new than stable.
 - [Team Black Sheep Agent](https://team-blacksheep.com/products/prod:agentx)
@@ -57,6 +58,7 @@ Telemetry / Widgets? Apps? Lua Scripts are the one!
 - [MadMonkey87's Telemetry Widgets](https://github.com/MadMonkey87/EdgeTX-Goodies)
 - [Yaapu's Frsky Telemetry Widgets](https://github.com/yaapu/FrskyTelemetryScripts). clone this whole repository & copy folders accordingly!
   - for EdgeTX/OpenTX: choose & copy according `*_common` folders, based on `color` or `b/w` model you had. Then with `color` or `b/w`, also copy the resolution folders too e.g. `c480x320/SD` for RadioMaster TX16s which has `Color` display. 
+  - [Horus Widget too](https://github.com/yaapu/HorusMappingWidget)
 - [iNav Telemetry](https://github.com/iNavFlight/OpenTX-Telemetry-Widget). [Download Latest](https://github.com/iNavFlight/OpenTX-Telemetry-Widget/releases/latest)
   - [Outdated](https://github.com/teckel12/LuaTelemetry) old. [Download](https://github.com/teckel12/LuaTelemetry/releases/latest)
 - [bob01's Widgets](https://github.com/bob01/etx-widgets)

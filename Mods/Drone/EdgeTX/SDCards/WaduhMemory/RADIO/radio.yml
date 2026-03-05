@@ -1,4 +1,4 @@
-checksum: 3582
+checksum: 18192
 manuallyEdited: 0
 timezoneMinutes: 0
 ppmunit: 0
@@ -98,7 +98,7 @@ splashMode: 3
 hapticMode: mode_all
 switchesDelay: 0
 lightAutoOff: 24
-templateSetup: 0
+templateSetup: 21
 PPM_Multiplier: 0
 hapticLength: 2
 beepLength: 2
@@ -110,7 +110,7 @@ speakerVolume: 24
 vBatMin: 67
 vBatMax: 83
 backlightBright: 0
-globalTimer: 12541
+globalTimer: 13096
 bluetoothBaudrate: 0
 bluetoothMode: TELEMETRY
 countryCode: 0
