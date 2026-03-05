@@ -58,7 +58,7 @@ SDCards/**/SOUNDS/*/*
 SDCards/**/IMAGES/*
 !SDCards/**/IMAGES/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]
 !SDCards/**/IMAGES/mav.png
-!SDCards/**/IMAGES/mav2.png
+!SDCards/**/IMAGES/mav*.png
 !SDCards/**/IMAGES/simulacral.png
 !SDCards/**/IMAGES/splash.png
 !SDCards/**/IMAGES/crzTes.png

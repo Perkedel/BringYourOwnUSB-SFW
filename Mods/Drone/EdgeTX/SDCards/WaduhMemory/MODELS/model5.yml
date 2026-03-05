@@ -9,7 +9,7 @@ noGlobalFunctions: 0
 displayTrims: 0
 ignoreSensorIds: 0
 trimInc: 0
-disableThrottleWarning: 0
+disableThrottleWarning: 1
 displayChecklist: 0
 extendedLimits: 0
 extendedTrims: 0
@@ -177,7 +177,7 @@ logicalSw:
       def: "L1,L1"
       andsw: "NONE"
       lsPersist: 1
-      lsState: 0
+      lsState: 1
       delay: 0
       duration: 0
 customFn: 
@@ -191,23 +191,7 @@ customFn:
       def: "angmod,1,1x"
 thrTraceSrc: Thr
 switchWarning: 
-   SA:
-      pos: up
-   SB:
-      pos: up
-   SC:
-      pos: up
-   SD:
-      pos: up
-   SE:
-      pos: up
-   SF:
-      pos: up
-   SG:
-      pos: up
    SH:
-      pos: up
-   SI:
       pos: up
    SJ:
       pos: up
