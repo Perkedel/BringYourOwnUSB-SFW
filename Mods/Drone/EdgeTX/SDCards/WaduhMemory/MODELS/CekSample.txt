@@ -1,0 +1,88 @@
+# Cek Sample
+
+Checklist Sample you can do with special syntax available from EdgeTX.
+
+Model:
+Stork Corazon Hyperthrophy
+(Open Source alt of DJI O5 Max)
+DIY! Corazon is Fly Unit core itself, 
+install it to Chasis, add your own Motor & Props!
+
+Batt = 6S, 10000 MAh
+Radio = 25 mw - 500 mw, +VTX, 900 MHz / 2.5 GHz
+Video = Digital / Analog UHF / OpenIPC 2.5 GHz
+
+See:
+```
+https://manual.edgetx.org/
+edgetx-how-to/model-notes-and-checklists
+```
+for more info
+
+=Acknowledge above tutorial article
+=lorem ipsum
+=Fuel at least >90%
+=Throttle Down (L\209 \dn)
+=Fly in well lit, textured environment.
+
+Controls:
+
+SF\up = Arms
+SC\up = Self-Level
+SC -- = Horizon
+SC\dn = Air
+
+Symbols:
+
+200\200 Right
+201\201 Left
+up\up Up
+dn\dn Down
+-- -- Middle
+
+Total Symbols:
+
+200 = \200 Right (Minimum Symbol)
+201 = \201 Left
+202 = \202 Up
+203 = \203 Down
+204 = \204 Delta
+205 = \205 (no Symbol)
+206 = \206 (no Symbol)
+207 = \207 (no Symbol)
+208 = \208 Delta again
+209 = \209 Axis
+
+210 = \210 Pots
+211 = \211 Gvars
+212 = \212 Switches
+213 = \213 Trims
+214 = \214 Inputs
+215 = \215 OtherVars
+216 = \216 Cyclic
+217 = \217 Trainer
+218 = \218 Channel
+219 = \219 Telemetry
+
+220 = \220 File
+221 = \221 Degree
+222 = \222 (no Symbol)
+223 = \223 (no Symbol)
+224 = \224 (no Symbol)
+225 = \225 Five (invalid symbols here til below)
+226 = \226 Six
+227 = \227 Seven
+228 = \228 Eight
+229 = \229 Nine
+230 = \230 Zero
+
+231 = \231 One
+
+249 = \249 Nine (yeah it goes on way down to 255 there)
+
+250 = \250 Zero
+251 = \251 One
+252 = \252 Two
+253 = \253 Three
+254 = \254 Four
+255 = \255 Five (Maximum Symbol)

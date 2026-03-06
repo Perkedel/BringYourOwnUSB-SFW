@@ -4,12 +4,12 @@ Labels:
 Sort: 1
 Models:
   model1.yml:
-    hash: "d05c0000665c0b2c"
+    hash: "d05c0000665cf18b"
     name: "Waduh"
     mod0type: 5
     labels: "WaduhCoy,Favorites"
     bitmap: "mav2.png"
-    lastopen: 1772773450
+    lastopen: 1772821524
   model2.yml:
     hash: "7f170000655c25b5"
     name: "Empty"
@@ -34,4 +34,10 @@ Models:
     labels: ""
     bitmap: "crzTes.png"
     lastopen: 1772773184
+  model6.yml:
+    hash: "ed110000665cb18e"
+    name: "CekSample"
+    labels: ""
+    bitmap: "mav3.png"
+    lastopen: 1772818415
 

@@ -32,15 +32,15 @@
      inkscape:pagecheckerboard="1"
      inkscape:deskcolor="#505050"
      inkscape:document-units="mm"
-     inkscape:zoom="2.8284271"
-     inkscape:cx="248.54803"
-     inkscape:cy="203.11642"
+     inkscape:zoom="2"
+     inkscape:cx="200.25"
+     inkscape:cy="129.25"
      inkscape:window-width="2560"
      inkscape:window-height="1417"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer129"
+     inkscape:current-layer="g71"
      showgrid="true">
     <inkscape:grid
        id="grid1"
@@ -137,7 +137,7 @@
      inkscape:label="Splashings"
      inkscape:groupmode="layer"
      id="layer1"
-     style="display:inline">
+     style="display:none">
     <g
        inkscape:groupmode="layer"
        id="layer120"
@@ -488,8 +488,8 @@
        inkscape:groupmode="layer"
        id="layer129"
        inkscape:label="StorkShutdown"
-       sodipodi:insensitive="true"
-       style="display:none">
+       style="display:none"
+       sodipodi:insensitive="true">
       <g
          id="g203"
          transform="matrix(4.0676936,0,0,4.0676936,5.2859019,127.9395)"
@@ -613,7 +613,7 @@
      inkscape:groupmode="layer"
      id="layer122"
      inkscape:label="Bg"
-     style="display:none">
+     style="display:inline">
     <g
        inkscape:groupmode="layer"
        id="g7"
@@ -632,7 +632,7 @@
        inkscape:groupmode="layer"
        id="g104"
        inkscape:label="Padding green"
-       style="display:inline"
+       style="display:none"
        sodipodi:insensitive="true">
       <rect
          style="fill:#002500;fill-opacity:1;stroke-width:0.0264583;stroke-linecap:round;stroke-linejoin:round"
