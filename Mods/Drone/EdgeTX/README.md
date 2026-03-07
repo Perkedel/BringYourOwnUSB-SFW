@@ -125,3 +125,4 @@ We got Model Images
 - https://www.expresslrs.org/software/switch-config
   - https://www.youtube.com/live/ARCfafma1rM
 - https://youtu.be/3rIxhtkNYEU On Off switch Bill Clark
+- https://youtu.be/NvIKHa90x2k?si=N6Zj-FEsW7Hyu_CM

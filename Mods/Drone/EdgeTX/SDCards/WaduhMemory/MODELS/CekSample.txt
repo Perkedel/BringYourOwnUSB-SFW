@@ -65,9 +65,9 @@ Total Symbols:
 219 = \219 Telemetry
 
 220 = \220 File
-221 = \221 Degree
-222 = \222 (no Symbol)
-223 = \223 (no Symbol)
+221 = \221 Logical Switches (formerly `Degree`)
+222 = \222 Curves (EdgeTX 2.12)
+223 = \223 Degree (EdgeTX 2.12)
 224 = \224 (no Symbol)
 225 = \225 Five (invalid symbols here til below)
 226 = \226 Six

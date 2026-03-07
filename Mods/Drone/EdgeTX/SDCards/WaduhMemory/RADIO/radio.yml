@@ -1,4 +1,4 @@
-checksum: 26734
+checksum: 35034
 manuallyEdited: 0
 timezoneMinutes: 0
 ppmunit: 0
@@ -98,7 +98,7 @@ speakerVolume: 24
 vBatMin: 67
 vBatMax: 83
 backlightBright: 0
-globalTimer: 19563
+globalTimer: 29937
 bluetoothBaudrate: 0
 bluetoothMode: TELEMETRY
 countryCode: 0
@@ -171,11 +171,11 @@ potsConfig:
       inv: 0
       name: ""
    EXT1:
-      type: slider
+      type: axis_x
       inv: 0
       name: ""
    EXT2:
-      type: slider
+      type: axis_y
       inv: 0
       name: ""
 switchConfig: 
@@ -310,7 +310,7 @@ selectedTheme: "Stork_TENS"
 labelSingleSelect: 0
 labelMultiMode: 0
 favMultiMode: 0
-modelSelectLayout: 0
+modelSelectLayout: 1
 radioThemesDisabled: 0
 radioGFDisabled: 0
 radioTrainerDisabled: 0

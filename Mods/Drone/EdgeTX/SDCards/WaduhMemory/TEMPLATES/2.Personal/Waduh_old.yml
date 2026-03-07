@@ -6,18 +6,6 @@ header:
 timers: 
    0:
       start: 0
-      swtch: "L2"
-      value: 0
-      mode: ON
-      countdownBeep: 0
-      minuteBeep: 0
-      persistent: 0
-      countdownStart: 0
-      showElapsed: 0
-      extraHaptic: 0
-      name: "Arm"
-   1:
-      start: 0
       swtch: "NONE"
       value: 0
       mode: START
@@ -28,7 +16,7 @@ timers:
       showElapsed: 0
       extraHaptic: 0
       name: "Flt"
-   2:
+   1:
       start: 0
       swtch: "NONE"
       value: 0
@@ -40,10 +28,22 @@ timers:
       showElapsed: 0
       extraHaptic: 0
       name: "Thr"
+   2:
+      start: 0
+      swtch: "SF0"
+      value: 0
+      mode: ON
+      countdownBeep: 0
+      minuteBeep: 0
+      persistent: 0
+      countdownStart: 0
+      showElapsed: 0
+      extraHaptic: 0
+      name: "Arm"
 telemetryProtocol: 0
 thrTrim: 0
 noGlobalFunctions: 0
-displayTrims: 0
+displayTrims: 1
 ignoreSensorIds: 0
 trimInc: 0
 disableThrottleWarning: 0
@@ -53,15 +53,15 @@ extendedTrims: 0
 throttleReversed: 0
 enableCustomThrottleWarning: 0
 disableTelemetryWarning: 0
-showInstanceIds: 0
-checklistInteractive: 0
+showInstanceIds: 1
+checklistInteractive: 1
 customThrottleWarningPosition: 0
-beepANACenter: 0
+beepANACenter: 4
 mixData: 
  -
    destCh: 0
    srcRaw: "I0"
-   carryTrim: 1
+   carryTrim: 0
    mixWarn: 0
    mltpx: ADD
    delayPrec: 0
@@ -78,7 +78,7 @@ mixData:
  -
    destCh: 1
    srcRaw: "I1"
-   carryTrim: 1
+   carryTrim: 0
    mixWarn: 0
    mltpx: ADD
    delayPrec: 0
@@ -95,7 +95,7 @@ mixData:
  -
    destCh: 2
    srcRaw: "I2"
-   carryTrim: 1
+   carryTrim: 0
    mixWarn: 0
    mltpx: ADD
    delayPrec: 0
@@ -112,7 +112,7 @@ mixData:
  -
    destCh: 3
    srcRaw: "I3"
-   carryTrim: 1
+   carryTrim: 0
    mixWarn: 0
    mltpx: ADD
    delayPrec: 0
@@ -129,7 +129,7 @@ mixData:
  -
    destCh: 4
    srcRaw: "I4"
-   carryTrim: 1
+   carryTrim: 0
    mixWarn: 0
    mltpx: ADD
    delayPrec: 0
@@ -157,7 +157,7 @@ expoData:
  -
    mode: 3
    scale: 0
-   trimSource: 1
+   trimSource: 0
    srcRaw: "Ail"
    weight: 100
    offset: 0
@@ -171,35 +171,29 @@ expoData:
  -
    mode: 3
    scale: 0
-   trimSource: 1
+   trimSource: 0
    srcRaw: "Ele"
    weight: 100
    offset: 0
    swtch: "NONE"
-   curve: 
-      type: 1
-      value: 0
    chn: 1
    flightModes: 000000000
    name: ""
  -
    mode: 3
    scale: 0
-   trimSource: 1
+   trimSource: 0
    srcRaw: "Thr"
    weight: 100
    offset: 0
    swtch: "NONE"
-   curve: 
-      type: 1
-      value: 0
    chn: 2
    flightModes: 000000000
    name: ""
  -
    mode: 3
    scale: 0
-   trimSource: 1
+   trimSource: 0
    srcRaw: "Rud"
    weight: 100
    offset: 0
@@ -218,16 +212,13 @@ expoData:
    weight: 100
    offset: 0
    swtch: "NONE"
-   curve: 
-      type: 1
-      value: 0
    chn: 4
    flightModes: 000000000
    name: "Arm"
 logicalSw: 
    0:
       func: FUNC_VPOS
-      def: "I4,0"
+      def: "!gv(8),1000"
       andsw: "NONE"
       lsPersist: 0
       lsState: 0
@@ -235,43 +226,88 @@ logicalSw:
       duration: 0
    1:
       func: FUNC_VNEG
-      def: "I4,0"
+      def: "I4,50"
       andsw: "NONE"
       lsPersist: 0
       lsState: 0
       delay: 0
       duration: 0
+   2:
+      func: FUNC_VPOS
+      def: "I4,50"
+      andsw: "NONE"
+      lsPersist: 0
+      lsState: 0
+      delay: 0
+      duration: 0
+   61:
+      func: FUNC_EDGE
+      def: "SJ2,0,5"
+      andsw: "NONE"
+      lsPersist: 0
+      lsState: 0
+      delay: 0
+      duration: 20
+   62:
+      func: FUNC_EDGE
+      def: "SJ2,10,20"
+      andsw: "NONE"
+      lsPersist: 0
+      lsState: 0
+      delay: 0
+      duration: 20
+   63:
+      func: FUNC_EDGE
+      def: "SJ2,20,30"
+      andsw: "NONE"
+      lsPersist: 0
+      lsState: 0
+      delay: 0
+      duration: 20
 customFn: 
    0:
+      swtch: "L1"
+      func: ADJUST_GVAR
+      def: "0,IncDec,1,0"
+   1:
       swtch: "L2"
       func: PLAY_TRACK
       def: "armed,1,1x"
-   1:
-      swtch: "!L2"
+   2:
+      swtch: "L3"
       func: PLAY_TRACK
       def: "disarm,1,1x"
+   8:
+      swtch: "L2"
+      func: RGB_LED
+      def: "throttle,1,On"
+   9:
+      swtch: "L3"
+      func: RGB_LED
+      def: "idle,1,On"
+   59:
+      swtch: "L62"
+      func: PLAY_VALUE
+      def: "Tmr1,1,1x"
+   60:
+      swtch: "L63"
+      func: PLAY_VALUE
+      def: "TX_VOLTAGE,1,1x"
+   61:
+      swtch: "L64"
+      func: SCREENSHOT
+      def: "1"
+   62:
+      swtch: "SJ2"
+      func: PLAY_SOUND
+      def: "Bp1,1,1"
+   63:
+      swtch: "SF0"
+      func: PLAY_TRACK
+      def: "armed,0,1x"
 flightModeData: 
    0:
-      trim: 
-         0:
-            value: 0
-            mode: 31
-         1:
-            value: 0
-            mode: 31
-         2:
-            value: 0
-            mode: 31
-         3:
-            value: 0
-            mode: 31
-         4:
-            value: 0
-            mode: 31
-         5:
-            value: 0
-            mode: 31
-      name: ""
+      name: "Acro"
       swtch: "NONE"
       fadeIn: 0
       fadeOut: 0
@@ -306,17 +342,15 @@ flightModeData:
             val: 0
          14:
             val: 0
+   1:
+      name: "Angle"
+      swtch: "NONE"
+      fadeIn: 0
+      fadeOut: 0
 thrTraceSrc: Thr
 switchWarning: 
    SF:
-      pos: up
-varioData: 
-   source: none
-   centerSilent: 1
-   centerMax: 0
-   centerMin: 0
-   min: 0
-   max: 0
+      pos: down
 rssiSource: none
 rfAlarms: 
    warning: 45
@@ -337,6 +371,13 @@ moduleData:
             crsfArmingMode: 0
             crsfArmingTrigger: "NONE"
             spare3: 0
+trainerData: 
+   mode: OFF
+   channelsStart: 0
+   channelsCount: -8
+   frameLength: 0
+   delay: 0
+   pulsePol: 0
 inputNames: 
    0:
       val: "Ail"
@@ -352,14 +393,14 @@ potsWarnEnabled: 0
 telemetrySensors: 
    0:
       id1: 
-         id: 30
+         id: 9
       id2: 
          instance: 0
-      label: "Ptch"
+      label: "Alt"
       subId: 0
       type: TYPE_CUSTOM
-      unit: 21
-      prec: 2
+      unit: 9
+      prec: 1
       autoOffset: 0
       filter: 0
       logs: 1
@@ -371,14 +412,14 @@ telemetrySensors:
             offset: 0
    1:
       id1: 
-         id: 30
+         id: 7
       id2: 
-         instance: 1
-      label: "Roll"
+         instance: 0
+      label: "VSpd"
       subId: 0
       type: TYPE_CUSTOM
-      unit: 21
-      prec: 2
+      unit: 5
+      prec: 1
       autoOffset: 0
       filter: 0
       logs: 1
@@ -389,80 +430,6 @@ telemetrySensors:
             ratio: 0
             offset: 0
    2:
-      id1: 
-         id: 30
-      id2: 
-         instance: 2
-      label: "Yaw"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 21
-      prec: 2
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   3:
-      id1: 
-         id: 33
-      id2: 
-         instance: 0
-      label: "FM"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 42
-      prec: 0
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         param: 0
-   4:
-      id1: 
-         id: 9
-      id2: 
-         instance: 0
-      label: "Alt"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 9
-      prec: 2
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   5:
-      id1: 
-         id: 7
-      id2: 
-         instance: 0
-      label: "VSpd"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 5
-      prec: 2
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   6:
       id1: 
          id: 20
       id2: 
@@ -481,7 +448,7 @@ telemetrySensors:
          custom: 
             ratio: 0
             offset: 0
-   7:
+   3:
       id1: 
          id: 20
       id2: 
@@ -500,7 +467,7 @@ telemetrySensors:
          custom: 
             ratio: 0
             offset: 0
-   8:
+   4:
       id1: 
          id: 20
       id2: 
@@ -519,7 +486,7 @@ telemetrySensors:
          custom: 
             ratio: 0
             offset: 0
-   9:
+   5:
       id1: 
          id: 20
       id2: 
@@ -538,7 +505,7 @@ telemetrySensors:
          custom: 
             ratio: 0
             offset: 0
-   10:
+   6:
       id1: 
          id: 20
       id2: 
@@ -557,7 +524,7 @@ telemetrySensors:
          custom: 
             ratio: 0
             offset: 0
-   11:
+   7:
       id1: 
          id: 20
       id2: 
@@ -576,7 +543,7 @@ telemetrySensors:
          custom: 
             ratio: 0
             offset: 0
-   12:
+   8:
       id1: 
          id: 20
       id2: 
@@ -595,7 +562,7 @@ telemetrySensors:
          custom: 
             ratio: 0
             offset: 0
-   13:
+   9:
       id1: 
          id: 20
       id2: 
@@ -614,7 +581,7 @@ telemetrySensors:
          custom: 
             ratio: 0
             offset: 0
-   14:
+   10:
       id1: 
          id: 20
       id2: 
@@ -633,7 +600,7 @@ telemetrySensors:
          custom: 
             ratio: 0
             offset: 0
-   15:
+   11:
       id1: 
          id: 20
       id2: 
@@ -652,7 +619,7 @@ telemetrySensors:
          custom: 
             ratio: 0
             offset: 0
-   16:
+   12:
       id1: 
          id: 8
       id2: 
@@ -671,7 +638,7 @@ telemetrySensors:
          custom: 
             ratio: 0
             offset: 0
-   17:
+   13:
       id1: 
          id: 8
       id2: 
@@ -690,7 +657,7 @@ telemetrySensors:
          custom: 
             ratio: 0
             offset: 0
-   18:
+   14:
       id1: 
          id: 8
       id2: 
@@ -709,7 +676,7 @@ telemetrySensors:
          custom: 
             ratio: 0
             offset: 0
-   19:
+   15:
       id1: 
          id: 8
       id2: 
@@ -728,7 +695,7 @@ telemetrySensors:
          custom: 
             ratio: 0
             offset: 0
-   20:
+   16:
       id1: 
          id: 2
       id2: 
@@ -745,7 +712,7 @@ telemetrySensors:
       onlyPositive: 0
       cfg: 
          param: 0
-   21:
+   17:
       id1: 
          id: 2
       id2: 
@@ -764,7 +731,7 @@ telemetrySensors:
          custom: 
             ratio: 0
             offset: 0
-   22:
+   18:
       id1: 
          id: 2
       id2: 
@@ -783,12 +750,12 @@ telemetrySensors:
          custom: 
             ratio: 0
             offset: 0
-   23:
+   19:
       id1: 
          id: 2
       id2: 
          instance: 4
-      label: "GAlt"
+      label: "Alt"
       subId: 0
       type: TYPE_CUSTOM
       unit: 9
@@ -802,7 +769,7 @@ telemetrySensors:
          custom: 
             ratio: 0
             offset: 0
-   24:
+   20:
       id1: 
          id: 2
       id2: 
@@ -821,9 +788,83 @@ telemetrySensors:
          custom: 
             ratio: 0
             offset: 0
+   21:
+      id1: 
+         id: 30
+      id2: 
+         instance: 0
+      label: "Ptch"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 21
+      prec: 2
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   22:
+      id1: 
+         id: 30
+      id2: 
+         instance: 1
+      label: "Roll"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 21
+      prec: 2
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   23:
+      id1: 
+         id: 30
+      id2: 
+         instance: 2
+      label: "Yaw"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 21
+      prec: 2
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   24:
+      id1: 
+         id: 33
+      id2: 
+         instance: 0
+      label: "FM"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 42
+      prec: 0
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         param: 0
 screenData: 
    0:
-      LayoutId: Layout1P3
+      LayoutId: Layout2P1
       layoutData: 
          zones: 
             0:
@@ -833,7 +874,7 @@ screenData:
                      0:
                         type: Color
                         value: 
-                           color: COLIDX0
+                           color: 0xF8FCF8
                      1:
                         type: Unsigned
                         value: 
@@ -845,7 +886,7 @@ screenData:
                      3:
                         type: Color
                         value: 
-                           color: COLIDX5
+                           color: 0x0070D0
                      4:
                         type: Bool
                         value: 
@@ -857,16 +898,8 @@ screenData:
                      0:
                         type: Unsigned
                         value: 
-                           unsignedValue: 0
+                           unsignedValue: 2
             2:
-               widgetName: SimWidget
-               widgetData: 
-                  options: 
-                     0:
-                        type: Bool
-                        value: 
-                           boolValue: 1
-            3:
                widgetName: Outputs
                widgetData: 
                   options: 
@@ -889,7 +922,7 @@ screenData:
                      4:
                         type: Color
                         value: 
-                           color: COLIDX1
+                           color: 0xF88038
          options: 
             0:
                type: Bool
@@ -960,6 +993,108 @@ screenData:
                type: Bool
                value: 
                   boolValue: 0
+   2:
+      LayoutId: Layout1x1
+      layoutData: 
+         zones: 
+            0:
+               widgetName: iNav
+               widgetData: 
+                  options: 
+                     0:
+                        type: Bool
+                        value: 
+                           boolValue: 1
+                     1:
+                        type: Color
+                        value: 
+                           color: COLIDX13
+                     2:
+                        type: Color
+                        value: 
+                           color: 0xF88400
+         options: 
+            0:
+               type: Bool
+               value: 
+                  boolValue: 0
+            1:
+               type: Bool
+               value: 
+                  boolValue: 0
+            2:
+               type: Bool
+               value: 
+                  boolValue: 0
+            3:
+               type: Bool
+               value: 
+                  boolValue: 0
+            4:
+               type: Bool
+               value: 
+                  boolValue: 0
+   3:
+      LayoutId: Layout1x1
+      layoutData: 
+         zones: 
+            0:
+               widgetName: Yaapu
+               widgetData: 
+                  options: 
+                     0:
+                        type: Signed
+                        value: 
+                           signedValue: 1
+         options: 
+            0:
+               type: Bool
+               value: 
+                  boolValue: 0
+            1:
+               type: Bool
+               value: 
+                  boolValue: 0
+            2:
+               type: Bool
+               value: 
+                  boolValue: 0
+            3:
+               type: Bool
+               value: 
+                  boolValue: 0
+            4:
+               type: Bool
+               value: 
+                  boolValue: 0
+   4:
+      LayoutId: Layout1x1
+      layoutData: 
+         zones: 
+            0:
+               widgetName: FM2M D-Clock
+               widgetData: 
+         options: 
+            0:
+               type: Bool
+               value: 
+                  boolValue: 0
+            1:
+               type: Bool
+               value: 
+                  boolValue: 0
+            2:
+               type: Bool
+               value: 
+                  boolValue: 0
+            3:
+               type: Bool
+               value: 
+                  boolValue: 0
+            4:
+               type: Bool
+               value: 
+                  boolValue: 0
 topbarData: 
    zones: 
       0:
@@ -969,7 +1104,7 @@ topbarData:
                0:
                   type: Source
                   value: 
-                     source: tele(16)
+                     source: tele(12)
                1:
                   type: Color
                   value: 
@@ -993,7 +1128,7 @@ topbarData:
                0:
                   type: Source
                   value: 
-                     source: tele(8)
+                     source: tele(4)
                1:
                   type: Color
                   value: 
@@ -1001,7 +1136,7 @@ topbarData:
                2:
                   type: Bool
                   value: 
-                     boolValue: 1
+                     boolValue: 0
                3:
                   type: Unsigned
                   value: 
@@ -1010,30 +1145,26 @@ topbarData:
                   type: Unsigned
                   value: 
                      unsignedValue: 0
-      3:
-         widgetName: ModelBmp
+      2:
+         widgetName: Value2
          widgetData: 
             options: 
                0:
+                  type: Source
+                  value: 
+                     source: TX_GPS
+               1:
                   type: Color
                   value: 
                      color: COLIDX0
-               1:
-                  type: Unsigned
-                  value: 
-                     unsignedValue: 0
                2:
-                  type: Bool
+                  type: String
                   value: 
-                     boolValue: 0
+                     stringValue: 
                3:
-                  type: Color
-                  value: 
-                     color: COLIDX5
-               4:
                   type: Bool
                   value: 
-                     boolValue: 0
+                     boolValue: 1
       4:
          widgetName: Value
          widgetData: 
@@ -1198,13 +1329,13 @@ customSwitches:
          b: 0
 cfsGroupOn: 
    1:
-      v: 1
+      v: 0
    2:
       v: 0
    3:
       v: 0
 usbJoystickExtMode: 0
-usbJoystickIfMode: JOYSTICK
+usbJoystickIfMode: GAMEPAD
 usbJoystickCircularCut: 0
 radioThemesDisabled: GLOBAL
 radioGFDisabled: GLOBAL

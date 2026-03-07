@@ -1,10 +1,22 @@
-semver: 2.11.5
+semver: 2.12.0
 header: 
    name: "Waduh"
    bitmap: "mav2.png"
    labels: "WaduhCoy,Favorites"
 timers: 
    0:
+      start: 0
+      swtch: "L2"
+      value: 0
+      mode: ON
+      countdownBeep: 0
+      minuteBeep: 0
+      persistent: 0
+      countdownStart: 0
+      showElapsed: 0
+      extraHaptic: 0
+      name: "Arm"
+   1:
       start: 0
       swtch: "NONE"
       value: 0
@@ -16,7 +28,7 @@ timers:
       showElapsed: 0
       extraHaptic: 0
       name: "Flt"
-   1:
+   2:
       start: 0
       swtch: "NONE"
       value: 0
@@ -31,7 +43,7 @@ timers:
 telemetryProtocol: 0
 thrTrim: 0
 noGlobalFunctions: 0
-displayTrims: 1
+displayTrims: 0
 ignoreSensorIds: 0
 trimInc: 0
 disableThrottleWarning: 0
@@ -41,15 +53,15 @@ extendedTrims: 0
 throttleReversed: 0
 enableCustomThrottleWarning: 0
 disableTelemetryWarning: 0
-showInstanceIds: 1
-checklistInteractive: 1
+showInstanceIds: 0
+checklistInteractive: 0
 customThrottleWarningPosition: 0
-beepANACenter: 4
+beepANACenter: 0
 mixData: 
  -
    destCh: 0
    srcRaw: "I0"
-   carryTrim: 0
+   carryTrim: 1
    mixWarn: 0
    mltpx: ADD
    delayPrec: 0
@@ -66,7 +78,7 @@ mixData:
  -
    destCh: 1
    srcRaw: "I1"
-   carryTrim: 0
+   carryTrim: 1
    mixWarn: 0
    mltpx: ADD
    delayPrec: 0
@@ -83,7 +95,7 @@ mixData:
  -
    destCh: 2
    srcRaw: "I2"
-   carryTrim: 0
+   carryTrim: 1
    mixWarn: 0
    mltpx: ADD
    delayPrec: 0
@@ -100,7 +112,7 @@ mixData:
  -
    destCh: 3
    srcRaw: "I3"
-   carryTrim: 0
+   carryTrim: 1
    mixWarn: 0
    mltpx: ADD
    delayPrec: 0
@@ -117,7 +129,7 @@ mixData:
  -
    destCh: 4
    srcRaw: "I4"
-   carryTrim: 0
+   carryTrim: 1
    mixWarn: 0
    mltpx: ADD
    delayPrec: 0
@@ -145,44 +157,56 @@ expoData:
  -
    mode: 3
    scale: 0
-   trimSource: 0
-   srcRaw: "Rud"
+   trimSource: 1
+   srcRaw: "Ail"
    weight: 100
    offset: 0
    swtch: "NONE"
+   curve: 
+      type: 1
+      value: 0
    chn: 0
    flightModes: 000000000
    name: ""
  -
    mode: 3
    scale: 0
-   trimSource: 0
+   trimSource: 1
    srcRaw: "Ele"
    weight: 100
    offset: 0
    swtch: "NONE"
+   curve: 
+      type: 1
+      value: 0
    chn: 1
    flightModes: 000000000
    name: ""
  -
    mode: 3
    scale: 0
-   trimSource: 0
+   trimSource: 1
    srcRaw: "Thr"
    weight: 100
    offset: 0
    swtch: "NONE"
+   curve: 
+      type: 1
+      value: 0
    chn: 2
    flightModes: 000000000
    name: ""
  -
    mode: 3
    scale: 0
-   trimSource: 0
-   srcRaw: "Ail"
+   trimSource: 1
+   srcRaw: "Rud"
    weight: 100
    offset: 0
    swtch: "NONE"
+   curve: 
+      type: 1
+      value: 0
    chn: 3
    flightModes: 000000000
    name: ""
@@ -194,13 +218,16 @@ expoData:
    weight: 100
    offset: 0
    swtch: "NONE"
+   curve: 
+      type: 1
+      value: 0
    chn: 4
    flightModes: 000000000
    name: "Arm"
 logicalSw: 
    0:
       func: FUNC_VPOS
-      def: "!gv(8),1000"
+      def: "I4,0"
       andsw: "NONE"
       lsPersist: 0
       lsState: 0
@@ -208,80 +235,43 @@ logicalSw:
       duration: 0
    1:
       func: FUNC_VNEG
-      def: "I4,50"
+      def: "I4,0"
       andsw: "NONE"
       lsPersist: 0
       lsState: 0
       delay: 0
       duration: 0
-   2:
-      func: FUNC_VPOS
-      def: "I4,50"
-      andsw: "NONE"
-      lsPersist: 0
-      lsState: 0
-      delay: 0
-      duration: 0
-   61:
-      func: FUNC_EDGE
-      def: "SJ2,0,5"
-      andsw: "NONE"
-      lsPersist: 0
-      lsState: 0
-      delay: 0
-      duration: 20
-   62:
-      func: FUNC_EDGE
-      def: "SJ2,10,20"
-      andsw: "NONE"
-      lsPersist: 0
-      lsState: 0
-      delay: 0
-      duration: 20
-   63:
-      func: FUNC_EDGE
-      def: "SJ2,20,30"
-      andsw: "NONE"
-      lsPersist: 0
-      lsState: 0
-      delay: 0
-      duration: 20
 customFn: 
    0:
-      swtch: "L1"
-      func: ADJUST_GVAR
-      def: "0,IncDec,1,0"
-   1:
       swtch: "L2"
       func: PLAY_TRACK
       def: "armed,1,1x"
-   2:
-      swtch: "L3"
+   1:
+      swtch: "!L2"
       func: PLAY_TRACK
       def: "disarm,1,1x"
-   59:
-      swtch: "L62"
-      func: PLAY_VALUE
-      def: "Tmr1,1,1x"
-   60:
-      swtch: "L63"
-      func: PLAY_VALUE
-      def: "TX_VOLTAGE,1,1x"
-   61:
-      swtch: "L64"
-      func: SCREENSHOT
-      def: "1"
-   62:
-      swtch: "SJ2"
-      func: PLAY_SOUND
-      def: "Bp1,1,1"
-   63:
-      swtch: "SF0"
-      func: PLAY_TRACK
-      def: "armed,0,1x"
 flightModeData: 
    0:
-      name: "Acro"
+      trim: 
+         0:
+            value: 0
+            mode: 31
+         1:
+            value: 0
+            mode: 31
+         2:
+            value: 0
+            mode: 31
+         3:
+            value: 0
+            mode: 31
+         4:
+            value: 0
+            mode: 31
+         5:
+            value: 0
+            mode: 31
+      name: ""
       swtch: "NONE"
       fadeIn: 0
       fadeOut: 0
@@ -304,15 +294,29 @@ flightModeData:
             val: 0
          8:
             val: 0
-   1:
-      name: "Angle"
-      swtch: "NONE"
-      fadeIn: 0
-      fadeOut: 0
+         9:
+            val: 0
+         10:
+            val: 0
+         11:
+            val: 0
+         12:
+            val: 0
+         13:
+            val: 0
+         14:
+            val: 0
 thrTraceSrc: Thr
 switchWarning: 
    SF:
-      pos: down
+      pos: up
+varioData: 
+   source: none
+   centerSilent: 1
+   centerMax: 0
+   centerMin: 0
+   min: 0
+   max: 0
 rssiSource: none
 rfAlarms: 
    warning: 45
@@ -333,424 +337,20 @@ moduleData:
             crsfArmingMode: 0
             crsfArmingTrigger: "NONE"
             spare3: 0
-trainerData: 
-   mode: OFF
-   channelsStart: 0
-   channelsCount: -8
-   frameLength: 0
-   delay: 0
-   pulsePol: 0
 inputNames: 
    0:
-      val: "Rud"
+      val: "Ail"
    1:
       val: "Ele"
    2:
       val: "Thr"
    3:
-      val: "Ail"
+      val: "Rud"
    4:
       val: "Arm"
 potsWarnEnabled: 0
 telemetrySensors: 
    0:
-      id1: 
-         id: 9
-      id2: 
-         instance: 0
-      label: "Alt"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 9
-      prec: 1
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   1:
-      id1: 
-         id: 7
-      id2: 
-         instance: 0
-      label: "VSpd"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 5
-      prec: 1
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   2:
-      id1: 
-         id: 20
-      id2: 
-         instance: 0
-      label: "1RSS"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 17
-      prec: 0
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   3:
-      id1: 
-         id: 20
-      id2: 
-         instance: 1
-      label: "2RSS"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 17
-      prec: 0
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   4:
-      id1: 
-         id: 20
-      id2: 
-         instance: 2
-      label: "RQly"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 13
-      prec: 0
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   5:
-      id1: 
-         id: 20
-      id2: 
-         instance: 3
-      label: "RSNR"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 17
-      prec: 0
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   6:
-      id1: 
-         id: 20
-      id2: 
-         instance: 4
-      label: "ANT"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 0
-      prec: 0
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   7:
-      id1: 
-         id: 20
-      id2: 
-         instance: 5
-      label: "RFMD"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 0
-      prec: 0
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   8:
-      id1: 
-         id: 20
-      id2: 
-         instance: 6
-      label: "TPWR"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 16
-      prec: 0
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   9:
-      id1: 
-         id: 20
-      id2: 
-         instance: 7
-      label: "TRSS"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 17
-      prec: 0
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   10:
-      id1: 
-         id: 20
-      id2: 
-         instance: 8
-      label: "TQly"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 13
-      prec: 0
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   11:
-      id1: 
-         id: 20
-      id2: 
-         instance: 9
-      label: "TSNR"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 17
-      prec: 0
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   12:
-      id1: 
-         id: 8
-      id2: 
-         instance: 0
-      label: "RxBt"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 1
-      prec: 1
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   13:
-      id1: 
-         id: 8
-      id2: 
-         instance: 1
-      label: "Curr"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 2
-      prec: 1
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   14:
-      id1: 
-         id: 8
-      id2: 
-         instance: 2
-      label: "Capa"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 14
-      prec: 0
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   15:
-      id1: 
-         id: 8
-      id2: 
-         instance: 3
-      label: "Bat%"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 13
-      prec: 0
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   16:
-      id1: 
-         id: 2
-      id2: 
-         instance: 0
-      label: "GPS"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 40
-      prec: 0
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         param: 0
-   17:
-      id1: 
-         id: 2
-      id2: 
-         instance: 2
-      label: "GSpd"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 7
-      prec: 1
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   18:
-      id1: 
-         id: 2
-      id2: 
-         instance: 3
-      label: "Hdg"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 20
-      prec: 2
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   19:
-      id1: 
-         id: 2
-      id2: 
-         instance: 4
-      label: "Alt"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 9
-      prec: 0
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   20:
-      id1: 
-         id: 2
-      id2: 
-         instance: 5
-      label: "Sats"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 0
-      prec: 0
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   21:
       id1: 
          id: 30
       id2: 
@@ -769,7 +369,7 @@ telemetrySensors:
          custom: 
             ratio: 0
             offset: 0
-   22:
+   1:
       id1: 
          id: 30
       id2: 
@@ -788,7 +388,7 @@ telemetrySensors:
          custom: 
             ratio: 0
             offset: 0
-   23:
+   2:
       id1: 
          id: 30
       id2: 
@@ -807,7 +407,7 @@ telemetrySensors:
          custom: 
             ratio: 0
             offset: 0
-   24:
+   3:
       id1: 
          id: 33
       id2: 
@@ -824,19 +424,416 @@ telemetrySensors:
       onlyPositive: 0
       cfg: 
          param: 0
+   4:
+      id1: 
+         id: 9
+      id2: 
+         instance: 0
+      label: "Alt"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 9
+      prec: 2
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   5:
+      id1: 
+         id: 7
+      id2: 
+         instance: 0
+      label: "VSpd"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 5
+      prec: 2
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   6:
+      id1: 
+         id: 20
+      id2: 
+         instance: 0
+      label: "1RSS"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 17
+      prec: 0
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   7:
+      id1: 
+         id: 20
+      id2: 
+         instance: 1
+      label: "2RSS"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 17
+      prec: 0
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   8:
+      id1: 
+         id: 20
+      id2: 
+         instance: 2
+      label: "RQly"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 13
+      prec: 0
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   9:
+      id1: 
+         id: 20
+      id2: 
+         instance: 3
+      label: "RSNR"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 17
+      prec: 0
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   10:
+      id1: 
+         id: 20
+      id2: 
+         instance: 4
+      label: "ANT"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 0
+      prec: 0
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   11:
+      id1: 
+         id: 20
+      id2: 
+         instance: 5
+      label: "RFMD"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 0
+      prec: 0
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   12:
+      id1: 
+         id: 20
+      id2: 
+         instance: 6
+      label: "TPWR"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 16
+      prec: 0
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   13:
+      id1: 
+         id: 20
+      id2: 
+         instance: 7
+      label: "TRSS"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 17
+      prec: 0
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   14:
+      id1: 
+         id: 20
+      id2: 
+         instance: 8
+      label: "TQly"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 13
+      prec: 0
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   15:
+      id1: 
+         id: 20
+      id2: 
+         instance: 9
+      label: "TSNR"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 17
+      prec: 0
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   16:
+      id1: 
+         id: 8
+      id2: 
+         instance: 0
+      label: "RxBt"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 1
+      prec: 1
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   17:
+      id1: 
+         id: 8
+      id2: 
+         instance: 1
+      label: "Curr"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 2
+      prec: 1
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   18:
+      id1: 
+         id: 8
+      id2: 
+         instance: 2
+      label: "Capa"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 14
+      prec: 0
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   19:
+      id1: 
+         id: 8
+      id2: 
+         instance: 3
+      label: "Bat%"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 13
+      prec: 0
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   20:
+      id1: 
+         id: 2
+      id2: 
+         instance: 0
+      label: "GPS"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 40
+      prec: 0
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         param: 0
+   21:
+      id1: 
+         id: 2
+      id2: 
+         instance: 2
+      label: "GSpd"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 7
+      prec: 1
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   22:
+      id1: 
+         id: 2
+      id2: 
+         instance: 3
+      label: "Hdg"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 20
+      prec: 2
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   23:
+      id1: 
+         id: 2
+      id2: 
+         instance: 4
+      label: "GAlt"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 9
+      prec: 0
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   24:
+      id1: 
+         id: 2
+      id2: 
+         instance: 5
+      label: "Sats"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 0
+      prec: 0
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
 screenData: 
    0:
-      LayoutId: "Layout2P1"
+      LayoutId: Layout1P3
       layoutData: 
          zones: 
             0:
-               widgetName: "ModelBmp"
+               widgetName: ModelBmp
                widgetData: 
                   options: 
                      0:
                         type: Color
                         value: 
-                           color: 0xF8FCF8
+                           color: COLIDX0
                      1:
                         type: Unsigned
                         value: 
@@ -848,15 +845,29 @@ screenData:
                      3:
                         type: Color
                         value: 
-                           color: 0x0070D0
+                           color: COLIDX5
                      4:
                         type: Bool
                         value: 
                            boolValue: 0
             1:
-               widgetName: "Timer"
+               widgetName: Timer
+               widgetData: 
+                  options: 
+                     0:
+                        type: Unsigned
+                        value: 
+                           unsignedValue: 0
             2:
-               widgetName: "Outputs"
+               widgetName: SimWidget
+               widgetData: 
+                  options: 
+                     0:
+                        type: Bool
+                        value: 
+                           boolValue: 1
+            3:
+               widgetName: Outputs
                widgetData: 
                   options: 
                      0:
@@ -878,7 +889,7 @@ screenData:
                      4:
                         type: Color
                         value: 
-                           color: 0xF88038
+                           color: COLIDX1
          options: 
             0:
                type: Bool
@@ -901,11 +912,11 @@ screenData:
                value: 
                   boolValue: 0
    1:
-      LayoutId: "Layout1x1"
+      LayoutId: Layout1x1
       layoutData: 
          zones: 
             0:
-               widgetName: "Dashboard"
+               widgetName: Dashboard
                widgetData: 
                   options: 
                      0:
@@ -928,107 +939,6 @@ screenData:
                         type: Bool
                         value: 
                            boolValue: 1
-         options: 
-            0:
-               type: Bool
-               value: 
-                  boolValue: 0
-            1:
-               type: Bool
-               value: 
-                  boolValue: 0
-            2:
-               type: Bool
-               value: 
-                  boolValue: 0
-            3:
-               type: Bool
-               value: 
-                  boolValue: 0
-            4:
-               type: Bool
-               value: 
-                  boolValue: 0
-   2:
-      LayoutId: "Layout1x1"
-      layoutData: 
-         zones: 
-            0:
-               widgetName: "iNav"
-               widgetData: 
-                  options: 
-                     0:
-                        type: Bool
-                        value: 
-                           boolValue: 1
-                     1:
-                        type: Color
-                        value: 
-                           color: COLIDX13
-                     2:
-                        type: Color
-                        value: 
-                           color: 0xF88400
-         options: 
-            0:
-               type: Bool
-               value: 
-                  boolValue: 0
-            1:
-               type: Bool
-               value: 
-                  boolValue: 0
-            2:
-               type: Bool
-               value: 
-                  boolValue: 0
-            3:
-               type: Bool
-               value: 
-                  boolValue: 0
-            4:
-               type: Bool
-               value: 
-                  boolValue: 0
-   3:
-      LayoutId: "Layout1x1"
-      layoutData: 
-         zones: 
-            0:
-               widgetName: "Yaapu"
-               widgetData: 
-                  options: 
-                     0:
-                        type: Signed
-                        value: 
-                           signedValue: 1
-         options: 
-            0:
-               type: Bool
-               value: 
-                  boolValue: 0
-            1:
-               type: Bool
-               value: 
-                  boolValue: 0
-            2:
-               type: Bool
-               value: 
-                  boolValue: 0
-            3:
-               type: Bool
-               value: 
-                  boolValue: 0
-            4:
-               type: Bool
-               value: 
-                  boolValue: 0
-   4:
-      LayoutId: "Layout1x1"
-      layoutData: 
-         zones: 
-            0:
-               widgetName: "FM2M D-Clock"
          options: 
             0:
                type: Bool
@@ -1053,13 +963,13 @@ screenData:
 topbarData: 
    zones: 
       0:
-         widgetName: "Value"
+         widgetName: Value
          widgetData: 
             options: 
                0:
                   type: Source
                   value: 
-                     source: tele(15)
+                     source: tele(16)
                1:
                   type: Color
                   value: 
@@ -1068,44 +978,64 @@ topbarData:
                   type: Bool
                   value: 
                      boolValue: 1
+               3:
+                  type: Unsigned
+                  value: 
+                     unsignedValue: 0
+               4:
+                  type: Unsigned
+                  value: 
+                     unsignedValue: 0
       1:
-         widgetName: "Value"
+         widgetName: Value
          widgetData: 
             options: 
                0:
                   type: Source
                   value: 
-                     source: tele(4)
+                     source: tele(8)
                1:
                   type: Color
                   value: 
                      color: COLIDX1
+               2:
+                  type: Bool
+                  value: 
+                     boolValue: 1
+               3:
+                  type: Unsigned
+                  value: 
+                     unsignedValue: 0
+               4:
+                  type: Unsigned
+                  value: 
+                     unsignedValue: 0
+      3:
+         widgetName: ModelBmp
+         widgetData: 
+            options: 
+               0:
+                  type: Color
+                  value: 
+                     color: COLIDX0
+               1:
+                  type: Unsigned
+                  value: 
+                     unsignedValue: 0
                2:
                   type: Bool
                   value: 
                      boolValue: 0
-      2:
-         widgetName: "Value2"
-         widgetData: 
-            options: 
-               0:
-                  type: Source
-                  value: 
-                     source: TX_GPS
-               1:
+               3:
                   type: Color
                   value: 
-                     color: COLIDX0
-               2:
-                  type: String
-                  value: 
-                     stringValue: ""
-               3:
+                     color: COLIDX5
+               4:
                   type: Bool
                   value: 
-                     boolValue: 1
-      3:
-         widgetName: "Value"
+                     boolValue: 0
+      4:
+         widgetName: Value
          widgetData: 
             options: 
                0:
@@ -1120,8 +1050,16 @@ topbarData:
                   type: Bool
                   value: 
                      boolValue: 1
-      4:
-         widgetName: "Radio Info"
+               3:
+                  type: Unsigned
+                  value: 
+                     unsignedValue: 0
+               4:
+                  type: Unsigned
+                  value: 
+                     unsignedValue: 0
+      5:
+         widgetName: Radio Info
          widgetData: 
             options: 
                0:
@@ -1136,8 +1074,8 @@ topbarData:
                   type: Color
                   value: 
                      color: 0x48AC50
-      5:
-         widgetName: "Date Time"
+      6:
+         widgetName: Date Time
          widgetData: 
             options: 
                0:
@@ -1157,8 +1095,114 @@ topbarWidgetWidth:
       val: 1
    5:
       val: 1
+   6:
+      val: 1
 view: 0
 modelRegistrationID: "-eC!U*U*"
+customSwitches: 
+   SW1:
+      name: ""
+      type: 2POS
+      group: 1
+      start: START_PREVIOUS
+      state: 0
+      onColorLuaOverride: OFF
+      offColorLuaOverride: OFF
+      onColor: 
+         r: 255
+         g: 255
+         b: 255
+      offColor: 
+         r: 0
+         g: 0
+         b: 0
+   SW2:
+      name: ""
+      type: 2POS
+      group: 1
+      start: START_PREVIOUS
+      state: 1
+      onColorLuaOverride: OFF
+      offColorLuaOverride: OFF
+      onColor: 
+         r: 255
+         g: 255
+         b: 255
+      offColor: 
+         r: 0
+         g: 0
+         b: 0
+   SW3:
+      name: ""
+      type: 2POS
+      group: 1
+      start: START_PREVIOUS
+      state: 0
+      onColorLuaOverride: OFF
+      offColorLuaOverride: OFF
+      onColor: 
+         r: 255
+         g: 255
+         b: 255
+      offColor: 
+         r: 0
+         g: 0
+         b: 0
+   SW4:
+      name: ""
+      type: 2POS
+      group: 1
+      start: START_PREVIOUS
+      state: 0
+      onColorLuaOverride: OFF
+      offColorLuaOverride: OFF
+      onColor: 
+         r: 255
+         g: 255
+         b: 255
+      offColor: 
+         r: 0
+         g: 0
+         b: 0
+   SW5:
+      name: ""
+      type: 2POS
+      group: 1
+      start: START_PREVIOUS
+      state: 0
+      onColorLuaOverride: OFF
+      offColorLuaOverride: OFF
+      onColor: 
+         r: 255
+         g: 255
+         b: 255
+      offColor: 
+         r: 0
+         g: 0
+         b: 0
+   SW6:
+      name: ""
+      type: 2POS
+      group: 1
+      start: START_PREVIOUS
+      state: 0
+      onColorLuaOverride: OFF
+      offColorLuaOverride: OFF
+      onColor: 
+         r: 255
+         g: 255
+         b: 255
+      offColor: 
+         r: 0
+         g: 0
+         b: 0
+cfsGroupOn: 
+   1:
+      v: 1
+   2:
+      v: 0
+   3:
+      v: 0
 usbJoystickExtMode: 0
 usbJoystickIfMode: JOYSTICK
 usbJoystickCircularCut: 0

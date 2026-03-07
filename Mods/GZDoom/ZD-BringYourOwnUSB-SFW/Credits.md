@@ -29,7 +29,7 @@ https://github.com/Perkedel/Lah-Mboh
 - [FreePD Public Domain Musics](https://freepd.com/). Kevin Macleod. **CC0**. Label that publishes musics under CC0 / Public Domain!
 	- Kevin Macleod - Study & Relax
 	- Bryan Teoh - Mysterious Lights
-- [Octavia MIDI Demo Collections!](https://github.com/ltgcgo/midi-demo-data). Octavia. Varied, **CC4.0-BY-NC-SA**. MIDI Collection Samples for [Octavia MIDI Visualizer](https://gh.ltgc.cc/octavia/test/).
-  - [`MIDI Massacere.mid`](https://github.com/ltgcgo/midi-demo-data/blob/main/artist/T%C3%B4Bach/MIDI%20Massacre.mid) = `M_MSACRE.mid`. TôBach
+- [Octavia MIDI Demo Collections!](https://github.com/ltgcgo/midi-data). Octavia. Varied, **CC4.0-BY-NC-SA**. MIDI Collection Samples for [Octavia MIDI Visualizer](https://gh.ltgc.cc/octavia/test/).
+  - [`MIDI Massacere.mid`](https://github.com/ltgcgo/midi-data/blob/main/artist/T%C3%B4Bach/MIDI%20Massacre.mid) = `M_MSACRE.mid`. TôBach
 - Freedoom. See [main CREDITS.md](https://github.com/Perkedel/Lah-Mboh/blob/main/CREDITS.md).
-- ???'s MIDI Collection. Collected by _*redacted as `Serek-katron`*. Varied. I cannot share the intel of this guy this time (`DO NOT CREDIT ME FOR THESE MIDI FILES`), maybe he/she was in danger, considering these are sparsdated MIDI files, and they're *SLAPS* hard!, many cover of Meme Songs too!. I will share the full intel soon to comply Perkedel's Pls sauce policy. Basically this guy is a YouTuber who collects MIDI and showcase them.
+- ???'s MIDI Collection. Collected by _*redacted as `Serek-katron`*. Varied. I cannot share the intel of this guy this time (`DO NOT CREDIT ME FOR THESE MIDI FILES`), maybe he/she was in danger, considering these are sparsdated MIDI files, and they're *SLAPS* 👍👍👍👍👍 hard!, many cover of Meme Songs too!. I will share the full intel soon to comply Perkedel's Pls sauce policy. Basically this guy is a YouTuber who collects MIDI and showcase them.

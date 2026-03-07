@@ -1,15 +1,52 @@
 semver: 2.12.0
 header:
-  name: ON-OFF
-  bitmap: crzTes.png
+  name: MODEL09
+  bitmap: ""
   labels: ""
+timers:
+  0:
+    swtch: SF0
+    mode: ON
+    name: arm
+    minuteBeep: 0
+    countdownBeep: 0
+    start: 0
+    persistent: 0
+    countdownStart: 0
+    value: 0
+    showElapsed: 0
+    extraHaptic: 0
+  1:
+    swtch: NONE
+    mode: THR
+    name: thr
+    minuteBeep: 0
+    countdownBeep: 0
+    start: 0
+    persistent: 0
+    countdownStart: 0
+    value: 0
+    showElapsed: 0
+    extraHaptic: 0
+  2:
+    swtch: NONE
+    mode: START
+    name: flt
+    minuteBeep: 0
+    countdownBeep: 0
+    start: 0
+    persistent: 0
+    countdownStart: 0
+    value: 0
+    showElapsed: 0
+    extraHaptic: 0
 noGlobalFunctions: 0
 thrTrim: 0
 trimInc: 0
 displayTrims: 0
 ignoreSensorIds: 0
 showInstanceIds: 0
-disableThrottleWarning: 1
+disableThrottleWarning: 0
 enableCustomThrottleWarning: 0
 customThrottleWarningPosition: 0
 beepANACenter: 0
@@ -94,27 +131,8 @@ mixData:
     flightModes: 000000000
     offset: 0
     name: ""
-  - destCh: 4
-    srcRaw: ls(2)
-    weight: 100
-    swtch: NONE
-    curve:
-      type: 0
-      value: 0
-    delayPrec: 0
-    delayUp: 0
-    delayDown: 0
-    speedPrec: 0
-    speedUp: 0
-    speedDown: 0
-    carryTrim: 0
-    mltpx: ADD
-    mixWarn: 0
-    flightModes: 000000000
-    offset: 0
-    name: ""
 expoData:
-  - srcRaw: Rud
+  - srcRaw: Ail
     scale: 0
     mode: 3
     chn: 0
@@ -153,7 +171,7 @@ expoData:
       value: 0
     trimSource: 0
     name: ""
-  - srcRaw: Ail
+  - srcRaw: Rud
     scale: 0
     mode: 3
     chn: 3
@@ -168,39 +186,13 @@ expoData:
     name: ""
 inputNames:
   0:
-    val: Rud
+    val: Ail
   1:
     val: Ele
   2:
     val: Thr
   3:
-    val: Ail
-logicalSw:
-  0:
-    func: FUNC_EDGE
-    def: SH2,0,-
-    delay: 0
-    duration: 0
-    andsw: NONE
-    lsPersist: 0
-    lsState: 0
-  1:
-    func: FUNC_STICKY
-    def: L1,L1
-    delay: 0
-    duration: 0
-    andsw: NONE
-    lsPersist: 1
-    lsState: 0
-customFn:
-  0:
-    swtch: L2
-    func: PLAY_TRACK
-    def: "acrmod\x00\x00,1,1x"
-  1:
-    swtch: "!L2"
-    func: PLAY_TRACK
-    def: "angmod\x00\x00,1,1x"
+    val: Rud
 swashR:
   type: TYPE_NONE
   value: 0
@@ -212,9 +204,33 @@ swashR:
   elevatorWeight: 0
 thrTraceSrc: Thr
 switchWarning:
-  SH:
+  SA:
     pos: up
-  SJ:
+  SB:
+    pos: up
+  SC:
+    pos: up
+  SD:
+    pos: up
+  SE:
+    pos: up
+  SF:
+    pos: up
+  SG:
+    pos: up
+  SI:
+    pos: up
+  SW1:
+    pos: down
+  SW2:
+    pos: up
+  SW3:
+    pos: up
+  SW4:
+    pos: up
+  SW5:
+    pos: up
+  SW6:
     pos: up
 thrTrimSw: 0
 potsWarnMode: WARN_OFF
@@ -245,75 +261,6 @@ screenData:
   0:
     LayoutId: Layout2P1
     layoutData:
-      zones:
-        0:
-          widgetName: Value2
-          widgetData:
-            options:
-              0:
-                type: Source
-                value:
-                  source: ls(2)
-              1:
-                type: Color
-                value:
-                  color: COLIDX0
-              2:
-                type: String
-                value:
-                  stringValue: ""
-              3:
-                type: Bool
-                value:
-                  boolValue: 1
-        1:
-          widgetName: Text
-          widgetData:
-            options:
-              0:
-                type: String
-                value:
-                  stringValue: Press SH now
-              1:
-                type: Color
-                value:
-                  color: 0xf8fcf8
-              2:
-                type: Unsigned
-                value:
-                  unsignedValue: 1
-              3:
-                type: Bool
-                value:
-                  boolValue: 1
-              4:
-                type: Unsigned
-                value:
-                  unsignedValue: 0
-        2:
-          widgetName: Outputs
-          widgetData:
-            options:
-              0:
-                type: Signed
-                value:
-                  signedValue: 1
-              1:
-                type: Bool
-                value:
-                  boolValue: 0
-              2:
-                type: Color
-                value:
-                  color: 0x008cf8
-              3:
-                type: Color
-                value:
-                  color: COLIDX0
-              4:
-                type: Color
-                value:
-                  color: 0xf8a440
       options:
         0:
           type: Bool
@@ -384,10 +331,10 @@ modelRegistrationID: -eC!U*U*
 hatsMode: GLOBAL
 customSwitches:
   SW1:
-    type: GLOBAL
+    type: 2POS
     group: 1
-    start: START_OFF
-    state: 0
+    start: START_ON
+    state: 1
     name: ""
     onColorLuaOverride: OFF
     offColorLuaOverride: OFF
@@ -400,7 +347,7 @@ customSwitches:
       g: 0
       b: 0
   SW2:
-    type: GLOBAL
+    type: 2POS
     group: 1
     start: START_OFF
     state: 0
@@ -416,7 +363,7 @@ customSwitches:
       g: 0
       b: 0
   SW3:
-    type: GLOBAL
+    type: 2POS
     group: 1
     start: START_OFF
     state: 0
@@ -432,7 +379,7 @@ customSwitches:
       g: 0
       b: 0
   SW4:
-    type: GLOBAL
+    type: 2POS
     group: 1
     start: START_OFF
     state: 0
@@ -448,7 +395,7 @@ customSwitches:
       g: 0
       b: 0
   SW5:
-    type: GLOBAL
+    type: 2POS
     group: 1
     start: START_OFF
     state: 0
@@ -464,7 +411,7 @@ customSwitches:
       g: 0
       b: 0
   SW6:
-    type: GLOBAL
+    type: 2POS
     group: 1
     start: START_OFF
     state: 0
