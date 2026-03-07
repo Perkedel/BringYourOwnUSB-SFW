@@ -1,6 +1,6 @@
 semver: 2.12.0
 header: 
-   name: "Waduh"
+   name: "WaduhUnaffect"
    bitmap: "mav2.png"
    labels: "WaduhCoy,Favorites"
 timers: 
@@ -32,14 +32,14 @@ timers:
       start: 0
       swtch: "NONE"
       value: 0
-      mode: OFF
+      mode: THR
       countdownBeep: 0
       minuteBeep: 0
       persistent: 0
       countdownStart: 0
       showElapsed: 0
       extraHaptic: 0
-      name: "iNav"
+      name: "Thr"
 telemetryProtocol: 0
 thrTrim: 0
 noGlobalFunctions: 0
@@ -939,47 +939,6 @@ screenData:
                         type: Bool
                         value: 
                            boolValue: 1
-         options: 
-            0:
-               type: Bool
-               value: 
-                  boolValue: 0
-            1:
-               type: Bool
-               value: 
-                  boolValue: 0
-            2:
-               type: Bool
-               value: 
-                  boolValue: 0
-            3:
-               type: Bool
-               value: 
-                  boolValue: 0
-            4:
-               type: Bool
-               value: 
-                  boolValue: 0
-   2:
-      LayoutId: Layout1x1
-      layoutData: 
-         zones: 
-            0:
-               widgetName: iNav
-               widgetData: 
-                  options: 
-                     0:
-                        type: Bool
-                        value: 
-                           boolValue: 1
-                     1:
-                        type: Color
-                        value: 
-                           color: COLIDX15
-                     2:
-                        type: Color
-                        value: 
-                           color: COLIDX1
          options: 
             0:
                type: Bool
