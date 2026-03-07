@@ -4,40 +4,46 @@ Labels:
 Sort: 1
 Models:
   model1.yml:
-    hash: "d05c0000665cf18b"
+    hash: "f3690000675c765a"
     name: "Waduh"
     mod0type: 5
     labels: "WaduhCoy,Favorites"
     bitmap: "mav2.png"
-    lastopen: 1772821524
+    lastopen: 1772883292
   model2.yml:
-    hash: "7f170000655c25b5"
+    hash: "94170000675c9d5a"
     name: "Empty"
     labels: "Favorites"
     bitmap: "mav2.png"
-    lastopen: 1772750459
+    lastopen: 1772883057
   model3.yml:
-    hash: "f8360000665c5d28"
+    hash: "9c3f0000675cb05a"
     name: "Simulacral"
     labels: "Favorites"
     bitmap: "simulacral.png"
-    lastopen: 1772773300
+    lastopen: 1772883244
   model4.yml:
-    hash: "70200000665c3c12"
+    hash: "0e230000675cd25a"
     name: "RoundRobin"
     labels: ""
     bitmap: "crzTes.png"
-    lastopen: 1772763378
+    lastopen: 1772879918
   model5.yml:
-    hash: "ab1a0000665c1728"
+    hash: "8e220000675ce25a"
     name: "ON-OFF"
     labels: ""
     bitmap: "crzTes.png"
-    lastopen: 1772773184
+    lastopen: 1772883240
   model6.yml:
-    hash: "ed110000665cb18e"
+    hash: "47190000675ced5a"
     name: "CekSample"
     labels: ""
-    bitmap: "mav3.png"
-    lastopen: 1772818415
+    bitmap: "mav2.png"
+    lastopen: 1772879057
+  model7.yml:
+    hash: "591a0000675c2e5a"
+    name: "MODEL07"
+    labels: ""
+    bitmap: ""
+    lastopen: 1772882987
 

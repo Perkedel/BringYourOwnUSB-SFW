@@ -1,4 +1,4 @@
-semver: 2.11.5
+semver: 2.12.0
 header: 
    name: "Simulacral"
    bitmap: "simulacral.png"
@@ -633,11 +633,11 @@ telemetrySensors:
             offset: 0
 screenData: 
    0:
-      LayoutId: "Layout1x1"
+      LayoutId: Layout1x1
       layoutData: 
          zones: 
             0:
-               widgetName: "SimWidget"
+               widgetName: SimWidget
                widgetData: 
                   options: 
                      0:
@@ -668,13 +668,17 @@ screenData:
 topbarData: 
    zones: 
       0:
-         widgetName: "ModelBmp"
+         widgetName: ModelBmp
          widgetData: 
             options: 
                0:
                   type: Color
                   value: 
                      color: 0xF8FCF8
+               1:
+                  type: Unsigned
+                  value: 
+                     unsignedValue: 0
                2:
                   type: Bool
                   value: 
@@ -687,8 +691,8 @@ topbarData:
                   type: Bool
                   value: 
                      boolValue: 0
-      3:
-         widgetName: "Value"
+      4:
+         widgetName: Value
          widgetData: 
             options: 
                0:
@@ -703,8 +707,16 @@ topbarData:
                   type: Bool
                   value: 
                      boolValue: 1
-      4:
-         widgetName: "Radio Info"
+               3:
+                  type: Unsigned
+                  value: 
+                     unsignedValue: 0
+               4:
+                  type: Unsigned
+                  value: 
+                     unsignedValue: 0
+      5:
+         widgetName: Radio Info
          widgetData: 
             options: 
                0:
@@ -719,8 +731,8 @@ topbarData:
                   type: Color
                   value: 
                      color: 0x48AC50
-      5:
-         widgetName: "Date Time"
+      6:
+         widgetName: Date Time
          widgetData: 
             options: 
                0:
@@ -740,11 +752,148 @@ topbarWidgetWidth:
       val: 1
    5:
       val: 1
+   6:
+      val: 1
 view: 0
 modelRegistrationID: "-eC!U*U*"
+customSwitches: 
+   SW1:
+      name: ""
+      type: GLOBAL
+      group: 1
+      start: START_OFF
+      state: 0
+      onColorLuaOverride: OFF
+      offColorLuaOverride: OFF
+      onColor: 
+         r: 255
+         g: 255
+         b: 255
+      offColor: 
+         r: 0
+         g: 0
+         b: 0
+   SW2:
+      name: ""
+      type: GLOBAL
+      group: 1
+      start: START_OFF
+      state: 0
+      onColorLuaOverride: OFF
+      offColorLuaOverride: OFF
+      onColor: 
+         r: 255
+         g: 255
+         b: 255
+      offColor: 
+         r: 0
+         g: 0
+         b: 0
+   SW3:
+      name: ""
+      type: GLOBAL
+      group: 1
+      start: START_OFF
+      state: 0
+      onColorLuaOverride: OFF
+      offColorLuaOverride: OFF
+      onColor: 
+         r: 255
+         g: 255
+         b: 255
+      offColor: 
+         r: 0
+         g: 0
+         b: 0
+   SW4:
+      name: ""
+      type: GLOBAL
+      group: 1
+      start: START_OFF
+      state: 0
+      onColorLuaOverride: OFF
+      offColorLuaOverride: OFF
+      onColor: 
+         r: 255
+         g: 255
+         b: 255
+      offColor: 
+         r: 0
+         g: 0
+         b: 0
+   SW5:
+      name: ""
+      type: GLOBAL
+      group: 1
+      start: START_OFF
+      state: 0
+      onColorLuaOverride: OFF
+      offColorLuaOverride: OFF
+      onColor: 
+         r: 255
+         g: 255
+         b: 255
+      offColor: 
+         r: 0
+         g: 0
+         b: 0
+   SW6:
+      name: ""
+      type: GLOBAL
+      group: 1
+      start: START_OFF
+      state: 0
+      onColorLuaOverride: OFF
+      offColorLuaOverride: OFF
+      onColor: 
+         r: 255
+         g: 255
+         b: 255
+      offColor: 
+         r: 0
+         g: 0
+         b: 0
+cfsGroupOn: 
+   1:
+      v: 1
+   2:
+      v: 0
+   3:
+      v: 0
 usbJoystickExtMode: 0
-usbJoystickIfMode: JOYSTICK
+usbJoystickIfMode: GAMEPAD
 usbJoystickCircularCut: 0
+usbJoystickCh: 
+   0:
+      mode: CH_SIM
+      inversion: 0
+      param: 0
+      btn_num: 0
+      switch_npos: 0
+   1:
+      mode: CH_SIM
+      inversion: 0
+      param: 1
+      btn_num: 0
+      switch_npos: 0
+   2:
+      mode: CH_SIM
+      inversion: 0
+      param: 3
+      btn_num: 0
+      switch_npos: 0
+   3:
+      mode: CH_SIM
+      inversion: 0
+      param: 2
+      btn_num: 0
+      switch_npos: 0
+   4:
+      mode: CH_AXIS
+      inversion: 0
+      param: 0
+      btn_num: 0
+      switch_npos: 0
 radioThemesDisabled: GLOBAL
 radioGFDisabled: GLOBAL
 radioTrainerDisabled: GLOBAL

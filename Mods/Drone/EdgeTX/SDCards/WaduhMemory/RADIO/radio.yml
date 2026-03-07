@@ -1,9 +1,9 @@
-checksum: 60909
+checksum: 26734
 manuallyEdited: 0
 timezoneMinutes: 0
 ppmunit: 0
-semver: 2.11.5
-board: tx16s
+semver: 2.12.0
+board: tx16smk3
 calib: 
    LH:
       mid: 512
@@ -29,34 +29,22 @@ calib:
       mid: 773
       spanNeg: 5388
       spanPos: 9758
-   P3:
-      mid: 2048
-      spanNeg: 2016
-      spanPos: 0
    SL1:
-      mid: 512
-      spanNeg: 384
-      spanPos: 384
+      mid: 1023
+      spanNeg: 1008
+      spanPos: 1008
    SL2:
-      mid: 512
-      spanNeg: 384
-      spanPos: 384
+      mid: 1023
+      spanNeg: 1008
+      spanPos: 1008
    EXT1:
-      mid: 512
-      spanNeg: 384
-      spanPos: 384
+      mid: 1023
+      spanNeg: 1008
+      spanPos: 1008
    EXT2:
-      mid: 512
-      spanNeg: 384
-      spanPos: 384
-   EXT3:
-      mid: 512
-      spanNeg: 384
-      spanPos: 384
-   EXT4:
-      mid: 512
-      spanNeg: 384
-      spanPos: 384
+      mid: 1023
+      spanNeg: 1008
+      spanPos: 1008
 vBatWarn: 66
 txVoltageCalibration: 0
 backlightMode: backlight_mode_all
@@ -68,11 +56,11 @@ internalModule: TYPE_CROSSFIRE
 trainer: 
    mix: 
       0:
-         srcChn: 0
+         srcChn: 3
          mode: REPL
          studWeight: 100
       1:
-         srcChn: 1
+         srcChn: 2
          mode: REPL
          studWeight: 100
       2:
@@ -80,7 +68,7 @@ trainer:
          mode: REPL
          studWeight: 100
       3:
-         srcChn: 3
+         srcChn: 0
          mode: REPL
          studWeight: 100
 view: 0
@@ -93,7 +81,7 @@ stickMode: 1
 timezone: 7
 adjustRTC: 1
 inactivityTimer: 10
-internalModuleBaudrate: 0
+internalModuleBaudrate: 1
 splashMode: 3
 hapticMode: mode_all
 switchesDelay: 0
@@ -110,7 +98,7 @@ speakerVolume: 24
 vBatMin: 67
 vBatMax: 83
 backlightBright: 0
-globalTimer: 15649
+globalTimer: 19563
 bluetoothBaudrate: 0
 bluetoothMode: TELEMETRY
 countryCode: 0
@@ -122,6 +110,7 @@ disableRssiPoweroffAlarm: 0
 USBMode: 0
 jackMode: 0
 ttsLanguage: "en"
+uiLanguage: "en"
 beepVolume: 2
 wavVolume: 4
 varioVolume: 2
@@ -141,7 +130,7 @@ customFn:
    60:
       swtch: "ON"
       func: BACKLIGHT
-      def: "P1,1"
+      def: "P1,0"
    61:
       swtch: "SF0"
       func: BACKLIGHT
@@ -153,7 +142,7 @@ customFn:
    63:
       swtch: "ON"
       func: VOLUME
-      def: "P3,1"
+      def: "NONE,0"
 serialPort: 
    AUX1:
       mode: TELEMETRY_IN
@@ -173,10 +162,6 @@ potsConfig:
       type: multipos_switch
       inv: 0
       name: ""
-   P3:
-      type: with_detent
-      inv: 0
-      name: ""
    SL1:
       type: slider
       inv: 0
@@ -193,57 +178,132 @@ potsConfig:
       type: slider
       inv: 0
       name: ""
-   EXT3:
-      type: slider
-      inv: 0
-      name: ""
-   EXT4:
-      type: slider
-      inv: 0
-      name: ""
 switchConfig: 
    SA:
-      type: 3pos
       name: ""
+      type: 3POS
    SB:
-      type: 3pos
       name: ""
+      type: 3POS
    SC:
-      type: 3pos
       name: ""
+      type: 3POS
    SD:
-      type: 3pos
       name: ""
+      type: 3POS
    SE:
-      type: 3pos
       name: ""
+      type: 3POS
    SF:
-      type: 2pos
       name: ""
+      type: 2POS
    SG:
-      type: 3pos
       name: ""
+      type: 3POS
    SH:
-      type: toggle
       name: ""
+      type: TOGGLE
    SI:
-      type: 2pos
       name: ""
+      type: 2POS
    SJ:
-      type: toggle
       name: ""
-flexSwitches: 
+      type: TOGGLE
+   SW1:
+      name: ""
+      type: TOGGLE
+      start: START_PREVIOUS
+      onColorLuaOverride: ON
+      offColorLuaOverride: ON
+      onColor: 
+         r: 0
+         g: 252
+         b: 0
+      offColor: 
+         r: 0
+         g: 0
+         b: 160
+   SW2:
+      name: ""
+      type: 2POS
+      start: START_PREVIOUS
+      onColorLuaOverride: ON
+      offColorLuaOverride: ON
+      onColor: 
+         r: 0
+         g: 252
+         b: 0
+      offColor: 
+         r: 0
+         g: 0
+         b: 160
+   SW3:
+      name: ""
+      type: 2POS
+      start: START_PREVIOUS
+      onColorLuaOverride: ON
+      offColorLuaOverride: ON
+      onColor: 
+         r: 0
+         g: 252
+         b: 0
+      offColor: 
+         r: 0
+         g: 0
+         b: 160
+   SW4:
+      name: ""
+      type: 2POS
+      start: START_PREVIOUS
+      onColorLuaOverride: ON
+      offColorLuaOverride: ON
+      onColor: 
+         r: 0
+         g: 252
+         b: 0
+      offColor: 
+         r: 0
+         g: 0
+         b: 160
+   SW5:
+      name: ""
+      type: 2POS
+      start: START_PREVIOUS
+      onColorLuaOverride: ON
+      offColorLuaOverride: ON
+      onColor: 
+         r: 0
+         g: 252
+         b: 0
+      offColor: 
+         r: 0
+         g: 0
+         b: 160
+   SW6:
+      name: ""
+      type: TOGGLE
+      start: START_PREVIOUS
+      onColorLuaOverride: ON
+      offColorLuaOverride: ON
+      onColor: 
+         r: 0
+         g: 252
+         b: 0
+      offColor: 
+         r: 0
+         g: 0
+         b: 160
    FL1:
-      channel: P1
+      name: ""
+      type: NONE
    FL2:
-      channel: P1
+      name: ""
+      type: NONE
 currModelFilename: "model1.yml"
-modelQuickSelect: 1
 blOffBright: 20
 bluetoothName: "hoshino"
 ownerRegistrationID: "-eC!U*U*"
 rotEncMode: 0
-uartSampleMode: 0
 imuMax: 0
 imuOffset: 0
 selectedTheme: "Stork_TENS"
@@ -264,4 +324,18 @@ modelCustomScriptsDisabled: 0
 modelTelemetryDisabled: 0
 disableTrainerPoweroffAlarm: 0
 disablePwrOnOffHaptic: 0
+modelQuickSelect: 1
 pwrOffIfInactive: 0
+keyShortcuts: 
+   0:
+      shortcut: MODEL_SETUP
+   1:
+      shortcut: OPEN_QUICK_MENU
+   2:
+      shortcut: UI_SCREEN1
+   3:
+      shortcut: MANAGE_MODELS
+   4:
+      shortcut: TOOLS_APPS
+   5:
+      shortcut: TOOLS_CHAN_MON

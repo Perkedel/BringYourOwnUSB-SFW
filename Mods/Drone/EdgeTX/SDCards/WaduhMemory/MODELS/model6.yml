@@ -1,7 +1,7 @@
-semver: 2.11.5
+semver: 2.12.0
 header: 
    name: "CekSample"
-   bitmap: "mav3.png"
+   bitmap: "mav2.png"
    labels: ""
 telemetryProtocol: 0
 thrTrim: 0
@@ -171,7 +171,7 @@ inputNames:
 potsWarnEnabled: 0
 screenData: 
    0:
-      LayoutId: "Layout2P1"
+      LayoutId: Layout2P1
       layoutData: 
          options: 
             0:
@@ -196,10 +196,11 @@ screenData:
                   boolValue: 0
 topbarData: 
    zones: 
-      3:
-         widgetName: "Internal GPS"
       4:
-         widgetName: "Radio Info"
+         widgetName: Internal GPS
+         widgetData: 
+      5:
+         widgetName: Radio Info
          widgetData: 
             options: 
                0:
@@ -214,8 +215,8 @@ topbarData:
                   type: Color
                   value: 
                      color: 0x48AC50
-      5:
-         widgetName: "Date Time"
+      6:
+         widgetName: Date Time
          widgetData: 
             options: 
                0:
@@ -235,8 +236,114 @@ topbarWidgetWidth:
       val: 1
    5:
       val: 1
+   6:
+      val: 1
 view: 0
 modelRegistrationID: "-eC!U*U*"
+customSwitches: 
+   SW1:
+      name: ""
+      type: 2POS
+      group: 1
+      start: START_ON
+      state: 1
+      onColorLuaOverride: OFF
+      offColorLuaOverride: OFF
+      onColor: 
+         r: 255
+         g: 255
+         b: 255
+      offColor: 
+         r: 0
+         g: 0
+         b: 0
+   SW2:
+      name: ""
+      type: 2POS
+      group: 1
+      start: START_OFF
+      state: 0
+      onColorLuaOverride: OFF
+      offColorLuaOverride: OFF
+      onColor: 
+         r: 255
+         g: 255
+         b: 255
+      offColor: 
+         r: 0
+         g: 0
+         b: 0
+   SW3:
+      name: ""
+      type: 2POS
+      group: 1
+      start: START_OFF
+      state: 0
+      onColorLuaOverride: OFF
+      offColorLuaOverride: OFF
+      onColor: 
+         r: 255
+         g: 255
+         b: 255
+      offColor: 
+         r: 0
+         g: 0
+         b: 0
+   SW4:
+      name: ""
+      type: 2POS
+      group: 1
+      start: START_OFF
+      state: 0
+      onColorLuaOverride: OFF
+      offColorLuaOverride: OFF
+      onColor: 
+         r: 255
+         g: 255
+         b: 255
+      offColor: 
+         r: 0
+         g: 0
+         b: 0
+   SW5:
+      name: ""
+      type: 2POS
+      group: 1
+      start: START_OFF
+      state: 0
+      onColorLuaOverride: OFF
+      offColorLuaOverride: OFF
+      onColor: 
+         r: 255
+         g: 255
+         b: 255
+      offColor: 
+         r: 0
+         g: 0
+         b: 0
+   SW6:
+      name: ""
+      type: 2POS
+      group: 1
+      start: START_OFF
+      state: 0
+      onColorLuaOverride: OFF
+      offColorLuaOverride: OFF
+      onColor: 
+         r: 255
+         g: 255
+         b: 255
+      offColor: 
+         r: 0
+         g: 0
+         b: 0
+cfsGroupOn: 
+   1:
+      v: 1
+   2:
+      v: 0
+   3:
+      v: 0
 usbJoystickExtMode: 0
 usbJoystickIfMode: JOYSTICK
 usbJoystickCircularCut: 0
