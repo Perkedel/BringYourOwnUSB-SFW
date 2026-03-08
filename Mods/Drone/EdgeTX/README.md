@@ -2,6 +2,25 @@
 
 Here are Packfiles for EdgeTX
 
+## Advices
+
+We've been scouring intels around the world about FPV and pretty much RCs of all kinds. Here are the advices we got so far:
+
+- **Start from only Remote**. No Drone itself, just the remote. Yes, I know sounds weird. BUT trust me, when everyone in the RC community (both Flyings & Lands, on YouTube and other forums) say it, **that's because we already have simulator**. Comparatively only costs so much (even better, MultiTalent is $0, and there is permanent game mode about it!), and breaking your RC unit do not cost you anything huge if you did it IRL.
+- **Never mess with your Input-Mixer-Output & Trims**! You no longer have to anymore this day, and if you messed up those Input-Mixer-Outputs, congratulations, you'll fly and drive tilt forever. **Always tune exclusively from the Core unit of the drone itself!!**, be with with **[Betaflight App](https://app.betaflight.com/), [Bluejay](https://esc-configurator.com/), Stork 🫀🩺🛠️ CardioTweaks, etc.** RC Core units these days are very sophisticated and has at worst mode, a minimum critical self adjusting. Therefore to tune your drone so it flies and drives stable, configure just the core unit with their respective configurator App. 
+  - The RC, leave as is. Whatever it provided you, just leave it like that (but if it's not AETR (Ch0 `Ail`, Ch1 `Ele`, Ch1 `Thr`, Ch2 `Rud`), reorder them), Never mess with curves, etc. etc.
+  - Also Disable the Trim! That's no longer needed, again your RC Core already has smarterest stabilizer too. go to `MDL` (press 1x), `Flight Modes`, the first one `FM0`, and turn off all of the trims. **Repeat for all Models**. And in Companion, Open up each & every model, `Flight Modes`, first one `FM0`, disable all trims down there. Now you can use these Trim buttons for something else yay!
+  - You can still mess around with its Sounds & Themes. So add those Meme & those 😏😏😏😏 stuffs there. **No, don't do 😏😏😏😏 if you're bringing your RC to public**, there maybe those who mentally cannot see them yet!
+  - Btw, ExpressLRS always use CH5 to `Arm`. So, lock that CH5 Input-Mixer-Output assigment excslusively to Arm. Because this channel in particular is binary ON/OFF only. Low is OFF, High is ON.
+- **Configuring RC overall is only best using its configurator app**. use EdgeTX Companion exclusively to configure your otherwise configs. Add those channels your ExpressLRS needed if there's missing one (again, never mess their default parameters). Using the RC itself is possible, but slow & cluttered, can cause you mess up by misclick!
+  - Unfortunately, as of March 2026, **you cannot configure your Telemetry / Widget, Telemtry Discovery, & Themes at all with Companion**. You have to first write all of your changed Companion configuration back to your RC, then build and rice in your RC itself after that. And then redownload the riced config for further adjustments and backup.
+- Use RC **with the biggest Gimbal size**. the `Full Size` one (usually Radiomaster AG series implemented RCs). These 2 joystick Size alone also **severely affects your flying & driving control performance**. So if you chose the RC not because of budget but your decision solely, you're stupid. And even so, **just avoid small Gimbaled RC at all**! Trust me, your hands will thank you. 
+  - I tried drone simulators and since I don't have RC, I had to just use gamepad. Man! **It's IMPOSSIBRU to fly at all!!** If only my joysticks are bigger than all of these typical gamepads, like those FPV Youtubers had! 
+  - Because of this small gimbal size, you'll feel like when Yanti Efurteyas (Blue Archive: New Paradigm (fan game remake)) tried FPV and failed miserably, and turns out after another group of Students investigated it the other day, **The demo unit used Radiomaster Pocket** lmao!, maybe to avoid vandalism idk since it's used for Customer Demo Interaction. Huh, no wonder her older sister, Tasha Efurteyas did also have a bit struggle too when first time tried too. So, the store owner, Reko had to pay his guilt by gifting just-left-the Yanti RemoteMod Postquarter (alike Radiomaster TX16s Mk 7 Max) & Stork Whoops sets. Now both of the Efurteyas has FPV drone, and the large gimballed RCs, yey!, no more polar-siding (Tasha's FPV & Yanti's DJI flagship, yuck!). And when Yanti tried the simulator, she can cinefly it well!
+- **Use DJI's VTX (the O4 and forward) if you fly and drive for general use**. Casual Cine, down to Freestyle parkour. This goes for both IRL & Perkedel Cinematic Universe. DJI despite being proprietary and expensive, is the only company who can make static-rare (jarang semut) digital VTX. Other else like HDZero, Walksnail, every OpenIPC, etc. still has reliability problem. Idk man, that Zerius crew said it. That's why the prebuilts often pre-install DJI O num series camera unit.
+  - But DJI eats all channels to achieve this stable connection that aggressively removes static ants!. **Only if you are doing Racing (multiple pilots next by next), then DJI is forbidden**, and when a drone contest had to be sponsored by DJI, then, everyone must be DJI too. So tbf, use Analog or these not-DJI digitals. Usually the HDZero or Walksnail that's known.
+  - Also still in DJI's properietariness, your Goggles choice is extremely constricted. You can only use DJI's also. Be it the Num or N Num series. And if you want to circumvent it, **DON't**, especially paying those 3rd party softwares about it, we always consider it scam and you have to yar...! idk, yeah, Just never install those. See I told you, I'm still awake! I wanted Not-DJI so choice is agnosticable, but yeah!
+
 ## Companion
 
 Use the Companion to start the SDCard content!
@@ -38,10 +57,11 @@ Unfortunately, EdgeTX Companion has Cons atm:
 - [G711 Sound Converter](https://g711.org). EdgeTX works best with up to **16-Bit 32 KHz PCM** WAV file. Be sure to convert them to this low quality first, or else you'll get too loud distortion.
 - [3CX Sound Converter](https://3cx.com/docs/converting-wav-file) (yes, that PABX company)
 - [Bill Clark's how to custom sound](https://youtu.be/DqF7HUsFrnE)
-- [Windows CE Startup](SDCards/WaduhMemory/SOUNDS/en/wcelod.wav). I added Windows CE startup sound I yoinked from a WinCE device. I have converted this with Audacity, export to 32 Khz 16 Bit (coz original was 12.8 Khz idk), as this is new compatible format for the radio.
+- [Windows CE Startup](SDCards/WaduhMemory/SOUNDS/en/wcelod.wav). I added Windows CE startup sound I yoinked from a WinCE device. I have converted this with Audacity, export to 32 Khz 16 Bit (coz original was 12.8 Khz idk), as this is new compatible format for the radio. 
   - You can replace `SD://SOUNDS/(lang)/SYSTEM/hello.wav` with this, or
-  - just make this Global Function that's `ON` which is `Play Track` `wcelod.wav`. This will get late and break the immersive joke due to `👩🗣️ Welcome to EdgeTX` first, then this sound, in that Global Function order.
+  - just make this Global Function that's `ON` which is `Play Track` `wcelod.wav`. This will get late and break the immersive joke due to `👩🗣️ Welcome to EdgeTX` first, then this sound, in that Global Function order. Everytime you switch model & validated the Pre-start Notes & warnings, it should play everytime that.
   - You can also use other OS startup sound for alternative jokes, like **Windows XP Logon**, or something idk.
+  - That's basically it, **minimum 32000 Hz 16 bit PCM**, Maximum about 96000 Hz 16 Bit PCM. that goes also for DOOM sound lumps you found across different WADs if they aren't in this quality yet or over than that.
 
 ## Lua Scripts
 
@@ -65,6 +85,8 @@ Telemetry / Widgets? Apps? Lua Scripts are the one!
 - [dbarrios' Widgets](https://github.com/dbarrios83/edgetx-widgets). Daniel Barrios' Telemetry Collections!, **Full Screen All-in-1 Widget Available & Recommended**
 - [EdgeTX About Widgets](https://manual.edgetx.org/color-radios/screen-settings/widgets)
   - https://github.com/offer-shmuely/edgetx-x10-widgets/wiki
+  - [EdgeTX Lua more](https://github.com/EdgeTX/lua-scripts)
+  - [EdgeTX Games Collections](https://github.com/EdgeTX/lua-scripts/blob/main/games.md). they got [FPV simulator](https://github.com/alexeystn/lua-fpv-sim) too
 - [Moshir's Flight Tracker](https://github.com/moshirfakhoury/edgetx-flightprogress-luascript)
   - [Video](https://youtu.be/JjI5H5LCPlc)
 - [FM2M's Crazy Rices](https://fm2m.online/download) **PAID** Free trial available, [buy info](https://fm2m.online/toolbox-edgetx/#paypal). Drastically rices / changes the look of your EdgeTX RCs! Try the **ToolBox**! Other than that, there are free Telemetries:
@@ -126,3 +148,4 @@ We got Model Images
   - https://www.youtube.com/live/ARCfafma1rM
 - https://youtu.be/3rIxhtkNYEU On Off switch Bill Clark
 - https://youtu.be/NvIKHa90x2k?si=N6Zj-FEsW7Hyu_CM
+- Zerius FPV! [Shopee](https://s.shopee.co.id/6Ag85Cs16Q) or [Tokopedia](https://tk.tokopedia.com/ZSu2kDoGb/) here! & [**Google Map + Plus Code = `RXR7+PV`**](https://maps.app.goo.gl/PpD1re7ajs9ebqSL7?g_st=ac) The only physical & tangible & decently luxury FPV RC store across Indonesia. Big shoutout to them for providing coolest FPV parts in their collection, and their advices while we had been there. at that time in 2025-03-08, One of the technician gave us lots of feedbacks & advice how to FPV well and don't screw up the first time.

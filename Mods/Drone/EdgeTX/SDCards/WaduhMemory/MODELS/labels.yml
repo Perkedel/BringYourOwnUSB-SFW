@@ -4,30 +4,30 @@ Labels:
 Sort: 4
 Models:
   model1.yml:
-    hash: "4a5e0000685c4422"
+    hash: "a2620000695c8a14"
     name: "Waduh"
     mod0type: 5
     labels: "WaduhCoy,Favorites"
     bitmap: "mav2.png"
-    lastopen: 1772945055
+    lastopen: 1773023614
   model2.yml:
-    hash: "4e1c0000685cec21"
+    hash: "581f0000695c2f14"
     name: "Empty"
     labels: "Favorites"
     bitmap: "mav2.png"
-    lastopen: 0
+    lastopen: 1773023610
   model3.yml:
-    hash: "bc390000685cec21"
+    hash: "ef450000695c1b14"
     name: "Simulacral"
     labels: "Favorites"
     bitmap: "simulacral.png"
-    lastopen: 0
+    lastopen: 1773023574
   model4.yml:
-    hash: "62250000685cec21"
+    hash: "5b290000695c9a11"
     name: "RoundRobin"
     labels: ""
     bitmap: "crzTes.png"
-    lastopen: 0
+    lastopen: 1773022371
   model5.yml:
     hash: "65210000685cec21"
     name: "ON-OFF"
@@ -60,7 +60,7 @@ Models:
     bitmap: ""
     lastopen: 0
   model10.yml:
-    hash: "4a5e0000685c4422"
+    hash: "525e0000685c8625"
     name: "WaduhUnaffect"
     mod0type: 5
     labels: "WaduhCoy,Favorites"

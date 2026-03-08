@@ -227,7 +227,7 @@ expoData:
 logicalSw: 
    0:
       func: FUNC_VPOS
-      def: "I4,0"
+      def: "I4,-50"
       andsw: "NONE"
       lsPersist: 0
       lsState: 0
@@ -235,7 +235,7 @@ logicalSw:
       duration: 0
    1:
       func: FUNC_VNEG
-      def: "I4,0"
+      def: "I4,50"
       andsw: "NONE"
       lsPersist: 0
       lsState: 0
@@ -309,7 +309,7 @@ flightModeData:
 thrTraceSrc: Thr
 switchWarning: 
    SF:
-      pos: up
+      pos: down
 varioData: 
    source: none
    centerSilent: 1

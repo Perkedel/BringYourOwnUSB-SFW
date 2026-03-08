@@ -1,0 +1,19 @@
+---
+summary: 
+   name: "Stork_TelorAsin"
+   author: "JOELwindows7"
+   info: "The Blue-Greenish theme from that salted duck egg"
+colors: 
+   PRIMARY1: 0xF8A840
+   PRIMARY2: 0xE0E0E0
+   PRIMARY3: 0x10FCC0
+   SECONDARY1: 0x00ACA0
+   SECONDARY2: 0x00FCF0
+   SECONDARY3: 0x006868
+   FOCUS: 0xE0B428
+   EDIT: 0x008C68
+   ACTIVE: 0x00F490
+   WARNING: 0xF80000
+   DISABLED: 0x808880
+   QM_BG: 0x005850
+   QM_FG: 0xF8F478

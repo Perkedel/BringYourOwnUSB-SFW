@@ -27,8 +27,10 @@ SDCards/**/SCRIPTS/PRESETS/*
 SDCards/**/SCRIPTS/MIXES/*
 !SDCards/**/SCRIPTS/MIXES/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]
 SDCards/**/SCRIPTS/TOOLS/*
-SDCards/**/SCRIPTS/TOOLS/*.luac
 !SDCards/**/SCRIPTS/TOOLS/elrs.lua
+SDCards/**/SCRIPTS/TOOLS/*.luac
+!SDCards/**/SCRIPTS/snake.lua
+!SDCards/**/SCRIPTS/TOOLS/snake.lua
 !SDCards/**/SCRIPTS/TOOLS/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]
 SDCards/**/SCRIPTS/RGBLED/*
 SDCards/**/SCRIPTS/TELEMETRY/*
@@ -36,6 +38,7 @@ SDCards/**/SCRIPTS/FUNCTIONS/*
 !SDCards/**/SCRIPTS/FUNCTIONS/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]
 SDCards/**/SCRIPTS/MIXES/*
 !SDCards/**/SCRIPTS/MIXES/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]
+SDCards/**/SCRIPTS/WIZARD/*
 
 SDCards/**/WIDGETS/*
 SDCards/**/WIDGETS/*.luac
@@ -61,6 +64,7 @@ SDCards/**/IMAGES/*
 !SDCards/**/IMAGES/mav*.png
 !SDCards/**/IMAGES/simulacral.png
 !SDCards/**/IMAGES/splash.png
+!SDCards/**/IMAGES/splash.bmp
 !SDCards/**/IMAGES/shutdown.png
 !SDCards/**/IMAGES/crzTes.png
 !SDCards/**/IMAGES/perkedel
