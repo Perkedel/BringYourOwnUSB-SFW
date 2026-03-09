@@ -155,6 +155,13 @@ Now why should you ask? Coz it's easier in the end. Once setup, just turn the RC
 
 Now with that in mind, **both RX & TX must have matching Binding Phrase** you just selected. As simple as that!
 
+## Fun facts
+
+- The TBS CSRF (Crossfire) was the first ever Protocol that able to achieve long distance RC connection. However, such module hardwares are exhorbitantly expensive. But thanks to **ExpressLRS**, now everyone can Crossfire Open Sourcely & much cheaper, yeay!!
+- The whole RC revolution (EdgeTX as the OS, & ExpressLRS as the connection protocol) was indeed came from this exact Flying Drone of this RC sub-rabbithole.
+  - Then followed by Surface (car) & Sea (boat), with especially Radiomaster MT12. The first ever EdgeTX Surface Radio (Pistol Wheel RC) we've come across common markets.
+- Van Elektronische had an experiment to use ExpressLRS as one of the connection method with their Gamepads. You can activate this as your auto-dynamic switching by binding your computer to it. Simple enable `ELRS`, and the computer will automatically setup matching Binding Phrase on both for you. This option is experimental, hence the computer prioritize MIDI BLE connection.
+
 ## Sauce
 
 - https://www.facebook.com/groups/edgetx/posts/3708514806145350
