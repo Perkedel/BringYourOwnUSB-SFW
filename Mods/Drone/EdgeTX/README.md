@@ -20,6 +20,15 @@ We've been scouring intels around the world about FPV and pretty much RCs of all
 - **Use DJI's VTX (the O4 and forward) if you fly and drive for general use**. Casual Cine, down to Freestyle parkour. This goes for both IRL & Perkedel Cinematic Universe. DJI despite being proprietary and expensive, is the only company who can make static-rare (jarang semut) digital VTX. Other else like HDZero, Walksnail, every OpenIPC, etc. still has reliability problem. Idk man, that Zerius crew said it. That's why the prebuilts often pre-install DJI O num series camera unit.
   - But DJI eats all channels to achieve this stable connection that aggressively removes static ants!. **Only if you are doing Racing (multiple pilots next by next), then DJI is forbidden**, and when a drone contest had to be sponsored by DJI, then, everyone must be DJI too. So tbf, use Analog or these not-DJI digitals. Usually the HDZero or Walksnail that's known.
   - Also still in DJI's properietariness, your Goggles choice is extremely constricted. You can only use DJI's also. Be it the Num or N Num series. And if you want to circumvent it, **DON't**, especially paying those 3rd party softwares about it, we always consider it scam and you have to yar...! idk, yeah, Just never install those. See I told you, I'm still awake! I wanted Not-DJI so choice is agnosticable, but yeah!
+- Use Strong power of the signal. For city, maximum about 250 mw. And for woods, go as high as maybe 1000 mw above.
+- Remotes usually have slow cyclings. What does that mean, **pilots rarely upgrade their RCs**, coz these almost never thrown out and has no Planned Obsolesence like smartphones do. In fact all chips and components in the RCs are Industry Grade, same ones used in factories and fields. Don't be surprised if many FPV stores seldom to stock new RCs and you had to look elsewhere or worse, import from the company itself with a huge hefty taxes. Bummer, even Posko Gaming that has FPV RC rabbit hole is also few branches only!, and Kivotos does not exist IRL!
+- **Bring lots of batteries**. Having to charge all 3 of them let's say wastes your time. So, bring atleast maybe 10 batteries, for each of your drones. Heck, just bring batteries and bring just enough powerbanks just in case. Make sure it covers over 2 hours of session there. And once done, just charge all of them back home
+- **Never leave your charging batteries unattended**, especially **LiPo** ones! Even tho today's modern BMS had best of the best cutoffs, safety, and all Fire Retardants and stuffs, **Batteries are batteries, and Batteries explodes**. Never ever you dare leave any of them unattended, even just a 🚽 pissing break. Just one unlucky pop, **💥 duar 🔥!** your whole office turns to dust. Also, **always sleeve charging of any kinds of batteries in a Fire Retardant Cooling case!** Because the faster you charge and discharge, larger the risk of explosion. And you don't get to know when shit happens. Just harness and practice every safety points of batteries you're handling, at all time.
+- [Multiple RX in just one TX?!](https://youtu.be/ww2U8xxmBZU). You can connect multiple ExpressLRS Receivers into one single TX at the same time. 
+  - On one condition that you have 2 Transmitter in it. One is internal ELRS CSRF, and the other External backpack ELRS CSRF.
+  - Only one can have telemetry. Say your second one is the Head Tracking, so, disable telemetry on that ELRS RX. Leave the Main ELRS RX has telemtry.
+  - With that second one away, also assign the control CH on that second RX far far away, be it like Ch14 camera pitch, Ch15 the Yaw, etc. So the main one (beginning from Ch0) is like this.
+  - Binding Phrase on these 2 must be same, especially on the camera, if 2nd RX is this, then the Main RX too has to be this. **(verification needed)** Now if you ask if you can have more than 1 model turned on, no. Because you would control all of your turned on models that had same Binding Phrase at the same time. Whatever, if you wanted it but why? idk. So just give each build different Binding Phrase, idk.
 
 ## Companion
 
@@ -121,6 +130,31 @@ We got Model Images
     - [Link 2](https://www.dropbox.com/scl/fi/xtvbv20enf44ztt159o71/background.png?rlkey=1fodpf5a51apef4wlbqxm6p3d&st=2hpmd4xw&dl=0)
     - [Link 3](https://www.dropbox.com/scl/fi/jq6orpu8p4jqqpsxabmb0/Adobe-Express-file.jpg?rlkey=khazb2uuuntttq8rj30hqdd3q&st=cn2krk63&dl=0)
 
+## Bind Phrases
+
+ExpressLRS Bind Phrases! Here are public Bind Phrases ideas you can use just to test things out. These too also used on our Stork kits
+
+- Your own name
+- Your organization name. Be it company you're working, racing team, whatever team.
+- `Stork`
+- `DetakJantung`. I am Cardiophile. I need home. I need.. yeah you know.
+- `HeartJumpOutOfChest`
+- `StethingMyWifeHeart`
+- `FemalePoundingHeartbeat`
+- `HoshinoIsWatchingYouSenseis`
+- `HoshinoNotHorus`. the default Bluetooth name given on EdgeTX is `horus`. And so why not? The Stork's golden era was first time started during Blue Archive (the New Paradigm fan remake ones, not original, pls don't attempt scouring thancc) not-limited event about Efurteyas duo who tried FPV Drone scene. In Blue Archive since original, there's a Student from Abydos named Hoshino. Without giving spoilers, whatever that relates with her, is that she's Horus. Something that's *Telemetrical*. Her heterochroma eyes tells us it's really something. ***To see***. In fact, you may find our RemoteMod RC Bluetooth name `hoshino` out of the box instead of `horus`.
+- `AndHerNameIsKasumizawaMiyuDuar`. That Reference lmao! Miyu from Rabbit Squad is a sniper. She has a quirk that everything ignores her, like she can't be seen nor noticed, a terminally diamond advantage amongst Sniping rabbit hole. She's therefore considered invisible and ultra-stealthy. So much ignored she's notorious hiding in a trash can, coz she felt being useless. Btw, Blue Archive is not Perkedel's idea, that's from Nexon. We're remaking it into Open World, coz we are not interested with its strategy card chess-like gameplay. 
+- `ImSuckIfItsNotDJI`. Or you're too coward to buy just the remote & simulator. You know, you don't have to buy the drone itself coz it's too expensive if you bork it anyway.
+- `DJIIsClosedSourceBruh`. E.g., with O4 Air Unit, you can only use DJI's Goggles. Connection options for other observers are also limited too, coz you must use DJI's software to be so. Also btw, DJI eats all channels to achieve ant-rare digitals. If you & your friend fly together each a unit, then all VTX's in whole premise must be DJI. 
+- `DJICanConsumeMyPosterior`. coz if instead they're open source, we'd justify their actions, idk.
+- `EnvironmentalMyPosterior`. because companies claim to be environmental, when it's all about removal of used to components. Isn't this... yeah you know (can't say it here, use NSFL!). 
+
+You can also prepend & append extra words to further differentiate the connection IDs.
+
+Now why should you ask? Coz it's easier in the end. Once setup, just turn the RC & Drone on properly, and they'll always bound, rare to forget about it assuming no short circuit or what.
+
+Now with that in mind, **both RX & TX must have matching Binding Phrase** you just selected. As simple as that!
+
 ## Sauce
 
 - https://www.facebook.com/groups/edgetx/posts/3708514806145350
@@ -147,5 +181,6 @@ We got Model Images
 - https://www.expresslrs.org/software/switch-config
   - https://www.youtube.com/live/ARCfafma1rM
 - https://youtu.be/3rIxhtkNYEU On Off switch Bill Clark
-- https://youtu.be/NvIKHa90x2k?si=N6Zj-FEsW7Hyu_CM
+- https://youtu.be/NvIKHa90x2k
 - Zerius FPV! [Shopee](https://s.shopee.co.id/6Ag85Cs16Q) or [Tokopedia](https://tk.tokopedia.com/ZSu2kDoGb/) here! & [**Google Map + Plus Code = `RXR7+PV`**](https://maps.app.goo.gl/PpD1re7ajs9ebqSL7?g_st=ac) The only physical & tangible & decently luxury FPV RC store across Indonesia. Big shoutout to them for providing coolest FPV parts in their collection, and their advices while we had been there. at that time in 2025-03-08, One of the technician gave us lots of feedbacks & advice how to FPV well and don't screw up the first time.
+- https://youtu.be/ww2U8xxmBZU multi connect receiver just one tx

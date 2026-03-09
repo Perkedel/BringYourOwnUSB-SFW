@@ -26,6 +26,7 @@ Use the following softwares to do so
   - [CP210x Driver](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers)
   - [STM USB VCP Driver](https://www.st.com/en/development-tools/stsw-stm32102.html)
   - inspired from [Original blheli-configurator](https://github.com/blheli-configurator/blheli-configurator)
+  - [AM32 Config](https://am32.ca/configurator) & [Website](https://am32.ca/configurator)
 - [Betaflight Configurator (Online PWA)](https://app.betaflight.com/) & [Android Releases](https://github.com/betaflight/betaflight-configurator/releases). [Source Code](https://github.com/betaflight/betaflight-configurator), [GitHub total](https://github.com/betaflight). Configure your Betaflight Flight Units
 - [Escape32 Tools CLI](https://github.com/neoxic/ESCape32-Tools/releases). If you want Escape32 instead.
 - [ESCTunes.com](http://esctunes.com/) Libraries of ESC musics
@@ -272,8 +273,23 @@ It's my turn now. **Bluejay / BLHeli_S** yey!
   - Mono: `OneByOne_Mono:d=4,o=4,b=160:c,e,p,e,g,p,g,a#,p,a#,c5,2p,2c` If you only had one ESC / Single Rotor e.g. Airplane Aeromodel
   - ESC 1: `OneByOne_0:d=4,o=4,b=160:c,e,p,p,p,p,p,p,p,p,p,2p,2c`
   - ESC 2: `OneByOne_1:d=4,o=4,b=160:p,p,p,e,g,p,p,p,p,p,p,2p,2e`
-  - ESC 3: `OneByOne_3:d=4,o=4,b=160:p,p,p,p,p,p,g,a#,p,p,p,2p,2g`
-  - ESC 4: `OneByOne_4:d=4,o=4,b=160:p,p,p,p,p,p,p,p,p,a#,c5,2p,2c`
+  - ESC 3: `OneByOne_2:d=4,o=4,b=160:p,p,p,p,p,p,g,a#,p,p,p,2p,2g`
+  - ESC 4: `OneByOne_3:d=4,o=4,b=160:p,p,p,p,p,p,p,p,p,a#,c5,2p,2c`
+- [Bethel Music - Goodness of God](https://youtu.be/n0FBb6hnwTo) / [Sudirman Worship - KebaikanMu Tuhan](https://youtu.be/0siXThnV59k). Make your drone sings of the goodness of God everytime you plug its battery in
+  - Mono: `GoodnessOfGod_M:d=4,o=5,b=125:e,d,2c,8p,8d,8e,8e,2d,p,8c,2c`
+  - ESC 1: `GoodnessOfGod_0:d=4,o=5,b=125:e,d,2c,8p,8d,8e,8e,2d,p,8c,2c`
+  - ESC 2: `GoodnessOfGod_1:d=4,o=5,b=125:b4,a4,2g4,8p,8g4,8a4,8b4,2g4,p,8g4,2c`
+  - ESC 3: `GoodnessOfGod_2:d=4,o=4,b=125:e,d,2c,8p,8d,8e,8e,2d,p,8c,2c`
+  - ESC 4: `GoodnessOfGod_0:d=4,o=5,b=125:e,d,2c,8p,8d,8e,8e,2d,p,8c,2c`
+- [Matt Redman - 10000 Reason](https://youtu.be/XtwIT8JjddM). Bless the Lord oh my soul!
+  - Mono: `10kReasons_M:d=4,o=4,b=160:a,g,a,b,2a,2p,g,1g`
+  - ESC 1: `10kReasons_0:d=4,o=4,b=160:a,g,a,b,2a,2p,g,1g`
+  - ESC 2: `10kReasons_1:d=4,o=4,b=160:a,g,f#,g,2a,2p,f#,1g`
+  - ESC 3: `10kReasons_2:d=4,o=4,b=160:a,g,a,b,2a,2p,g,1g`
+  - ESC 4: `10kReasons_3:d=4,o=4,b=160:a,g,a,b,2a,2p,f#,1g`
+  - ~~Old 3: `10kReasons_2:d=4,o=4,b=160:e,d,e,f#,2a,2p,f#,1g`~~
+- Blheli_32 Ready. Wait, what's the point?!
+  - All: `BLHeli32:d=4,o=5,b=63:a,16p,d6`
 
 ## How to install the song?
 
@@ -345,6 +361,7 @@ If it seems to complicate you, feel free to find other ones with all 4 8-Bit ESC
 - https://github.com/neoxic/ESCape32/wiki
   - https://github.com/neoxic/ESCape32-Tools/releases
 - https://github.com/drewcrawford/bassdll
+- https://youtu.be/tc76K8QB8FY
 
 ## End
 
