@@ -106,6 +106,9 @@ Telemetry / Widgets? Apps? Lua Scripts are the one!
   - [Video tutorial](https://youtu.be/Pv36h7FIiYc)
   - put the `ledfinder.lua` into just `SCRIPTS` folder (optionally again to `SCRIPTS/TOOLS`)
   - put the `idle.lua` & `throttle.lua` into `SCRIPTS/RGBLED` folder
+- [TaraniTunes](https://github.com/jrwieland/TaraniTunes-v4.x). Music Player
+  - [AutoPlaylist](https://github.com/jrwieland/TaraniTunes-v4.x/tree/master/Auto_Playlist). [Discuss](https://www.rcgroups.com/forums/showpost.php?p=31361271&postcount=41772)
+  - [MP3 tag to make tage](http://www.mp3tag.de/en/)
 
 ## Splash Screens
 

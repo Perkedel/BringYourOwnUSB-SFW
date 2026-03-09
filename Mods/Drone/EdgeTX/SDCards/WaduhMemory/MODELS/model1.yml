@@ -1194,7 +1194,7 @@ customSwitches:
       type: GLOBAL
       group: 1
       start: START_OFF
-      state: 0
+      state: 1
       onColorLuaOverride: OFF
       offColorLuaOverride: OFF
       onColor: 
