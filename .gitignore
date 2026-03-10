@@ -21,3 +21,7 @@ outCompile
 # temporary hide from upload because the corps are after us!
 Mods/GZDoom/ZD-BringYourOwnUSB-SFW/music/Serek-katron/**/*.*
 !Mods/GZDoom/ZD-BringYourOwnUSB-SFW/music/Serek-katron/Roland_GS/KY/WISH.MID
+
+Mods/Drone/EdgeTX/Soundpacks/Azure_GadisNeural_ID/region
+Mods/Drone/EdgeTX/Soundpacks/Azure_GadisNeural_ID/key
+Mods/Drone/EdgeTX/Soundpacks/Azure_GadisNeural_ID/log*

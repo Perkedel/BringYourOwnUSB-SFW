@@ -1,4 +1,4 @@
-checksum: 32686
+checksum: 19027
 manuallyEdited: 0
 timezoneMinutes: 0
 ppmunit: 0
@@ -94,11 +94,11 @@ hapticStrength: 2
 gpsFormat: 0
 audioMuteEnable: 0
 speakerPitch: 0
-speakerVolume: 24
+speakerVolume: 9
 vBatMin: 67
 vBatMax: 83
 backlightBright: 0
-globalTimer: 38880
+globalTimer: 39249
 bluetoothBaudrate: 0
 bluetoothMode: TELEMETRY
 countryCode: 0

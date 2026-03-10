@@ -63,6 +63,7 @@ Unfortunately, EdgeTX Companion has Cons atm:
   - https://open-txu.org/amber-sound-pack/
   - https://www.rcgroups.com/forums/showpost.php?p=28161759&postcount=1
 - [EdgeTX default TTS soundpack](https://github.com/EdgeTX/edgetx-sdcard-sounds). No Bahasa Indonesia atm.
+  - [Forked to add Emily](https://github.com/xsnoopy/edgetx-sdcard-sounds)
 - [G711 Sound Converter](https://g711.org). EdgeTX works best with up to **16-Bit 32 KHz PCM** WAV file. Be sure to convert them to this low quality first, or else you'll get too loud distortion.
 - [3CX Sound Converter](https://3cx.com/docs/converting-wav-file) (yes, that PABX company)
 - [Bill Clark's how to custom sound](https://youtu.be/DqF7HUsFrnE)

@@ -75,3 +75,7 @@ SDCards/**/IMAGES/*
 
 SDCards/**/FM2M/*
 !SDCards/**/FM2M/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]
+
+Soundpacks/**/key
+Soundpacks/**/region
+Soundpacks/**/log-*
