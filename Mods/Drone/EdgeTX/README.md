@@ -65,7 +65,7 @@ Unfortunately, EdgeTX Companion has Cons atm:
 - [EdgeTX default TTS soundpack](https://github.com/EdgeTX/edgetx-sdcard-sounds). No Bahasa Indonesia atm.
   - [Forked to add Emily](https://github.com/xsnoopy/edgetx-sdcard-sounds)
   - Create your own?
-    - [Azure how](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/spx-basics?tabs=windowsinstall%2Cterminal), [and](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-support?tabs=tts#supported-languages), [aand](https://learn.microsoft.com/en-us/azure/ai-services/multi-service-resource?pivots=azportal)
+    - [Azure how](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/spx-basics?tabs=windowsinstall%2Cterminal), [and](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-support?tabs=tts#supported-languages), [aand](https://learn.microsoft.com/en-us/azure/ai-services/multi-service-resource?pivots=azportal).
 - [G711 Sound Converter](https://g711.org). EdgeTX works best with up to **16-Bit 32 KHz PCM** WAV file. Be sure to convert them to this low quality first, or else you'll get too loud distortion.
 - [3CX Sound Converter](https://3cx.com/docs/converting-wav-file) (yes, that PABX company)
 - [Bill Clark's how to custom sound](https://youtu.be/DqF7HUsFrnE)
