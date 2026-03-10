@@ -145,10 +145,11 @@ ExpressLRS Bind Phrases! Here are public Bind Phrases ideas you can use just to 
 - `StethingMyWifeHeart`
 - `FemalePoundingHeartbeat`
 - `HoshinoIsWatchingYouSenseis`
+- `I listen to female heartbeat, and it's always exciting everytime when her heart beats so fast`. You can also add spaces, comma, and other punctuations etc., they'll be dotted too. But be careful, too long may cause lag. Probably you have 255 Characters limit on the field.
 - `HoshinoNotHorus`. the default Bluetooth name given on EdgeTX is `horus`. And so why not? The Stork's golden era was first time started during Blue Archive (the New Paradigm fan remake ones, not original, pls don't attempt scouring thancc) not-limited event about Efurteyas duo who tried FPV Drone scene. In Blue Archive since original, there's a Student from Abydos named Hoshino. Without giving spoilers, whatever that relates with her, is that she's Horus. Something that's *Telemetrical*. Her heterochroma eyes tells us it's really something. ***To see***. In fact, you may find our RemoteMod RC Bluetooth name `hoshino` out of the box instead of `horus`.
 - `AndHerNameIsKasumizawaMiyuDuar`. That Reference lmao! Miyu from Rabbit Squad is a sniper. She has a quirk that everything ignores her, like she can't be seen nor noticed, a terminally diamond advantage amongst Sniping rabbit hole. She's therefore considered invisible and ultra-stealthy. So much ignored she's notorious hiding in a trash can, coz she felt being useless. Btw, Blue Archive is not Perkedel's idea, that's from Nexon. We're remaking it into Open World, coz we are not interested with its strategy card chess-like gameplay. 
-- `ImSuckIfItsNotDJI`. Or you're too coward to buy just the remote & simulator. You know, you don't have to buy the drone itself coz it's too expensive if you bork it anyway.
-- `DJIIsClosedSourceBruh`. E.g., with O4 Air Unit, you can only use DJI's Goggles. Connection options for other observers are also limited too, coz you must use DJI's software to be so. Also btw, DJI eats all channels to achieve ant-rare digitals. If you & your friend fly together each a unit, then all VTX's in whole premise must be DJI. 
+- `ImSuckIfItsNotDJI`. Or you're too coward to buy just the remote & simulator. You know, you don't have to buy the drone itself coz it's too expensive if you bork it anyway. Simulators on the other hand doesn't, and they already realistic enough to be useful as training system.
+- `DJIIsClosedSourceBruh`. E.g., with O4 Air Unit, you can only use DJI's Goggles. Connection options for other observers are also limited too, coz you must use DJI's software to be so (**DO NOT PAY 3RD PARTY SOFTWARES SUCH ONE THAT PROMISES CONNECT TO MONITOR, USUALLY SCAM & VIRUS!!**). Also btw, DJI eats all channels to achieve ant-rare digitals. If you & your friend fly together each a unit, then all VTX's in whole premise must be DJI. 
 - `DJICanConsumeMyPosterior`. coz if instead they're open source, we'd justify their actions, idk.
 - `EnvironmentalMyPosterior`. because companies claim to be environmental, when it's all about removal of used to components. Isn't this... yeah you know (can't say it here, use NSFL!). 
 
@@ -156,10 +157,34 @@ You can also prepend & append extra words to further differentiate the connectio
 
 Now why should you ask? Coz it's easier in the end. Once setup, just turn the RC & Drone on properly, and they'll always bound, rare to forget about it assuming no short circuit or what.
 
-Now with that in mind, **both RX & TX must have matching Binding Phrase** you just selected. As simple as that!
+Now with that in mind, **both RX & TX must have matching Binding Phrase** you just selected. As simple as that! And you can separate it by assigning different RX Channel number in each of your Model & the unit of that.
 
-## Concerns
+## Frequently Asked Questions
 
+- Why Van Elektronische Drone rabbithole doohickeys branded it after heartbeat fetish?
+  - It was following random codenaming. Apparently, when Joel was entering the world of FPV (Flying Drone), he was homesick of Cardiophilia stuffs. Things like
+    - Small Drone was codenamed `Kesturi` which is known to have the fastest idle heartbeat.
+    - Large heavyweight Drone called `Cardiomegaly` like Heart organ enlarged and becomes very heavy to operate.
+    - Conversely, the largest drone MCU model was named `Hypertrophy` like something coming from a muscular bodybuilder whose heart have enlarged because of muscle hypertrophy. Like the name says, it has lots of feature and huge power output.
+    - And not forget, the drone mcu is labeled `Corazon`, meaning 🫀 `heart` in certain European language. Because it's the central unit of a drone, and also because of homesick of Cardiphilia.
+- `STORK`?
+  - a department in Van Elektronische, spearheaded by Samuel Stork. Samuel himself loves FPV so much, but he was not satisfied with existing droning system that time. So he proposed ideas to Van ELektronische and there you have it.
+  - Also, Van Elektronische at the same time was looking for RC rabbithole spearheads, solely because DJI's corcerning monopoly tactics. They loathe the world of Proprietarism, and just so lucky that they got Samuel in.
+  - Coincidentally, the family was named `Stork` because back home in the old days, they used to deliver stuffs around the hoods, **including living babies too!** Eventually, the Stork department comes to full circle when they are tackling DJI's Flycart with `Cargo`. Cargo combines Flycart & Agras, because this model is designed to carry heavy item & drops few of them when needed. Cargo is available also in
+  - Hmm. Josh Sivre. Sivre is wireless data port access. Something like RFID & NFC, but Open Source and reliable too.
+- What else those funny names you got?
+  - Selonjoran
+    - a word in Bahasa Indonesia / Dozeric. Meaning *to relax*, *lie down*.
+    - This is used for Surface Drones. Namely Cars, Motorbike, etc.
+  - Menciut
+    - *Shrank*, as in *your heart organ shrank like Grinch*.
+    - Indicate this RC model has smaller gimbals (i.e. not Full Size) to achieve compact size. Much like Radiomaster Pocket.
+    - The name sometime is insulting because we do not recommend pilots to use this kind of Gimbal size, you should stick to Full Size if you can.
+  - Onta
+    - *Ostrich*
+    - This is a Surface Drone that has Mecanum wheels, where all of the wheels are direct drive.
+    - It controls same like Flying Drones, but without altitude. Yeah, just like birb Ostrich, can't fly but run instead.
+    - Unlike other Surface types, Onta uses Dual Joystick RCs. The Throttle (Left Joystick Vertical) is unused.
 - Is using ExpressLRS going to need License, since this able to reach far distance?
   - Depends.
     - **DNB relieves the License requirements** off of POC License for **ExpressLRS both 2.4 GHz & 900 MHz (SubG)** 
@@ -167,6 +192,9 @@ Now with that in mind, **both RX & TX must have matching Binding Phrase** you ju
     - Please review your laws carefully, especially pertaining to Wireless Interactions. Make sure you set your radio parameters so that you don't disturb national critical infrastructures.
   - I can't find why rn, but one thing certain is that RC data like this is very compact unlike many Complex Audio Video Transmission (since Chatting one, not including Machinery VTX). Plus POC License only scrutinize anything that causes **Public Social Interaction** from single way (Television) down to multi way (Chats like IRC, Discord Teamspeak, Facebook, Zoom, Ham Radio DMR and analog, etc.). The ExpressLRS (among like Analog, DJI, OpenIPC) feature sets it has as of 2026 currently only causes **Private Machinery Interaction**, which does not make sense to be scrutinized. Really, to use CCTV doorbell you need License?? Huh?
     - If you ask me, then Social media poses significant risks, that's why it requires Ham Radio License (POC License: Analog, DMR, Social Media), **in DNB**. Hey, at least in Old Terra there's no Ham License required to use Facebook, that's why so many depressions haha!
+- (Extra) Wait, then Meshtastic requires Ham Radio License then?!?!?!?!?!?!?
+  - in DNB, **Yes.** Because it causes **Public Social Interaction**.
+  - But not (yet) in Old Terra, as of *2026*. Sssh, don't give them an idea! They would execute it poorly by solely asking age for their selfish purposes rather than properly enforcing our POC curiculum it supposed to be!
 
 ## Fun facts
 
