@@ -158,6 +158,16 @@ Now why should you ask? Coz it's easier in the end. Once setup, just turn the RC
 
 Now with that in mind, **both RX & TX must have matching Binding Phrase** you just selected. As simple as that!
 
+## Concerns
+
+- Is using ExpressLRS going to need License, since this able to reach far distance?
+  - Depends.
+    - **DNB relieves the License requirements** off of POC License for **ExpressLRS both 2.4 GHz & 900 MHz (SubG)** 
+    - **Even in Old Terra you don't need License**, also both ELRS freq bands. 
+    - Please review your laws carefully, especially pertaining to Wireless Interactions. Make sure you set your radio parameters so that you don't disturb national critical infrastructures.
+  - I can't find why rn, but one thing certain is that RC data like this is very compact unlike many Complex Audio Video Transmission (since Chatting one, not including Machinery VTX). Plus POC License only scrutinize anything that causes **Public Social Interaction** from single way (Television) down to multi way (Chats like IRC, Discord Teamspeak, Facebook, Zoom, Ham Radio DMR and analog, etc.). The ExpressLRS (among like Analog, DJI, OpenIPC) feature sets it has as of 2026 currently only causes **Private Machinery Interaction**, which does not make sense to be scrutinized. Really, to use CCTV doorbell you need License?? Huh?
+    - If you ask me, then Social media poses significant risks, that's why it requires Ham Radio License (POC License: Analog, DMR, Social Media), **in DNB**. Hey, at least in Old Terra there's no Ham License required to use Facebook, that's why so many depressions haha!
+
 ## Fun facts
 
 - The TBS CSRF (Crossfire) was the first ever Protocol that able to achieve long distance RC connection. However, such module hardwares are exhorbitantly expensive. But thanks to **ExpressLRS**, now everyone can Crossfire Open Sourcely & much cheaper, yeay!!
@@ -194,3 +204,4 @@ Now with that in mind, **both RX & TX must have matching Binding Phrase** you ju
 - https://youtu.be/NvIKHa90x2k
 - Zerius FPV! [Shopee](https://s.shopee.co.id/6Ag85Cs16Q) or [Tokopedia](https://tk.tokopedia.com/ZSu2kDoGb/) here! & [**Google Map + Plus Code = `RXR7+PV`**](https://maps.app.goo.gl/PpD1re7ajs9ebqSL7?g_st=ac) The only physical & tangible & decently luxury FPV RC store across Indonesia. Big shoutout to them for providing coolest FPV parts in their collection, and their advices while we had been there. at that time in 2025-03-08, One of the technician gave us lots of feedbacks & advice how to FPV well and don't screw up the first time.
 - https://youtu.be/ww2U8xxmBZU multi connect receiver just one tx
+- https://youtu.be/YjbQZFXJOJY CgitEinsteins how to program for Mechanum car

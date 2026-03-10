@@ -1,6 +1,11 @@
 semver: 2.12.0
 header: 
-   name: "Waduh"
+   name: "Onta"
+   modelId: 
+      0:
+         val: 1
+      1:
+         val: 1
    bitmap: "mav2.png"
    labels: "WaduhCoy,Favorites"
 timers: 
@@ -46,7 +51,7 @@ noGlobalFunctions: 0
 displayTrims: 0
 ignoreSensorIds: 0
 trimInc: 0
-disableThrottleWarning: 0
+disableThrottleWarning: 1
 displayChecklist: 0
 extendedLimits: 0
 extendedTrims: 0
@@ -60,8 +65,8 @@ beepANACenter: 0
 mixData: 
  -
    destCh: 0
-   srcRaw: "I0"
-   carryTrim: 1
+   srcRaw: "I1"
+   carryTrim: 0
    mixWarn: 0
    mltpx: ADD
    delayPrec: 0
@@ -70,6 +75,49 @@ mixData:
    weight: 100
    offset: 0
    swtch: "NONE"
+   curve: 
+      type: 3
+      value: 1
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "FL"
+ -
+   destCh: 0
+   srcRaw: "I0"
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   delayPrec: 0
+   speedPrec: 0
+   flightModes: 000000000
+   weight: 100
+   offset: 0
+   swtch: "NONE"
+   curve: 
+      type: 3
+      value: 1
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   destCh: 0
+   srcRaw: "I3"
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   delayPrec: 0
+   speedPrec: 0
+   flightModes: 000000000
+   weight: 50
+   offset: 0
+   swtch: "NONE"
+   curve: 
+      type: 3
+      value: 1
    delayUp: 0
    delayDown: 0
    speedUp: 0
@@ -78,7 +126,7 @@ mixData:
  -
    destCh: 1
    srcRaw: "I1"
-   carryTrim: 1
+   carryTrim: 0
    mixWarn: 0
    mltpx: ADD
    delayPrec: 0
@@ -87,6 +135,49 @@ mixData:
    weight: 100
    offset: 0
    swtch: "NONE"
+   curve: 
+      type: 3
+      value: 1
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "FR"
+ -
+   destCh: 1
+   srcRaw: "I0"
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   delayPrec: 0
+   speedPrec: 0
+   flightModes: 000000000
+   weight: -100
+   offset: 0
+   swtch: "NONE"
+   curve: 
+      type: 3
+      value: 1
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   destCh: 1
+   srcRaw: "I3"
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   delayPrec: 0
+   speedPrec: 0
+   flightModes: 000000000
+   weight: -50
+   offset: 0
+   swtch: "NONE"
+   curve: 
+      type: 3
+      value: 1
    delayUp: 0
    delayDown: 0
    speedUp: 0
@@ -94,8 +185,8 @@ mixData:
    name: ""
  -
    destCh: 2
-   srcRaw: "I2"
-   carryTrim: 1
+   srcRaw: "I1"
+   carryTrim: 0
    mixWarn: 0
    mltpx: ADD
    delayPrec: 0
@@ -104,6 +195,89 @@ mixData:
    weight: 100
    offset: 0
    swtch: "NONE"
+   curve: 
+      type: 3
+      value: 1
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "BL"
+ -
+   destCh: 2
+   srcRaw: "I0"
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   delayPrec: 0
+   speedPrec: 0
+   flightModes: 000000000
+   weight: 100
+   offset: 0
+   swtch: "NONE"
+   curve: 
+      type: 3
+      value: 1
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   destCh: 2
+   srcRaw: "I3"
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   delayPrec: 0
+   speedPrec: 0
+   flightModes: 000000000
+   weight: 50
+   offset: 0
+   swtch: "NONE"
+   curve: 
+      type: 3
+      value: 1
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   destCh: 3
+   srcRaw: "I1"
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   delayPrec: 0
+   speedPrec: 0
+   flightModes: 000000000
+   weight: 100
+   offset: 0
+   swtch: "NONE"
+   curve: 
+      type: 3
+      value: 1
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "BR"
+ -
+   destCh: 3
+   srcRaw: "I0"
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   delayPrec: 0
+   speedPrec: 0
+   flightModes: 000000000
+   weight: -100
+   offset: 0
+   swtch: "NONE"
+   curve: 
+      type: 3
+      value: 1
    delayUp: 0
    delayDown: 0
    speedUp: 0
@@ -112,15 +286,18 @@ mixData:
  -
    destCh: 3
    srcRaw: "I3"
-   carryTrim: 1
+   carryTrim: 0
    mixWarn: 0
    mltpx: ADD
    delayPrec: 0
    speedPrec: 0
    flightModes: 000000000
-   weight: 100
+   weight: -50
    offset: 0
    swtch: "NONE"
+   curve: 
+      type: 3
+      value: 1
    delayUp: 0
    delayDown: 0
    speedUp: 0
@@ -224,6 +401,25 @@ expoData:
    chn: 4
    flightModes: 000000000
    name: "Arm"
+curves: 
+   0:
+      type: 1
+      smooth: 0
+      points: 0
+      name: "GAS"
+points: 
+   0:
+      val: -100
+   1:
+      val: -10
+   3:
+      val: 10
+   4:
+      val: 100
+   5:
+      val: -1
+   7:
+      val: 1
 logicalSw: 
    0:
       func: FUNC_VPOS
@@ -1138,7 +1334,7 @@ topbarWidgetWidth:
       val: 1
    6:
       val: 1
-view: 1
+view: 0
 modelRegistrationID: "-eC!U*U*"
 customSwitches: 
    SW1:
@@ -1194,7 +1390,7 @@ customSwitches:
       type: GLOBAL
       group: 1
       start: START_OFF
-      state: 1
+      state: 0
       onColorLuaOverride: OFF
       offColorLuaOverride: OFF
       onColor: 

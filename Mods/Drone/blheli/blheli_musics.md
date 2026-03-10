@@ -290,6 +290,12 @@ It's my turn now. **Bluejay / BLHeli_S** yey!
   - ~~Old 3: `10kReasons_2:d=4,o=4,b=160:e,d,e,f#,2a,2p,f#,1g`~~
 - Blheli_32 Ready. Wait, what's the point?!
   - All: `BLHeli32:d=4,o=5,b=63:a,16p,d6`
+- Rasa Sayange. Regional Song, from Maluku, Indonesia, Old Terra.
+  - All: `RasaSayange:d=4,o=5,b=225:e,f,2g,2g,2c6,b,a,g,g,e,f,g,p,c6,b,a,a,g,f,e,g,c,e,d,d,c,b4,c`
+- Ondel Ondel. Regional Song, from Jakarta (Batavia), Indonesia, Old Terra. *Nyok, kite nonton Ondel-ondel, nyok!*
+  - All: `OndelOndel:d=4,o=5,b=225:b4,8p,8b4,8b4,8p,e,d,e,d,a4,b4,p,d,b4`
+- [24GH - Lovely Sad](https://vt.tiktok.com/ZSu6qE4CQ). *Iya iya-aa, yeye, yeye!!*
+  - All: `IyaIyaaYeyeYeye:d=4,o=5,b=200:d,d,f#,d,2b4,p,d,2c#,p,f#,2d`
 
 ## How to install the song?
 
@@ -362,6 +368,7 @@ If it seems to complicate you, feel free to find other ones with all 4 8-Bit ESC
   - https://github.com/neoxic/ESCape32-Tools/releases
 - https://github.com/drewcrawford/bassdll
 - https://youtu.be/tc76K8QB8FY
+- https://github.com/Skarune/midi 
 
 ## End
 

@@ -1,0 +1,38 @@
+# Selonjoran
+
+Change this model
+note to yours!
+
+|-------------------|
+Model =
+STRK CRZN HPTP,
+STRK SLJR Skater
+Batt =
+6S, 10000 MAh
+Radio =
+ELRS 25 mw
+500 mw,
+900 MHz / 2.4 GHz
+Video =
+Digital VTX
+/ Analog UHF
+/ OpenIPC 2.4 GHz
+Type =
+Car, Drifter
+
+=TH-
+=Arm OFF (\212 SA\up)
+=All 4 Wheels OK
+Change Borkd Now
+=Battery full
+=Stand back 0.5m
+=Drive in well lit,
+textured environment.
+
+## Controls:
+
+TH = Accel / Rev
+ST = Steering
+
+SF\dn = Arm
+SB\dn = Brake

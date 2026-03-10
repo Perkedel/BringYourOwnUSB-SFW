@@ -4,12 +4,12 @@ Labels:
 Sort: 4
 Models:
   model1.yml:
-    hash: "a2620000695cfd8e"
+    hash: "a2620000695c1d9a"
     name: "Waduh"
     mod0type: 5
     labels: "WaduhCoy,Favorites"
     bitmap: "mav2.png"
-    lastopen: 1773082487
+    lastopen: 1773172251
   model2.yml:
     hash: "581f0000695c2f14"
     name: "Empty"
@@ -54,7 +54,7 @@ Models:
     bitmap: "mav2.png"
     lastopen: 0
   model9.yml:
-    hash: "bb1b0000695c7d96"
+    hash: "bb1b0000695cbb96"
     name: "Musik"
     labels: ""
     bitmap: ""
@@ -66,4 +66,13 @@ Models:
     labels: "WaduhCoy,Favorites"
     bitmap: "mav2.png"
     lastopen: 1772945031
+  model11.yml:
+    hash: ""
+    name: "Onta"
+    mod0id: 1
+    mod0type: 5
+    mod1id: 1
+    labels: "WaduhCoy,Favorites"
+    bitmap: "mav2.png"
+    lastopen: 1773172090
 
