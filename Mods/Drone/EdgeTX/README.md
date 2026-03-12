@@ -129,6 +129,9 @@ Telemetry / Widgets? Apps? Lua Scripts are the one!
 - [moschotto GPS Widget](https://github.com/moschotto/OpenTX_GPS_Telemetry)
 - [nikbg3 Log Viewer for B/W](https://github.com/nikbg3/EdgeTXLogViewerBW)
 - [pascallanger Lua Scripts](https://github.com/pascallanger/DIY-Multiprotocol-TX-Module/tree/master/Lua_scripts)
+- jrwieland stuffs!
+  - [F3A Caller](https://github.com/jrwieland/F3A)
+  - [Battery Percent mAh used](https://github.com/jrwieland/Battery-mAh)
 - [EdgeTX About Widgets](https://manual.edgetx.org/color-radios/screen-settings/widgets)
   - Offer Shmuely's [Widgets](https://github.com/offer-shmuely/edgetx-x10-widgets/) & [Scripts](https://github.com/offer-shmuely/edgetx-x10-scripts)
   - [EdgeTX Lua more](https://github.com/EdgeTX/lua-scripts)
@@ -182,6 +185,12 @@ Telemetry / Widgets? Apps? Lua Scripts are the one!
 - [kristjanbjarni Widgets](https://github.com/kristjanbjarni/opentx-widgets)
 - [Sunil Chahal Lua Scripts](https://github.com/iamsunilchahal/edgetx-lua-scripts-bw)
 - [forbesmyester Import Export the Inputs Mixes Outputs](https://github.com/forbesmyester/EdgeTX-ImpExp)
+- [Colin's Radio Control](https://colinsradiocontrol.com/) Control
+  - [Lua Scripts](https://colinsradiocontrol.com/index.php/lua-scripts)
+    - [Widgets](https://colinsradiocontrol.com/index.php/lua-scripts/14-t16widgets)
+  - [BLHeli_32 Musics](https://colinsradiocontrol.com/index.php/blheli-32-music)
+  - [FreeCAD Files](https://colinsradiocontrol.com/index.php/freecad-files) **error MIME type not found, refuses to download**, burh Phoca succ! you should've use Copyparty instead bhur!, it will let you download anyway!
+  - [Build Packs](https://colinsradiocontrol.com/index.php/build-packs) 
 - [FM2M's Crazy Rices](https://fm2m.online/download) . Drastically rices / changes the look of your EdgeTX RCs! Try the **ToolBox**! Other than that, there are free Telemetries:
   - Toolbox. **PAID** Free trial available, [buy info](https://fm2m.online/toolbox-edgetx/#paypal)
   - [Digital Clock](https://download.fm2m.online/edgetx/stable/FM2M_DigitalClock_110.zip)
@@ -277,6 +286,11 @@ Now with that in mind, **both RX & TX must have matching Binding Phrase** you ju
     - to *sew* / *weave*.
     - Fibre Optic cable and the gallon tubes of it. In case Wireless flying is undesirable.
     - Nowadays, you should stick to ExpressLRS instead, unless if the hostile area has EMI. But if they also got Fibre Cutter, unfortunately you must come manually.
+- What's the default English voice of this EdgeTX beside its variant?
+  - it's `Emily`, Azure TTS `en_IE` (Irish). Rate is `1.10`, and the text language in your SSML should be British English (`en_GB`).
+- Why use AI voice?
+  - Because that's what happened. It's possible to have it full bio, but they got to be fed first.
+  - Please note, before the AI craze, there was once upon a time Surreal Meme videos back in the days. The YouTubers used TTS to voice those characters. E.g., Meme Man was voiced by `flite` default male. You should be able to install `flite` from most Linux Distro's repository btw.
 - Is using ExpressLRS going to need License, since this able to reach far distance?
   - Depends.
     - **DNB relieves the License requirements** off of POC License for **ExpressLRS both 2.4 GHz & 900 MHz (SubG)** 
@@ -291,6 +305,15 @@ Now with that in mind, **both RX & TX must have matching Binding Phrase** you ju
 - (Extra) Wait, then Meshtastic requires Ham Radio License then?!?!?!?!?!?!?
   - in DNB, **Yes.** Because it causes **Public Social Interaction**.
   - But not (yet) in Old Terra, as of *2026*. Sssh, don't give them an idea! They would execute it poorly by solely asking age for their selfish purposes rather than properly enforcing our POC curiculum it supposed to be!
+- (Extra) Bro, why do I have to show that my private chat must mean for company internals i.e. **Employment Deed?!**
+  - You are not allowed to circumvent POC License.
+  - We ask this private server owner to enforce Employment deed, which what you did there with it, is do some *complicated measures* to prove that you're doing it just for internal communication, not *everyone else can join*. 
+  - We looked it case by case basis. 
+    - Usually, freestyle-style communities is the one we ask all members to have POC License, if they start using Servered Website (Teamspeak, Matrix, Mumble + XMPP, etc. with Reverse Proxy or whatever connect to Internet, as well as Discord, Line, KakaoTalk, anything interneted etc.). But, if all member requires to be in the place, coz the Server computer or Repeater does not connect to internet (i.e LAN Party only), we won't ask POC License. 
+    - Cripled Analog radio without mod that only Transmit around 432 MHz won't be asked POC License. Receiving over 432 MHz exclusive-inclusive (a.k.a. Elder Radio) is okay, POC License no need.
+    - All Full Analog (Transmit all frequencies, Residential or not) no matter what always requires POC License.
+  - Say, you are a public community of this RC, and have chat server, **everyone can join without terms-in-order**. That mean you are doing Public Space, hence you must have POC License, all of you. And if any of you did not register POC License, you'll be warned, and punished if you had Bullying history.
+  - Seriously, you better just register POC License right after you born, or established DNB Nationality. It's easy, and cheap, for just 500 Pts. (about US$45-ish / IDR 500k) for every 5 years! You'll get easy to understand tuition how to Social Media and be respectful to others, and other respect technical stuffs, What? you think this is *your_corrupt_goverment_country_name* that'd excercise unecessarily impossibru measures if you're not recognized as family of the encforcers and/or didn't tell how old are you by face? Of course not! Registration is seamless, like you're signing up your favourite Gacha Games!
 
 ## Fun facts
 
