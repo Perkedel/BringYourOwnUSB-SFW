@@ -32,17 +32,23 @@ SDCards/**/SCRIPTS/TOOLS/*.luac
 !SDCards/**/SCRIPTS/snake.lua
 !SDCards/**/SCRIPTS/TOOLS/snake.lua
 !SDCards/**/SCRIPTS/TOOLS/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]
+SDCards/**/SCRIPTS/TOOLS/FM2M_ToolBox_*.lua
 SDCards/**/SCRIPTS/RGBLED/*
 SDCards/**/SCRIPTS/TELEMETRY/*
+SDCards/**/SCRIPTS/TELEMETRY/TB*.lua
 SDCards/**/SCRIPTS/FUNCTIONS/*
 !SDCards/**/SCRIPTS/FUNCTIONS/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]
 SDCards/**/SCRIPTS/MIXES/*
 !SDCards/**/SCRIPTS/MIXES/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]
 SDCards/**/SCRIPTS/WIZARD/*
+SDCards/**/SCRIPTS/GAMES/*
+SDCards/**/SCRIPTS/X-TRIS/*
+SDCards/**/SCRIPTS/BF/*
 
 SDCards/**/WIDGETS/*
 SDCards/**/WIDGETS/*.luac
 !SDCards/**/WIDGETS/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]
+SDCards/**/WIDGETS/FM2MTOOLBOX
 
 SDCards/**/TEMPLATES/*
 !SDCards/**/TEMPLATES/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]
@@ -55,6 +61,8 @@ SDCards/**/SOUNDS/*/*
 !SDCards/**/SOUNDS/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]
 !SDCards/**/SOUNDS/*/wcelod.wav
 !SDCards/**/SOUNDS/wcelod.wav
+!SDCards/**/SOUNDS/flwlit.wav
+!SDCards/**/SOUNDS/*/flwlit.wav
 
 ### Most of the time, IMAGES contains dependencies for other apps
 
@@ -71,9 +79,12 @@ SDCards/**/IMAGES/*
 # pls do not use dropbox or non-preservable hosting!
 !SDCards/**/IMAGES/droneshakk
 
+SDCards/**/VIDEO
+
 ### The FM2M is special Fly Me to the Moon's stuffs!
 
 SDCards/**/FM2M/*
+SDCards/**/FM2M/VC
 !SDCards/**/FM2M/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]
 
 Soundpacks/**/key

@@ -29,6 +29,24 @@ We've been scouring intels around the world about FPV and pretty much RCs of all
   - Only one can have telemetry. Say your second one is the Head Tracking, so, disable telemetry on that ELRS RX. Leave the Main ELRS RX has telemtry.
   - With that second one away, also assign the control CH on that second RX far far away, be it like Ch14 camera pitch, Ch15 the Yaw, etc. So the main one (beginning from Ch0) is like this.
   - Binding Phrase on these 2 must be same, especially on the camera, if 2nd RX is this, then the Main RX too has to be this. **(verification needed)** Now if you ask if you can have more than 1 model turned on, no. Because you would control all of your turned on models that had same Binding Phrase at the same time. Whatever, if you wanted it but why? idk. So just give each build different Binding Phrase, idk.
+- Where's *"Channel Number System"*? Alongside Binding Phrase differentiator, **Receiver ABC Differentiator still exist in ELRS**. All you have to do is:
+  - in the RX (your drone), set the **`Model Match`** number & **Enable it**. available numbers from `0` - `63` inclusive
+  - in the TX (your radio), set the **`Receiver ID`** number, into that number you've selected.
+    - `MDL`
+    - Internal RX (internal radio) / External RX (if you use the backpack).
+    - Scroll down to see **`Receiver`**. Set that number to whatever you picked up.
+    - Now `RTN` back to Main Screen.
+    - `SYS` to see apps
+    - Run `ELRS.lua`
+    - Enable the `Model Match` on each respective RX (Internal and/or External) there.
+    - Like above Multi RX a TX, you can share the numbers & Binding Phrase to every RX's, because you can setting each ELRS RX what channel it should expect. Remember, **Only one RX can have telemetry!**, disable Telemetry to all RX's except the main RX.
+    - Additionally, you can set certain RX module to ignore Model Match (disable `Model Match`) while keeping the same Binding Phrase **(verification needed)**. With this, you can make modular VTX that you can attach & drop on different Drones you have for different occassion. e.g., even if you changed Model, the Camera VTX system can still work cross Model! Yay!!
+- You can set Trainer to control different channels too. So it's like Copiloting, where you drive, the other control the gun.
+  - Caveat is, Trainer can only go from Ch1 - Ch4. And also its adjustment is system wide only atm. So it's the Trainer that drive, and you control other channels (edit `Inputs`)
+  - `SYS`
+  - `Trainer`
+  - Set all control to replace. Then assign. Best is if you leave it.
+  - This does not work well, pls ignore. I don't think that's how to co-pilot.
 
 ## Companion
 
@@ -65,7 +83,17 @@ Unfortunately, EdgeTX Companion has Cons atm:
 - [EdgeTX default TTS soundpack](https://github.com/EdgeTX/edgetx-sdcard-sounds). No Bahasa Indonesia atm.
   - [Forked to add Emily](https://github.com/xsnoopy/edgetx-sdcard-sounds)
   - Create your own?
-    - [Azure how](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/spx-basics?tabs=windowsinstall%2Cterminal), [and](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-support?tabs=tts#supported-languages), [aand](https://learn.microsoft.com/en-us/azure/ai-services/multi-service-resource?pivots=azportal).
+    - [Azure how](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/spx-basics?tabs=windowsinstall%2Cterminal), [and](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-support?tabs=tts#supported-languages), [aand](https://learn.microsoft.com/en-us/azure/ai-services/multi-service-resource?pivots=azportal), [huh](https://speech.microsoft.com/audiocontentcreation).
+    - How I did work the Azure TTS:
+      - Doing this so cumbersome!
+      - have Azure Account! chances are, you already have Windowslive, Outlook, or an Xbox account. You can use that to sign up Azure & build your project with it.
+      - use cURL
+        - `$SPEECH_REGION = yourRegion` e.g. `southeastasia` if you chose Southeast Asia in making of the project
+        - `$SPEECH_KEY = yourKey` e.g. `iioJOIDFoi*8D8` bla bla bla
+        - to make Emily (the EdgeTX voice chosen here) say DJI's iconic pre-flight line e.g.: `curl --location --request POST "https://${SPEECH_REGION}.tts.speech.microsoft.com/cognitiveservices/v1" --header "Ocp-Apim-Subscription-Key: ${SPEECH_KEY}" --header "Content-type: application/ssml+xml" --header "X-Microsoft-OutputFormat: riff-48kHz-16bit-mono-pcm" --header "User-Agent: curl" --data-raw "<speak version='1.0' xml:lang='en-GB'><voice xml:lang='en-GB' xml:gender='Female' name='en-IE-EmilyNeural' rate='1.10'>Fly in well lit, textured environment.</voice></speak>" --output flwlit_raw.wav`
+        - Convert it back to 32Khz `ffmpeg -i flwlit_raw.wav -ar 32000 flwlit.wav`
+        - Put that in the SDCard: `SDCard/SOUNDS/en/flwlit.wav`
+  - [OpenTX speaker using Windows narator voice tts](https://www.open-tx.org/2014/03/15/opentx-speaker)
 - [G711 Sound Converter](https://g711.org). EdgeTX works best with up to **16-Bit 32 KHz PCM** WAV file. Be sure to convert them to this low quality first, or else you'll get too loud distortion.
 - [3CX Sound Converter](https://3cx.com/docs/converting-wav-file) (yes, that PABX company)
 - [Bill Clark's how to custom sound](https://youtu.be/DqF7HUsFrnE)
@@ -83,11 +111,13 @@ Telemetry / Widgets? Apps? Lua Scripts are the one!
 - [Moar Lua Script pls](https://github.com/EdgeTX/lua-scripts)
 - [Betaflight's Lua Scripts App](https://github.com/betaflight/betaflight-tx-lua-scripts)
   - [Try Nightly](https://github.com/betaflight/betaflight-tx-lua-scripts-nightlies/releases) if your betaflight version is too new than stable.
+- [ExpressLRS Widgets](https://github.com/ExpressLRS/ElrsTelemWidget)
 - [Team Black Sheep Agent](https://team-blacksheep.com/products/prod:agentx)
   - [Online PWA](https://www.team-blacksheep.com/agentm/) **require login**
   - Use Desktop version instead! [Win](https://agent.team-blacksheep.com/agent/TBS-Agent-v4-latest-windows.zip), [Linux](https://agent.team-blacksheep.com/agent/TBS-Agent-v4-latest-linux.zip), [Linux ARM64](https://agent.team-blacksheep.com/agent/TBS-Agent-v4-latest-arm64-linux.zip), [macOS M1](https://agent.team-blacksheep.com/agent/TBS-Agent-v4-latest-arm64-mac.zip), [macOS Intel](https://agent.team-blacksheep.com/agent/TBS-Agent-v4-latest-linux.zip)
   - [Lua Script EdgeTX](https://www.team-blacksheep.com/media/files/tbs-agent-100-etx.zip) (put content of zip file to `SCRIPTS/TOOLS`), [FreedomTX / OpenTX](https://www.team-blacksheep.com/media/files/tbs-agent-100-legacy.zip), [ETHOS](https://www.team-blacksheep.com/media/files/TBSAGENTLITE.zip) ([how to install on ETHOS](https://www.team-blacksheep.com/media/files/tbs-agent-lite-ethos.pdf))
 - [MadMonkey87's Telemetry Widgets](https://github.com/MadMonkey87/EdgeTX-Goodies)
+- [Ziege-One Touch Buttons Widget](https://github.com/Ziege-One/TSwitch)
 - [Yaapu's Frsky Telemetry Widgets](https://github.com/yaapu/FrskyTelemetryScripts). clone this whole repository & copy folders accordingly!
   - for EdgeTX/OpenTX: choose & copy according `*_common` folders, based on `color` or `b/w` model you had. Then with `color` or `b/w`, also copy the resolution folders too e.g. `c480x320/SD` for RadioMaster TX16s which has `Color` display. 
   - [Horus Widget too](https://github.com/yaapu/HorusMappingWidget)
@@ -95,16 +125,27 @@ Telemetry / Widgets? Apps? Lua Scripts are the one!
   - [Outdated](https://github.com/teckel12/LuaTelemetry) old. [Download](https://github.com/teckel12/LuaTelemetry/releases/latest)
 - [bob01's Widgets](https://github.com/bob01/etx-widgets)
 - [dbarrios' Widgets](https://github.com/dbarrios83/edgetx-widgets). Daniel Barrios' Telemetry Collections!, **Full Screen All-in-1 Widget Available & Recommended**
+- [calmarc's Battery & RX Widgets](https://github.com/calmarc/EdgeTX-Widgets)
+- [moschotto GPS Widget](https://github.com/moschotto/OpenTX_GPS_Telemetry)
+- [nikbg3 Log Viewer for B/W](https://github.com/nikbg3/EdgeTXLogViewerBW)
+- [pascallanger Lua Scripts](https://github.com/pascallanger/DIY-Multiprotocol-TX-Module/tree/master/Lua_scripts)
 - [EdgeTX About Widgets](https://manual.edgetx.org/color-radios/screen-settings/widgets)
-  - https://github.com/offer-shmuely/edgetx-x10-widgets/wiki
+  - Offer Shmuely's [Widgets](https://github.com/offer-shmuely/edgetx-x10-widgets/) & [Scripts](https://github.com/offer-shmuely/edgetx-x10-scripts)
   - [EdgeTX Lua more](https://github.com/EdgeTX/lua-scripts)
   - [EdgeTX Games Collections](https://github.com/EdgeTX/lua-scripts/blob/main/games.md). they got [FPV simulator](https://github.com/alexeystn/lua-fpv-sim) too
+    - [FPV Simulator](https://github.com/alexeystn/lua-fpv-sim). Alexey stn. Fly drone simulator. It's Subway Surfer but drone tho, but should suffice.
+    - [Galuaxian](https://github.com/timmalahov/galuaxian). timmalahov. Galaga Lua lol. What if you can fly in space remotely?
+    - [Tetris](https://github.com/DavBfr/etx-tetris?tab=readme-ov-file). DavBfr. Yey Tetris. Just a fill a row line with blocks game.
+    - [X-Lite Tetris](https://www.youtube.com/watch?v=VpnyOe8sJ4c), [DL](http://mike-vom-mars.com/blog/wp-content/uploads/2018/06/XTRIS_XLITE.zip). Mike Vom Mars
 - [Moshir's Flight Tracker](https://github.com/moshirfakhoury/edgetx-flightprogress-luascript)
   - [Video](https://youtu.be/JjI5H5LCPlc)
-- [FM2M's Crazy Rices](https://fm2m.online/download) **PAID** Free trial available, [buy info](https://fm2m.online/toolbox-edgetx/#paypal). Drastically rices / changes the look of your EdgeTX RCs! Try the **ToolBox**! Other than that, there are free Telemetries:
-  - [Digital Clock](https://download.fm2m.online/edgetx/stable/FM2M_DigitalClock_110.zip)
-  - [Widget Pack](https://download.fm2m.online/edgetx/stable/FM2M_DigitalClock_110.zip)
-  - [Visual Pack](https://download.fm2m.online/edgetx/stable/FM2M_VisualPack.zip)
+  - [RotorRush Game](https://github.com/moshirfakhoury/edgetx-rotorrush-luascript)
+- [Ulf Schelth's Image Viewer widget](https://www.schleth.com/fpv/vu-a-simple-image-viewer-for-edgetx-radios-with-big-screens-2113.html)
+- [RC Soar `Show it All Widget](https://rc-soar.com/edgetx/lua/showitall/index.php)
+- [Just Fly Switch Config Widget](https://repository.justfly.solutions/index.php?view=product&id=115:switch-config)
+  - [Even moar](https://repository.justfly.solutions/index.php/lua-scripts)
+- [Druckgott's Switches Widget](https://github.com/druckgott/getswitchesWdgets/)
+- [fdm225 mahRe2 Widget](https://github.com/fdm225/mahRe2)
 - [btastic's 6POS RGB LED](https://github.com/btastic/rgb-throttle-edgetx)
   - [Video tutorial](https://youtu.be/Pv36h7FIiYc)
   - put the `ledfinder.lua` into just `SCRIPTS` folder (optionally again to `SCRIPTS/TOOLS`)
@@ -112,6 +153,40 @@ Telemetry / Widgets? Apps? Lua Scripts are the one!
 - [TaraniTunes](https://github.com/jrwieland/TaraniTunes-v4.x). Music Player
   - [AutoPlaylist](https://github.com/jrwieland/TaraniTunes-v4.x/tree/master/Auto_Playlist). [Discuss](https://www.rcgroups.com/forums/showpost.php?p=31361271&postcount=41772)
   - [MP3 tag to make tage](http://www.mp3tag.de/en/)
+- [EdgeTV Video Player](https://github.com/Kudzzo/EdgeTV)
+  - [Post Reddit](https://www.reddit.com/r/edgetx/comments/1rd324z/oc_i_made_a_10fps_video_player_for_the/)
+- [SpechtD's Pong](https://github.com/SpechtD/OpenTX-Pong)
+- [Armin's Scripts](https://github.com/armin-rc/edgetx). Pay Attention to Prefixes!
+  - `f_` = Function
+  - `m_` = Mixes
+  - `t_` = Telemetry
+- [pcdh88's Reaction Trainer](https://github.com/pvdh88/EdgeTX-Reaction-Trainer.git)
+- [mshagg's edit of Dashboard for Surface, RadioMaster MT12](https://github.com/mshagg/Radiomaster-MT12-Surface-Based-Luas)
+  - [original from Andrew Farley](https://github.com/AndrewFarley/Taranis-XLite-Q7-Lua-Dashboard) There's more!
+  - [Also mvaldesshc's Quad Telemtry](https://github.com/mvaldesshc/advanced-edgetx-dashboard), [original](https://github.com/alexey-gamov/opentx-quad-telemetry)
+- [IKKI's RGB Controller](https://github.com/IKKI-FPV/stikki.git)
+- [eyelabraham's scripts](https://github.com/eyalabraham/radiomaster-lua)
+  - BattVL Widget
+  - Dual Rudder Stick Mixes
+  - *Useless* app
+- [Fig Newton's Ghost.lua game](https://www.rcgroups.com/forums/showthread.php?2180470-Ghost-lua-A-new-game-for-OpenTX)
+- RadioMaster Horray!
+  - **Pls yoink RadioMaster included games. Some of them we couldn't find on internet!**
+  - [Lap Timer](https://github.com/RadioMasterRC/EdgeTX-LapTimer), [original](https://github.com/RadioMasterRC/EdgeTX-LapTimer)
+  - [tbs spec](https://github.com/RadioMasterRC/tbs-crsf-spec)
+- [frankiearzu DSM Tools](https://github.com/frankiearzu/DSMTools)
+- icebreaker-ch [Log Manager](https://github.com/icebreaker-ch/EdgeTX-LogManager) & [LogFM](https://github.com/icebreaker-ch/EdgeTX-LogFM)
+- [wimalopaan Lua Scripts](https://github.com/wimalopaan/LUA)
+- [DHaacke Mambo Tango Stick Command Viewer](https://github.com/DHaacke/Mambo-Tango)
+- [alufers GPS QR Code](https://github.com/alufers/edgetx-gps-qrcode)
+- [kristjanbjarni Widgets](https://github.com/kristjanbjarni/opentx-widgets)
+- [Sunil Chahal Lua Scripts](https://github.com/iamsunilchahal/edgetx-lua-scripts-bw)
+- [forbesmyester Import Export the Inputs Mixes Outputs](https://github.com/forbesmyester/EdgeTX-ImpExp)
+- [FM2M's Crazy Rices](https://fm2m.online/download) . Drastically rices / changes the look of your EdgeTX RCs! Try the **ToolBox**! Other than that, there are free Telemetries:
+  - Toolbox. **PAID** Free trial available, [buy info](https://fm2m.online/toolbox-edgetx/#paypal)
+  - [Digital Clock](https://download.fm2m.online/edgetx/stable/FM2M_DigitalClock_110.zip)
+  - [Widget Pack](https://download.fm2m.online/edgetx/stable/FM2M_DigitalClock_110.zip)
+  - [Visual Pack](https://download.fm2m.online/edgetx/stable/FM2M_VisualPack.zip)
 
 ## Splash Screens
 
@@ -181,13 +256,27 @@ Now with that in mind, **both RX & TX must have matching Binding Phrase** you ju
     - This is used for Surface Drones. Namely Cars, Motorbike, etc.
   - Menciut
     - *Shrank*, as in *your heart organ shrank like Grinch*.
-    - Indicate this RC model has smaller gimbals (i.e. not Full Size) to achieve compact size. Much like Radiomaster Pocket.
+    - Indicate this RC model has smaller gimbals (i.e. not Full Size) to achieve compact size. Much like Radiomaster Pocket with AG01.
     - The name sometime is insulting because we do not recommend pilots to use this kind of Gimbal size, you should stick to Full Size if you can.
   - Onta
     - *Ostrich*
     - This is a Surface Drone that has Mecanum wheels, where all of the wheels are direct drive.
     - It controls same like Flying Drones, but without altitude. Yeah, just like birb Ostrich, can't fly but run instead.
     - Unlike other Surface types, Onta uses Dual Joystick RCs. The Throttle (Left Joystick Vertical) is unused.
+  - Jotos
+    - *Punch*, as in Combat & Battle Punch. allegedly `Jotos` comes from Arenodic / Javanese language.
+    - Combat Drones series. Designed to be very tough, indestructible, and secure.
+    - Unlike other series, Jotos drones are tightly sealed, including its batteries. Reason why it's to prevent Landbreakers or any hostile entities from taking its battery off and the memory disk when it intentionally shot down.
+    - Jotos can still be disassembled with the special tool.
+    - Most owned Jotos are set to forbid forced disassembly. Every Jotos drone has a customizable tag box you can attach to it. It mainly used to legally punish said Landbreakers attempted destroying evidence.
+    - Jotos series was introduced in 2204 in collaboration with Endfield Industries. At first, the Van Elektronische folk felt this is a betrayal, but after serveral negotiation and on-field tests, the Jotos is very useful for certain circumstances, especially where the area to be surveyed is extremely hostile.
+    - Despite being a Military model, Civilians can still try one of these, if they want it (because sealed drone is uninteresting and hard to repair)..
+    - Jotos is also a different department of Van Elektronische, which is a Weaponry division. One of the infamous figure e.g. [Jade Harvey](https://github.com/Perkedel/Docs/tree/main/Lores/Homestuck/Homestuck%20Assail%20the%20target%20at%20the%20acid%20lab.md) uses Jotos Longshot Riffle, during Homestuck x Interpol 2025-2030.
+    - Operators who uses drone as a weapon type equip `E` model Jotos drones. `E` as in Enfielder. This model is designed to fly closer with the operator, and designed to be attached with various kinds of strong weaponries.
+  - Rajut
+    - to *sew* / *weave*.
+    - Fibre Optic cable and the gallon tubes of it. In case Wireless flying is undesirable.
+    - Nowadays, you should stick to ExpressLRS instead, unless if the hostile area has EMI. But if they also got Fibre Cutter, unfortunately you must come manually.
 - Is using ExpressLRS going to need License, since this able to reach far distance?
   - Depends.
     - **DNB relieves the License requirements** off of POC License for **ExpressLRS both 2.4 GHz & 900 MHz (SubG)** 
@@ -195,6 +284,10 @@ Now with that in mind, **both RX & TX must have matching Binding Phrase** you ju
     - Please review your laws carefully, especially pertaining to Wireless Interactions. Make sure you set your radio parameters so that you don't disturb national critical infrastructures.
   - I can't find why rn, but one thing certain is that RC data like this is very compact unlike many Complex Audio Video Transmission (since Chatting one, not including Machinery VTX). Plus POC License only scrutinize anything that causes **Public Social Interaction** from single way (Television) down to multi way (Chats like IRC, Discord Teamspeak, Facebook, Zoom, Ham Radio DMR and analog, etc.). The ExpressLRS (among like Analog, DJI, OpenIPC) feature sets it has as of 2026 currently only causes **Private Machinery Interaction**, which does not make sense to be scrutinized. Really, to use CCTV doorbell you need License?? Huh?
     - If you ask me, then Social media poses significant risks, that's why it requires Ham Radio License (POC License: Analog, DMR, Social Media), **in DNB**. Hey, at least in Old Terra there's no Ham License required to use Facebook, that's why so many depressions haha!
+  - (Extra) Unlike Analog Radios, you can make private spaces without having to obtain POC License beforehand. e.g.
+    - Enterprise Self-Hosted DMR & Chatcord. As long as you don't cause connection to public, you won't be asked to verify POC License, unless again if you include Analog protocol that excludes around 432 MHz (or any License-Free Residential frequencies of your nation) ranges which and/or over 500 mw.
+    - Advantages of such Digital therefore is that interference is quite small, so small it becomes perceptually always interference free in theory. Heck, you can even make a private website to host these chat servers that only your organization can access, and you won't be asked POC License. You can even let other friend borrow your server to get them do the same too!. As long as none of these hosted chat requires password **& employment deed (mandatory enforcement)** to access, POC License is not required. 
+    - Doing the same in Analog is impossible, because it can interfere other signals on air as always, and of course due to such design, there's no such thing such as private space, even if you say add *Tone Code* differentiator.
 - (Extra) Wait, then Meshtastic requires Ham Radio License then?!?!?!?!?!?!?
   - in DNB, **Yes.** Because it causes **Public Social Interaction**.
   - But not (yet) in Old Terra, as of *2026*. Sssh, don't give them an idea! They would execute it poorly by solely asking age for their selfish purposes rather than properly enforcing our POC curiculum it supposed to be!

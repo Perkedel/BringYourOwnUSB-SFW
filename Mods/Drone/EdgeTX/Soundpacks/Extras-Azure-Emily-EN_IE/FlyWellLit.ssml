@@ -1,0 +1,10 @@
+
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-GB">
+    <!-- pls help
+    - https://speech.microsoft.com/audiocontentcreation
+
+    -->
+    <voice xml:lang="en-GB" xml:gender="Female" name="en-IE-EmilyNeural">
+        <prosody rate="1.10">Fly in well lit, textured environment</prosody>
+    </voice>
+</speak>
