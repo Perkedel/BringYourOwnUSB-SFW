@@ -4,7 +4,7 @@ Labels:
 Sort: 4
 Models:
   model1.yml:
-    hash: "a26200006b5c0f9c"
+    hash: "ef6200006c5c4302"
     name: "Waduh"
     mod0type: 5
     labels: "WaduhCoy,Favorites"
@@ -17,7 +17,7 @@ Models:
     bitmap: "mav2.png"
     lastopen: 1773023610
   model3.yml:
-    hash: "ef4500006b5c3d33"
+    hash: "ef4500006c5c3702"
     name: "Simulacral"
     labels: "Favorites"
     bitmap: "simulacral.png"

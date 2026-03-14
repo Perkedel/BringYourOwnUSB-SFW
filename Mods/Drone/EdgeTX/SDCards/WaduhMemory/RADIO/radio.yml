@@ -1,4 +1,4 @@
-checksum: 32656
+checksum: 51189
 manuallyEdited: 0
 timezoneMinutes: 0
 ppmunit: 0
@@ -98,7 +98,7 @@ speakerVolume: 11
 vBatMin: 67
 vBatMax: 83
 backlightBright: 0
-globalTimer: 40313
+globalTimer: 40421
 bluetoothBaudrate: 0
 bluetoothMode: TELEMETRY
 countryCode: 0
