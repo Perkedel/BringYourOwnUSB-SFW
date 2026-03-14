@@ -103,6 +103,18 @@ Unfortunately, EdgeTX Companion has Cons atm:
   - You can also use other OS startup sound for alternative jokes, like **Windows XP Logon**, or something idk.
   - That's basically it, **minimum 32000 Hz 16 bit PCM**, Maximum about 96000 Hz 16 Bit PCM. that goes also for DOOM sound lumps you found across different WADs if they aren't in this quality yet or over than that.
 
+### TTS ideas
+
+Need some Phrase ideas? Here you go!
+
+- `Fly in well lit, Textured Environment.`. DJI's iconic line when Just Turned On & Disarmed
+- `Caution, High Threat Hostile.`. Used for Telemetry type Play Track Command, Perceptive Camera Feedback when saw hostile figure.
+- `Caution, Contamination High.`. This one used on Zenless Zone Zero, when Miasma is about to full.
+- `Low HP, return home immediately`. Drone damaged
+- `Prop 1 failed`. A prop failed
+- `Motor 1 failed`. A motor failed
+- `Heart Rate High`. used for Human remoting. Funny story, there are scientists across DNB attempted to realize the imagination of using ELRS' Telemetry for human beating heart(s).
+
 ## Lua Scripts
 
 Telemetry / Widgets? Apps? Lua Scripts are the one!
@@ -245,6 +257,14 @@ You can also prepend & append extra words to further differentiate the connectio
 Now why should you ask? Coz it's easier in the end. Once setup, just turn the RC & Drone on properly, and they'll always bound, rare to forget about it assuming no short circuit or what.
 
 Now with that in mind, **both RX & TX must have matching Binding Phrase** you just selected. As simple as that! And you can separate it by assigning different RX Channel number in each of your Model & the unit of that.
+
+## Telemetry Ideas
+
+Funny Telemetry
+
+- `HRat`. Heart Rate
+- `Pulse`. clocktick, send everytime heart went Systole
+- Other imaginations are not listed here.
 
 ## Frequently Asked Questions
 
