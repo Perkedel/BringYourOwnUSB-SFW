@@ -1,4 +1,4 @@
-checksum: 51189
+checksum: 57
 manuallyEdited: 0
 timezoneMinutes: 0
 ppmunit: 0
@@ -98,7 +98,7 @@ speakerVolume: 11
 vBatMin: 67
 vBatMax: 83
 backlightBright: 0
-globalTimer: 40421
+globalTimer: 41279
 bluetoothBaudrate: 0
 bluetoothMode: TELEMETRY
 countryCode: 0
@@ -159,7 +159,7 @@ potsConfig:
       inv: 0
       name: ""
    P2:
-      type: multipos_switch
+      type: with_detent
       inv: 0
       name: ""
    SL1:

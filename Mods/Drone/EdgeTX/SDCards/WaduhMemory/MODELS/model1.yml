@@ -241,6 +241,14 @@ logicalSw:
       lsState: 0
       delay: 0
       duration: 0
+   2:
+      func: FUNC_VPOS
+      def: "tele(8),70"
+      andsw: "!L2"
+      lsPersist: 0
+      lsState: 0
+      delay: 0
+      duration: 0
 customFn: 
    0:
       swtch: "L2"
@@ -251,7 +259,7 @@ customFn:
       func: PLAY_TRACK
       def: "disarm,1,1x"
    2:
-      swtch: "!L2"
+      swtch: "L3"
       func: PLAY_TRACK
       def: "flwlit,1,1x"
 flightModeData: 
@@ -1198,7 +1206,7 @@ customSwitches:
       type: GLOBAL
       group: 1
       start: START_OFF
-      state: 1
+      state: 0
       onColorLuaOverride: OFF
       offColorLuaOverride: OFF
       onColor: 
