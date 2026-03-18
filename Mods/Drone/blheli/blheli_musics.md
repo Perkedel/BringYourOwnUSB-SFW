@@ -296,6 +296,8 @@ It's my turn now. **Bluejay / BLHeli_S** yey!
   - All: `OndelOndel:d=4,o=5,b=225:b4,8p,8b4,8b4,8p,e,d,e,d,a4,b4,p,d,b4`
 - [24GH - Lovely Sad](https://vt.tiktok.com/ZSu6qE4CQ). *Iya iya-aa, yeye, yeye!!*
   - All: `IyaIyaaYeyeYeye:d=4,o=5,b=200:d,d,f#,d,2b4,p,d,2c#,p,f#,2d`
+- Pizza Hut Indonesia. *Berbagi bersama, di Pizza Hut!*. If only we did found some SMS Ring back tone download back in early 2000s somehow, never heard this particular one tho. Also Virtual Triples is impossible with RTTL. Apology for off length in the end.
+  - All: `PizzaHutID:d=4,o=5,b=250:2e,c#,d,e,f,e,p,e,e,2c#6,2b,a`
 
 ## How to install the song?
 

@@ -120,10 +120,10 @@ Need some Phrase ideas? Here you go!
 Telemetry / Widgets? Apps? Lua Scripts are the one!
 
 - ExpressLRS Lua App. You can use the [configurator](https://www.expresslrs.org/quick-start/installing-configurator/) to download the matching Lua App version for your RC. After you connected, save the the app into `SCRIPTS/TOOLS` of your RC SDCard.
+  - [ExpressLRS Widgets](https://github.com/ExpressLRS/ElrsTelemWidget)
 - [Moar Lua Script pls](https://github.com/EdgeTX/lua-scripts)
 - [Betaflight's Lua Scripts App](https://github.com/betaflight/betaflight-tx-lua-scripts)
   - [Try Nightly](https://github.com/betaflight/betaflight-tx-lua-scripts-nightlies/releases) if your betaflight version is too new than stable.
-- [ExpressLRS Widgets](https://github.com/ExpressLRS/ElrsTelemWidget)
 - [Team Black Sheep Agent](https://team-blacksheep.com/products/prod:agentx)
   - [Online PWA](https://www.team-blacksheep.com/agentm/) **require login**
   - Use Desktop version instead! [Win](https://agent.team-blacksheep.com/agent/TBS-Agent-v4-latest-windows.zip), [Linux](https://agent.team-blacksheep.com/agent/TBS-Agent-v4-latest-linux.zip), [Linux ARM64](https://agent.team-blacksheep.com/agent/TBS-Agent-v4-latest-arm64-linux.zip), [macOS M1](https://agent.team-blacksheep.com/agent/TBS-Agent-v4-latest-arm64-mac.zip), [macOS Intel](https://agent.team-blacksheep.com/agent/TBS-Agent-v4-latest-linux.zip)
@@ -135,15 +135,19 @@ Telemetry / Widgets? Apps? Lua Scripts are the one!
   - [Horus Widget too](https://github.com/yaapu/HorusMappingWidget)
 - [iNav Telemetry](https://github.com/iNavFlight/OpenTX-Telemetry-Widget). [Download Latest](https://github.com/iNavFlight/OpenTX-Telemetry-Widget/releases/latest)
   - [Outdated](https://github.com/teckel12/LuaTelemetry) old. [Download](https://github.com/teckel12/LuaTelemetry/releases/latest)
-- [bob01's Widgets](https://github.com/bob01/etx-widgets)
+- [bob01's Widgets](https://github.com/bob01/etx-widgets). use `er` prefixed widgets! That's the newest one!
 - [dbarrios' Widgets](https://github.com/dbarrios83/edgetx-widgets). Daniel Barrios' Telemetry Collections!, **Full Screen All-in-1 Widget Available & Recommended**
 - [calmarc's Battery & RX Widgets](https://github.com/calmarc/EdgeTX-Widgets)
 - [moschotto GPS Widget](https://github.com/moschotto/OpenTX_GPS_Telemetry)
 - [nikbg3 Log Viewer for B/W](https://github.com/nikbg3/EdgeTXLogViewerBW)
 - [pascallanger Lua Scripts](https://github.com/pascallanger/DIY-Multiprotocol-TX-Module/tree/master/Lua_scripts)
+- [derelict's Battery Widget TxBatTele](https://github.com/derelict/TxBatTele)
 - jrwieland stuffs!
   - [F3A Caller](https://github.com/jrwieland/F3A)
   - [Battery Percent mAh used](https://github.com/jrwieland/Battery-mAh)
+  - [TaraniTunes](https://github.com/jrwieland/TaraniTunes-v4.x). Music Player
+    - [AutoPlaylist](https://github.com/jrwieland/TaraniTunes-v4.x/tree/master/Auto_Playlist). [Discuss](https://www.rcgroups.com/forums/showpost.php?p=31361271&postcount=41772)
+    - [MP3 tag to make tage](http://www.mp3tag.de/en/)
 - [EdgeTX About Widgets](https://manual.edgetx.org/color-radios/screen-settings/widgets)
   - Offer Shmuely's [Widgets](https://github.com/offer-shmuely/edgetx-x10-widgets/) & [Scripts](https://github.com/offer-shmuely/edgetx-x10-scripts)
   - [EdgeTX Lua more](https://github.com/EdgeTX/lua-scripts)
@@ -154,8 +158,8 @@ Telemetry / Widgets? Apps? Lua Scripts are the one!
     - [X-Lite Tetris](https://www.youtube.com/watch?v=VpnyOe8sJ4c), [DL](http://mike-vom-mars.com/blog/wp-content/uploads/2018/06/XTRIS_XLITE.zip). Mike Vom Mars
 - [Moshir's Flight Tracker](https://github.com/moshirfakhoury/edgetx-flightprogress-luascript)
   - [Video](https://youtu.be/JjI5H5LCPlc)
-  - [RotorRush Game](https://github.com/moshirfakhoury/edgetx-rotorrush-luascript)
-- [Ulf Schelth's Image Viewer widget](https://www.schleth.com/fpv/vu-a-simple-image-viewer-for-edgetx-radios-with-big-screens-2113.html)
+  - [RotorRush Game](https://github.com/moshirfakhoury/edgetx-rotorrush-luascript). ⚠️, AI generated title screen
+- [Ulf Schelth's Image Viewer widget VU](https://www.schleth.com/fpv/vu-a-simple-image-viewer-for-edgetx-radios-with-big-screens-2113.html)
 - [RC Soar `Show it All Widget](https://rc-soar.com/edgetx/lua/showitall/index.php)
 - [Just Fly Switch Config Widget](https://repository.justfly.solutions/index.php?view=product&id=115:switch-config)
   - [Even moar](https://repository.justfly.solutions/index.php/lua-scripts)
@@ -165,9 +169,6 @@ Telemetry / Widgets? Apps? Lua Scripts are the one!
   - [Video tutorial](https://youtu.be/Pv36h7FIiYc)
   - put the `ledfinder.lua` into just `SCRIPTS` folder (optionally again to `SCRIPTS/TOOLS`)
   - put the `idle.lua` & `throttle.lua` into `SCRIPTS/RGBLED` folder
-- [TaraniTunes](https://github.com/jrwieland/TaraniTunes-v4.x). Music Player
-  - [AutoPlaylist](https://github.com/jrwieland/TaraniTunes-v4.x/tree/master/Auto_Playlist). [Discuss](https://www.rcgroups.com/forums/showpost.php?p=31361271&postcount=41772)
-  - [MP3 tag to make tage](http://www.mp3tag.de/en/)
 - [EdgeTV Video Player](https://github.com/Kudzzo/EdgeTV)
   - [Post Reddit](https://www.reddit.com/r/edgetx/comments/1rd324z/oc_i_made_a_10fps_video_player_for_the/)
 - [SpechtD's Pong](https://github.com/SpechtD/OpenTX-Pong)
@@ -195,6 +196,7 @@ Telemetry / Widgets? Apps? Lua Scripts are the one!
 - [DHaacke Mambo Tango Stick Command Viewer](https://github.com/DHaacke/Mambo-Tango)
 - [alufers GPS QR Code](https://github.com/alufers/edgetx-gps-qrcode)
 - [kristjanbjarni Widgets](https://github.com/kristjanbjarni/opentx-widgets)
+  - GPS Widget with [Plus Code](https://en.wikipedia.org/wiki/Open_Location_Code) available too!
 - [Sunil Chahal Lua Scripts](https://github.com/iamsunilchahal/edgetx-lua-scripts-bw)
 - [forbesmyester Import Export the Inputs Mixes Outputs](https://github.com/forbesmyester/EdgeTX-ImpExp)
 - [Colin's Radio Control](https://colinsradiocontrol.com/) Control
@@ -203,6 +205,14 @@ Telemetry / Widgets? Apps? Lua Scripts are the one!
   - [BLHeli_32 Musics](https://colinsradiocontrol.com/index.php/blheli-32-music)
   - [FreeCAD Files](https://colinsradiocontrol.com/index.php/freecad-files) **error MIME type not found, refuses to download**, burh Phoca succ! you should've use Copyparty instead bhur!, it will let you download anyway!
   - [Build Packs](https://colinsradiocontrol.com/index.php/build-packs) 
+- [SpiderFI](https://github.com/SpiderFI)
+  - [Battery Tube Widget](https://github.com/SpiderFI/EdgeTX-Battery-Widget)
+  - [LQ or DBM GPS](https://github.com/SpiderFI/EdgeTX-LQorDBM-Widget)
+  - [TxBatt Widget](https://github.com/SpiderFI/EdgeTX-TXBatt-Widget)
+- Assorted GPS Viewers
+  - [ktaliaferro's Color GPS Viewer](https://github.com/ktaliaferro/gps-viewer)
+  - poweredjj's [GPS Logger BW](https://github.com/poweredjj/gpslog) & [GPS Logger Color](https://github.com/poweredjj/gpslog_color)
+  - [Yaapu's Horus Mapping Widget](https://github.com/yaapu/HorusMappingWidget)
 - [FM2M's Crazy Rices](https://fm2m.online/download) . Drastically rices / changes the look of your EdgeTX RCs! Try the **ToolBox**! Other than that, there are free Telemetries:
   - Toolbox. **PAID** Free trial available, [buy info](https://fm2m.online/toolbox-edgetx/#paypal)
   - [Digital Clock](https://download.fm2m.online/edgetx/stable/FM2M_DigitalClock_110.zip)

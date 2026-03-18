@@ -1,0 +1,54 @@
+normal,normal.wav
+warning,warning.wav
+critical,critical.wav
+used,used.wav
+receiver,receiver.wav
+Receiver Battery Alarm,rbatw.wav
+notfull,notfull.wav
+missing cell warning,mcw.wav
+main,main.wav
+inconsistent cell warning,icw.wav
+detected,detected.wav
+cell Battery detected with a current voltage of,cellbatdetect.wav
+not,not.wav
+battery,battery.wav
+full,full.wav
+empty,empty.wav
+missing,missing.wav
+cell,cell.wav
+cells,cells.wav
+SAB Goblin 630,sg630.wav
+T-Rex 600,t600.wav
+Goosky RS 7,grs7.wav
+Goosky RS 4,grs4.wav
+YU Xiang F280,yu280.wav
+Assault 700,a700.wav
+SAB Raw 580,sr580.wav
+T-rex 550,t550.wav
+waiting for,wtf.wav
+Telemetry,tele.wav
+of,of.wav
+cells detected,cdt.wav
+cell missing,cm.wav
+ok,ok.wav
+power,power.wav
+Buffer,buffer.wav
+Pack,pack.wav
+lipo,lipo.wav
+low,low.wav
+high,high.wav
+voltage,voltage.wav
+percent,percent.wav
+End of Activity detected.,eoad.wav
+Reseting Status.,rs.wav
+Taking Screenshot.,tss.wav
+off,off.wav
+on,on.wav
+Turning Logging,tl.wav
+Active,active.wav
+flight,flight.wav
+End of,endof.wav
+End of flight detected.,eofd.wav
+Active flight detected.,afd.wav
+Ready to fly.,rtf.wav
+
