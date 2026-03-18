@@ -44,7 +44,7 @@ We've been scouring intels around the world about FPV and pretty much RCs of all
 - You can set Trainer to control different channels too. So it's like Copiloting, where you drive, the other control the gun.
   - Caveat is, Trainer can only go from Ch1 - Ch4. And also its adjustment is system wide only atm. So it's the Trainer that drive, and you control other channels (edit `Inputs`)
   - `SYS`
-  - `Trainer`
+  - page `Trainer`
   - Set all control to replace. Then assign. Best is if you leave it.
   - This does not work well, pls ignore. I don't think that's how to co-pilot.
 
@@ -231,6 +231,12 @@ We got Model Images
     - [480x320](https://www.dropbox.com/scl/fi/b436aoa10puc12viuq9xo/InShot_20251017_013727302.jpg?rlkey=fizchetuljr6ph4yrqvw9z04x&st=d750k8l3&dl=0)
     - [Link 2](https://www.dropbox.com/scl/fi/xtvbv20enf44ztt159o71/background.png?rlkey=1fodpf5a51apef4wlbqxm6p3d&st=2hpmd4xw&dl=0)
     - [Link 3](https://www.dropbox.com/scl/fi/jq6orpu8p4jqqpsxabmb0/Adobe-Express-file.jpg?rlkey=khazb2uuuntttq8rj30hqdd3q&st=cn2krk63&dl=0)
+- Perkedel
+  - ![Mavrickle Placeholder](SDCards/WaduhMemory/IMAGES/perkedel/mavrickle_modelThumb2.png)
+  - ![Simulacral](SDCards/WaduhMemory/IMAGES/perkedel/simulacral.png)
+  - ![Test Model made-up heart organ on debug table](SDCards/WaduhMemory/IMAGES/perkedel/JantungDebug2.png)
+  - ![Stork Bootscreen](SDCards/WaduhMemory/IMAGES/perkedel/splash_800x480.png)
+  - Moar in [IMAGES](SDCards/WaduhMemory/IMAGES/perkedel) SDCard folder!
 
 ## Bind Phrases
 
