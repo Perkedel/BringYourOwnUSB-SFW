@@ -252,20 +252,33 @@ We got Model Images
 
 ExpressLRS Bind Phrases! Here are public Bind Phrases ideas you can use just to test things out. These too also used on our Stork kits
 
+> [!TIP]  
+> [**Binding Phrases is not a password**](https://www.expresslrs.org/faq/#is-my-binding-phrase-a-secret), according to the Official FAQ there. It is just there to prevent collission with other pilots.  
+> Be sure to coordinate Binding Phrases with all pilots and/or teams on the scene, so that it's unique with each other per pilot or team. You can still put same Binding Phrase with your own / team's different Models, and you can make it unique against other pilots / team.  
+> You can also put wordy & saucy passwords as well, with examples bellow.  
+> You are still recommended to change Binding Phrase off of the shipped ones immediately even so, so that it won't collide with other pilots who also just unboxed the same similar Model or same manufacturer.
+
 - Your own name
 - Your organization name. Be it company you're working, racing team, whatever team.
 - `Stork`
-- `DetakJantung`. I am Cardiophile. I need home. I need.. yeah you know.
+- `DetakJantung` (*heartbeat* in ID). I am Cardiophile. I need home. I need.. yeah you know.
+- `Herzschlag` (*heartbeat* in DE). Sometimes your Stork's ships this Binding Phrase out of the box, with a random GUID after it e.g. `herzschlag-bb3a6a51-00ab-4961-baa7-152abc55636b`. You can see this stickers containing this information when you unbox our TENS Remote (to be bound with separate Drone later), or Drone Combo Remote (both units prebound).
+- `DagDigDug` / `LubDub`
 - `HeartJumpOutOfChest`
 - `StethingMyWifeHeart`
+- `StethingMyHusbandHeart`
 - `FemalePoundingHeartbeat`
-- `HoshinoIsWatchingYouSenseis`
+- `EarstethBetterThanStethoscope`. You can also put opinions
+- `StethoscopeBetterThanEarsteth`. And vice versa
+- `EarthstehOrStethoscopeOkay`. Or neutral at all.
+- `IdontSteth`. Or perhaps avoid doing anything, that's okay too, idk.
+- `HoshinoIsWatchingYouSenseis`. hehe, Blue Archive lmao
 - `I listen to female heartbeat, and it's always exciting everytime when her heart beats so fast`. You can also add spaces, comma, and other punctuations etc., they'll be dotted too. But be careful, too long may cause lag. Probably you have 255 Characters limit on the field.
 - `HoshinoNotHorus`. the default Bluetooth name given on EdgeTX is `horus`. And so why not? The Stork's golden era was first time started during Blue Archive (the New Paradigm fan remake ones, not original, pls don't attempt scouring thancc) not-limited event about Efurteyas duo who tried FPV Drone scene. In Blue Archive since original, there's a Student from Abydos named Hoshino. Without giving spoilers, whatever that relates with her, is that she's Horus. Something that's *Telemetrical*. Her heterochroma eyes tells us it's really something. ***To see***. In fact, you may find our RemoteMod RC Bluetooth name `hoshino` out of the box instead of `horus`.
 - `AndHerNameIsKasumizawaMiyuDuar`. That Reference lmao! Miyu from Rabbit Squad is a sniper. She has a quirk that everything ignores her, like she can't be seen nor noticed, a terminally diamond advantage amongst Sniping rabbit hole. She's therefore considered invisible and ultra-stealthy. So much ignored she's notorious hiding in a trash can, coz she felt being useless. Btw, Blue Archive is not Perkedel's idea, that's from Nexon. We're remaking it into Open World, coz we are not interested with its strategy card chess-like gameplay. 
 - `ImSuckIfItsNotDJI`. Or you're too coward to buy just the remote & simulator. You know, you don't have to buy the drone itself coz it's too expensive if you bork it anyway. Simulators on the other hand doesn't, and they already realistic enough to be useful as training system.
 - `DJIIsClosedSourceBruh`. E.g., with O4 Air Unit, you can only use DJI's Goggles. Connection options for other observers are also limited too, coz you must use DJI's software to be so (**DO NOT PAY 3RD PARTY SOFTWARES SUCH ONE THAT PROMISES CONNECT TO MONITOR, USUALLY SCAM & VIRUS!!**). Also btw, DJI eats all channels to achieve ant-rare digitals. If you & your friend fly together each a unit, then all VTX's in whole premise must be DJI. 
-- `DJICanConsumeMyPosterior`. coz if instead they're open source, we'd justify their actions, idk.
+- `DJICanConsumeMyPosterior`. coz if instead they're open source, we'd justify some few of their actions, idk.
 - `EnvironmentalMyPosterior`. because companies claim to be environmental, when it's all about removal of used to components. Isn't this... yeah you know (can't say it here, use NSFL!). 
 
 You can also prepend & append extra words to further differentiate the connection IDs.
