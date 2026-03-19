@@ -9,7 +9,7 @@
    id="svg1"
    inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
    sodipodi:docname="SplashScreeningsTX16Mk3.svg"
-   inkscape:export-filename="..\SDCards\WaduhMemory\IMAGES\perkedel\warningELRS_800x480.png"
+   inkscape:export-filename="..\SDCards\WaduhMemory\IMAGES\perkedel\RulesBando_800x480.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -166,6 +166,18 @@
   </sodipodi:namedview>
   <defs
      id="defs1">
+    <rect
+       x="419.99999"
+       y="139.99999"
+       width="329.99999"
+       height="229.99999"
+       id="rect839" />
+    <rect
+       x="409.99999"
+       y="139.99999"
+       width="330"
+       height="230"
+       id="rect838" />
     <inkscape:path-effect
        effect="fillet_chamfer"
        id="path-effect829"
@@ -5458,7 +5470,8 @@
        inkscape:groupmode="layer"
        id="g824"
        inkscape:label="RuleSetBandoArena"
-       style="display:inline">
+       style="display:none"
+       sodipodi:insensitive="true">
       <rect
          style="fill:#d5d5ff;stroke-width:1.32292;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.5;paint-order:markers stroke fill"
          id="rect651"
@@ -6876,10 +6889,47 @@
          xml:space="preserve"
          transform="scale(0.26458333)"
          id="text817"
-         style="font-weight:800;font-size:17.3333px;line-height:1;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font Ultra-Bold';text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect824);display:inline;fill:#0000ff;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"><tspan
-           x="173.20006"
+         style="font-weight:800;font-size:17.3333px;line-height:1;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font Ultra-Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect824);display:inline;fill:#0000ff;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+         x="-170"
+         y="0"><tspan
+           x="50"
            y="153.39391"
-           id="tspan36">Peraturan</tspan></text>
+           id="tspan36">- Respect other pilots
+</tspan><tspan
+           x="50"
+           y="170.72721"
+           id="tspan37">- Do not hack &amp; mess
+</tspan><tspan
+           x="50"
+           y="188.06051"
+           id="tspan38">- Do not crash / kill others
+</tspan><tspan
+           x="50"
+           y="205.39381"
+           id="tspan39">- Free consultation only for </tspan><tspan
+           x="50"
+           y="222.7271"
+           id="tspan40">EdgeTX &amp; ELRS, sorry!
+</tspan><tspan
+           x="50"
+           y="240.0604"
+           id="tspan41">- Do not short circuit
+</tspan><tspan
+           x="50"
+           y="257.3937"
+           id="tspan42">- Do not explode intentionally
+</tspan><tspan
+           x="50"
+           y="274.72701"
+           id="tspan43">- No Smoking, No Vaping
+</tspan><tspan
+           x="50"
+           y="292.06033"
+           id="tspan44">- No Gambling, No Drugs
+</tspan><tspan
+           x="50"
+           y="309.39364"
+           id="tspan45">- Trade OK, Scam forbidden</tspan></text>
       <g
          id="g823"
          transform="matrix(1.3805913,0,0,1.3805913,-102.86497,-32.054371)"
@@ -6938,7 +6988,7 @@
         </g>
       </g>
       <rect
-         style="fill:#0000d4;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+         style="fill:#0000ff;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
          id="rect823"
          width="5.2916665"
          height="13.229165"
@@ -7021,11 +7071,11 @@
            id="text824"><tspan
              sodipodi:role="line"
              id="tspan823"
-             style="stroke-width:0.748368;fill:#0000ff"
+             style="fill:#0000ff;stroke-width:0.748368"
              x="92.297958"
              y="108.89406">ARENA</tspan><tspan
              sodipodi:role="line"
-             style="stroke-width:0.748368;fill:#0000ff"
+             style="fill:#0000ff;stroke-width:0.748368"
              x="92.297958"
              y="115.3799"
              id="tspan824">BANDO</tspan></text>
@@ -7136,6 +7186,63 @@
          x="103.1875"
          y="37.041668"
          ry="2.6458328" />
+      <text
+         xml:space="preserve"
+         transform="scale(0.26458333)"
+         id="text838"
+         style="font-weight:800;font-size:16px;line-height:1;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font Ultra-Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect839);display:inline;fill:#0000ff;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+         x="-165"
+         y="0"><tspan
+           x="420"
+           y="152.36364"
+           id="tspan46">Price
+</tspan><tspan
+           x="420"
+           y="168.36364"
+           id="tspan47">- 30 Minutes = 50 Pts
+</tspan><tspan
+           x="420"
+           y="184.36364"
+           id="tspan48">- Power (2000 W) = Included
+</tspan><tspan
+           x="420"
+           y="200.36364"
+           id="tspan49">- 6S LiPo = 450 Pts.
+</tspan><tspan
+           x="420"
+           y="216.36364"
+           id="tspan50">- 3S LiPo = 250 Pts.
+</tspan><tspan
+           x="420"
+           y="232.36364"
+           id="tspan51">- 1S LiPo = 75 Pts.
+</tspan><tspan
+           x="420"
+           y="248.36364"
+           id="tspan52">
+</tspan><tspan
+           x="420"
+           y="264.36364"
+           id="tspan53">Benefits:
+</tspan><tspan
+           x="420"
+           y="280.36364"
+           id="tspan54">- Free EdgeTX &amp; ELRS Helps
+</tspan><tspan
+           x="420"
+           y="296.36364"
+           id="tspan55">- Wall Plug Token included
+</tspan><tspan
+           x="420"
+           y="312.36364"
+           id="tspan56">- Free Regular Drink
+</tspan><tspan
+           x="420"
+           y="328.36364"
+           id="tspan57">- Loyalty Card Rewards across all </tspan><tspan
+           x="420"
+           y="344.36364"
+           id="tspan58">Posko Gaming facilities</tspan></text>
     </g>
   </g>
   <g
