@@ -298,6 +298,8 @@ It's my turn now. **Bluejay / BLHeli_S** yey!
   - All: `IyaIyaaYeyeYeye:d=4,o=5,b=200:d,d,f#,d,2b4,p,d,2c#,p,f#,2d`
 - Pizza Hut Indonesia. *Berbagi bersama, di Pizza Hut!*. If only we did found some SMS Ring back tone download back in early 2000s somehow, never heard this particular one tho. Also Virtual Triples is impossible with RTTL. Apology for off length in the end.
   - All: `PizzaHutID:d=4,o=5,b=250:2e,c#,d,e,f,e,p,e,e,2c#6,2b,a`
+- Van Elektronische's SMS Fanfare. Phones have various SMS attachment tone, while selections are standardized (Chime Low High, Ding, Tada, Beep, Fanfare, Chord Low High), so what sounds like this on this brand, will be different on recipient's other brand. Think of Sony Ericsson's, Samsung, Siemen, LG, Alcatel, or even Nokia, etc. This one is Van Elektronische's. It should be marching band's vibe with flute trill ending it, but limited by RTTL not only numbers of phonic but also archaicness of time measures.
+  - All: `VE-Fanfare:d=4,o=5,b=225:b4,e,g,16g#,a,g#,16g,8e,8p,e,d,16d#,e`
 
 ## How to install the song?
 
