@@ -1315,6 +1315,22 @@ screenData:
                type: Bool
                value: 
                   boolValue: 0
+   7:
+      LayoutId: Layout1x1AM
+      layoutData: 
+         zones: 
+            0:
+               widgetName: Telemetry Dashboard
+               widgetData: 
+                  options: 
+                     0:
+                        type: Bool
+                        value: 
+                           boolValue: 1
+                     1:
+                        type: Unsigned
+                        value: 
+                           unsignedValue: 4
 topbarData: 
    zones: 
       0:

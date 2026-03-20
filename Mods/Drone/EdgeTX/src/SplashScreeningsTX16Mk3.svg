@@ -34,7 +34,7 @@
      showgrid="true"
      inkscape:zoom="1.5307255"
      inkscape:cx="388.37793"
-     inkscape:cy="189.12601"
+     inkscape:cy="234.85596"
      inkscape:window-width="2560"
      inkscape:window-height="1417"
      inkscape:window-x="-8"
@@ -3400,19 +3400,19 @@
          style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:14.6667px;line-height:1;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font Ultra-Bold';text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect411);display:inline;fill:#ff0000;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"><tspan
            x="74.399045"
            y="151.33336"
-           id="tspan14">Your RC does not impose artificial limit that affects your RC experience! 
+           id="tspan1">Your RC does not impose artificial limit that affects your RC experience! 
 </tspan><tspan
            x="118.39917"
            y="166.00006"
-           id="tspan15">Always excercise your regional regulation when flying / driving!
+           id="tspan2">Always excercise your regional regulation when flying / driving!
 </tspan><tspan
            x="162.3993"
            y="180.66676"
-           id="tspan16">Beware of the following recommended regulations below!
+           id="tspan3">Beware of the following recommended regulations below!
 </tspan><tspan
            x="96.399109"
            y="195.33347"
-           id="tspan17">Violation of these regulations may cause huge fines and/or jail time!
+           id="tspan8">Violation of these regulations may cause huge fines and/or jail time!
 </tspan></text>
       <g
          id="g417">
@@ -3589,11 +3589,11 @@
            y="0"><tspan
              x="420"
              y="297.36364"
-             id="tspan18">Obey Fly / Drive Zones!
+             id="tspan9">Obey Fly / Drive Zones!
 </tspan><tspan
              x="420"
              y="313.36364"
-             id="tspan19">Avoid interfere critical radios!</tspan></text>
+             id="tspan10">Avoid interfere critical radios!</tspan></text>
       </g>
       <g
          id="g609-8"
@@ -3838,13 +3838,13 @@
              y="0"><tspan
                x="180"
                y="355.303"
-               id="tspan20">Refer to the included </tspan><tspan
+               id="tspan11">Refer to the included </tspan><tspan
                x="180"
                y="368.63632"
-               id="tspan21">manual for instruction &amp; </tspan><tspan
+               id="tspan12">manual for instruction &amp; </tspan><tspan
                x="180"
                y="381.96963"
-               id="tspan22">safety!</tspan></text>
+               id="tspan13">safety!</tspan></text>
         </g>
       </g>
     </g>
@@ -5337,53 +5337,53 @@
          style="font-weight:800;font-size:17.3333px;line-height:1;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font Ultra-Bold';text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect641);display:inline;fill:#ff0000;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"><tspan
            x="67.200435"
            y="153.39391"
-           id="tspan23">JANGAN BIARKAN ANTENNA ExpressLRS / ELRS ANDA MASUK MODE HOTSPOT </tspan><tspan
+           id="tspan14">JANGAN BIARKAN ANTENNA ExpressLRS / ELRS ANDA MASUK MODE HOTSPOT </tspan><tspan
            x="368.80004"
            y="170.72721"
-           id="tspan24">LAMA2!
+           id="tspan15">LAMA2!
 </tspan><tspan
            x="176.40029"
            y="188.06051"
-           id="tspan25">BISA KENA HACK ORANG TAK BERTANGGUNG JAWAB!
+           id="tspan16">BISA KENA HACK ORANG TAK BERTANGGUNG JAWAB!
 </tspan><tspan
            x="400"
            y="205.39381"
-           id="tspan26">
+           id="tspan17">
 </tspan><tspan
            x="72.400429"
            y="222.7271"
-           id="tspan27">SEGERA SELESAIKAN SETUP ELRS &amp; REBOOT TANPA HOTSPOT SETELAHNYA!
+           id="tspan18">SEGERA SELESAIKAN SETUP ELRS &amp; REBOOT TANPA HOTSPOT SETELAHNYA!
 </tspan><tspan
            x="306.40012"
            y="240.0604"
-           id="tspan28">TRIMS! (Manajemen)
+           id="tspan19">TRIMS! (Manajemen)
 </tspan><tspan
            x="400"
            y="257.3937"
-           id="tspan29">
+           id="tspan20">
 </tspan><tspan
            x="51.600456"
            y="274.72701"
-           id="tspan30">DO NOT LET YOUR ExpressLRS / ERLS ANTENNA IN HOTSPOT FOR LONG TIME!
+           id="tspan21">DO NOT LET YOUR ExpressLRS / ERLS ANTENNA IN HOTSPOT FOR LONG TIME!
 </tspan><tspan
            x="171.2003"
            y="292.06033"
-           id="tspan31">IT COULD GET HACKED BY IRRESPONSIBLE PEOPLE!
+           id="tspan22">IT COULD GET HACKED BY IRRESPONSIBLE PEOPLE!
 </tspan><tspan
            x="400"
            y="309.39364"
-           id="tspan32">
+           id="tspan59">
 </tspan><tspan
            x="62.000442"
            y="326.72695"
-           id="tspan33">IMMEDIATELY FINISH YOUR ELRS SETUP &amp; REBOOT WITHOUT HOTSPOT AFTER </tspan><tspan
+           id="tspan60">IMMEDIATELY FINISH YOUR ELRS SETUP &amp; REBOOT WITHOUT HOTSPOT AFTER </tspan><tspan
            x="374.00003"
            y="344.06026"
-           id="tspan34">THAT!
+           id="tspan61">THAT!
 </tspan><tspan
            x="296.00014"
            y="361.39358"
-           id="tspan35">THANCC! (Management)</tspan></text>
+           id="tspan62">THANCC! (Management)</tspan></text>
       <g
          id="g135-8"
          transform="matrix(1.3805913,0,0,1.3805913,-102.86497,-32.054371)"
@@ -6894,42 +6894,50 @@
          y="0"><tspan
            x="50"
            y="153.39391"
-           id="tspan36">- Respect other pilots
+           id="tspan63">- Respect other pilots
 </tspan><tspan
            x="50"
            y="170.72721"
-           id="tspan37">- Do not hack &amp; mess
+           id="tspan64">- Do not hack &amp; mess
 </tspan><tspan
            x="50"
            y="188.06051"
-           id="tspan38">- Do not crash / kill others
+           id="tspan65">- Do not crash / kill others
 </tspan><tspan
            x="50"
            y="205.39381"
-           id="tspan39">- Free consultation only for </tspan><tspan
+           id="tspan66">- Free consultation only for </tspan><tspan
            x="50"
            y="222.7271"
-           id="tspan40">EdgeTX &amp; ELRS, sorry!
+           id="tspan67">EdgeTX &amp; ELRS, sorry!
 </tspan><tspan
            x="50"
            y="240.0604"
-           id="tspan41">- Do not short circuit
+           id="tspan68">- Do not short circuit
 </tspan><tspan
            x="50"
            y="257.3937"
-           id="tspan42">- Do not explode intentionally
+           id="tspan69">- Do not explode intentionally
 </tspan><tspan
            x="50"
            y="274.72701"
-           id="tspan43">- No Smoking, No Vaping
+           id="tspan70">- No Smoking, No Vaping
 </tspan><tspan
            x="50"
            y="292.06033"
-           id="tspan44">- No Gambling, No Drugs
+           id="tspan71">- No Gambling, No Drugs
 </tspan><tspan
            x="50"
            y="309.39364"
-           id="tspan45">- Trade OK, Scam forbidden</tspan></text>
+           id="tspan72">- Trade OK, Scam forbidden
+</tspan><tspan
+           x="50"
+           y="326.72695"
+           id="tspan73">- Do not edit setting of rent RC
+</tspan><tspan
+           x="50"
+           y="344.06026"
+           id="tspan74">- Do not Hotspot rent RC</tspan></text>
       <g
          id="g823"
          transform="matrix(1.3805913,0,0,1.3805913,-102.86497,-32.054371)"
@@ -7190,59 +7198,79 @@
          xml:space="preserve"
          transform="scale(0.26458333)"
          id="text838"
-         style="font-weight:800;font-size:16px;line-height:1;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font Ultra-Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect839);display:inline;fill:#0000ff;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+         style="font-weight:800;font-size:12px;line-height:1;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font Ultra-Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect839);display:inline;fill:#0000ff;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
          x="-165"
          y="0"><tspan
            x="420"
-           y="152.36364"
-           id="tspan46">Price
+           y="149.27273"
+           id="tspan75">Price
 </tspan><tspan
            x="420"
-           y="168.36364"
-           id="tspan47">- 30 Minutes = 50 Pts
+           y="161.27273"
+           id="tspan76">- 30 Minutes Pax = 50 Pts
 </tspan><tspan
            x="420"
-           y="184.36364"
-           id="tspan48">- Power (2000 W) = Included
+           y="173.27273"
+           id="tspan77">- +Power (2000 W) &amp; Adapter = Included / Pax
 </tspan><tspan
            x="420"
-           y="200.36364"
-           id="tspan49">- 6S LiPo = 450 Pts.
+           y="185.27273"
+           id="tspan78">- +RM TX15 Max = 45 Pts / Pax
 </tspan><tspan
            x="420"
-           y="216.36364"
-           id="tspan50">- 3S LiPo = 250 Pts.
+           y="197.27273"
+           id="tspan79">- +Kesturi Whoop = 100 Pts / Pax
 </tspan><tspan
            x="420"
-           y="232.36364"
-           id="tspan51">- 1S LiPo = 75 Pts.
+           y="209.27273"
+           id="tspan80">- +Selonjoran Crawler = 50 Pts / Pax
 </tspan><tspan
            x="420"
-           y="248.36364"
-           id="tspan52">
+           y="221.27273"
+           id="tspan81">- +Selonjoran Drifter = 50 Pts / Pax
 </tspan><tspan
            x="420"
-           y="264.36364"
-           id="tspan53">Benefits:
+           y="233.27273"
+           id="tspan82">- +RM MT12 Max = 25 Pts / Pax
 </tspan><tspan
            x="420"
-           y="280.36364"
-           id="tspan54">- Free EdgeTX &amp; ELRS Helps
+           y="245.27273"
+           id="tspan83">- 6S LiPo = 450 Pts.
 </tspan><tspan
            x="420"
-           y="296.36364"
-           id="tspan55">- Wall Plug Token included
+           y="257.27273"
+           id="tspan84">- 3S LiPo = 250 Pts.
 </tspan><tspan
            x="420"
-           y="312.36364"
-           id="tspan56">- Free Regular Drink
+           y="269.27273"
+           id="tspan85">- 1S LiPo = 75 Pts.
 </tspan><tspan
            x="420"
-           y="328.36364"
-           id="tspan57">- Loyalty Card Rewards across all </tspan><tspan
+           y="281.27273"
+           id="tspan86">
+</tspan><tspan
            x="420"
-           y="344.36364"
-           id="tspan58">Posko Gaming facilities</tspan></text>
+           y="293.27273"
+           id="tspan87">Benefits:
+</tspan><tspan
+           x="420"
+           y="305.27273"
+           id="tspan88">- Free EdgeTX &amp; ELRS Helps
+</tspan><tspan
+           x="420"
+           y="317.27273"
+           id="tspan89">- Wall Plug Token included
+</tspan><tspan
+           x="420"
+           y="329.27273"
+           id="tspan90">- Free Regular Drink
+</tspan><tspan
+           x="420"
+           y="341.27273"
+           id="tspan91">- Loyalty Card Rewards across all Posko </tspan><tspan
+           x="420"
+           y="353.27273"
+           id="tspan92">Gaming facilities</tspan></text>
     </g>
   </g>
   <g

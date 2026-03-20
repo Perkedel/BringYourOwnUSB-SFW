@@ -137,6 +137,7 @@ Telemetry / Widgets? Apps? Lua Scripts are the one!
   - [Outdated](https://github.com/teckel12/LuaTelemetry) old. [Download](https://github.com/teckel12/LuaTelemetry/releases/latest)
 - [bob01's Widgets](https://github.com/bob01/etx-widgets). use `er` prefixed widgets! That's the newest one!
 - [dbarrios' Widgets](https://github.com/dbarrios83/edgetx-widgets). Daniel Barrios' Telemetry Collections!, **Full Screen All-in-1 Widget Available & Recommended**
+  - **NEW! [Dashboard!](https://github.com/dbarrios83/edgetx-telemetry-dashboard)**
 - [calmarc's Battery & RX Widgets](https://github.com/calmarc/EdgeTX-Widgets)
 - [moschotto GPS Widget](https://github.com/moschotto/OpenTX_GPS_Telemetry)
 - [nikbg3 Log Viewer for B/W](https://github.com/nikbg3/EdgeTXLogViewerBW)
@@ -158,7 +159,7 @@ Telemetry / Widgets? Apps? Lua Scripts are the one!
     - [X-Lite Tetris](https://www.youtube.com/watch?v=VpnyOe8sJ4c), [DL](http://mike-vom-mars.com/blog/wp-content/uploads/2018/06/XTRIS_XLITE.zip). Mike Vom Mars
 - [Moshir's Flight Tracker](https://github.com/moshirfakhoury/edgetx-flightprogress-luascript)
   - [Video](https://youtu.be/JjI5H5LCPlc)
-  - [RotorRush Game](https://github.com/moshirfakhoury/edgetx-rotorrush-luascript). ⚠️, AI generated title screen
+  - [RotorRush Game](https://github.com/moshirfakhoury/edgetx-rotorrush-luascript). **⚠️, AI generated title screen**, I have replaced the thumb with terrible but has soul hand drawn vector.
 - [Ulf Schelth's Image Viewer widget VU](https://www.schleth.com/fpv/vu-a-simple-image-viewer-for-edgetx-radios-with-big-screens-2113.html)
 - [RC Soar `Show it All Widget](https://rc-soar.com/edgetx/lua/showitall/index.php)
 - [Just Fly Switch Config Widget](https://repository.justfly.solutions/index.php?view=product&id=115:switch-config)

@@ -300,6 +300,8 @@ It's my turn now. **Bluejay / BLHeli_S** yey!
   - All: `PizzaHutID:d=4,o=5,b=250:2e,c#,d,e,f,e,p,e,e,2c#6,2b,a`
 - Van Elektronische's SMS Fanfare. Phones have various SMS attachment tone, while selections are standardized (Chime Low High, Ding, Tada, Beep, Fanfare, Chord Low High), so what sounds like this on this brand, will be different on recipient's other brand. Think of Sony Ericsson's, Samsung, Siemen, LG, Alcatel, or even Nokia, etc. This one is Van Elektronische's. It should be marching band's vibe with flute trill ending it, but limited by RTTL not only numbers of phonic but also archaicness of time measures.
   - All: `VE-Fanfare:d=4,o=5,b=225:b4,e,g,16g#,a,g#,16g,8e,8p,e,d,16d#,e`
+- Kasih ibu kepada beta
+  - All: `KasihIbuKepadaBeta:d=4,o=5,b=100:e,8d,8e,c,8p,8c,c6,8a,8c6,g,p,8a,8a,8g,8f,e,8c,8d,8e,8e,8d,8d,c`
 
 ## How to install the song?
 
