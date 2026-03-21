@@ -612,7 +612,8 @@
        inkscape:groupmode="layer"
        id="layer6"
        inkscape:label="RotorRushRedraw"
-       sodipodi:insensitive="true">
+       sodipodi:insensitive="true"
+       style="display:none">
       <rect
          style="fill:#d5d5ff;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
          id="rect6"
