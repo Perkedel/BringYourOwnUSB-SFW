@@ -133,6 +133,7 @@ Telemetry / Widgets? Apps? Lua Scripts are the one!
 - [Yaapu's Frsky Telemetry Widgets](https://github.com/yaapu/FrskyTelemetryScripts). clone this whole repository & copy folders accordingly!
   - for EdgeTX/OpenTX: choose & copy according `*_common` folders, based on `color` or `b/w` model you had. Then with `color` or `b/w`, also copy the resolution folders too e.g. `c480x320/SD` for RadioMaster TX16s which has `Color` display. 
   - [Horus Widget too](https://github.com/yaapu/HorusMappingWidget)
+- [Telemetry Spun-off DevNWorks Rodrigo-NH](https://github.com/Rodrigo-NH/SmallTelemetryScript/tree/master)
 - [iNav Telemetry](https://github.com/iNavFlight/OpenTX-Telemetry-Widget). [Download Latest](https://github.com/iNavFlight/OpenTX-Telemetry-Widget/releases/latest)
   - [Outdated](https://github.com/teckel12/LuaTelemetry) old. [Download](https://github.com/teckel12/LuaTelemetry/releases/latest)
 - [bob01's Widgets](https://github.com/bob01/etx-widgets). use `er` prefixed widgets! That's the newest one!
@@ -143,12 +144,15 @@ Telemetry / Widgets? Apps? Lua Scripts are the one!
 - [nikbg3 Log Viewer for B/W](https://github.com/nikbg3/EdgeTXLogViewerBW)
 - [pascallanger Lua Scripts](https://github.com/pascallanger/DIY-Multiprotocol-TX-Module/tree/master/Lua_scripts)
 - [derelict's Battery Widget TxBatTele](https://github.com/derelict/TxBatTele)
+- [Sharkovich's LED EdgeRGB Stick](https://github.com/sharkovich/EdgeRGB)
 - jrwieland stuffs!
   - [F3A Caller](https://github.com/jrwieland/F3A)
   - [Battery Percent mAh used](https://github.com/jrwieland/Battery-mAh)
   - [TaraniTunes](https://github.com/jrwieland/TaraniTunes-v4.x). Music Player
     - [AutoPlaylist](https://github.com/jrwieland/TaraniTunes-v4.x/tree/master/Auto_Playlist). [Discuss](https://www.rcgroups.com/forums/showpost.php?p=31361271&postcount=41772)
     - [MP3 tag to make tage](http://www.mp3tag.de/en/)
+- [RC Info Center B/W](https://github.com/AlonsoLP/rcic)
+- [Anonymous K1wi's Combat Robot Kwik Mixer](https://github.com/anonymous-k1wi/Kiwi-K-Mixer). Model setup but for land battle robots. You can also use this to setup tanks too!
 - [EdgeTX About Widgets](https://manual.edgetx.org/color-radios/screen-settings/widgets)
   - Offer Shmuely's [Widgets](https://github.com/offer-shmuely/edgetx-x10-widgets/) & [Scripts](https://github.com/offer-shmuely/edgetx-x10-scripts)
   - [EdgeTX Lua more](https://github.com/EdgeTX/lua-scripts)

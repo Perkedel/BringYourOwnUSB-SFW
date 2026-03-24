@@ -18,8 +18,9 @@ SDCards/**/FIRMWARE/*
 !SDCards/**/FIRMWARE/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]
 
 #SDCards/**/SCRIPTS/*
-SDCards/**/SCRIPTS/*.lua
+#SDCards/**/SCRIPTS/*.lua
 SDCards/**/SCRIPTS/*.luac
+SDCards/**/SCRIPTS/**/*.luac
 #!SDCards/**/SCRIPTS/PRESETS/*
 #!SDCards/**/SCRIPTS/MIXES/*
 SDCards/**/SCRIPTS/PRESETS/*
@@ -37,6 +38,8 @@ SDCards/**/SCRIPTS/TOOLS/FM2M_ToolBox_*.lua
 #SDCards/**/SCRIPTS/RGBLED/*
 #SDCards/**/SCRIPTS/TELEMETRY/*
 SDCards/**/SCRIPTS/TELEMETRY/TB*.lua
+SDCards/**/SCRIPTS/TELEMETRY/*.luac
+SDCards/**/SCRIPTS/TELEMETRY/**/*.luac
 #SDCards/**/SCRIPTS/FUNCTIONS/*
 !SDCards/**/SCRIPTS/FUNCTIONS/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]
 #SDCards/**/SCRIPTS/MIXES/*
