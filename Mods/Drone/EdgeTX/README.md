@@ -406,3 +406,5 @@ Funny Telemetry
 - Zerius FPV! [Shopee](https://s.shopee.co.id/6Ag85Cs16Q) or [Tokopedia](https://tk.tokopedia.com/ZSu2kDoGb/) here! & [**Google Map + Plus Code = `RXR7+PV`**](https://maps.app.goo.gl/PpD1re7ajs9ebqSL7?g_st=ac) The only physical & tangible & decently luxury FPV RC store across Indonesia. Big shoutout to them for providing coolest FPV parts in their collection, and their advices while we had been there. at that time in 2025-03-08, One of the technician gave us lots of feedbacks & advice how to FPV well and don't screw up the first time.
 - https://youtu.be/ww2U8xxmBZU multi connect receiver just one tx
 - https://youtu.be/YjbQZFXJOJY CgitEinsteins how to program for Mechanum car
+- https://youtu.be/zLcB24e8ZEc
+- https://youtu.be/t5S9P6I7rDo tighten prop up about 23.5 in-lbs
