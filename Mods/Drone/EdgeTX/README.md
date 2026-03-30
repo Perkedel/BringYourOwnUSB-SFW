@@ -311,7 +311,7 @@ Funny Telemetry
 - `STORK`?
   - a department in Van Elektronische, spearheaded by Samuel Stork. Samuel himself loves FPV so much, but he was not satisfied with existing droning system that time. So he proposed ideas to Van ELektronische and there you have it.
   - Also, Van Elektronische at the same time was looking for RC rabbithole spearheads, solely because DJI's corcerning monopoly tactics. They loathe the world of Proprietarism, and just so lucky that they got Samuel in.
-  - Coincidentally, the family was named `Stork` because back home in the old days, they used to deliver stuffs around the hoods, **including living babies too!** Eventually, the Stork department comes to full circle when they are tackling DJI's Flycart with `Cargo`. Cargo combines Flycart & Agras, because this model is designed to carry heavy item & drops few of them when needed. Cargo is available also in
+  - Coincidentally, the family was named `Stork` because back home in the old days, they used to deliver stuffs around the hoods, **including living babies too!** Eventually, the Stork department comes to full circle when they are tackling DJI's Flycart with `Cargo`. Cargo combines Flycart & Agras, because this model is designed to carry heavy item & drops few of them when needed. Cargo is available also in Land, Sizes, and various cargo related designs.
   - Hmm. Josh Sivre. Sivre is wireless data port access. Something like RFID & NFC, but Open Source and reliable too.
 - What else those funny names you got?
   - Selonjoran
@@ -340,12 +340,16 @@ Funny Telemetry
     - to *sew* / *weave*.
     - Fibre Optic cable and the gallon tubes of it. In case Wireless flying is undesirable.
     - Nowadays, you should stick to ExpressLRS instead, unless if the hostile area has EMI. But if they also got Fibre Cutter, unfortunately you must come manually.
+  - Needles
+    - actual rideable vehicles.
+    - Named such because it's like **Needling your heart organ** to obtain high sensation, sprinkled with electro-shocking for even more. You could die when you ruptured yours, and/or caused fibrilation. Comparable to riding vehicle itself which is a risk of accident and death, and as well as modding explosion (the electro-shock needle one, but that's a digress, you can repair and mod Van Elektronische vehicles yourself and it's encouraged).
+    - That's what Stork is for, it's to drive and fly remotely, not ride on it itself. But still, the demands have grown for that.
 - What's the default English voice of this EdgeTX beside its variant?
   - it's `Emily`, Azure TTS `en_IE` (Irish). Rate is `1.10`, and the text language in your SSML should be British English (`en_GB`).
 - Why use AI voice?
   - Because that's what happened. It's possible to have it full bio, but they got to be fed first.
   - Please note, before the AI craze, there was once upon a time Surreal Meme videos back in the days. The YouTubers used TTS to voice those characters. E.g., Meme Man was voiced by `flite` default male. You should be able to install `flite` from most Linux Distro's repository btw.
-- Is using ExpressLRS going to need License, since this able to reach far distance?
+- Is using ExpressLRS going to need (Ham) License, since this able to reach far distance?
   - Depends.
     - **DNB relieves the License requirements** off of POC License for **ExpressLRS both 2.4 GHz & 900 MHz (SubG)** 
     - **Even in Old Terra you don't need License**, also both ELRS freq bands. 
