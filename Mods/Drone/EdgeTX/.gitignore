@@ -51,6 +51,10 @@ SDCards/**/SCRIPTS/BF/*
 
 #SDCards/**/WIDGETS/*
 SDCards/**/WIDGETS/*.luac
+SDCards/**/WIDGETS/**.luac
+SDCards/**/WIDGETS/*/*.luac
+SDCards/**/WIDGETS/**/*.luac
+SDCards/**/WIDGETS/*/**.luac
 !SDCards/**/WIDGETS/[Rr][Ee][Aa][Dd][Mm][Ee].[Tt][Xx][Tt]
 SDCards/**/WIDGETS/FM2MTOOLBOX
 SDCards/**/WIDGETS/FM2M*
