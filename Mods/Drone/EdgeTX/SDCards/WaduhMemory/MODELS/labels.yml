@@ -1,4 +1,77 @@
 Labels:
-  WaduhCoy: ~
-  Favorites: ~
+  "WaduhCoy":
+  "Favorites":
 Sort: 4
+Models:
+  model1.yml:
+    hash: "8d6700007f5c9235"
+    name: "Waduh"
+    mod0type: 5
+    labels: "WaduhCoy,Favorites"
+    bitmap: "mav2.png"
+    lastopen: 1774940986
+  model10.yml:
+    hash: "585700007f5c9335"
+    name: "Waduh2"
+    mod0type: 5
+    labels: ""
+    bitmap: "mav2.png"
+    lastopen: 0
+  model11.yml:
+    hash: "031a00007f5c9335"
+    name: "Musik"
+    labels: ""
+    bitmap: ""
+    lastopen: 0
+  model2.yml:
+    hash: "425700007f5c9335"
+    name: "Onta"
+    mod0id: 1
+    mod0type: 5
+    labels: "WaduhCoy,Favorites"
+    bitmap: "mav2.png"
+    lastopen: 0
+  model3.yml:
+    hash: "b34c00007f5c9335"
+    name: "WaduhUnaffect"
+    mod0type: 5
+    labels: ""
+    bitmap: "mav2.png"
+    lastopen: 0
+  model4.yml:
+    hash: "6c1c00007f5c9335"
+    name: "Empty"
+    labels: "Favorites"
+    bitmap: "mav2.png"
+    lastopen: 0
+  model5.yml:
+    hash: "d63900007f5c9335"
+    name: "Simulacral"
+    labels: "Favorites"
+    bitmap: "simulacral.png"
+    lastopen: 0
+  model6.yml:
+    hash: "802500007f5c9335"
+    name: "RoundRobin"
+    labels: ""
+    bitmap: "crzTes.png"
+    lastopen: 0
+  model7.yml:
+    hash: "772100007f5c9335"
+    name: "ON-OFF"
+    labels: ""
+    bitmap: "crzTes.png"
+    lastopen: 0
+  model8.yml:
+    hash: "1e1800007f5c9335"
+    name: "CekSample"
+    labels: "Favorites"
+    bitmap: "mav2.png"
+    lastopen: 0
+  model9.yml:
+    hash: "6d1c00007f5c9335"
+    name: "Supposed"
+    labels: ""
+    bitmap: "crzTes.png"
+    lastopen: 0
+
