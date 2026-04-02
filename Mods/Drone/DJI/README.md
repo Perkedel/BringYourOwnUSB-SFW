@@ -18,6 +18,18 @@ Go to [Download Center here](https://www.dji.com/id/downloads).
   - [Consumer 2](https://www.dji.com/id/downloads/softwares/dji-assistant-2-consumer-drones-series)
 - [DJI Decrypt Tool](https://www.dji.com/id/downloads/softwares/dji-decrypt-tool)
 - [DJI Robomaster](https://www.dji.com/id/downloads/softwares/robomaster-win) **deprecated**
+- 3rd Party Softwares worth analyzing while you're still there, until OpenIPC works best of the best
+  - https://github.com/annesteenbeek/dji_desktop_streamer **old**
+  - [OBS](https://obsproject.com/download). your DJI App can stream to an RTMP.
+    - [Instruction here](https://gist.github.com/unitycoder/f4ad3be420e73ec05b27d5474b9e3aba)
+    - [Mona Server](http://monaserver.ovh/installation.html) to host RTMP locally. Configure, start it up, and set RTMP address to IP address of that PC running Mona server
+    - The RTMP address can be opened into OBS' VLC player overlay.
+    - alternative server: [nginx-rtmp](https://github.com/illuspas/nginx-rtmp-win32) for Windows
+  - [SquirrelCast](https://play.google.com/store/apps/details?id=com.NuclearSquirrel.SquirrelCast) ([doc](https://github.com/xNuclearSquirrel/SquirrelCast-Public)). it's a **paid** proprietary android app that has multitude of features (especially RTMPing) and DRMs (to activate its Windows client).  Otherwise very recommended, better than Cosmostreamer box & DJI tho, and way way way way ywa cheaper than having to Cosmostreamer let alone DIY the RaspberryPi just to Android the DJI Fly app. It also has ELRS support, used to wrangle those Telemetries. 
+  - Carry 2 cameras at once, if you don't mind weight.
+    - One use DJI O4 lite, for low latency realtime viewing that cannot afford disconnection midflight
+    - and the other, OpenIPC to be streamed easily. can accept disconnection midflight since we got realtime above.
+    - Or Recording action camera.
 
 ## Tips
 
