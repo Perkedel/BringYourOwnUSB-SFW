@@ -9,11 +9,12 @@
    id="svg1"
    inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
    sodipodi:docname="SplashScreeningsTX16Mk3.svg"
-   inkscape:export-filename="..\SDCards\WaduhMemory\IMAGES\perkedel\RulesBando_800x480.png"
+   inkscape:export-filename="W:\starring codes\sANDbox Project\randoaddon\splash_screen.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -33,14 +34,14 @@
      inkscape:document-units="mm"
      showgrid="true"
      inkscape:zoom="1.5307255"
-     inkscape:cx="388.37793"
-     inkscape:cy="234.85596"
+     inkscape:cx="343.95455"
+     inkscape:cy="262.29393"
      inkscape:window-width="2560"
      inkscape:window-height="1417"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g824">
+     inkscape:current-layer="layer5">
     <inkscape:grid
        id="grid1"
        units="mm"
@@ -166,6 +167,66 @@
   </sodipodi:namedview>
   <defs
      id="defs1">
+    <linearGradient
+       id="linearGradient324"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#552200;stop-opacity:1;"
+         offset="0"
+         id="stop324" />
+      <stop
+         style="stop-color:#cde7ff;stop-opacity:1;"
+         offset="0.4325186"
+         id="stop328" />
+      <stop
+         style="stop-color:#f9c1e5;stop-opacity:1;"
+         offset="0.66737515"
+         id="stop329" />
+      <stop
+         style="stop-color:#fff33d;stop-opacity:1;"
+         offset="0.77364504"
+         id="stop327" />
+      <stop
+         style="stop-color:#55ffff;stop-opacity:1;"
+         offset="0.93623805"
+         id="stop326" />
+      <stop
+         style="stop-color:#55ff00;stop-opacity:1;"
+         offset="1"
+         id="stop325" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient297"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#55ff00;stop-opacity:1;"
+         offset="0"
+         id="stop297" />
+      <stop
+         style="stop-color:#ffd100;stop-opacity:1;"
+         offset="0.04463337"
+         id="stop302" />
+      <stop
+         style="stop-color:#ff0bff;stop-opacity:1;"
+         offset="0.24123274"
+         id="stop300" />
+      <stop
+         style="stop-color:#5583ff;stop-opacity:1;"
+         offset="0.48459086"
+         id="stop299" />
+      <stop
+         style="stop-color:#55cdff;stop-opacity:1;"
+         offset="0.69287992"
+         id="stop301" />
+      <stop
+         style="stop-color:#0000ff;stop-opacity:1;"
+         offset="0.88097769"
+         id="stop303" />
+      <stop
+         style="stop-color:#550000;stop-opacity:1;"
+         offset="1"
+         id="stop298" />
+    </linearGradient>
     <rect
        x="419.99999"
        y="139.99999"
@@ -385,6 +446,28 @@
        width="340"
        height="230"
        id="rect824" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient297"
+       id="radialGradient298"
+       cx="105.83333"
+       cy="63.499996"
+       fx="105.83333"
+       fy="63.499996"
+       r="105.83333"
+       gradientTransform="rotate(90,105.83333,63.499996)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient324"
+       id="radialGradient325"
+       cx="99.439238"
+       cy="56.554688"
+       fx="99.439238"
+       fy="56.554688"
+       r="38.585071"
+       gradientTransform="matrix(1,0,0,0.91714282,0,4.6859619)"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <g
      inkscape:label="Paddings"
@@ -3400,19 +3483,19 @@
          style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:14.6667px;line-height:1;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font Ultra-Bold';text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect411);display:inline;fill:#ff0000;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"><tspan
            x="74.399045"
            y="151.33336"
-           id="tspan1">Your RC does not impose artificial limit that affects your RC experience! 
+           id="tspan23">Your RC does not impose artificial limit that affects your RC experience! 
 </tspan><tspan
            x="118.39917"
            y="166.00006"
-           id="tspan2">Always excercise your regional regulation when flying / driving!
+           id="tspan24">Always excercise your regional regulation when flying / driving!
 </tspan><tspan
            x="162.3993"
            y="180.66676"
-           id="tspan3">Beware of the following recommended regulations below!
+           id="tspan25">Beware of the following recommended regulations below!
 </tspan><tspan
            x="96.399109"
            y="195.33347"
-           id="tspan8">Violation of these regulations may cause huge fines and/or jail time!
+           id="tspan26">Violation of these regulations may cause huge fines and/or jail time!
 </tspan></text>
       <g
          id="g417">
@@ -3589,11 +3672,11 @@
            y="0"><tspan
              x="420"
              y="297.36364"
-             id="tspan9">Obey Fly / Drive Zones!
+             id="tspan27">Obey Fly / Drive Zones!
 </tspan><tspan
              x="420"
              y="313.36364"
-             id="tspan10">Avoid interfere critical radios!</tspan></text>
+             id="tspan28">Avoid interfere critical radios!</tspan></text>
       </g>
       <g
          id="g609-8"
@@ -3838,13 +3921,13 @@
              y="0"><tspan
                x="180"
                y="355.303"
-               id="tspan11">Refer to the included </tspan><tspan
+               id="tspan29">Refer to the included </tspan><tspan
                x="180"
                y="368.63632"
-               id="tspan12">manual for instruction &amp; </tspan><tspan
+               id="tspan30">manual for instruction &amp; </tspan><tspan
                x="180"
                y="381.96963"
-               id="tspan13">safety!</tspan></text>
+               id="tspan31">safety!</tspan></text>
         </g>
       </g>
     </g>
@@ -5337,53 +5420,53 @@
          style="font-weight:800;font-size:17.3333px;line-height:1;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font Ultra-Bold';text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect641);display:inline;fill:#ff0000;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"><tspan
            x="67.200435"
            y="153.39391"
-           id="tspan14">JANGAN BIARKAN ANTENNA ExpressLRS / ELRS ANDA MASUK MODE HOTSPOT </tspan><tspan
+           id="tspan32">JANGAN BIARKAN ANTENNA ExpressLRS / ELRS ANDA MASUK MODE HOTSPOT </tspan><tspan
            x="368.80004"
            y="170.72721"
-           id="tspan15">LAMA2!
+           id="tspan33">LAMA2!
 </tspan><tspan
            x="176.40029"
            y="188.06051"
-           id="tspan16">BISA KENA HACK ORANG TAK BERTANGGUNG JAWAB!
+           id="tspan34">BISA KENA HACK ORANG TAK BERTANGGUNG JAWAB!
 </tspan><tspan
            x="400"
            y="205.39381"
-           id="tspan17">
+           id="tspan35">
 </tspan><tspan
            x="72.400429"
            y="222.7271"
-           id="tspan18">SEGERA SELESAIKAN SETUP ELRS &amp; REBOOT TANPA HOTSPOT SETELAHNYA!
+           id="tspan36">SEGERA SELESAIKAN SETUP ELRS &amp; REBOOT TANPA HOTSPOT SETELAHNYA!
 </tspan><tspan
            x="306.40012"
            y="240.0604"
-           id="tspan19">TRIMS! (Manajemen)
+           id="tspan37">TRIMS! (Manajemen)
 </tspan><tspan
            x="400"
            y="257.3937"
-           id="tspan20">
+           id="tspan38">
 </tspan><tspan
            x="51.600456"
            y="274.72701"
-           id="tspan21">DO NOT LET YOUR ExpressLRS / ERLS ANTENNA IN HOTSPOT FOR LONG TIME!
+           id="tspan39">DO NOT LET YOUR ExpressLRS / ERLS ANTENNA IN HOTSPOT FOR LONG TIME!
 </tspan><tspan
            x="171.2003"
            y="292.06033"
-           id="tspan22">IT COULD GET HACKED BY IRRESPONSIBLE PEOPLE!
+           id="tspan40">IT COULD GET HACKED BY IRRESPONSIBLE PEOPLE!
 </tspan><tspan
            x="400"
            y="309.39364"
-           id="tspan59">
+           id="tspan41">
 </tspan><tspan
            x="62.000442"
            y="326.72695"
-           id="tspan60">IMMEDIATELY FINISH YOUR ELRS SETUP &amp; REBOOT WITHOUT HOTSPOT AFTER </tspan><tspan
+           id="tspan42">IMMEDIATELY FINISH YOUR ELRS SETUP &amp; REBOOT WITHOUT HOTSPOT AFTER </tspan><tspan
            x="374.00003"
            y="344.06026"
-           id="tspan61">THAT!
+           id="tspan43">THAT!
 </tspan><tspan
            x="296.00014"
            y="361.39358"
-           id="tspan62">THANCC! (Management)</tspan></text>
+           id="tspan44">THANCC! (Management)</tspan></text>
       <g
          id="g135-8"
          transform="matrix(1.3805913,0,0,1.3805913,-102.86497,-32.054371)"
@@ -6894,50 +6977,50 @@
          y="0"><tspan
            x="50"
            y="153.39391"
-           id="tspan63">- Respect other pilots
+           id="tspan45">- Respect other pilots
 </tspan><tspan
            x="50"
            y="170.72721"
-           id="tspan64">- Do not hack &amp; mess
+           id="tspan46">- Do not hack &amp; mess
 </tspan><tspan
            x="50"
            y="188.06051"
-           id="tspan65">- Do not crash / kill others
+           id="tspan47">- Do not crash / kill others
 </tspan><tspan
            x="50"
            y="205.39381"
-           id="tspan66">- Free consultation only for </tspan><tspan
+           id="tspan48">- Free consultation only for </tspan><tspan
            x="50"
            y="222.7271"
-           id="tspan67">EdgeTX &amp; ELRS, sorry!
+           id="tspan49">EdgeTX &amp; ELRS, sorry!
 </tspan><tspan
            x="50"
            y="240.0604"
-           id="tspan68">- Do not short circuit
+           id="tspan50">- Do not short circuit
 </tspan><tspan
            x="50"
            y="257.3937"
-           id="tspan69">- Do not explode intentionally
+           id="tspan51">- Do not explode intentionally
 </tspan><tspan
            x="50"
            y="274.72701"
-           id="tspan70">- No Smoking, No Vaping
+           id="tspan52">- No Smoking, No Vaping
 </tspan><tspan
            x="50"
            y="292.06033"
-           id="tspan71">- No Gambling, No Drugs
+           id="tspan53">- No Gambling, No Drugs
 </tspan><tspan
            x="50"
            y="309.39364"
-           id="tspan72">- Trade OK, Scam forbidden
+           id="tspan54">- Trade OK, Scam forbidden
 </tspan><tspan
            x="50"
            y="326.72695"
-           id="tspan73">- Do not edit setting of rent RC
+           id="tspan55">- Do not edit setting of rent RC
 </tspan><tspan
            x="50"
            y="344.06026"
-           id="tspan74">- Do not Hotspot rent RC</tspan></text>
+           id="tspan56">- Do not Hotspot rent RC</tspan></text>
       <g
          id="g823"
          transform="matrix(1.3805913,0,0,1.3805913,-102.86497,-32.054371)"
@@ -7203,74 +7286,139 @@
          y="0"><tspan
            x="420"
            y="149.27273"
-           id="tspan75">Price
+           id="tspan57">Price
 </tspan><tspan
            x="420"
            y="161.27273"
-           id="tspan76">- 30 Minutes Pax = 50 Pts
+           id="tspan58">- 30 Minutes Pax = 50 Pts
 </tspan><tspan
            x="420"
            y="173.27273"
-           id="tspan77">- +Power (2000 W) &amp; Adapter = Included / Pax
+           id="tspan59">- +Power (2000 W) &amp; Adapter = Included / Pax
 </tspan><tspan
            x="420"
            y="185.27273"
-           id="tspan78">- +RM TX15 Max = 45 Pts / Pax
+           id="tspan60">- +RM TX15 Max = 45 Pts / Pax
 </tspan><tspan
            x="420"
            y="197.27273"
-           id="tspan79">- +Kesturi Whoop = 100 Pts / Pax
+           id="tspan61">- +Kesturi Whoop = 100 Pts / Pax
 </tspan><tspan
            x="420"
            y="209.27273"
-           id="tspan80">- +Selonjoran Crawler = 50 Pts / Pax
+           id="tspan62">- +Selonjoran Crawler = 50 Pts / Pax
 </tspan><tspan
            x="420"
            y="221.27273"
-           id="tspan81">- +Selonjoran Drifter = 50 Pts / Pax
+           id="tspan63">- +Selonjoran Drifter = 50 Pts / Pax
 </tspan><tspan
            x="420"
            y="233.27273"
-           id="tspan82">- +RM MT12 Max = 25 Pts / Pax
+           id="tspan64">- +RM MT12 Max = 25 Pts / Pax
 </tspan><tspan
            x="420"
            y="245.27273"
-           id="tspan83">- 6S LiPo = 450 Pts.
+           id="tspan65">- 6S LiPo = 450 Pts.
 </tspan><tspan
            x="420"
            y="257.27273"
-           id="tspan84">- 3S LiPo = 250 Pts.
+           id="tspan66">- 3S LiPo = 250 Pts.
 </tspan><tspan
            x="420"
            y="269.27273"
-           id="tspan85">- 1S LiPo = 75 Pts.
+           id="tspan67">- 1S LiPo = 75 Pts.
 </tspan><tspan
            x="420"
            y="281.27273"
-           id="tspan86">
+           id="tspan68">
 </tspan><tspan
            x="420"
            y="293.27273"
-           id="tspan87">Benefits:
+           id="tspan69">Benefits:
 </tspan><tspan
            x="420"
            y="305.27273"
-           id="tspan88">- Free EdgeTX &amp; ELRS Helps
+           id="tspan70">- Free EdgeTX &amp; ELRS Helps
 </tspan><tspan
            x="420"
            y="317.27273"
-           id="tspan89">- Wall Plug Token included
+           id="tspan71">- Wall Plug Token included
 </tspan><tspan
            x="420"
            y="329.27273"
-           id="tspan90">- Free Regular Drink
+           id="tspan72">- Free Regular Drink
 </tspan><tspan
            x="420"
            y="341.27273"
-           id="tspan91">- Loyalty Card Rewards across all Posko </tspan><tspan
+           id="tspan73">- Loyalty Card Rewards across all Posko </tspan><tspan
            x="420"
            y="353.27273"
-           id="tspan92">Gaming facilities</tspan></text>
+           id="tspan74">Gaming facilities</tspan></text>
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer5"
+       inkscape:label="RandoAddonSandbox"
+       sodipodi:insensitive="true"
+       style="display:none">
+      <rect
+         style="fill:url(#radialGradient298);stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+         id="rect297"
+         width="211.66666"
+         height="126.99999"
+         x="0"
+         y="0" />
+      <g
+         id="g313">
+        <path
+           id="path303"
+           style="fill:url(#radialGradient325);stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+           d="m 99.21875,21.166667 0.87695,0.219108 c -0.246485,-0.142879 -0.537215,-0.219108 -0.87695,-0.219108 z m 0.87747,0.219108 C 103.68816,23.469262 97.895833,39.6875 97.895833,39.6875 l 3.968747,1.322917 1.32292,-10.583334 1.32292,11.90625 h 2.64583 c 2.64583,1.322917 7.9375,-14.552083 7.9375,-14.552083 l -3.75946,-2.506307 c 2.05472,1.794421 -4.17804,11.766724 -4.17804,11.766724 L 104.51042,22.489583 Z M 80.697917,23.8125 78.052083,27.78125 c 5.291666,0 5.291667,22.489583 5.291667,22.489583 L 87.3125,47.625 c 1.322917,-2.645833 -2.645833,-7.9375 -2.645833,-7.9375 l 3.96875,-2.645833 c 2.645833,-1.322917 3.96875,5.291666 3.96875,5.291666 l 3.96875,-2.645833 c 1.322916,-2.645833 -15.875,-15.875 -15.875,-15.875 z m 30.427083,1.322917 0.20826,0.138493 c -0.0617,-0.05376 -0.13119,-0.09996 -0.20826,-0.138493 z m -41.899251,5.208984 c -3.906738,0 -8.371582,6.697266 -8.371582,6.697266 6.614581,2.645833 9.260416,21.166666 9.260416,21.166666 h 2.645834 l -1.322917,-9.260416 7.9375,3.96875 2.645833,-1.322917 -11.90625,-7.9375 c 0,0 6.614584,-2.645833 2.645834,-10.583333 -0.992188,-1.984375 -2.232422,-2.728516 -3.534668,-2.728516 z m 14.118001,0.08268 5.291667,4.401799 -3.96875,2.212785 c 0,0 0.529169,-3.174999 -1.322917,-6.614584 z m 35.71875,0 c 2.64583,3.96875 -6.61458,14.552084 -6.61458,14.552084 7.9375,3.968748 11.90625,0 11.90625,0 3.96875,-7.937499 -5.29167,-14.552084 -5.29167,-14.552084 z m -51.167419,4.066936 c 1.530309,0.0412 2.04587,2.564184 2.219502,3.605981 0.264583,1.5875 -1.5875,3.704167 -1.5875,3.704167 0.264583,-3.968749 -3.96875,-4.7625 -3.96875,-4.7625 1.455208,-1.909961 2.535157,-2.569232 3.336748,-2.547648 z m 52.490339,2.812231 c 0,0 5.02708,0.79375 2.11666,5.027083 -2.91042,4.233333 -5.02708,0 -5.02708,0 2.91041,-0.79375 2.91042,-5.027083 2.91042,-5.027083 z m 12.84211,6.198071 c -0.91928,-0.02507 -2.09341,0.358635 -3.5817,1.474846 -5.29167,3.96875 -2.64583,2.645834 -2.64583,7.9375 0,5.291667 5.29167,7.9375 9.26042,3.96875 3.96875,-3.96875 0,-10.583334 0,-10.583334 0,0 -0.68363,-2.733691 -3.03289,-2.797762 z m -1.20045,3.856096 c 3.70417,0 3.70417,5.027083 3.70417,5.027083 0,0 -0.26459,4.497916 -3.70417,3.96875 -3.43958,-0.529167 -2.91041,-4.233333 -2.91041,-4.233333 0,0 -0.79376,-4.7625 2.91041,-4.7625 z M 83.34375,74.083333 79.375,88.635417 l 3.96875,1.322916 1.322917,-5.291666 2.645833,5.291666 h 3.96875 l -3.96875,-15.875 z m 9.405111,2.563151 c -0.888835,0 -1.467611,0.08268 -1.467611,0.08268 l 2.645833,14.552083 c 0,0 9.260417,0 7.937497,-7.9375 -0.99219,-5.953123 -6.449216,-6.697265 -9.115719,-6.697266 z M 85.460417,78.052083 87.3125,83.608333 85.195833,82.55 83.079167,83.079167 Z m 42.862503,0 2.64583,6.614584 -5.29167,-5.291667 h -2.64583 l 2.64583,10.583333 H 127 v -5.291666 l 3.96875,3.96875 h 3.96875 L 132.29167,78.052083 Z M 105.83333,79.375 104.51042,91.28125 c 0,0 7.9375,0 7.9375,-3.96875 0,-3.96875 -6.61459,-7.9375 -6.61459,-7.9375 z m -11.641663,1.852083 5.55625,2.38125 -4.233334,3.175 z m 24.041423,0.271302 c -1.46502,-0.02035 -3.13934,0.770495 -3.13934,4.491198 0,6.614583 2.64583,5.291667 2.64583,5.291667 0,0 5.29167,2.645834 5.29167,-2.645833 0,-5.291666 -2.64583,-6.614584 -2.64583,-6.614584 0,0 -1.01286,-0.506623 -2.15233,-0.522448 z m -10.81226,2.639115 1.5875,0.529167 1.32292,1.058333 v 1.852083 l -1.5875,1.058334 -2.11667,0.529166 z m 11.90625,0.529167 c 0,0 0.52917,1.852083 1.5875,1.852083 0,0 -1.32292,0.79375 -1.5875,2.116667 0,0 -1.32291,-1.852086 -2.11666,-1.852084 0,0 2.38124,-0.264582 2.11666,-2.116666 z" />
+      </g>
+      <g
+         id="g324"
+         transform="translate(-191.82291,-15.875001)">
+        <path
+           id="path313"
+           style="fill:#552200;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+           d="m 69.225749,30.344401 c -3.906738,0 -8.371582,6.697266 -8.371582,6.697266 6.614581,2.645833 9.260416,21.166666 9.260416,21.166666 h 2.645834 l -1.322917,-9.260416 7.9375,3.96875 2.645833,-1.322917 -11.90625,-7.9375 c 0,0 6.614584,-2.645833 2.645834,-10.583333 -0.992188,-1.984375 -2.232422,-2.728516 -3.534668,-2.728516 z m -1.330668,4.149618 c 1.530309,0.0412 2.04587,2.564184 2.219502,3.605981 0.264583,1.5875 -1.5875,3.704167 -1.5875,3.704167 0.264583,-3.968749 -3.96875,-4.7625 -3.96875,-4.7625 1.455208,-1.909961 2.535157,-2.569232 3.336748,-2.547648 z" />
+        <path
+           id="path314"
+           style="fill:#552200;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+           d="m 80.697917,23.8125 -2.645834,3.96875 c 5.291666,0 5.291667,22.489583 5.291667,22.489583 L 87.3125,47.625 c 1.322917,-2.645833 -2.645833,-7.9375 -2.645833,-7.9375 l 3.96875,-2.645833 c 2.645833,-1.322917 3.96875,5.291666 3.96875,5.291666 l 3.96875,-2.645833 c 1.322916,-2.645833 -15.875,-15.875 -15.875,-15.875 z m 2.645833,6.614583 5.291667,4.401799 -3.96875,2.212785 c 0,0 0.529169,-3.174999 -1.322917,-6.614584 z" />
+        <path
+           style="fill:#552200;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+           d="m 97.895829,39.687497 c 0,0 6.614581,-18.520832 1.322917,-18.520832 l 5.291664,1.322917 2.64584,14.552083 c 0,0 6.61458,-10.583333 3.96875,-11.90625 l 3.96875,2.645834 c 0,0 -5.29167,15.874999 -7.9375,14.552082 h -2.64584 l -1.32291,-11.906249 -1.32292,10.583333 z"
+           id="path315" />
+        <path
+           id="path316"
+           style="fill:#552200;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+           d="m 119.0625,30.427083 c 2.64583,3.96875 -6.61458,14.552084 -6.61458,14.552084 7.9375,3.968748 11.90625,0 11.90625,0 3.96875,-7.937499 -5.29167,-14.552084 -5.29167,-14.552084 z m 1.32292,6.879167 c 0,0 5.02708,0.79375 2.11666,5.027083 -2.91042,4.233333 -5.02708,0 -5.02708,0 2.91041,-0.79375 2.91042,-5.027083 2.91042,-5.027083 z" />
+        <path
+           id="path317"
+           style="fill:#552200;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+           d="m 133.22753,43.504321 c -0.91928,-0.02507 -2.09341,0.358635 -3.5817,1.474846 -5.29167,3.96875 -2.64583,2.645834 -2.64583,7.9375 0,5.291667 5.29167,7.9375 9.26042,3.96875 3.96875,-3.96875 0,-10.583334 0,-10.583334 0,0 -0.68363,-2.733691 -3.03289,-2.797762 z m -1.20045,3.856096 c 3.70417,0 3.70417,5.027083 3.70417,5.027083 0,0 -0.26459,4.497916 -3.70417,3.96875 -3.43958,-0.529167 -2.91041,-4.233333 -2.91041,-4.233333 0,0 -0.79376,-4.7625 2.91041,-4.7625 z" />
+        <path
+           id="path318"
+           style="fill:#552200;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+           d="m 83.34375,74.083333 -3.96875,14.552084 3.96875,1.322916 1.322917,-5.291666 2.645833,5.291666 h 3.96875 l -3.96875,-15.875 z m 2.116667,3.96875 1.852083,5.55625 L 85.195833,82.55 83.079167,83.079167 Z" />
+        <path
+           id="path319"
+           style="fill:#552200;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+           d="m 92.748861,76.646484 c -0.888835,0 -1.467611,0.08268 -1.467611,0.08268 l 2.645833,14.552083 c 0,0 9.260417,0 7.937497,-7.9375 -0.99219,-5.953123 -6.449216,-6.697265 -9.115719,-6.697266 z m 1.442806,4.580599 5.55625,2.38125 -4.233334,3.175 z" />
+        <path
+           id="path320"
+           style="fill:#552200;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+           d="m 105.83333,79.375 -1.32291,11.90625 c 0,0 7.9375,0 7.9375,-3.96875 0,-3.96875 -6.61459,-7.9375 -6.61459,-7.9375 z m 1.5875,4.7625 1.5875,0.529167 1.32292,1.058333 v 1.852083 l -1.5875,1.058334 -2.11667,0.529166 z" />
+        <path
+           id="path321"
+           style="fill:#552200;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+           d="m 118.23309,81.498385 c -1.46502,-0.02035 -3.13934,0.770495 -3.13934,4.491198 0,6.614583 2.64583,5.291667 2.64583,5.291667 0,0 5.29167,2.645834 5.29167,-2.645833 0,-5.291666 -2.64583,-6.614584 -2.64583,-6.614584 0,0 -1.01286,-0.506623 -2.15233,-0.522448 z m 1.09399,3.168282 c 0,0 0.52917,1.852083 1.5875,1.852083 0,0 -1.32292,0.79375 -1.5875,2.116667 0,0 -1.32291,-1.852086 -2.11666,-1.852084 0,0 2.38124,-0.264582 2.11666,-2.116666 z" />
+        <path
+           style="fill:#552200;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+           d="m 125.67708,89.958327 -2.64583,-10.583333 h 2.64583 l 5.29167,5.291666 -2.64584,-6.614583 h 3.96875 l 2.64584,10.583333 h -3.96875 L 127,84.66666 v 5.291667 z"
+           id="path322" />
+      </g>
     </g>
   </g>
   <g
