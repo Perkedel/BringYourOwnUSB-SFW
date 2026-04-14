@@ -122,6 +122,7 @@ Telemetry / Widgets? Apps? Lua Scripts are the one!
 - ExpressLRS Lua App. You can use the [configurator](https://www.expresslrs.org/quick-start/installing-configurator/) to download the matching Lua App version for your RC. After you connected, save the the app into `SCRIPTS/TOOLS` of your RC SDCard.
   - [ExpressLRS Widgets](https://github.com/ExpressLRS/ElrsTelemWidget)
 - [Moar Lua Script pls](https://github.com/EdgeTX/lua-scripts)
+- [WidgetTX.com](https://widgettx.com) (⚠️ Online only tool). **Yey Make your own EdgeTX Widgets!!!** See this [YouTube video](https://youtu.be/r5QwnwP-aPQ) for introduction.
 - [Betaflight's Lua Scripts App](https://github.com/betaflight/betaflight-tx-lua-scripts)
   - [Try Nightly](https://github.com/betaflight/betaflight-tx-lua-scripts-nightlies/releases) if your betaflight version is too new than stable.
 - [Team Black Sheep Agent](https://team-blacksheep.com/products/prod:agentx)
