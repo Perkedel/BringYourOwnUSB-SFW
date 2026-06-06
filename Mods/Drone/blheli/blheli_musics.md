@@ -307,6 +307,12 @@ It's my turn now. **Bluejay / BLHeli_S** yey!
   - ESC 2: `b`
   - ESC 3: `c`
   - ESC 4: `d`
+- Nokia Bounce Classic Pickup / Ring
+  - All: `bounce_pickup:d=4,o=6,b=250:c,8e5,8g5,8c`
+- Nokia Bounce Classic Powerup
+  - All: `bounce_up:d=4,o=6,b=250:c,8g5,8c`
+- Nokia Bounce Classic Pop / death
+  - All: `bounce_pop:d=4,o=5,b=250:16g,16b,c`
 
 ## How to install the song?
 
