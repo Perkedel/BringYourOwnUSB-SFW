@@ -33,3 +33,11 @@ https://github.com/Perkedel/Lah-Mboh
   - [`MIDI Massacere.mid`](https://github.com/ltgcgo/midi-data/blob/main/artist/T%C3%B4Bach/MIDI%20Massacre.mid) = `M_MSACRE.mid`. TôBach
 - Freedoom. See [main CREDITS.md](https://github.com/Perkedel/Lah-Mboh/blob/main/CREDITS.md).
 - ???'s MIDI Collection. Collected by _*redacted as `Serek-katron`*. Varied. I cannot share the intel of this guy this time (`DO NOT CREDIT ME FOR THESE MIDI FILES`), maybe he/she was in danger, considering these are sparsdated MIDI files, and they're *SLAPS* 👍👍👍👍👍 hard!, many cover of Meme Songs too!. I will share the full intel soon to comply Perkedel's Pls sauce policy. Basically this guy is a YouTuber who collects MIDI and showcase them.
+- Geocities Archive on Archive.org
+  - [The Magic of Midis](https://archive.org/details/themagicofmidiv1).
+    - Also, Angel-Neko_X, **pls do not use MP3 render of `frosty-laura.mid` (Frosty The Snowman song) without also including the original MIDI file itself** on [this mod](https://www.moddb.com/mods/angry-anna-xmas-quest-2), that hurts!, fucking lot! Thank you.
+    - [That goes to you too](https://www.youtube.com/watch?v=vgUqEj3iJkc&pp=ygUXZnJvc3R5IHRoZSBzbm93bWFuIG1pZGk%3D), TheMusician. NO!! **DO not omit MIDI download link!!**
+    - There, I had to put it in BringYourOwnUSB, seriously bruh!
+  - [Midi Collection v1.2](https://archive.org/details/TheGeocitiesMidiCollectionVersion1.2)
+  - [Midis Collection](https://archive.org/details/archiveteam-geocities-midi-collection-2009)
+  - [Prism Corp Home](https://archive.org/details/prismcorphomemidis)
