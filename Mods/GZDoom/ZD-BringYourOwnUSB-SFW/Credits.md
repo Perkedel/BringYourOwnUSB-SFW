@@ -41,3 +41,5 @@ https://github.com/Perkedel/Lah-Mboh
   - [Midi Collection v1.2](https://archive.org/details/TheGeocitiesMidiCollectionVersion1.2)
   - [Midis Collection](https://archive.org/details/archiveteam-geocities-midi-collection-2009)
   - [Prism Corp Home](https://archive.org/details/prismcorphomemidis)
+- FreeDOS. 
+  - idk if this is true, we got `test.mid` (➡️ `fd_test.mid`) got it from [Music Curios](https://sites.google.com/site/musiccurios/downloads)
