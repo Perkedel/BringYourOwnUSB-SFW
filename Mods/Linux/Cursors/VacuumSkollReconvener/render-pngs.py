@@ -48,6 +48,8 @@ if not os.path.exists('pngs/128'):
 # 	os.makedirs('pngs/1024')
 # if not os.path.exists('pngs/2048'):
 # 	os.makedirs('pngs/2048')
+# if not os.path.exists('pngs/scalable'):
+# 	os.makedirs('pngs/scalable')
 
 svgFilename = None
 
@@ -89,6 +91,7 @@ class SVGRect:
 		rc = os.system('inkscape --export-type=png -w 128 -h 128 --export-id="%s" --export-filename="pngs/128/%s" "%s"' % (self.name, sliceFName, svgFName))
 		# rc = os.system('inkscape --export-type=png -w 1024 -h 1024 --export-id="%s" --export-filename="pngs/1024/%s" "%s"' % (self.name, sliceFName, svgFName))
 		# rc = os.system('inkscape --export-type=png -w 2048 -h 2048 --export-id="%s" --export-filename="pngs/2048/%s" "%s"' % (self.name, sliceFName, svgFName))
+		# rc = os.system('inkscape --export-type=svg -w 128 -h 128 --export-id="%s" --export-filename="pngs/scalable/%s" "%s"' % (self.name, sliceFName, svgFName))
 
 class SVGHandler(handler.ContentHandler):
 	"""Base class for SVG parsers"""
