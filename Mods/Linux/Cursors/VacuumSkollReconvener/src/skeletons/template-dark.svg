@@ -31,8 +31,8 @@
      inkscape:document-units="mm"
      showgrid="true"
      inkscape:zoom="0.99999999"
-     inkscape:cx="407"
-     inkscape:cy="355.5"
+     inkscape:cx="487"
+     inkscape:cy="675.50001"
      inkscape:window-width="2560"
      inkscape:window-height="1417"
      inkscape:window-x="-8"
@@ -2237,7 +2237,7 @@
        inkscape:label="n-resize" />
     <rect
        style="fill:none;stroke:none;stroke-width:25;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
-       id="botom_tee"
+       id="bottom_tee"
        width="128"
        height="128"
        x="640"
@@ -2333,7 +2333,7 @@
        inkscape:label="x-cursor" />
     <rect
        style="fill:none;stroke:none;stroke-width:25;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
-       id="progress-00"
+       id="progress-01"
        width="128"
        height="128"
        x="0"
