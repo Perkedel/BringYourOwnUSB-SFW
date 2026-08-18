@@ -48,8 +48,8 @@ if not os.path.exists('pngs/128'):
 # 	os.makedirs('pngs/1024')
 # if not os.path.exists('pngs/2048'):
 # 	os.makedirs('pngs/2048')
-# if not os.path.exists('pngs/scalable'):
-# 	os.makedirs('pngs/scalable')
+if not os.path.exists('pngs/scalable'):
+	os.makedirs('pngs/scalable')
 
 svgFilename = None
 
@@ -78,20 +78,21 @@ class SVGRect:
 		dbg("New SVGRect: (%s)" % name)
 
 	def renderFromSVG(self, svgFName, sliceFName):
-		rc = os.system('inkscape --export-id="%s" -w 24 -h 24 --export-filename="pngs/24/%s" --export-type=png "%s"' % (self.name, sliceFName, svgFName))
+		rc = os.system('inkscape --export-id="%s" -w 24 -h 24 --export-filename="pngs/24/%s.png" --export-type=png "%s"' % (self.name, sliceFName, svgFName))
 		if rc > 0:
 			fatalError('ABORTING: Inkscape failed to render the slice.')
 
 # Not only render 24x4 PNGs, but also 32x32 and 48x48
 # You know what? more!!
 
-		rc = os.system('inkscape --export-type=png -w 32 -h 32 --export-id="%s" --export-filename="pngs/32/%s" "%s"' % (self.name, sliceFName, svgFName))
-		rc = os.system('inkscape --export-type=png -w 48 -h 48 --export-id="%s" --export-filename="pngs/48/%s" "%s"' % (self.name, sliceFName, svgFName))
-		rc = os.system('inkscape --export-type=png -w 72 -h 72 --export-id="%s" --export-filename="pngs/72/%s" "%s"' % (self.name, sliceFName, svgFName))
-		rc = os.system('inkscape --export-type=png -w 128 -h 128 --export-id="%s" --export-filename="pngs/128/%s" "%s"' % (self.name, sliceFName, svgFName))
+		rc = os.system('inkscape --export-type=png -w 32 -h 32 --export-id="%s" --export-filename="pngs/32/%s.png" "%s"' % (self.name, sliceFName, svgFName))
+		rc = os.system('inkscape --export-type=png -w 48 -h 48 --export-id="%s" --export-filename="pngs/48/%s.png" "%s"' % (self.name, sliceFName, svgFName))
+		rc = os.system('inkscape --export-type=png -w 72 -h 72 --export-id="%s" --export-filename="pngs/72/%s.png" "%s"' % (self.name, sliceFName, svgFName))
+		rc = os.system('inkscape --export-type=png -w 128 -h 128 --export-id="%s" --export-filename="pngs/128/%s.png" "%s"' % (self.name, sliceFName, svgFName))
 		# rc = os.system('inkscape --export-type=png -w 1024 -h 1024 --export-id="%s" --export-filename="pngs/1024/%s" "%s"' % (self.name, sliceFName, svgFName))
 		# rc = os.system('inkscape --export-type=png -w 2048 -h 2048 --export-id="%s" --export-filename="pngs/2048/%s" "%s"' % (self.name, sliceFName, svgFName))
-		# rc = os.system('inkscape --export-type=svg -w 128 -h 128 --export-id="%s" --export-filename="pngs/scalable/%s" "%s"' % (self.name, sliceFName, svgFName))
+		# rc = os.system('inkscape --export-type=svg -w 128 -h 128 --export-id="%s" --export-filename="pngs/scalable/%s.svg" "%s"' % (self.name, sliceFName, svgFName))
+		# rc = os.system('inkscape --export-plain-svg -w 128 -h 128 --export-id="%s" --export-filename="pngs/scalable/%s.svg" "%s"' % (self.name, sliceFName, svgFName))
 
 class SVGHandler(handler.ContentHandler):
 	"""Base class for SVG parsers"""
@@ -278,7 +279,8 @@ if __name__ == '__main__':
 
 	# loop through each slice rectangle, and render a PNG image for it
 	for rect in rects:
-		sliceFName = sliceprefix + rect.name + '.png'
+		# sliceFName = sliceprefix + rect.name + '.png'
+		sliceFName = sliceprefix + rect.name
 
 		dbg('Saving slice as: "%s"' % sliceFName)
 		rect.renderFromSVG(svgFilename, sliceFName)

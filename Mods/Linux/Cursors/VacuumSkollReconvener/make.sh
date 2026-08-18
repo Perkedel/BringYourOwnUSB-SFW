@@ -3,22 +3,69 @@
 # Copyright (C) 2018 Gerhard Großmann
 
 # sauce https://github.com/charakterziffer/cursor-toolbox
+# https://unix.stackexchange.com/questions/607564/how-to-read-each-line-in-a-file-separated-by-delimiters-and-spaces
+# https://stackoverflow.com/questions/1975849/how-to-split-a-line-into-words-separated-by-one-or-more-spaces-in-bash
+# https://stackoverflow.com/questions/10929453/read-a-file-line-by-line-assigning-the-value-to-a-variable
+# https://superuser.com/questions/606733/how-do-i-parse-a-line-thorugh-a-file-in-bash
+# https://stackoverflow.com/questions/16623835/remove-a-fixed-prefix-suffix-from-a-string-in-bash
 
 # Set the name of your cursor theme
 themetitle='Vacuum Skoll Endfield Dark'
-
+commentdescription='OpenCX Cursor New 2200 era'
+commentdescriptionId='Kursor OpenCX Baru era 2200an'
 
 # For the folder name: Replace forbidden charakters with “-”
 foldername=$(echo $themetitle | sed -e 's/[^A-Za-z0-9_-]/-/g')
 mkdir -p $foldername
 mkdir -p $foldername/cursors
-echo '[Icon Theme]
-Name="'$themetitle'"' > $foldername/cursor.theme
+indexSay='[Icon Theme]
+Name="'$themetitle'"
+Comment[en]="'$commentdescription'"
+Comment[id_ID]="'$commentdescriptionId'"
+Inherits=breeze_cursors'
+cursorSay='[Icon Theme]
+Name="'$themetitle'"
+Inherits=breeze_cursors'
+
+echo $cursorSay > $foldername/cursor.theme
+echo $indexSay > $foldername/index.theme
+
+hyprSpots=()
 
 # Go to hotspots folder, render the PNGs according to those files
 cd hotspots/
 for f in *.in ; do
 	xcursorgen "$f" ../$foldername/cursors/"${f%.in}" ;
+
+	while IFS=' ' read -r RESOLUTION X_HOTSPOT Y_HOTSPOT IMAGE_FILE ignored; do
+	    # echo "read $IMAGE_FILE"
+	    if [[ $RESOLUTION == "128" ]];then
+    	 #    cleanBack="../pngs/scalable/"
+    		# objName="${IMAGE_FILE#'$cleanBack'}"
+    		# cleanFront=".png"
+    		# objName="${objName%'$cleanFront'}"
+            objName="${IMAGE_FILE#../pngs/128/}"
+            objName="${objName%.png}"
+    		x_hot=$X_HOTSPOT
+    		y_hot=$Y_HOTSPOT
+            # echo "$objName"
+            echo "$RESOLUTION $X_HOTSPOT $Y_HOTSPOT $objName"
+            addTo=("$RESOLUTION" "$X_HOTSPOT" "$Y_HOTSPOT" "${f%.in}")
+            hyprSpots+=($addTo)
+		fi
+	done < $f
+# 	echo "Meta datas hypr ${f%.in}.svg $x_hot $y_hot"
+    # echo "meta datas hyper ${hyprSpots[3]}"
+# metadataing='[
+#     {
+#         "filename": "'${f%.in}'.svg",
+#         "hotspot_x": '$x_hot',
+#         "hotspot_y": '$y_hot',
+#         "nominal_size": 128
+#     }
+# ]'
+#     mkdir -p ../$foldername/cursors_scalable/${f%.in}
+#     echo $metadataing > ../$foldername/cursors_scalable/${f%.in}/metadata.json
 done
 
 # Create symbolic links for equivalent cursors
@@ -71,7 +118,7 @@ ln -sf cross cross_reverse
 ln -sf cross target
 ln -sf cell plus
 ln -sf x-cursor X_cursor
-ln -sf x-cursor wayland-cursor
+#ln -sf x-cursor wayland-cursor
 ln -sf not-allowed forbidden
 ln -sf not-allowed crossed_circle
 ln -sf not-allowed 03b6e0fcb3499374a867c041f52298f0
