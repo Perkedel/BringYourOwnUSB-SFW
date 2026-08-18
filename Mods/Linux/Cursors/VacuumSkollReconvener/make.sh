@@ -27,7 +27,7 @@ cursorSay='[Icon Theme]
 Name="'$themetitle'"
 Inherits=breeze_cursors'
 
-echo $cursorSay > $foldername/cursor.theme
+echo $indexSay > $foldername/cursor.theme
 echo $indexSay > $foldername/index.theme
 
 hyprSpots=()

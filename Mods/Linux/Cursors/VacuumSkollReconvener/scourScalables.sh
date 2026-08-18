@@ -1,4 +1,4 @@
-#!/bin/env
+#!/bin/sh
 
 # Simple SVG scouring script pls!
 # https://github.com/scour-project/scour
