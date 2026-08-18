@@ -1,0 +1,17 @@
+resize_algorithm = none
+hotspot_x = 0.04
+hotspot_y = 0.04
+
+define_size = 0, link.svg
+
+# define_size = 24, link_000.png, 50
+# define_size = 32, link_001.png, 50
+# define_size = 48, link_002.png, 50
+# define_size = 72, link_003.png, 50
+# define_size = 128, link_004.png, 50
+
+define_override = alias
+define_override = 0876e1c15ff2fc01f906f1c363074c0f
+define_override = 3085a0e285430894940527032f8b26df
+define_override = 640fb0e74195791501fd1ed57b41487f
+define_override = a2a266d0498c3104214a47bd64ab0fc8

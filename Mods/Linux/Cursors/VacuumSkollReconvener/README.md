@@ -13,3 +13,5 @@ Yey, cursor brand new for OpenCX! We've been using the same blue cursor set for 
   - [hyprcursor-util](https://github.com/hyprwm/hyprcursor/tree/main/hyprcursor-util)
   - [hyprcursor about](https://wiki.hypr.land/Hypr-Ecosystem/hyprcursor/)
 - [Posy's cursor port scalable Morxemplum](https://github.com/Morxemplum/posys-cursor-scalable)
+
+wector!

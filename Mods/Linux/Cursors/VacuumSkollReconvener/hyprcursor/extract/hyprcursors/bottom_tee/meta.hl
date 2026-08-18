@@ -1,0 +1,12 @@
+resize_algorithm = none
+hotspot_x = 0.50
+hotspot_y = 0.96
+
+define_size = 0, bottom_tee.svg
+
+# define_size = 24, bottom_tee_000.png, 50
+# define_size = 32, bottom_tee_001.png, 50
+# define_size = 48, bottom_tee_002.png, 50
+# define_size = 72, bottom_tee_003.png, 50
+# define_size = 128, bottom_tee_004.png, 50
+

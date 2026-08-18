@@ -1,0 +1,18 @@
+resize_algorithm = none
+hotspot_x = 0.50
+hotspot_y = 0.50
+
+define_size = 0, move.svg
+
+# define_size = 24, move_000.png, 50
+# define_size = 32, move_001.png, 50
+# define_size = 48, move_002.png, 50
+# define_size = 72, move_003.png, 50
+# define_size = 128, move_004.png, 50
+
+define_override = fleur
+define_override = size_all
+define_override = pointer-move
+define_override = 4498f0e0c1937ffe01fd06f973665830
+define_override = 9081237383d90e509aa00f00170e968f
+define_override = fcf21c00b30f7e3f83fe0dfd12e71cff

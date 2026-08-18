@@ -1,0 +1,15 @@
+resize_algorithm = none
+hotspot_x = 0.50
+hotspot_y = 0.50
+
+define_size = 0, cross.svg
+
+# define_size = 24, cross_000.png, 50
+# define_size = 32, cross_001.png, 50
+# define_size = 48, cross_002.png, 50
+# define_size = 72, cross_003.png, 50
+# define_size = 128, cross_004.png, 50
+
+define_override = diamond_cross
+define_override = cross_reverse
+define_override = target

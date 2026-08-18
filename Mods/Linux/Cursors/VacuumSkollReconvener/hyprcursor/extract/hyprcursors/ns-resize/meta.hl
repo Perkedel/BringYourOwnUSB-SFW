@@ -1,0 +1,21 @@
+resize_algorithm = none
+hotspot_x = 0.50
+hotspot_y = 0.50
+
+define_size = 0, ns-resize.svg
+
+# define_size = 24, ns-resize_000.png, 50
+# define_size = 32, ns-resize_001.png, 50
+# define_size = 48, ns-resize_002.png, 50
+# define_size = 72, ns-resize_003.png, 50
+# define_size = 128, ns-resize_004.png, 50
+
+define_override = size_ver
+define_override = size-ver
+define_override = v_double_arrow
+define_override = double_arrow
+define_override = 00008160000006810000408080010102
+define_override = split_v
+define_override = based_arrow_up
+define_override = based_arrow_down
+define_override = sb_v_double_arrow

@@ -1,0 +1,12 @@
+resize_algorithm = none
+hotspot_x = 0.50
+hotspot_y = 0.04
+
+define_size = 0, center_ptr.svg
+
+# define_size = 24, center_ptr_000.png, 50
+# define_size = 32, center_ptr_001.png, 50
+# define_size = 48, center_ptr_002.png, 50
+# define_size = 72, center_ptr_003.png, 50
+# define_size = 128, center_ptr_004.png, 50
+

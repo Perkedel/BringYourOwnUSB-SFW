@@ -1,0 +1,13 @@
+resize_algorithm = none
+hotspot_x = 0.96
+hotspot_y = 0.04
+
+define_size = 0, ne-resize.svg
+
+# define_size = 24, ne-resize_000.png, 50
+# define_size = 32, ne-resize_001.png, 50
+# define_size = 48, ne-resize_002.png, 50
+# define_size = 72, ne-resize_003.png, 50
+# define_size = 128, ne-resize_004.png, 50
+
+define_override = top_right_corner

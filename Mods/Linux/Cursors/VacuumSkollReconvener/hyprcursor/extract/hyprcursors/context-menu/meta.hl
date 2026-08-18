@@ -1,0 +1,13 @@
+resize_algorithm = none
+hotspot_x = 0.04
+hotspot_y = 0.04
+
+define_size = 0, context-menu.svg
+
+# define_size = 24, context-menu_000.png, 50
+# define_size = 32, context-menu_001.png, 50
+# define_size = 48, context-menu_002.png, 50
+# define_size = 72, context-menu_003.png, 50
+# define_size = 128, context-menu_004.png, 50
+
+define_override = 08ffe1e65f80fcfdf9fff11263e74c48

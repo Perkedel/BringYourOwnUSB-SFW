@@ -1,0 +1,17 @@
+resize_algorithm = none
+hotspot_x = 0.50
+hotspot_y = 0.50
+
+define_size = 0, nesw-resize.svg
+
+# define_size = 24, nesw-resize_000.png, 50
+# define_size = 32, nesw-resize_001.png, 50
+# define_size = 48, nesw-resize_002.png, 50
+# define_size = 72, nesw-resize_003.png, 50
+# define_size = 128, nesw-resize_004.png, 50
+
+define_override = size_bdiag
+define_override = size-bdiag
+define_override = fd_double_arrow
+define_override = 50585d75b494802d0151028115016902
+define_override = fcf1c3c7cd4491d801f1e1c78f100000

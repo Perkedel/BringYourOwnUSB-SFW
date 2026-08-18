@@ -1,0 +1,13 @@
+resize_algorithm = none
+hotspot_x = 0.96
+hotspot_y = 0.50
+
+define_size = 0, e-resize.svg
+
+# define_size = 24, e-resize_000.png, 50
+# define_size = 32, e-resize_001.png, 50
+# define_size = 48, e-resize_002.png, 50
+# define_size = 72, e-resize_003.png, 50
+# define_size = 128, e-resize_004.png, 50
+
+define_override = right_side

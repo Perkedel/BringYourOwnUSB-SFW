@@ -1,0 +1,15 @@
+resize_algorithm = none
+hotspot_x = 0.04
+hotspot_y = 0.04
+
+define_size = 0, not-allowed.svg
+
+# define_size = 24, not-allowed_000.png, 50
+# define_size = 32, not-allowed_001.png, 50
+# define_size = 48, not-allowed_002.png, 50
+# define_size = 72, not-allowed_003.png, 50
+# define_size = 128, not-allowed_004.png, 50
+
+define_override = forbidden
+define_override = crossed_circle
+define_override = 03b6e0fcb3499374a867c041f52298f0

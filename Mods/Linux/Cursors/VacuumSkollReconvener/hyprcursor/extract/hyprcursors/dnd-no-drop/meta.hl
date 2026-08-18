@@ -1,0 +1,14 @@
+resize_algorithm = none
+hotspot_x = 0.04
+hotspot_y = 0.04
+
+define_size = 0, dnd-no-drop.svg
+
+# define_size = 24, dnd-no-drop_000.png, 50
+# define_size = 32, dnd-no-drop_001.png, 50
+# define_size = 48, dnd-no-drop_002.png, 50
+# define_size = 72, dnd-no-drop_003.png, 50
+# define_size = 128, dnd-no-drop_004.png, 50
+
+define_override = no-drop
+define_override = 03b6e0fcb3499374a867d041f52298f0

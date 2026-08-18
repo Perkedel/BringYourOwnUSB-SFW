@@ -1,0 +1,14 @@
+resize_algorithm = none
+hotspot_x = 0.50
+hotspot_y = 0.50
+
+define_size = 0, col-resize.svg
+
+# define_size = 24, col-resize_000.png, 50
+# define_size = 32, col-resize_001.png, 50
+# define_size = 48, col-resize_002.png, 50
+# define_size = 72, col-resize_003.png, 50
+# define_size = 128, col-resize_004.png, 50
+
+define_override = 043a9f68147c53184671403ffa811cc5
+define_override = 14fef782d02440884392942c11205230

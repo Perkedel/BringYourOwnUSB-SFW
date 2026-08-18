@@ -1,0 +1,16 @@
+resize_algorithm = none
+hotspot_x = 0.04
+hotspot_y = 0.04
+
+define_size = 0, openhand.svg
+
+# define_size = 24, openhand_000.png, 50
+# define_size = 32, openhand_001.png, 50
+# define_size = 48, openhand_002.png, 50
+# define_size = 72, openhand_003.png, 50
+# define_size = 128, openhand_004.png, 50
+
+define_override = grab
+define_override = hand1
+define_override = 5aca4d189052212118709018842178c0
+define_override = 9d800788f1b08800ae810202380a0822

@@ -1,0 +1,12 @@
+resize_algorithm = none
+hotspot_x = 0.04
+hotspot_y = 0.04
+
+define_size = 0, x-cursor.svg
+# define_size = 24, x-cursor_000.png, 50
+# define_size = 32, x-cursor_001.png, 50
+# define_size = 48, x-cursor_002.png, 50
+# define_size = 72, x-cursor_003.png, 50
+# define_size = 128, x-cursor_004.png, 50
+
+define_override = X_cursor

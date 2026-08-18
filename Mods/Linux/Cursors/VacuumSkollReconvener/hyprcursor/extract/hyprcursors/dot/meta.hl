@@ -1,0 +1,12 @@
+resize_algorithm = none
+hotspot_x = 0.50
+hotspot_y = 0.50
+
+define_size = 0, dot.svg
+
+# define_size = 24, dot_000.png, 50
+# define_size = 32, dot_001.png, 50
+# define_size = 48, dot_002.png, 50
+# define_size = 72, dot_003.png, 50
+# define_size = 128, dot_004.png, 50
+

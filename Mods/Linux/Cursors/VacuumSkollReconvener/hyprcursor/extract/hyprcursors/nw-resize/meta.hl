@@ -1,0 +1,13 @@
+resize_algorithm = none
+hotspot_x = 0.04
+hotspot_y = 0.04
+
+define_size = 0, nw-resize.svg
+
+# define_size = 24, nw-resize_000.png, 50
+# define_size = 332, nw-resize_001.png, 50
+# define_size = 48, nw-resize_002.png, 50
+# define_size = 72, nw-resize_003.png, 50
+# define_size = 128, nw-resize_004.png, 50
+
+define_override = top_left_corner

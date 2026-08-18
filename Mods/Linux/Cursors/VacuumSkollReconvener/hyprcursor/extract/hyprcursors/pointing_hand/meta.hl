@@ -1,0 +1,16 @@
+resize_algorithm = none
+hotspot_x = 0.04
+hotspot_y = 0.04
+
+define_size = 0, pointing_hand.svg
+
+# define_size = 24, pointing_hand_000.png, 50
+# define_size = 32, pointing_hand_001.png, 50
+# define_size = 48, pointing_hand_002.png, 50
+# define_size = 72, pointing_hand_003.png, 50
+# define_size = 128, pointing_hand_004.png, 50
+
+define_override = pointer
+define_override = hand
+define_override = hand2
+define_override = e29285e634086352946a0e7090d73106

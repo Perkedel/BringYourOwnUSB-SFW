@@ -1,0 +1,12 @@
+resize_algorithm = none
+hotspot_x = 0.04
+hotspot_y = 0.96
+
+define_size = 0, ll_angle.svg
+
+# define_size = 24, ll_angle_000.png, 50
+# define_size = 32, ll_angle_001.png, 50
+# define_size = 48, ll_angle_002.png, 50
+# define_size = 72, ll_angle_003.png, 50
+# define_size = 128, ll_angle_004.png, 50
+

@@ -1,0 +1,14 @@
+resize_algorithm = none
+hotspot_x = 0.50
+hotspot_y = 0.04
+
+define_size = 0, up-arrow.svg
+
+# define_size = 24, up-arrow_000.png, 50
+# define_size = 32, up-arrow_001.png, 50
+# define_size = 48, up-arrow_002.png, 50
+# define_size = 72, up-arrow_003.png, 50
+# define_size = 128, up-arrow_004.png, 50
+
+define_override = up_arrow
+define_override = sb_up_arrow

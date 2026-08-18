@@ -1,0 +1,13 @@
+resize_algorithm = none
+hotspot_x = 0.92
+hotspot_y = 0.92
+
+define_size = 0, se-resize.svg
+
+# define_size = 24, se-resize_000.png, 50
+# define_size = 32, se-resize_001.png, 50
+# define_size = 48, se-resize_002.png, 50
+# define_size = 72, se-resize_003.png, 50
+# define_size = 128, se-resize_004.png, 50
+
+define_override = bottom_right_corner

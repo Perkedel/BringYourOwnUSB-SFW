@@ -1,0 +1,18 @@
+resize_algorithm = none
+hotspot_x = 0.50
+hotspot_y = 0.50
+
+define_size = 0, ew-resize.svg
+
+# define_size = 24, ew-resize_000.png, 50
+# define_size = 32, ew-resize_001.png, 50
+# define_size = 48, ew-resize_002.png, 50
+# define_size = 72, ew-resize_003.png, 50
+# define_size = 128, ew-resize_004.png, 50
+
+define_override = size_hor
+define_override = size-hor
+define_override = h_double_arrow
+define_override = 028006030e0e7ebffc7f7070c0600140
+define_override = split_h
+define_override = sb_h_double_arrow

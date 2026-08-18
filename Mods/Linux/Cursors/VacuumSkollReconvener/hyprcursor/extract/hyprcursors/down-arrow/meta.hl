@@ -1,0 +1,14 @@
+resize_algorithm = none
+hotspot_x = 0.50
+hotspot_y = 0.96
+
+define_size = 0, down-arrow.svg
+
+# define_size = 24, down-arrow_000.png, 50
+# define_size = 32, down-arrow_001.png, 50
+# define_size = 48, down-arrow_002.png, 50
+# define_size = 72, down-arrow_003.png, 50
+# define_size = 128, down-arrow_004.png, 50
+
+define_override = down_arrow
+define_override = sb_down_arrow
