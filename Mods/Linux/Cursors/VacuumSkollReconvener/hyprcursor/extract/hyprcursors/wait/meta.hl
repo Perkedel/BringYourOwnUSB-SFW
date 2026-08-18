@@ -2,15 +2,15 @@ resize_algorithm = none
 hotspot_x = 0.04
 hotspot_y = 0.04
 
-define_size = 128, wait-01.svg, 60
-define_size = 128, wait-02.svg, 60
-define_size = 128, wait-03.svg, 60
-define_size = 128, wait-01.svg, 60
+define_size = 0, wait-01.svg, 60
+define_size = 0, wait-02.svg, 60
+define_size = 0, wait-03.svg, 60
+define_size = 0, wait-04.svg, 60
 
-define_size = 128, wait-04.svg, 60
-define_size = 128, wait-05.svg, 60
-define_size = 128, wait-06.svg, 60
-define_size = 128, wait-07.svg, 60
+define_size = 0, wait-05.svg, 60
+define_size = 0, wait-06.svg, 60
+define_size = 0, wait-07.svg, 60
+define_size = 0, wait-08.svg, 60
 
 # define_size = 24, wait_000.png, 60
 # define_size = 24, wait_001.png, 60

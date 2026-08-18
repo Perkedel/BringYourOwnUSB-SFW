@@ -2,15 +2,15 @@ resize_algorithm = none
 hotspot_x = 0.04
 hotspot_y = 0.04
 
-define_size = 128, progress-01.svg, 60
-define_size = 128, progress-02.svg, 60
-define_size = 128, progress-03.svg, 60
-define_size = 128, progress-04.svg, 60
+define_size = 0, progress-01.svg, 60
+define_size = 0, progress-02.svg, 60
+define_size = 0, progress-03.svg, 60
+define_size = 0, progress-04.svg, 60
 
-define_size = 128, progress-05.svg, 60
-define_size = 128, progress-06.svg, 60
-define_size = 128, progress-07.svg, 60
-define_size = 128, progress-08.svg, 60
+define_size = 0, progress-05.svg, 60
+define_size = 0, progress-06.svg, 60
+define_size = 0, progress-07.svg, 60
+define_size = 0, progress-08.svg, 60
 
 # define_size = 24, progress_000.png, 60
 # define_size = 24, progress_001.png, 60
