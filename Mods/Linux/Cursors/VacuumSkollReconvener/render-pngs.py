@@ -40,6 +40,8 @@ if not os.path.exists('pngs/32'):
 	os.makedirs('pngs/32')
 if not os.path.exists('pngs/48'):
 	os.makedirs('pngs/48')
+if not os.path.exists('pngs/64'):
+	os.makedirs('pngs/64')
 if not os.path.exists('pngs/72'):
 	os.makedirs('pngs/72')
 if not os.path.exists('pngs/128'):
@@ -87,6 +89,7 @@ class SVGRect:
 
 		rc = os.system('inkscape --export-type=png -w 32 -h 32 --export-id="%s" --export-filename="pngs/32/%s.png" "%s"' % (self.name, sliceFName, svgFName))
 		rc = os.system('inkscape --export-type=png -w 48 -h 48 --export-id="%s" --export-filename="pngs/48/%s.png" "%s"' % (self.name, sliceFName, svgFName))
+		rc = os.system('inkscape --export-type=png -w 64 -h 64 --export-id="%s" --export-filename="pngs/64/%s.png" "%s"' % (self.name, sliceFName, svgFName))
 		rc = os.system('inkscape --export-type=png -w 72 -h 72 --export-id="%s" --export-filename="pngs/72/%s.png" "%s"' % (self.name, sliceFName, svgFName))
 		rc = os.system('inkscape --export-type=png -w 128 -h 128 --export-id="%s" --export-filename="pngs/128/%s.png" "%s"' % (self.name, sliceFName, svgFName))
 		# rc = os.system('inkscape --export-type=png -w 1024 -h 1024 --export-id="%s" --export-filename="pngs/1024/%s" "%s"' % (self.name, sliceFName, svgFName))
