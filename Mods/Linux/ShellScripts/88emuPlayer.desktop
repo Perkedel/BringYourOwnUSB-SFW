@@ -1,0 +1,16 @@
+[Desktop Entry]
+Comment[id_ID]=
+Comment=
+Exec=/usr/local/bin/88emuPlayer
+GenericName[id_ID]=
+GenericName=
+MimeType=
+Name[id_ID]=88Emu Player
+Name=88Emu Player
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=
