@@ -20,13 +20,13 @@ mkdir -p $foldername
 mkdir -p $foldername/cursors
 
 indexSay="[Icon Theme]
-Name='$themetitle'
-Comment[en]='$commentdescription'
-Comment[id_ID]='$commentdescriptionId'
+Name=$themetitle
+Comment[en]=$commentdescription
+Comment[id_ID]=$commentdescriptionId
 Inherits=breeze_cursors"
 
 cursorSay="[Icon Theme]
-Name='$themetitle'
+Name=$themetitle
 Inherits=breeze_cursors"
 
 echo $indexSay > $foldername/cursor.theme
