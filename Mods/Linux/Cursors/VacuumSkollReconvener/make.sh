@@ -18,14 +18,16 @@ commentdescriptionId='Kursor OpenCX Baru era 2200an'
 foldername=$(echo $themetitle | sed -e 's/[^A-Za-z0-9_-]/-/g')
 mkdir -p $foldername
 mkdir -p $foldername/cursors
-indexSay='[Icon Theme]
-Name="'$themetitle'"
-Comment[en]="'$commentdescription'"
-Comment[id_ID]="'$commentdescriptionId'"
-Inherits=breeze_cursors'
-cursorSay='[Icon Theme]
-Name="'$themetitle'"
-Inherits=breeze_cursors'
+
+indexSay="[Icon Theme]
+Name='$themetitle'
+Comment[en]='$commentdescription'
+Comment[id_ID]='$commentdescriptionId'
+Inherits=breeze_cursors"
+
+cursorSay="[Icon Theme]
+Name='$themetitle'
+Inherits=breeze_cursors"
 
 echo $indexSay > $foldername/cursor.theme
 echo $indexSay > $foldername/index.theme
